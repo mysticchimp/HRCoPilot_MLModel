@@ -170,7 +170,8 @@ skill_semantic_threshold = 0.40
 # overrides ONLY the 0.45-weight similarity component; title/skill keep all-mpnet.
 # Qwen3-Embedding-0.6B (95% zero-shot, apache-2.0) captures the ~44% of LinkedIn
 # profiles that exceed all-mpnet's 384-token cap; the query instruction is its trained
-# asymmetric-retrieval prompt (JD=query). fp16 + L1024 keep it within a 16GB MPS budget.
+# asymmetric-retrieval prompt (JD=query). fp16 via torch_dtype at load + L1024 keep it
+# within a 16GB MPS budget (no post-load .half() RSS spike).
 similarity_model_config = {
     "model_name": "Qwen/Qwen3-Embedding-0.6B",
     "query_instruction": "Instruct: Given a job description, retrieve candidate profiles that best match the role.\nQuery: ",

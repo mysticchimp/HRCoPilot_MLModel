@@ -18,14 +18,13 @@ from typing import Any
 
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
-import torch
 from sentence_transformers import SentenceTransformer
 
 from core.adapters.linkedin_adapter import LinkedInAdapter
 from core.adapters.resume_adapter import ResumeAdapter
 from core.llm import get_provider
 from evals.cases import EvalCase, build_linkedin_gold_case, build_reverse_match_case, load_fixture, sample_seeds
-from evals.runner import PipelineConfig, SimilaritySpec, aggregate, evaluate_cases
+from evals.runner import PipelineConfig, aggregate, evaluate_cases
 from evals.skew import dataset_skew
 from models.mappings import similarity_model_config
 
@@ -145,36 +144,23 @@ def main():
         and not args.sim_doc_instruction
     )
     if not is_default:
-        if args.embedding_model == "all-mpnet-base-v2":
-            sim_model = base_model
-        else:
-            load_kwargs: dict[str, Any] = {"trust_remote_code": True}
-            if args.sim_device:
-                load_kwargs["device"] = args.sim_device
-            # dtype: fp16 applied post-load (the MPS-friendly path); fp32/bf16 at load time.
-            load_dtype = None
-            if args.sim_dtype == "fp32" or (args.sim_dtype == "auto" and args.sim_device == "cpu"):
-                load_dtype = torch.float32
-            elif args.sim_dtype == "bf16":
-                load_dtype = torch.bfloat16
-            if load_dtype is not None:
-                load_kwargs["model_kwargs"] = {"torch_dtype": load_dtype}
-            sim_model = SentenceTransformer(args.embedding_model, **load_kwargs)
-            if args.sim_dtype == "fp16":
-                sim_model = sim_model.half()
-            if args.sim_max_seq:
-                sim_model.max_seq_length = args.sim_max_seq
+        # Prefer the shared builder so fp16 loads via torch_dtype (no .half() spike).
+        from core.embedding import build_similarity_spec
+
+        sim_cfg = {
+            "model_name": args.embedding_model,
+            "query_instruction": args.sim_query_instruction or None,
+            "doc_instruction": args.sim_doc_instruction or None,
+            "dtype": args.sim_dtype,
+            "device": args.sim_device,
+            "max_seq_length": args.sim_max_seq,
+            "batch_size": args.sim_batch_size,
+        }
+        sim_spec = build_similarity_spec(sim_cfg, base_model=base_model)
         slug = args.embedding_model.replace("/", "_")
         if args.sim_query_instruction or args.sim_doc_instruction:
             slug += "_instr"
         cache_path = f".ai-recruiter/emb_{args.dataset}_{slug}.pkl"
-        sim_spec = SimilaritySpec(
-            model=sim_model,
-            model_key=f"{args.embedding_model}|q={args.sim_query_instruction}|d={args.sim_doc_instruction}|L={args.sim_max_seq}",
-            query_instruction=args.sim_query_instruction or None,
-            doc_instruction=args.sim_doc_instruction or None,
-            batch_size=args.sim_batch_size,
-        )
         print(f"[similarity] isolated model={args.embedding_model} "
               f"q_instr={bool(args.sim_query_instruction)} d_instr={bool(args.sim_doc_instruction)}")
 

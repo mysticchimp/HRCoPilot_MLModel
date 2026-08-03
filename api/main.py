@@ -3,12 +3,15 @@
 POST /score
   body: { jd_text, candidates: [{ candidate_id, raw_profile }] }
   → ApifyJsonAdapter → run_pipeline → swipe-card JSON (tagged with caller candidate_id)
+
+Embedding models (all-mpnet + Qwen similarity) are loaded once at startup and reused.
 """
 
 from __future__ import annotations
 
 import logging
 import os
+from contextlib import asynccontextmanager
 from typing import Any
 
 from fastapi import FastAPI, HTTPException
@@ -17,17 +20,33 @@ from pydantic import BaseModel, Field
 from core.adapters.apify_json_adapter import ApifyJsonAdapter
 from core.data import profiles_to_dataframe
 from core.jd_extraction import process_jd
+from core.model_cache import warm_scoring_models
 from core.pipeline import run_pipeline
 from core.swipe import build_card
 from models.candidate import CandidateProfile
 
 logger = logging.getLogger(__name__)
 
-app = FastAPI(title="Contra6 Scoring API", version="0.1.0")
-
 # Optional offline JD cache (e.g. jd/parsed/hr_assistant_prime_ac.json) for local
 # sanity without a live Anthropic call. Leave unset in production.
 _JD_CACHE_PATH = os.environ.get("JD_CACHE_PATH") or None
+
+# Populated by lifespan; reused on every /score.
+_embedding_model = None
+_sim_spec = None
+_rerank_spec = None
+
+
+@asynccontextmanager
+async def lifespan(app: FastAPI):
+    global _embedding_model, _sim_spec, _rerank_spec
+    logger.info("Warming scoring embedding models (once per process)...")
+    _embedding_model, _sim_spec, _rerank_spec = warm_scoring_models()
+    logger.info("Model warm-up complete")
+    yield
+
+
+app = FastAPI(title="Contra6 Scoring API", version="0.1.0", lifespan=lifespan)
 
 
 class ScoreCandidateIn(BaseModel):
@@ -73,6 +92,9 @@ def score_candidates(jd_text: str, candidates: list[ScoreCandidateIn]) -> list[d
         profiles=profiles,
         processed_jd=jd,
         top_n=len(profiles),
+        embedding_model=_embedding_model,
+        sim_spec=_sim_spec,
+        rerank_spec=_rerank_spec,
     )
 
     # run_pipeline returns a display subset; merge card metadata back in.
@@ -96,7 +118,10 @@ def score_candidates(jd_text: str, candidates: list[ScoreCandidateIn]) -> list[d
 
 @app.get("/health")
 def health():
-    return {"status": "ok"}
+    return {
+        "status": "ok",
+        "models_ready": _embedding_model is not None,
+    }
 
 
 @app.post("/score", response_model=ScoreResponse)

@@ -6,10 +6,11 @@ from sentence_transformers import SentenceTransformer
 from core.adapters.base import CandidateAdapter
 from core.adapters.resume_adapter import ResumeAdapter
 from core.data import profiles_to_dataframe
-from core.embedding import build_similarity_spec, embed_profiles
+from core.embedding import SimilaritySpec, build_similarity_spec, embed_profiles
 from core.filtering import filter_by_job_title
 from core.jd_extraction import load_sample_jd, process_jd
-from core.reranking import build_rerank_model
+from core.model_cache import get_base_embedding_model, get_rerank_spec, get_similarity_spec
+from core.reranking import RerankSpec, build_rerank_model
 from core.scoring import (
     apply_rerank,
     calculate_attrition_score,
@@ -58,20 +59,45 @@ def run_pipeline(
     similarity_model_config: dict | None = CHAMPION_SIM_CONFIG,
     rerank_model_config: dict | None = CHAMPION_RERANK_CONFIG,
     rerank_top_k: int = CHAMPION_RERANK_TOP_K,
+    embedding_model: SentenceTransformer | None = None,
+    sim_spec: SimilaritySpec | None = None,
+    rerank_spec: RerankSpec | None = None,
+    use_model_cache: bool = True,
 ) -> pd.DataFrame:
     """Run the full candidate matching pipeline over any adapter's candidates.
 
     By default uses the ResumeAdapter on `resume_csv_path`; pass a different
     `adapter` + `source` (or a pre-built `profiles` list) to score another dataset
     through the same pipeline.
+
+    Prefer passing preloaded ``embedding_model`` / ``sim_spec`` (or leave
+    ``use_model_cache=True``) so SentenceTransformers are not reconstructed per call.
     """
     logging.info("Starting candidate matching pipeline...")
 
-    logging.info(f"Loading embedding model: {embedding_model_name}")
-    model = SentenceTransformer(embedding_model_name)
-    sim_spec = build_similarity_spec(similarity_model_config, base_model=model)
-    rerank_spec = build_rerank_model(rerank_model_config)
-    emb_model = sim_spec.model if sim_spec else model
+    if embedding_model is not None:
+        model = embedding_model
+    elif use_model_cache:
+        model = get_base_embedding_model(embedding_model_name)
+    else:
+        logging.info(f"Loading embedding model: {embedding_model_name}")
+        model = SentenceTransformer(embedding_model_name)
+
+    if sim_spec is not None:
+        resolved_sim = sim_spec
+    elif use_model_cache:
+        resolved_sim = get_similarity_spec(similarity_model_config, base_model=model)
+    else:
+        resolved_sim = build_similarity_spec(similarity_model_config, base_model=model)
+
+    if rerank_spec is not None:
+        resolved_rerank = rerank_spec
+    elif use_model_cache:
+        resolved_rerank = get_rerank_spec(rerank_model_config)
+    else:
+        resolved_rerank = build_rerank_model(rerank_model_config)
+
+    emb_model = resolved_sim.model if resolved_sim else model
 
     logging.info("Loading candidates via adapter...")
     if profiles is None:
@@ -83,9 +109,9 @@ def run_pipeline(
     logging.info(f"Embedding {len(profiles)} candidate profiles...")
     embed_profiles(
         profiles, emb_model, cache_path=embedding_cache_path,
-        model_key=sim_spec.model_key if sim_spec else None,
-        doc_instruction=sim_spec.doc_instruction if sim_spec else None,
-        batch_size=sim_spec.batch_size if sim_spec else 32,
+        model_key=resolved_sim.model_key if resolved_sim else None,
+        doc_instruction=resolved_sim.doc_instruction if resolved_sim else None,
+        batch_size=resolved_sim.batch_size if resolved_sim else 32,
     )
     df_candidates = profiles_to_dataframe(profiles)
 
@@ -144,8 +170,8 @@ def run_pipeline(
     logging.info("Scoring by similarity...")
     df_filtered = calculate_similarity_score(
         df_filtered, processed_jd,
-        sim_spec.model if sim_spec else model,
-        query_instruction=sim_spec.query_instruction if sim_spec else None,
+        resolved_sim.model if resolved_sim else model,
+        query_instruction=resolved_sim.query_instruction if resolved_sim else None,
     )
 
     logging.info("Calculating final score...")
@@ -153,7 +179,7 @@ def run_pipeline(
 
     logging.info(f"Reranking (Stage 2) and returning top {top_n} candidates.")
     df_ranked = apply_rerank(
-        df_scored, processed_jd, rerank_spec, top_k=rerank_top_k,
+        df_scored, processed_jd, resolved_rerank, top_k=rerank_top_k,
         weights=weights, normalize=normalize_components,
     )
     cols_to_display = [

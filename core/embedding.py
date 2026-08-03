@@ -234,6 +234,21 @@ class SimilaritySpec:
     batch_size: int = 32
 
 
+def _resolve_load_dtype(dtype: str, device: str | None):
+    """Map config dtype string → torch.dtype for construction-time loading.
+
+    fp16 is applied via ``model_kwargs={"torch_dtype": torch.float16}`` at load —
+    never post-load ``.half()``, which briefly doubles peak RSS (fp32 + fp16).
+    """
+    if dtype == "fp16":
+        return torch.float16
+    if dtype == "bf16":
+        return torch.bfloat16
+    if dtype == "fp32" or (dtype == "auto" and device == "cpu"):
+        return torch.float32
+    return None
+
+
 def build_similarity_spec(config: dict | None, base_model=None) -> "SimilaritySpec | None":
     """Construct a SimilaritySpec from a config dict, loading the model with the right
     device/dtype/max_seq. Returns None when config is falsy (similarity uses base_model).
@@ -241,7 +256,7 @@ def build_similarity_spec(config: dict | None, base_model=None) -> "SimilaritySp
     config keys: model_name, query_instruction, doc_instruction, dtype
     (auto|fp32|fp16|bf16), device (None=auto), max_seq_length, batch_size.
     Notes from measurement: some encoders (e.g. Jasper) NaN on Apple MPS — pin device='cpu';
-    fp16 halves MPS memory for long-context models (applied post-load via .half()).
+    fp16 is loaded directly via torch_dtype (no post-load .half() memory spike).
     """
     if not config:
         return None
@@ -254,16 +269,10 @@ def build_similarity_spec(config: dict | None, base_model=None) -> "SimilaritySp
         if device:
             load_kwargs["device"] = device
         dtype = config.get("dtype", "auto")
-        load_dtype = None
-        if dtype == "fp32" or (dtype == "auto" and device == "cpu"):
-            load_dtype = torch.float32
-        elif dtype == "bf16":
-            load_dtype = torch.bfloat16
+        load_dtype = _resolve_load_dtype(dtype, device)
         if load_dtype is not None:
             load_kwargs["model_kwargs"] = {"torch_dtype": load_dtype}
         model = SentenceTransformer(name, **load_kwargs)
-        if dtype == "fp16":
-            model = model.half()
         if config.get("max_seq_length"):
             model.max_seq_length = config["max_seq_length"]
     q = config.get("query_instruction")
