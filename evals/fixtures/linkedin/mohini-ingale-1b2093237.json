@@ -1,0 +1,332 @@
+{
+  "case_id": "linkedin:mohini-ingale-1b2093237",
+  "dataset": "linkedin",
+  "jd_text": "# HR Officer\n\n## About the Role\n\nWe are seeking a dedicated and detail-oriented HR Officer to join our growing People & Culture team. In this role, you will serve as a key point of contact for employees and management, supporting the full employee lifecycle from recruitment through offboarding. You will play a vital role in fostering a positive workplace culture, ensuring compliance with employment legislation, and driving initiatives that support employee engagement and organizational success.\n\nThis is an excellent opportunity for an HR professional who enjoys a hands-on, generalist role with exposure to a broad range of HR functions.\n\n## Key Responsibilities\n\n- Support end-to-end recruitment activities, including drafting job descriptions, coordinating with hiring managers, screening candidates, scheduling interviews, and managing offer processes\n- Manage employee onboarding and induction programs to ensure a smooth and engaging experience for new hires\n- Maintain accurate and up-to-date employee records, HRIS data, and personnel files in compliance with data protection regulations\n- Serve as the first point of contact for employee queries relating to HR policies, procedures, benefits, and payroll\n- Support performance management cycles, including probation reviews, appraisals, and development planning\n- Assist in the development, implementation, and review of HR policies and procedures in line with employment law and best practice\n- Coordinate employee relations matters, including grievances, disciplinary actions, and absence management, escalating complex cases as appropriate\n- Administer employee benefits, leave, and compensation processes in collaboration with payroll\n- Support learning and development initiatives, including identifying training needs and coordinating training sessions\n- Contribute to HR reporting, producing metrics and insights on headcount, turnover, absence, and other key indicators\n- Assist with employee engagement initiatives, wellbeing programs, and internal communications\n- Support offboarding processes, including exit interviews and documentation\n\n## Required Skills & Qualifications\n\n- Bachelor's degree in Human Resources, Business Administration, Psychology, or a related field\n- 2+ years of experience in an HR generalist or HR administration role\n- Working knowledge of employment law and HR best practices\n- Strong interpersonal and communication skills, with the ability to build trust and rapport across all levels of the organization\n- High level of discretion and confidentiality when handling sensitive information\n- Excellent organizational skills with the ability to manage multiple priorities and meet deadlines\n- Proficient in Microsoft Office (Word, Excel, PowerPoint) and comfortable working with HRIS platforms\n- Strong attention to detail and accuracy in record-keeping and documentation\n- A proactive, solutions-focused approach and a genuine interest in supporting people\n\n## Preferred Qualifications\n\n- CIPD Level 3 or 5 qualification (or equivalent HR certification such as SHRM-CP, PHR)\n- Experience with HRIS systems such as BambooHR, Workday, SAP SuccessFactors, or similar\n- Previous experience supporting recruitment across multiple functions\n- Exposure to employee relations casework\n- Familiarity with GDPR and data protection principles as they apply to HR\n- Experience working in a fast-paced or scaling organization\n\n## What We Offer\n\n- Competitive salary and annual performance bonus\n- Comprehensive health and wellbeing benefits\n- Generous annual leave and flexible working arrangements\n- Professional development budget and support toward HR certifications\n- Collaborative, inclusive team culture with real opportunities to make an impact\n\n*We are an equal opportunity employer and welcome applications from candidates of all backgrounds.*",
+  "parsed_jd": {
+    "role": "HR Officer",
+    "company": {
+      "name": "Undisclosed Company",
+      "size": null,
+      "stage": "growth"
+    },
+    "industry": [
+      "Human Resources",
+      "People & Culture"
+    ],
+    "role_objectives": [
+      "Serve as a key point of contact for employees and management across the full employee lifecycle",
+      "Foster a positive workplace culture",
+      "Ensure compliance with employment legislation",
+      "Drive initiatives that support employee engagement and organizational success"
+    ],
+    "responsibilities": [
+      "Support end-to-end recruitment activities, including drafting job descriptions, coordinating with hiring managers, screening candidates, scheduling interviews, and managing offer processes",
+      "Manage employee onboarding and induction programs to ensure a smooth and engaging experience for new hires",
+      "Maintain accurate and up-to-date employee records, HRIS data, and personnel files in compliance with data protection regulations",
+      "Serve as the first point of contact for employee queries relating to HR policies, procedures, benefits, and payroll",
+      "Support performance management cycles, including probation reviews, appraisals, and development planning",
+      "Assist in the development, implementation, and review of HR policies and procedures in line with employment law and best practice",
+      "Coordinate employee relations matters, including grievances, disciplinary actions, and absence management, escalating complex cases as appropriate",
+      "Administer employee benefits, leave, and compensation processes in collaboration with payroll",
+      "Support learning and development initiatives, including identifying training needs and coordinating training sessions",
+      "Contribute to HR reporting, producing metrics and insights on headcount, turnover, absence, and other key indicators",
+      "Assist with employee engagement initiatives, wellbeing programs, and internal communications",
+      "Support offboarding processes, including exit interviews and documentation"
+    ],
+    "skills": [
+      {
+        "skill": "HR Generalist / HR Administration",
+        "priority": "essential",
+        "proficiency_level": "intermediate"
+      },
+      {
+        "skill": "Employment Law Knowledge",
+        "priority": "essential",
+        "proficiency_level": "intermediate"
+      },
+      {
+        "skill": "HR Best Practices",
+        "priority": "essential",
+        "proficiency_level": "intermediate"
+      },
+      {
+        "skill": "Recruitment & Talent Acquisition",
+        "priority": "essential",
+        "proficiency_level": "intermediate"
+      },
+      {
+        "skill": "Employee Onboarding",
+        "priority": "essential",
+        "proficiency_level": "intermediate"
+      },
+      {
+        "skill": "HRIS Data Management",
+        "priority": "essential",
+        "proficiency_level": "intermediate"
+      },
+      {
+        "skill": "Performance Management",
+        "priority": "essential",
+        "proficiency_level": "intermediate"
+      },
+      {
+        "skill": "HR Policy Development",
+        "priority": "essential",
+        "proficiency_level": "intermediate"
+      },
+      {
+        "skill": "Employee Relations",
+        "priority": "essential",
+        "proficiency_level": "intermediate"
+      },
+      {
+        "skill": "Benefits & Compensation Administration",
+        "priority": "essential",
+        "proficiency_level": "intermediate"
+      },
+      {
+        "skill": "Learning & Development Coordination",
+        "priority": "essential",
+        "proficiency_level": "intermediate"
+      },
+      {
+        "skill": "HR Reporting & Metrics",
+        "priority": "essential",
+        "proficiency_level": "intermediate"
+      },
+      {
+        "skill": "Record-Keeping & Documentation",
+        "priority": "essential",
+        "proficiency_level": "advanced"
+      },
+      {
+        "skill": "Data Protection Compliance",
+        "priority": "essential",
+        "proficiency_level": "intermediate"
+      },
+      {
+        "skill": "Employee Engagement Initiatives",
+        "priority": "important",
+        "proficiency_level": "intermediate"
+      },
+      {
+        "skill": "Offboarding & Exit Interviews",
+        "priority": "important",
+        "proficiency_level": "intermediate"
+      },
+      {
+        "skill": "Employee Relations Casework",
+        "priority": "important",
+        "proficiency_level": "intermediate"
+      },
+      {
+        "skill": "GDPR / Data Protection Principles",
+        "priority": "important",
+        "proficiency_level": "intermediate"
+      },
+      {
+        "skill": "Multi-function Recruitment",
+        "priority": "important",
+        "proficiency_level": "intermediate"
+      }
+    ],
+    "technologies": [
+      {
+        "technology": "Microsoft Word",
+        "priority": "essential",
+        "version": null
+      },
+      {
+        "technology": "Microsoft Excel",
+        "priority": "essential",
+        "version": null
+      },
+      {
+        "technology": "Microsoft PowerPoint",
+        "priority": "essential",
+        "version": null
+      },
+      {
+        "technology": "HRIS Platforms (general)",
+        "priority": "essential",
+        "version": null
+      },
+      {
+        "technology": "BambooHR",
+        "priority": "important",
+        "version": null
+      },
+      {
+        "technology": "Workday",
+        "priority": "important",
+        "version": null
+      },
+      {
+        "technology": "SAP SuccessFactors",
+        "priority": "important",
+        "version": null
+      }
+    ],
+    "language_proficiency": null,
+    "qualifications": {
+      "education": [
+        {
+          "degree": "Bachelor's Degree",
+          "field": "Human Resources, Business Administration, Psychology, or related field",
+          "priority": "essential"
+        }
+      ],
+      "certifications": [
+        {
+          "certification": "CIPD Level 3 or 5",
+          "priority": "important",
+          "timeline": null
+        },
+        {
+          "certification": "SHRM-CP",
+          "priority": "important",
+          "timeline": null
+        },
+        {
+          "certification": "PHR",
+          "priority": "important",
+          "timeline": null
+        }
+      ]
+    },
+    "experience": {
+      "level": "mid",
+      "years_total": {
+        "min": 2,
+        "max": null
+      },
+      "years_relevant": {
+        "min": 2,
+        "max": null
+      },
+      "industry_experience": [
+        {
+          "industry": "Fast-paced or scaling organization",
+          "priority": "important"
+        }
+      ],
+      "leadership": {
+        "required": false,
+        "team_size": null,
+        "priority": null
+      }
+    },
+    "location": null,
+    "employment_details": {
+      "type": "full_time",
+      "urgency": null,
+      "salary_range": {
+        "min": null,
+        "max": null,
+        "currency": null,
+        "frequency": "annually"
+      },
+      "benefits": [
+        "Competitive salary",
+        "Annual performance bonus",
+        "Comprehensive health and wellbeing benefits",
+        "Generous annual leave",
+        "Flexible working arrangements",
+        "Professional development budget",
+        "Support toward HR certifications"
+      ]
+    },
+    "soft_skills": [
+      {
+        "skill": "Interpersonal Skills",
+        "priority": "essential",
+        "context": "building trust and rapport across all levels of the organization"
+      },
+      {
+        "skill": "Communication",
+        "priority": "essential",
+        "context": "employee and management interactions"
+      },
+      {
+        "skill": "Discretion and Confidentiality",
+        "priority": "essential",
+        "context": "handling sensitive employee information"
+      },
+      {
+        "skill": "Organizational Skills",
+        "priority": "essential",
+        "context": "managing multiple priorities and meeting deadlines"
+      },
+      {
+        "skill": "Attention to Detail",
+        "priority": "essential",
+        "context": "record-keeping and documentation accuracy"
+      },
+      {
+        "skill": "Proactive & Solutions-Focused Approach",
+        "priority": "essential",
+        "context": "supporting people initiatives"
+      },
+      {
+        "skill": "Genuine Interest in Supporting People",
+        "priority": "essential",
+        "context": "people & culture team"
+      }
+    ],
+    "project_context": {
+      "types": [
+        "recruitment",
+        "onboarding",
+        "employee relations",
+        "performance management",
+        "learning & development",
+        "employee engagement",
+        "HR policy development",
+        "offboarding"
+      ],
+      "methodologies": null,
+      "environment": null
+    },
+    "team_context": {
+      "size": null,
+      "structure": "People & Culture team",
+      "reporting_to": null
+    },
+    "compliance_legal": {
+      "visa_sponsorship": null,
+      "security_clearance": null,
+      "background_check": null
+    },
+    "cultural_fit": {
+      "company_values": [
+        "collaboration",
+        "inclusion",
+        "employee engagement",
+        "wellbeing",
+        "equal opportunity",
+        "positive workplace culture"
+      ],
+      "work_style": [
+        "hands-on",
+        "generalist",
+        "detail-oriented",
+        "proactive",
+        "solutions-focused",
+        "people-oriented"
+      ]
+    },
+    "growth_opportunities": [
+      "Professional development budget",
+      "Support toward HR certifications",
+      "Exposure to a broad range of HR functions",
+      "Real opportunities to make an impact"
+    ]
+  },
+  "relevance": {
+    "mohini-ingale-1b2093237": 1.0
+  },
+  "source": "reverse_match",
+  "seed_id": "mohini-ingale-1b2093237",
+  "model": "claude-opus-4.7",
+  "prompt_version": "v1"
+}

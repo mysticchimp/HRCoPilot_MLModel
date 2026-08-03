@@ -1,0 +1,302 @@
+{
+  "case_id": "linkedin:ayshaalneyadi-811a792ab",
+  "dataset": "linkedin",
+  "jd_text": "# Human Resources Coordinator\n\n**Location:** Dubai, United Arab Emirates\n**Department:** Human Resources\n**Employment Type:** Full-time\n\n## About the Role\n\nWe are seeking a proactive and detail-oriented **Human Resources Coordinator** to join our growing People & Culture team. Reporting to the HR Manager, you will serve as a key liaison between department heads and the HR function, ensuring the smooth delivery of recruitment, onboarding, training, and employee engagement initiatives. This role is ideal for a people-focused professional with hands-on experience supporting HR operations in a fast-paced, multicultural environment \u2014 and a genuine passion for developing talent.\n\n## Key Responsibilities\n\n- Act as the primary point of contact between department managers and the HR team to ensure seamless day-to-day HR operations.\n- Coordinate end-to-end recruitment activities including sourcing support, scheduling interviews, coordinating assessments, and managing candidate communication.\n- Facilitate a structured and welcoming onboarding experience for new hires, including documentation, orientation sessions, and 30/60/90-day check-ins.\n- Support **Emiratization efforts and NAFIS-aligned hiring initiatives**, maintaining accurate records and partnering with government portals as required.\n- Assist in tracking employee performance metrics, coordinating appraisal cycles, and supporting managers with performance benchmarking tools.\n- Coordinate the planning and delivery of training programs, workshops, and learning sessions; issue training certificates and maintain training records.\n- Handle employee inquiries with discretion and professionalism, promoting positive workplace relations and supporting engagement initiatives.\n- Maintain meticulous HR records, ensuring compliance with UAE Labour Law and internal policies.\n- Facilitate weekly team meetings, prepare HR reports, and contribute to continuous improvement of HR processes.\n\n## Required Qualifications\n\n- Bachelor's degree in Human Resources, Business Administration, Education, or a related field.\n- 2\u20134 years of experience in an HR support, coordination, or generalist role, preferably in the UAE.\n- Working knowledge of UAE Labour Law and familiarity with **Emiratization / NAFIS** recruitment frameworks.\n- Demonstrated experience coordinating recruitment and onboarding for multiple hires simultaneously.\n- Strong record-keeping, documentation, and reporting skills with a keen eye for detail.\n- Proficiency in MS Office (Excel, Word, PowerPoint) and comfort working with HRIS/ATS platforms.\n- Excellent written and verbal communication skills in English; Arabic is a strong advantage.\n\n## Preferred Qualifications\n\n- Prior experience supporting training program design, delivery, and evaluation.\n- Background in education, teaching, or L&D \u2014 with the ability to translate learning principles into workplace development programs.\n- Exposure to employee engagement, culture, or internal communications initiatives, including social media / content creation for employer branding.\n- Experience working with diverse and inclusive teams, including People of Determination.\n- CIPD Level 3 (or working toward) or equivalent HR certification is a plus.\n\n## What We Offer\n\n- A collaborative, multicultural work environment with strong learning opportunities.\n- Exposure to the full HR lifecycle with room to grow into specialist or managerial tracks.\n- Competitive salary, medical insurance, annual leave, and end-of-service benefits in line with UAE Labour Law.\n- Sponsored professional development and HR certifications.\n- A team that genuinely values initiative, ownership, and fresh perspectives.\n\n---\n\n*We are an equal opportunity employer and strongly encourage UAE Nationals to apply. All applications will be treated with the strictest confidence.*",
+  "parsed_jd": {
+    "role": "Human Resources Coordinator",
+    "company": {
+      "name": "Undisclosed",
+      "size": null,
+      "stage": "growth"
+    },
+    "industry": [
+      "human resources",
+      "people & culture"
+    ],
+    "role_objectives": [
+      "Serve as a key liaison between department heads and the HR function",
+      "Ensure the smooth delivery of recruitment, onboarding, training, and employee engagement initiatives",
+      "Support HR operations in a fast-paced, multicultural environment",
+      "Develop talent and contribute to continuous improvement of HR processes"
+    ],
+    "responsibilities": [
+      "Act as the primary point of contact between department managers and the HR team to ensure seamless day-to-day HR operations",
+      "Coordinate end-to-end recruitment activities including sourcing support, scheduling interviews, coordinating assessments, and managing candidate communication",
+      "Facilitate a structured and welcoming onboarding experience for new hires, including documentation, orientation sessions, and 30/60/90-day check-ins",
+      "Support Emiratization efforts and NAFIS-aligned hiring initiatives, maintaining accurate records and partnering with government portals as required",
+      "Assist in tracking employee performance metrics, coordinating appraisal cycles, and supporting managers with performance benchmarking tools",
+      "Coordinate the planning and delivery of training programs, workshops, and learning sessions; issue training certificates and maintain training records",
+      "Handle employee inquiries with discretion and professionalism, promoting positive workplace relations and supporting engagement initiatives",
+      "Maintain meticulous HR records, ensuring compliance with UAE Labour Law and internal policies",
+      "Facilitate weekly team meetings, prepare HR reports, and contribute to continuous improvement of HR processes"
+    ],
+    "skills": [
+      {
+        "skill": "Recruitment Coordination",
+        "priority": "essential",
+        "proficiency_level": "advanced"
+      },
+      {
+        "skill": "Onboarding Management",
+        "priority": "essential",
+        "proficiency_level": "advanced"
+      },
+      {
+        "skill": "UAE Labour Law Knowledge",
+        "priority": "essential",
+        "proficiency_level": "intermediate"
+      },
+      {
+        "skill": "Emiratization / NAFIS Framework Knowledge",
+        "priority": "essential",
+        "proficiency_level": "intermediate"
+      },
+      {
+        "skill": "HR Record-Keeping and Documentation",
+        "priority": "essential",
+        "proficiency_level": "advanced"
+      },
+      {
+        "skill": "HR Reporting",
+        "priority": "essential",
+        "proficiency_level": "intermediate"
+      },
+      {
+        "skill": "Interview Scheduling and Candidate Communication",
+        "priority": "essential",
+        "proficiency_level": "advanced"
+      },
+      {
+        "skill": "Performance Management Support",
+        "priority": "important",
+        "proficiency_level": "intermediate"
+      },
+      {
+        "skill": "Training Program Coordination",
+        "priority": "important",
+        "proficiency_level": "intermediate"
+      },
+      {
+        "skill": "Employee Engagement",
+        "priority": "important",
+        "proficiency_level": "intermediate"
+      },
+      {
+        "skill": "Training Program Design and Evaluation",
+        "priority": "valuable",
+        "proficiency_level": "intermediate"
+      },
+      {
+        "skill": "Learning & Development (L&D)",
+        "priority": "valuable",
+        "proficiency_level": "intermediate"
+      },
+      {
+        "skill": "Internal Communications",
+        "priority": "valuable",
+        "proficiency_level": "intermediate"
+      },
+      {
+        "skill": "Employer Branding / Social Media Content Creation",
+        "priority": "valuable",
+        "proficiency_level": "beginner"
+      },
+      {
+        "skill": "Diversity and Inclusion (including People of Determination)",
+        "priority": "valuable",
+        "proficiency_level": "intermediate"
+      }
+    ],
+    "technologies": [
+      {
+        "technology": "MS Excel",
+        "priority": "essential",
+        "version": null
+      },
+      {
+        "technology": "MS Word",
+        "priority": "essential",
+        "version": null
+      },
+      {
+        "technology": "MS PowerPoint",
+        "priority": "essential",
+        "version": null
+      },
+      {
+        "technology": "HRIS Platforms",
+        "priority": "essential",
+        "version": null
+      },
+      {
+        "technology": "ATS (Applicant Tracking Systems)",
+        "priority": "essential",
+        "version": null
+      },
+      {
+        "technology": "NAFIS Government Portal",
+        "priority": "important",
+        "version": null
+      }
+    ],
+    "language_proficiency": null,
+    "qualifications": {
+      "education": [
+        {
+          "degree": "Bachelor's Degree",
+          "field": "Human Resources, Business Administration, Education, or related field",
+          "priority": "essential"
+        }
+      ],
+      "certifications": [
+        {
+          "certification": "CIPD Level 3 (or equivalent HR certification)",
+          "priority": "valuable",
+          "timeline": "working toward is acceptable"
+        }
+      ]
+    },
+    "experience": {
+      "level": "mid",
+      "years_total": {
+        "min": 2,
+        "max": 4
+      },
+      "years_relevant": {
+        "min": 2,
+        "max": 4
+      },
+      "industry_experience": [
+        {
+          "industry": "Human Resources (UAE)",
+          "priority": "important"
+        },
+        {
+          "industry": "Education / Teaching / L&D",
+          "priority": "valuable"
+        }
+      ],
+      "leadership": {
+        "required": false,
+        "team_size": null,
+        "priority": "supplementary"
+      }
+    },
+    "location": null,
+    "employment_details": {
+      "type": "full_time",
+      "urgency": "flexible",
+      "salary_range": {
+        "min": null,
+        "max": null,
+        "currency": "AED",
+        "frequency": "annually"
+      },
+      "benefits": [
+        "Competitive salary",
+        "Medical insurance",
+        "Annual leave",
+        "End-of-service benefits in line with UAE Labour Law",
+        "Sponsored professional development and HR certifications"
+      ]
+    },
+    "soft_skills": [
+      {
+        "skill": "Attention to Detail",
+        "priority": "essential",
+        "context": "meticulous HR record-keeping and documentation"
+      },
+      {
+        "skill": "Communication",
+        "priority": "essential",
+        "context": "liaison between department heads and HR, candidate communication"
+      },
+      {
+        "skill": "Discretion and Professionalism",
+        "priority": "essential",
+        "context": "handling employee inquiries"
+      },
+      {
+        "skill": "Proactivity",
+        "priority": "essential",
+        "context": "proactive and detail-oriented approach"
+      },
+      {
+        "skill": "Organization",
+        "priority": "essential",
+        "context": "coordinating multiple hires simultaneously"
+      },
+      {
+        "skill": "People-focused Orientation",
+        "priority": "important",
+        "context": "genuine passion for developing talent"
+      },
+      {
+        "skill": "Ownership and Initiative",
+        "priority": "important",
+        "context": "values initiative, ownership, and fresh perspectives"
+      },
+      {
+        "skill": "Collaboration",
+        "priority": "important",
+        "context": "collaborative multicultural work environment"
+      }
+    ],
+    "project_context": {
+      "types": [
+        "recruitment",
+        "onboarding",
+        "training and L&D",
+        "employee engagement",
+        "Emiratization / NAFIS hiring",
+        "performance management"
+      ],
+      "methodologies": [
+        "30/60/90-day onboarding check-ins",
+        "continuous improvement"
+      ],
+      "environment": null
+    },
+    "team_context": {
+      "size": null,
+      "structure": "People & Culture team",
+      "reporting_to": "HR Manager"
+    },
+    "compliance_legal": {
+      "visa_sponsorship": null,
+      "security_clearance": null,
+      "background_check": null
+    },
+    "cultural_fit": {
+      "company_values": [
+        "initiative",
+        "ownership",
+        "fresh perspectives",
+        "diversity and inclusion",
+        "multiculturalism",
+        "learning orientation"
+      ],
+      "work_style": [
+        "detail-oriented",
+        "proactive",
+        "people-focused",
+        "collaborative",
+        "discreet and professional"
+      ]
+    },
+    "growth_opportunities": [
+      "Exposure to the full HR lifecycle",
+      "Room to grow into HR specialist tracks",
+      "Room to grow into managerial tracks",
+      "Sponsored professional development and HR certifications",
+      "Strong learning opportunities in a multicultural environment"
+    ]
+  },
+  "relevance": {
+    "ayshaalneyadi-811a792ab": 1.0
+  },
+  "source": "reverse_match",
+  "seed_id": "ayshaalneyadi-811a792ab",
+  "model": "claude-opus-4.7",
+  "prompt_version": "v1"
+}

@@ -1,0 +1,145 @@
+{
+  "company": {
+    "name": "[Company X]"
+  },
+  "responsibilities": [
+    "Design and build tools and frameworks to automate the development, testing, deployment, and management of services and products.",
+    "Plan and scale distributed software and applications, using synchronous and asynchronous design patterns, writing code, and delivering with urgency and quality.",
+    "Collaborate with global team to produce project plans and analyze the efficiency and feasibility of project operations.",
+    "Track, document, and maintain software and network system functionality, and leverage any opportunity to improve engineering.",
+    "Focus on creating software and networking platforms that are free of faulty programming.",
+    "Work with product managers and user-experience designers to influence the strategy and delivery of next-wave product features and system capabilities."
+  ],
+  "role": "software engineer",
+  "skills": [
+    {
+      "priority": "essential",
+      "skill": "Software and Networking Platform Engineering"
+    },
+    {
+      "priority": "essential",
+      "skill": "Scripting"
+    },
+    {
+      "priority": "essential",
+      "skill": "Test Automation"
+    },
+    {
+      "priority": "essential",
+      "skill": "Rapid Development Cycles"
+    },
+    {
+      "priority": "essential",
+      "skill": "Web-based Environment Development"
+    },
+    {
+      "priority": "essential",
+      "skill": "Distributed Systems Design"
+    },
+    {
+      "priority": "essential",
+      "skill": "Synchronous and Asynchronous Design Patterns"
+    },
+    {
+      "priority": "essential",
+      "skill": "Unit Testing"
+    },
+    {
+      "priority": "essential",
+      "skill": "Code Review"
+    },
+    {
+      "priority": "essential",
+      "skill": "Continuous Integration"
+    },
+    {
+      "priority": "essential",
+      "skill": "System Monitoring"
+    },
+    {
+      "priority": "essential",
+      "skill": "Automated Remediation"
+    },
+    {
+      "priority": "important",
+      "skill": "Web Application Development"
+    }
+  ],
+  "soft_skills": [
+    {
+      "priority": "essential",
+      "skill": "Documentation",
+      "context": "Proven ability to document design processes, including development, testing, analytics, and troubleshooting."
+    },
+    {
+      "priority": "essential",
+      "skill": "Continuous Learning",
+      "context": "Desire to continue professional growth through training and education."
+    },
+    {
+      "priority": "essential",
+      "skill": "Collaboration",
+      "context": "Collaborate with global team to produce project plans."
+    },
+    {
+      "priority": "important",
+      "skill": "Problem Solving",
+      "context": "Highly motivated in finding technical issues and fixing them with meticulous code."
+    },
+    {
+      "priority": "important",
+      "skill": "Attention to Detail",
+      "context": "Fixing issues with meticulous code."
+    }
+  ],
+  "technologies": [
+    {
+      "priority": "essential",
+      "technology": "Java"
+    },
+    {
+      "priority": "essential",
+      "technology": "Python"
+    },
+    {
+      "priority": "essential",
+      "technology": "C++"
+    },
+    {
+      "priority": "important",
+      "technology": "Relational Databases"
+    },
+    {
+      "priority": "important",
+      "technology": "ORM"
+    },
+    {
+      "priority": "important",
+      "technology": "SQL"
+    },
+    {
+      "priority": "important",
+      "technology": "HTML5"
+    },
+    {
+      "priority": "important",
+      "technology": "CSS3"
+    },
+    {
+      "priority": "important",
+      "technology": "Content Management Systems"
+    },
+    {
+      "priority": "important",
+      "technology": "Wicket"
+    },
+    {
+      "priority": "important",
+      "technology": "GWT"
+    },
+    {
+      "priority": "important",
+      "technology": "Spring MVC"
+    }
+  ]
+}

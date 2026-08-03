@@ -1,0 +1,329 @@
+{
+  "case_id": "linkedin:sean-dsouza-7aa2b1214",
+  "dataset": "linkedin",
+  "jd_text": "# HR & Administration Officer (with EA Responsibilities)\n\n**Location:** Dubai, UAE (JAFZA / Free Zone)\n**Employment Type:** Full-time, On-site\n**Reports to:** Managing Director\n\n## About the Role\n\nWe are a growing organisation with operations across the UAE and KSA, seeking a proactive and detail-oriented **HR & Administration Officer** to take ownership of our people operations and day-to-day administrative functions. This is a hands-on generalist role suited for someone who thrives in a fast-paced environment, enjoys wearing multiple hats, and is comfortable supporting senior leadership directly. The successful candidate will play a key role in shaping our HR framework, strengthening employee experience, and ensuring smooth back-office operations.\n\n## Key Responsibilities\n\n### Human Resources\n- Manage the full employee lifecycle for a workforce of 60+ across office and production functions \u2014 including recruitment, onboarding, confirmations, transfers, and offboarding.\n- Lead talent acquisition efforts: sourcing, shortlisting, interview coordination, offer management, and hiring documentation.\n- Own the performance management cycle \u2014 design and refine KPIs, appraisal templates, review timelines, and reporting for management.\n- Draft, implement, and update HR policies and procedures in alignment with **UAE Labour Law** and internal governance requirements.\n- Handle employee relations, grievances, disciplinary matters, and workplace investigations with fairness and discretion.\n- Oversee attendance, leave, overtime approvals, and maintain accurate employee records and HR files.\n- Coordinate payroll inputs for **UAE and KSA entities**, ensuring accuracy, timeliness, and regulatory compliance.\n- Manage PRO activities, visa processing, labour contracts, medical insurance renewals, and **JAFZA documentation**.\n- Drive employee engagement initiatives including annual kick-off meetings, internal events, product trainings, and recognition programs.\n\n### Administration & Executive Support\n- Oversee general office administration: vendor coordination, procurement, petty cash, PO processing via **MS Dynamics NAV**, and facilities management.\n- Provide executive assistance to the Managing Director \u2014 calendar management, travel arrangements, meeting coordination, and follow-ups on action items.\n- Support cross-functional coordination with Finance, Operations, and external partners.\n- Prepare management reports, presentations, and internal communications as required.\n\n## Required Qualifications & Skills\n\n- Bachelor's degree in Human Resources, Business Administration, or a related field.\n- **4\u20137 years of experience** in an HR generalist or HR & Admin role, preferably within the UAE.\n- Strong working knowledge of **UAE Labour Law**; familiarity with KSA labour regulations is a significant plus.\n- Hands-on experience with **JAFZA / Free Zone processes**, visa formalities, and PRO coordination.\n- Proven experience running payroll for GCC entities (UAE and/or KSA).\n- Demonstrated ability to design and roll out performance management frameworks (KPIs, appraisal templates, review cycles).\n- Proficiency in MS Office; experience with **MS Dynamics NAV** or a comparable ERP is highly desirable.\n- Excellent interpersonal, communication, and stakeholder management skills.\n- High level of integrity, discretion, and ability to handle confidential information.\n\n## Preferred Attributes\n\n- Prior experience supporting C-level executives or Managing Directors.\n- Exposure to manufacturing, trading, or multi-entity GCC business environments.\n- HR certification (CIPD, SHRM, or equivalent) is a plus.\n- Comfortable operating both strategically (policy, framework design) and tactically (day-to-day execution).\n\n## What We Offer\n\n- A visible, impact-driven role with direct access to senior leadership.\n- Opportunity to shape and mature the HR function across multiple GCC entities.\n- Competitive salary, medical insurance, and standard UAE benefits as per company policy.\n- A collaborative, people-first work culture.\n\n*Only candidates currently based in the UAE or eligible to relocate will be considered.*",
+  "parsed_jd": {
+    "role": "HR & Administration Officer (with EA Responsibilities)",
+    "company": {
+      "name": "Undisclosed (Growing GCC Organisation)",
+      "size": "small",
+      "stage": "growth"
+    },
+    "industry": [
+      "Manufacturing",
+      "Trading",
+      "GCC Multi-entity Business"
+    ],
+    "role_objectives": [
+      "Take ownership of people operations and day-to-day administrative functions",
+      "Shape and mature the HR framework across multiple GCC entities",
+      "Strengthen employee experience",
+      "Ensure smooth back-office operations",
+      "Provide direct support to senior leadership"
+    ],
+    "responsibilities": [
+      "Manage the full employee lifecycle for a workforce of 60+ across office and production functions, including recruitment, onboarding, confirmations, transfers, and offboarding",
+      "Lead talent acquisition efforts: sourcing, shortlisting, interview coordination, offer management, and hiring documentation",
+      "Own the performance management cycle - design and refine KPIs, appraisal templates, review timelines, and reporting for management",
+      "Draft, implement, and update HR policies and procedures in alignment with UAE Labour Law and internal governance requirements",
+      "Handle employee relations, grievances, disciplinary matters, and workplace investigations with fairness and discretion",
+      "Oversee attendance, leave, overtime approvals, and maintain accurate employee records and HR files",
+      "Coordinate payroll inputs for UAE and KSA entities, ensuring accuracy, timeliness, and regulatory compliance",
+      "Manage PRO activities, visa processing, labour contracts, medical insurance renewals, and JAFZA documentation",
+      "Drive employee engagement initiatives including annual kick-off meetings, internal events, product trainings, and recognition programs",
+      "Oversee general office administration: vendor coordination, procurement, petty cash, PO processing via MS Dynamics NAV, and facilities management",
+      "Provide executive assistance to the Managing Director - calendar management, travel arrangements, meeting coordination, and follow-ups on action items",
+      "Support cross-functional coordination with Finance, Operations, and external partners",
+      "Prepare management reports, presentations, and internal communications as required"
+    ],
+    "skills": [
+      {
+        "skill": "HR Generalist Operations",
+        "priority": "essential",
+        "proficiency_level": "advanced"
+      },
+      {
+        "skill": "Employee Lifecycle Management",
+        "priority": "essential",
+        "proficiency_level": "advanced"
+      },
+      {
+        "skill": "Talent Acquisition & Recruitment",
+        "priority": "essential",
+        "proficiency_level": "advanced"
+      },
+      {
+        "skill": "Performance Management Framework Design",
+        "priority": "essential",
+        "proficiency_level": "advanced"
+      },
+      {
+        "skill": "UAE Labour Law",
+        "priority": "essential",
+        "proficiency_level": "advanced"
+      },
+      {
+        "skill": "HR Policy Drafting & Implementation",
+        "priority": "essential",
+        "proficiency_level": "advanced"
+      },
+      {
+        "skill": "Employee Relations & Grievance Handling",
+        "priority": "essential",
+        "proficiency_level": "advanced"
+      },
+      {
+        "skill": "Payroll Coordination (UAE & KSA)",
+        "priority": "essential",
+        "proficiency_level": "advanced"
+      },
+      {
+        "skill": "PRO Coordination & Visa Processing",
+        "priority": "essential",
+        "proficiency_level": "advanced"
+      },
+      {
+        "skill": "JAFZA / Free Zone Processes",
+        "priority": "essential",
+        "proficiency_level": "advanced"
+      },
+      {
+        "skill": "Office Administration",
+        "priority": "essential",
+        "proficiency_level": "advanced"
+      },
+      {
+        "skill": "Executive Assistance",
+        "priority": "essential",
+        "proficiency_level": "advanced"
+      },
+      {
+        "skill": "Calendar & Travel Management",
+        "priority": "essential",
+        "proficiency_level": "advanced"
+      },
+      {
+        "skill": "Vendor Coordination & Procurement",
+        "priority": "essential",
+        "proficiency_level": "intermediate"
+      },
+      {
+        "skill": "Employee Engagement Initiatives",
+        "priority": "important",
+        "proficiency_level": "intermediate"
+      },
+      {
+        "skill": "KSA Labour Regulations",
+        "priority": "important",
+        "proficiency_level": "intermediate"
+      },
+      {
+        "skill": "Management Reporting & Presentations",
+        "priority": "important",
+        "proficiency_level": "intermediate"
+      },
+      {
+        "skill": "Strategic & Tactical HR Operation",
+        "priority": "important",
+        "proficiency_level": "advanced"
+      }
+    ],
+    "technologies": [
+      {
+        "technology": "MS Dynamics NAV",
+        "priority": "important",
+        "version": null
+      },
+      {
+        "technology": "MS Office",
+        "priority": "essential",
+        "version": null
+      },
+      {
+        "technology": "ERP Systems",
+        "priority": "important",
+        "version": null
+      }
+    ],
+    "language_proficiency": null,
+    "qualifications": {
+      "education": [
+        {
+          "degree": "Bachelor's Degree",
+          "field": "Human Resources, Business Administration, or a related field",
+          "priority": "essential"
+        }
+      ],
+      "certifications": [
+        {
+          "certification": "CIPD",
+          "priority": "valuable",
+          "timeline": null
+        },
+        {
+          "certification": "SHRM",
+          "priority": "valuable",
+          "timeline": null
+        }
+      ]
+    },
+    "experience": {
+      "level": "mid",
+      "years_total": {
+        "min": 4,
+        "max": 7
+      },
+      "years_relevant": {
+        "min": 4,
+        "max": 7
+      },
+      "industry_experience": [
+        {
+          "industry": "UAE HR / GCC HR",
+          "priority": "important"
+        },
+        {
+          "industry": "Manufacturing",
+          "priority": "valuable"
+        },
+        {
+          "industry": "Trading",
+          "priority": "valuable"
+        },
+        {
+          "industry": "Multi-entity GCC business",
+          "priority": "valuable"
+        }
+      ],
+      "leadership": {
+        "required": false,
+        "team_size": null,
+        "priority": "valuable"
+      }
+    },
+    "location": null,
+    "employment_details": {
+      "type": "full_time",
+      "urgency": null,
+      "salary_range": {
+        "min": null,
+        "max": null,
+        "currency": "AED",
+        "frequency": "annually"
+      },
+      "benefits": [
+        "Competitive salary",
+        "Medical insurance",
+        "Standard UAE benefits as per company policy"
+      ]
+    },
+    "soft_skills": [
+      {
+        "skill": "Interpersonal Skills",
+        "priority": "essential",
+        "context": "cross-functional collaboration and employee relations"
+      },
+      {
+        "skill": "Communication",
+        "priority": "essential",
+        "context": "stakeholder engagement and internal communications"
+      },
+      {
+        "skill": "Stakeholder Management",
+        "priority": "essential",
+        "context": "senior leadership and cross-functional coordination"
+      },
+      {
+        "skill": "Integrity",
+        "priority": "essential",
+        "context": "handling confidential information"
+      },
+      {
+        "skill": "Discretion",
+        "priority": "essential",
+        "context": "sensitive HR and executive matters"
+      },
+      {
+        "skill": "Confidentiality",
+        "priority": "essential",
+        "context": "employee records and executive support"
+      },
+      {
+        "skill": "Proactivity",
+        "priority": "important",
+        "context": "fast-paced environment"
+      },
+      {
+        "skill": "Detail-Oriented",
+        "priority": "important",
+        "context": "HR records and payroll accuracy"
+      },
+      {
+        "skill": "Multitasking / Wearing Multiple Hats",
+        "priority": "important",
+        "context": "generalist role across HR and admin"
+      },
+      {
+        "skill": "Fairness",
+        "priority": "important",
+        "context": "disciplinary matters and investigations"
+      }
+    ],
+    "project_context": {
+      "types": [
+        "HR framework design",
+        "Policy development",
+        "Performance management rollout",
+        "Payroll operations",
+        "Employee engagement programs",
+        "Executive support"
+      ],
+      "methodologies": [
+        "generalist HR operations",
+        "hands-on execution",
+        "strategic policy design"
+      ],
+      "environment": "on_premise"
+    },
+    "team_context": {
+      "size": 60,
+      "structure": "Cross-functional support across office and production functions, coordinating with Finance, Operations, and external partners",
+      "reporting_to": "Managing Director"
+    },
+    "compliance_legal": {
+      "visa_sponsorship": null,
+      "security_clearance": null,
+      "background_check": null
+    },
+    "cultural_fit": {
+      "company_values": [
+        "people-first",
+        "collaborative",
+        "impact-driven",
+        "employee experience focus"
+      ],
+      "work_style": [
+        "proactive",
+        "detail-oriented",
+        "hands-on generalist",
+        "comfortable wearing multiple hats",
+        "thrives in fast-paced environment",
+        "strategic and tactical",
+        "discreet"
+      ]
+    },
+    "growth_opportunities": [
+      "Visible, impact-driven role with direct access to senior leadership",
+      "Opportunity to shape and mature the HR function across multiple GCC entities",
+      "Direct exposure to C-level / Managing Director",
+      "Ownership of HR framework design across UAE and KSA operations"
+    ]
+  },
+  "relevance": {
+    "sean-dsouza-7aa2b1214": 1.0
+  },
+  "source": "reverse_match",
+  "seed_id": "sean-dsouza-7aa2b1214",
+  "model": "claude-opus-4.7",
+  "prompt_version": "v1"
+}

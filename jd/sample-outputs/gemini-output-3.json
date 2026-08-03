@@ -1,0 +1,212 @@
+{
+    "role": "Software Engineer",
+    "company": {
+        "name": "Company X",
+        "size": null,
+        "stage": "mature"
+    },
+    "industry": [
+        "Software Development"
+    ],
+    "role_objectives": [
+        "Enhance existing platform and network capabilities to handle massive growth, enabling new insights and products based on data via self-serve computing, reporting solutions, and interactive querying",
+        "Visualize, design, and develop innovative software platforms as we continue to experience growth in the usage and visibility of our products",
+        "Create scalable software platforms and applications, as well as efficient networking solutions, that are unit tested, code reviewed, and checked regularly for continuous integration",
+        "Examine existing systems for flaws and create solutions that improve service uptime and time-to-resolve through monitoring and automated remediation",
+        "Plan and execute full software development lifecycle for each assigned project, adhering to company standards and expectations"
+    ],
+    "responsibilities": [
+        "Design and build tools and frameworks to automate the development, testing, deployment, and management of services and products",
+        "Plan and scale distributed software and applications, using synchronous and asynchronous design patterns, writing code, and delivering with urgency and quality",
+        "Collaborate with global team to produce project plans and analyze the efficiency and feasibility of project operations, leveraging global technology stack and making localized improvements",
+        "Track, document, and maintain software and network system functionality, and leverage any opportunity to improve engineering",
+        "Focus on creating software and networking platforms that are free of faulty programming, and continuously keep developers in step without compromising site reliability",
+        "Work with product managers and user-experience designers to influence the strategy and delivery of next-wave product features and system capabilities"
+    ],
+    "skills": [
+        {
+            "skill": "Software Development Processes",
+            "priority": "essential",
+            "proficiency_level": "expert"
+        },
+        {
+            "skill": "Network Systems Testing and Evaluation",
+            "priority": "essential",
+            "proficiency_level": null
+        },
+        {
+            "skill": "Scripting",
+            "priority": "essential",
+            "proficiency_level": "advanced"
+        },
+        {
+            "skill": "Test Automation",
+            "priority": "essential",
+            "proficiency_level": "advanced"
+        },
+        {
+            "skill": "Rapid Development Cycles",
+            "priority": "essential",
+            "proficiency_level": null
+        },
+        {
+            "skill": "Web Application Development",
+            "priority": "important",
+            "proficiency_level": null
+        }
+    ],
+    "technologies": [
+        {
+            "technology": "Java",
+            "priority": "essential",
+            "version": null
+        },
+        {
+            "technology": "Python",
+            "priority": "essential",
+            "version": null
+        },
+        {
+            "technology": "C++",
+            "priority": "essential",
+            "version": null
+        },
+        {
+            "technology": "Relational Databases",
+            "priority": "important",
+            "version": null
+        },
+        {
+            "technology": "ORM",
+            "priority": "important",
+            "version": null
+        },
+        {
+            "technology": "SQL",
+            "priority": "important",
+            "version": null
+        },
+        {
+            "technology": "HTML5",
+            "priority": "important",
+            "version": null
+        },
+        {
+            "technology": "CSS3",
+            "priority": "important",
+            "version": null
+        },
+        {
+            "technology": "Content Management Systems",
+            "priority": "important",
+            "version": null
+        },
+        {
+            "technology": "Wicket",
+            "priority": "important",
+            "version": null
+        },
+        {
+            "technology": "GWT",
+            "priority": "important",
+            "version": null
+        },
+        {
+            "technology": "Spring MVC",
+            "priority": "important",
+            "version": null
+        }
+    ],
+    "language_proficiency": null,
+    "qualifications": {
+        "education": [
+            {
+                "degree": "Bachelor's degree",
+                "field": "software engineering or information technology",
+                "priority": "important"
+            }
+        ],
+        "certifications": null
+    },
+    "experience": {
+        "level": "senior",
+        "years_total": {
+            "min": 7,
+            "max": null
+        },
+        "years_relevant": {
+            "min": 5,
+            "max": null
+        },
+        "industry_experience": null,
+        "leadership": null
+    },
+    "location": {
+        "cities": null,
+        "countries": null,
+        "remote_options": "on_site",
+        "travel_requirements": null,
+        "relocation": null
+    },
+    "employment_details": {
+        "type": "full_time",
+        "urgency": null,
+        "salary_range": null,
+        "benefits": null
+    },
+    "soft_skills": [
+        {
+            "skill": "Problem Solving",
+            "priority": "essential",
+            "context": "finding technical issues and fixing them with meticulous code"
+        },
+        {
+            "skill": "Documentation",
+            "priority": "essential",
+            "context": "Proven ability to document design processes, including development, testing, analytics, and troubleshooting"
+        },
+        {
+            "skill": "Continuous Learning",
+            "priority": "essential",
+            "context": "Desire to continue professional growth through training and education"
+        },
+        {
+            "skill": "Collaboration",
+            "priority": "important",
+            "context": "Collaborate with global team, product managers, and user-experience designers"
+        },
+        {
+            "skill": "Attention to Detail",
+            "priority": "essential",
+            "context": "fixing them with meticulous code"
+        }
+    ],
+    "project_context": {
+        "types": [
+            "Platform Development",
+            "Network Design",
+            "Automation Tools"
+        ],
+        "methodologies": [
+            "Rapid Development Cycles",
+            "Continuous Integration"
+        ],
+        "environment": "hybrid"
+    },
+    "team_context": {
+        "size": null,
+        "structure": "Works within the program and network design team, collaborating with a global team, product managers, and user-experience designers.",
+        "reporting_to": null
+    },
+    "compliance_legal": null,
+    "cultural_fit": {
+        "company_values": null,
+        "work_style": [
+            "Highly motivated",
+            "Meticulous"
+        ]
+    },
+    "growth_opportunities": [
+        "Professional growth through training and education"
+    ]
+}

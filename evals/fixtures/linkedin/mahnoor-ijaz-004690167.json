@@ -1,0 +1,306 @@
+{
+  "case_id": "linkedin:mahnoor-ijaz-004690167",
+  "dataset": "linkedin",
+  "jd_text": "# Assistant Manager \u2013 Human Resources\n\n## About the Role\n\nWe are seeking an experienced and people-focused HR professional to join our team as **Assistant Manager \u2013 Human Resources**. In this role, you will partner with business leaders to drive HR initiatives that support organizational growth, strengthen employee engagement, and cultivate a high-performance culture. You will play a hands-on role across the full employee lifecycle \u2014 from talent acquisition to employee relations and policy execution.\n\n## Key Responsibilities\n\n- Manage end-to-end talent acquisition, including sourcing, screening, interviewing, and onboarding candidates across functions and levels.\n- Serve as a trusted point of contact for employee relations matters, resolving grievances and fostering a positive, inclusive workplace.\n- Implement, communicate, and continuously improve HR policies and procedures in line with organizational goals and statutory requirements.\n- Design and roll out employee engagement programs, recognition initiatives, and wellness activities to enhance workplace culture.\n- Support performance management cycles, including goal setting, appraisals, feedback, and development planning.\n- Collaborate with business leaders and department heads to understand workforce needs and provide strategic HR advisory support.\n- Drive learning and development initiatives to support employee growth and career progression.\n- Maintain accurate HR records, generate people analytics reports, and provide data-driven insights to leadership.\n- Ensure compliance with labor laws, HR audits, and internal governance standards.\n- Support HR transformation projects and contribute to continuous improvement of HR processes.\n\n## Required Qualifications\n\n- Bachelor's degree in Human Resources, Business Administration, Psychology, or a related field (MBA/PGDM in HR preferred).\n- 4\u20137 years of progressive HR experience, with hands-on exposure to talent acquisition, employee relations, and HR operations.\n- Strong understanding of HR policies, employment laws, and best practices.\n- Proven ability to manage multiple stakeholders and handle sensitive employee matters with discretion.\n- Excellent interpersonal, communication, and conflict-resolution skills.\n- Proficiency in HRIS platforms and MS Office (Excel, PowerPoint).\n\n## Preferred Qualifications\n\n- Experience partnering with business leaders as an HR generalist or HR business partner.\n- Demonstrated success in designing and executing employee engagement or culture-building initiatives.\n- Exposure to performance management frameworks and L&D program design.\n- Knowledge of HR analytics and the ability to translate data into actionable insights.\n- Certifications such as SHRM-CP, PHR, or equivalent are a plus.\n\n## What We Offer\n\n- A collaborative, people-first work environment where HR has a seat at the table.\n- Opportunities to shape culture, influence strategy, and drive meaningful change.\n- Competitive compensation, comprehensive benefits, and clear career progression pathways.\n- Continuous learning opportunities and professional development support.",
+  "parsed_jd": {
+    "role": "Assistant Manager \u2013 Human Resources",
+    "company": {
+      "name": "Unspecified",
+      "size": null,
+      "stage": null
+    },
+    "industry": [
+      "human resources"
+    ],
+    "role_objectives": [
+      "Partner with business leaders to drive HR initiatives supporting organizational growth",
+      "Strengthen employee engagement and cultivate a high-performance culture",
+      "Play a hands-on role across the full employee lifecycle"
+    ],
+    "responsibilities": [
+      "Manage end-to-end talent acquisition, including sourcing, screening, interviewing, and onboarding candidates across functions and levels",
+      "Serve as a trusted point of contact for employee relations matters, resolving grievances and fostering a positive, inclusive workplace",
+      "Implement, communicate, and continuously improve HR policies and procedures in line with organizational goals and statutory requirements",
+      "Design and roll out employee engagement programs, recognition initiatives, and wellness activities to enhance workplace culture",
+      "Support performance management cycles, including goal setting, appraisals, feedback, and development planning",
+      "Collaborate with business leaders and department heads to understand workforce needs and provide strategic HR advisory support",
+      "Drive learning and development initiatives to support employee growth and career progression",
+      "Maintain accurate HR records, generate people analytics reports, and provide data-driven insights to leadership",
+      "Ensure compliance with labor laws, HR audits, and internal governance standards",
+      "Support HR transformation projects and contribute to continuous improvement of HR processes"
+    ],
+    "skills": [
+      {
+        "skill": "Talent Acquisition",
+        "priority": "essential",
+        "proficiency_level": "advanced"
+      },
+      {
+        "skill": "Employee Relations",
+        "priority": "essential",
+        "proficiency_level": "advanced"
+      },
+      {
+        "skill": "HR Operations",
+        "priority": "essential",
+        "proficiency_level": "advanced"
+      },
+      {
+        "skill": "HR Policies and Procedures",
+        "priority": "essential",
+        "proficiency_level": "advanced"
+      },
+      {
+        "skill": "Employment Law Knowledge",
+        "priority": "essential",
+        "proficiency_level": "advanced"
+      },
+      {
+        "skill": "Stakeholder Management",
+        "priority": "essential",
+        "proficiency_level": "advanced"
+      },
+      {
+        "skill": "Onboarding",
+        "priority": "essential",
+        "proficiency_level": "advanced"
+      },
+      {
+        "skill": "Grievance Resolution",
+        "priority": "essential",
+        "proficiency_level": "advanced"
+      },
+      {
+        "skill": "Performance Management",
+        "priority": "important",
+        "proficiency_level": "intermediate"
+      },
+      {
+        "skill": "Employee Engagement Program Design",
+        "priority": "important",
+        "proficiency_level": "intermediate"
+      },
+      {
+        "skill": "HR Business Partnering",
+        "priority": "important",
+        "proficiency_level": "intermediate"
+      },
+      {
+        "skill": "Learning and Development",
+        "priority": "important",
+        "proficiency_level": "intermediate"
+      },
+      {
+        "skill": "HR Analytics",
+        "priority": "important",
+        "proficiency_level": "intermediate"
+      },
+      {
+        "skill": "People Analytics Reporting",
+        "priority": "important",
+        "proficiency_level": "intermediate"
+      },
+      {
+        "skill": "Compliance and HR Audits",
+        "priority": "essential",
+        "proficiency_level": "advanced"
+      },
+      {
+        "skill": "HR Transformation",
+        "priority": "valuable",
+        "proficiency_level": "intermediate"
+      },
+      {
+        "skill": "Culture Building",
+        "priority": "important",
+        "proficiency_level": "intermediate"
+      }
+    ],
+    "technologies": [
+      {
+        "technology": "HRIS Platforms",
+        "priority": "essential",
+        "version": null
+      },
+      {
+        "technology": "MS Excel",
+        "priority": "essential",
+        "version": null
+      },
+      {
+        "technology": "MS PowerPoint",
+        "priority": "essential",
+        "version": null
+      },
+      {
+        "technology": "MS Office",
+        "priority": "essential",
+        "version": null
+      }
+    ],
+    "language_proficiency": null,
+    "qualifications": {
+      "education": [
+        {
+          "degree": "Bachelor's degree",
+          "field": "Human Resources, Business Administration, Psychology, or related field",
+          "priority": "essential"
+        },
+        {
+          "degree": "MBA/PGDM",
+          "field": "Human Resources",
+          "priority": "important"
+        }
+      ],
+      "certifications": [
+        {
+          "certification": "SHRM-CP",
+          "priority": "valuable",
+          "timeline": null
+        },
+        {
+          "certification": "PHR",
+          "priority": "valuable",
+          "timeline": null
+        }
+      ]
+    },
+    "experience": {
+      "level": "mid",
+      "years_total": {
+        "min": 4,
+        "max": 7
+      },
+      "years_relevant": {
+        "min": 4,
+        "max": 7
+      },
+      "industry_experience": [
+        {
+          "industry": "human resources",
+          "priority": "essential"
+        },
+        {
+          "industry": "HR business partnering",
+          "priority": "important"
+        }
+      ],
+      "leadership": {
+        "required": false,
+        "team_size": null,
+        "priority": "valuable"
+      }
+    },
+    "location": null,
+    "employment_details": {
+      "type": "full_time",
+      "urgency": null,
+      "salary_range": null,
+      "benefits": [
+        "Competitive compensation",
+        "Comprehensive benefits",
+        "Clear career progression pathways",
+        "Continuous learning opportunities",
+        "Professional development support"
+      ]
+    },
+    "soft_skills": [
+      {
+        "skill": "Interpersonal Skills",
+        "priority": "essential",
+        "context": "working with employees at all levels"
+      },
+      {
+        "skill": "Communication",
+        "priority": "essential",
+        "context": "employee relations and stakeholder engagement"
+      },
+      {
+        "skill": "Conflict Resolution",
+        "priority": "essential",
+        "context": "handling sensitive employee matters"
+      },
+      {
+        "skill": "Discretion",
+        "priority": "essential",
+        "context": "managing confidential employee matters"
+      },
+      {
+        "skill": "Collaboration",
+        "priority": "important",
+        "context": "partnering with business leaders and department heads"
+      },
+      {
+        "skill": "Strategic Thinking",
+        "priority": "important",
+        "context": "providing HR advisory support"
+      },
+      {
+        "skill": "Empathy",
+        "priority": "important",
+        "context": "people-focused HR role"
+      },
+      {
+        "skill": "Problem Solving",
+        "priority": "important",
+        "context": "resolving employee grievances"
+      }
+    ],
+    "project_context": {
+      "types": [
+        "talent acquisition",
+        "employee engagement",
+        "policy execution",
+        "HR transformation",
+        "L&D program design",
+        "culture building"
+      ],
+      "methodologies": [
+        "employee lifecycle management",
+        "performance management",
+        "HR transformation"
+      ],
+      "environment": null
+    },
+    "team_context": {
+      "size": null,
+      "structure": "cross-functional partnering with business leaders and department heads",
+      "reporting_to": null
+    },
+    "compliance_legal": {
+      "visa_sponsorship": null,
+      "security_clearance": null,
+      "background_check": null
+    },
+    "cultural_fit": {
+      "company_values": [
+        "people-first",
+        "collaborative",
+        "inclusive workplace",
+        "high-performance culture",
+        "continuous improvement"
+      ],
+      "work_style": [
+        "hands-on",
+        "people-focused",
+        "collaborative",
+        "strategic",
+        "detail-oriented"
+      ]
+    },
+    "growth_opportunities": [
+      "Shape culture and influence strategy",
+      "Drive meaningful organizational change",
+      "Clear career progression pathways",
+      "Continuous learning opportunities",
+      "Professional development support"
+    ]
+  },
+  "relevance": {
+    "mahnoor-ijaz-004690167": 1.0
+  },
+  "source": "reverse_match",
+  "seed_id": "mahnoor-ijaz-004690167",
+  "model": "claude-opus-4.7",
+  "prompt_version": "v1"
+}

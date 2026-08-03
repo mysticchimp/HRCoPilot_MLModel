@@ -1,0 +1,319 @@
+{
+  "case_id": "linkedin:muhammed-ashar-k-19b216236",
+  "dataset": "linkedin",
+  "jd_text": "# HR Officer \u2013 Operations & Workforce Administration\n\n**Location:** Al Ain, UAE\n**Department:** Human Resources\n**Reports to:** HR Manager\n**Employment Type:** Full-time, On-site\n\n## About the Role\n\nWe are seeking a detail-oriented and reliable HR Officer to support our growing operations in Al Ain. Working closely with site management and the head office HR team, you will play a key role in delivering day-to-day HR services to a large blue-collar workforce, ensuring smooth onboarding, compliance, and employee support across the site. This is a hands-on role suited to someone who thrives in a fast-paced, operationally driven environment and enjoys being the go-to HR contact on the ground.\n\n## Key Responsibilities\n\n- Manage day-to-day HR operations at the Al Ain site, coordinating between field staff, line managers, and head office.\n- Support end-to-end recruitment activities, including job postings, shortlisting, interview scheduling, and onboarding of new joiners.\n- Coordinate visa processing, medicals, Emirates ID, and other government-related transactions in partnership with the PRO team.\n- Maintain accurate employee records, contracts, and HR documentation in line with UAE Labour Law and internal policies.\n- Administer attendance, leave, and time-off tracking, and provide clean, timely inputs to the payroll process.\n- Oversee accommodation allocation, fleet/asset handovers, and internal movement of employees across operational sites.\n- Act as the first point of contact for employee queries, grievances, and administrative concerns, escalating where appropriate.\n- Manage offboarding, final settlements, and exit interviews in a professional and compliant manner.\n- Support performance management cycles, appraisals, and training coordination using the company's HRMS.\n- Prepare periodic HR reports on headcount, attrition, leave, and compliance metrics for management review.\n- Contribute to employee engagement initiatives and internal communications to support a motivated workforce.\n\n## Required Qualifications & Skills\n\n- Bachelor's degree in Human Resources, Business Administration, or a related field.\n- 2+ years of HR experience in the UAE, preferably supporting a large operational or blue-collar workforce (logistics, transport, retail, facilities, or similar).\n- Working knowledge of UAE Labour Law, visa processes, and government portals.\n- Hands-on experience with HRMS platforms such as **SAP SuccessFactors**, **Ramco HCM**, or equivalent.\n- Proficiency in Microsoft Office, particularly Excel and Outlook.\n- Strong documentation skills with high attention to detail and confidentiality.\n- Excellent interpersonal and communication skills in English; Arabic or Hindi/Malayalam is a plus.\n- Ability to work independently at a site location while collaborating with a central HR team.\n\n## Preferred Qualifications\n\n- Prior experience managing HR for a driver, delivery, or field workforce.\n- Exposure to PRO coordination via **Single Window** or similar UAE government platforms.\n- Familiarity with document management systems (e.g., Contentverse) and performance management modules.\n- Experience supporting recruitment via SAP SuccessFactors, including job requisition workflows and approvals.\n- UAE driving license (preferred, not mandatory).\n\n## What We Offer\n\n- Competitive salary package as per UAE market standards.\n- Medical insurance and annual leave entitlements per UAE Labour Law.\n- Opportunity to work in a dynamic, multicultural environment with clear career progression in HR.\n- Exposure to end-to-end HR operations across a large, distributed workforce.\n\n*We are an equal opportunity employer. All qualified applicants will be considered without regard to nationality, gender, or background.*",
+  "parsed_jd": {
+    "role": "HR Officer \u2013 Operations & Workforce Administration",
+    "company": {
+      "name": "Undisclosed",
+      "size": null,
+      "stage": "growth"
+    },
+    "industry": [
+      "human_resources",
+      "logistics",
+      "operations"
+    ],
+    "role_objectives": [
+      "Deliver day-to-day HR services to a large blue-collar workforce at the Al Ain site",
+      "Ensure smooth onboarding, compliance, and employee support across operational sites",
+      "Act as the on-ground HR contact bridging field staff, line managers, and head office"
+    ],
+    "responsibilities": [
+      "Manage day-to-day HR operations at the Al Ain site, coordinating between field staff, line managers, and head office",
+      "Support end-to-end recruitment activities, including job postings, shortlisting, interview scheduling, and onboarding of new joiners",
+      "Coordinate visa processing, medicals, Emirates ID, and other government-related transactions in partnership with the PRO team",
+      "Maintain accurate employee records, contracts, and HR documentation in line with UAE Labour Law and internal policies",
+      "Administer attendance, leave, and time-off tracking, and provide clean, timely inputs to the payroll process",
+      "Oversee accommodation allocation, fleet/asset handovers, and internal movement of employees across operational sites",
+      "Act as the first point of contact for employee queries, grievances, and administrative concerns, escalating where appropriate",
+      "Manage offboarding, final settlements, and exit interviews in a professional and compliant manner",
+      "Support performance management cycles, appraisals, and training coordination using the company's HRMS",
+      "Prepare periodic HR reports on headcount, attrition, leave, and compliance metrics for management review",
+      "Contribute to employee engagement initiatives and internal communications to support a motivated workforce"
+    ],
+    "skills": [
+      {
+        "skill": "HR Operations Management",
+        "priority": "essential",
+        "proficiency_level": "advanced"
+      },
+      {
+        "skill": "UAE Labour Law Knowledge",
+        "priority": "essential",
+        "proficiency_level": "intermediate"
+      },
+      {
+        "skill": "Visa Processing & Government Portals",
+        "priority": "essential",
+        "proficiency_level": "intermediate"
+      },
+      {
+        "skill": "Recruitment & Onboarding",
+        "priority": "essential",
+        "proficiency_level": "intermediate"
+      },
+      {
+        "skill": "Employee Records & HR Documentation",
+        "priority": "essential",
+        "proficiency_level": "advanced"
+      },
+      {
+        "skill": "Attendance & Leave Administration",
+        "priority": "essential",
+        "proficiency_level": "intermediate"
+      },
+      {
+        "skill": "Payroll Input Preparation",
+        "priority": "essential",
+        "proficiency_level": "intermediate"
+      },
+      {
+        "skill": "Offboarding & Final Settlements",
+        "priority": "essential",
+        "proficiency_level": "intermediate"
+      },
+      {
+        "skill": "Performance Management Coordination",
+        "priority": "important",
+        "proficiency_level": "intermediate"
+      },
+      {
+        "skill": "HR Reporting & Analytics",
+        "priority": "important",
+        "proficiency_level": "intermediate"
+      },
+      {
+        "skill": "Employee Engagement",
+        "priority": "important",
+        "proficiency_level": "intermediate"
+      },
+      {
+        "skill": "Accommodation & Asset Allocation",
+        "priority": "important",
+        "proficiency_level": "intermediate"
+      },
+      {
+        "skill": "PRO Coordination",
+        "priority": "important",
+        "proficiency_level": "intermediate"
+      },
+      {
+        "skill": "Document Management",
+        "priority": "valuable",
+        "proficiency_level": "intermediate"
+      }
+    ],
+    "technologies": [
+      {
+        "technology": "SAP SuccessFactors",
+        "priority": "essential",
+        "version": null
+      },
+      {
+        "technology": "Ramco HCM",
+        "priority": "essential",
+        "version": null
+      },
+      {
+        "technology": "Microsoft Excel",
+        "priority": "essential",
+        "version": null
+      },
+      {
+        "technology": "Microsoft Outlook",
+        "priority": "essential",
+        "version": null
+      },
+      {
+        "technology": "Microsoft Office",
+        "priority": "essential",
+        "version": null
+      },
+      {
+        "technology": "HRMS Platforms",
+        "priority": "essential",
+        "version": null
+      },
+      {
+        "technology": "Single Window (UAE Government Portal)",
+        "priority": "important",
+        "version": null
+      },
+      {
+        "technology": "Contentverse",
+        "priority": "valuable",
+        "version": null
+      }
+    ],
+    "language_proficiency": null,
+    "qualifications": {
+      "education": [
+        {
+          "degree": "Bachelor's degree",
+          "field": "Human Resources, Business Administration, or related field",
+          "priority": "essential"
+        }
+      ],
+      "certifications": [
+        {
+          "certification": "UAE Driving License",
+          "priority": "valuable",
+          "timeline": null
+        }
+      ]
+    },
+    "experience": {
+      "level": "mid",
+      "years_total": {
+        "min": 2,
+        "max": null
+      },
+      "years_relevant": {
+        "min": 2,
+        "max": null
+      },
+      "industry_experience": [
+        {
+          "industry": "logistics",
+          "priority": "important"
+        },
+        {
+          "industry": "transport",
+          "priority": "important"
+        },
+        {
+          "industry": "retail",
+          "priority": "important"
+        },
+        {
+          "industry": "facilities management",
+          "priority": "important"
+        },
+        {
+          "industry": "blue-collar workforce operations",
+          "priority": "important"
+        },
+        {
+          "industry": "driver/delivery/field workforce HR",
+          "priority": "valuable"
+        }
+      ],
+      "leadership": {
+        "required": false,
+        "team_size": null,
+        "priority": "supplementary"
+      }
+    },
+    "location": null,
+    "employment_details": {
+      "type": "full_time",
+      "urgency": null,
+      "salary_range": {
+        "min": null,
+        "max": null,
+        "currency": "AED",
+        "frequency": null
+      },
+      "benefits": [
+        "Competitive salary package as per UAE market standards",
+        "Medical insurance",
+        "Annual leave entitlements per UAE Labour Law",
+        "Multicultural work environment",
+        "Career progression in HR"
+      ]
+    },
+    "soft_skills": [
+      {
+        "skill": "Attention to Detail",
+        "priority": "essential",
+        "context": "HR documentation and record keeping"
+      },
+      {
+        "skill": "Confidentiality",
+        "priority": "essential",
+        "context": "handling sensitive employee data"
+      },
+      {
+        "skill": "Interpersonal Communication",
+        "priority": "essential",
+        "context": "engaging with blue-collar workforce and management"
+      },
+      {
+        "skill": "Reliability",
+        "priority": "essential",
+        "context": "on-site HR delivery"
+      },
+      {
+        "skill": "Independent Work",
+        "priority": "essential",
+        "context": "working at site location with remote central HR team"
+      },
+      {
+        "skill": "Collaboration",
+        "priority": "essential",
+        "context": "coordinating with head office HR team"
+      },
+      {
+        "skill": "Problem Solving",
+        "priority": "important",
+        "context": "handling employee queries and grievances"
+      },
+      {
+        "skill": "Adaptability",
+        "priority": "important",
+        "context": "fast-paced operationally driven environment"
+      }
+    ],
+    "project_context": {
+      "types": [
+        "HR operations",
+        "recruitment",
+        "onboarding",
+        "compliance",
+        "employee engagement"
+      ],
+      "methodologies": null,
+      "environment": null
+    },
+    "team_context": {
+      "size": null,
+      "structure": "Site-based HR role coordinating with central head office HR team",
+      "reporting_to": "HR Manager"
+    },
+    "compliance_legal": {
+      "visa_sponsorship": null,
+      "security_clearance": null,
+      "background_check": null
+    },
+    "cultural_fit": {
+      "company_values": [
+        "equal opportunity",
+        "diversity",
+        "compliance",
+        "employee support"
+      ],
+      "work_style": [
+        "detail-oriented",
+        "reliable",
+        "hands-on",
+        "fast-paced",
+        "operationally driven",
+        "independent",
+        "collaborative"
+      ]
+    },
+    "growth_opportunities": [
+      "Clear career progression in HR",
+      "Exposure to end-to-end HR operations across a large, distributed workforce",
+      "Work in a dynamic, multicultural environment"
+    ]
+  },
+  "relevance": {
+    "muhammed-ashar-k-19b216236": 1.0
+  },
+  "source": "reverse_match",
+  "seed_id": "muhammed-ashar-k-19b216236",
+  "model": "claude-opus-4.7",
+  "prompt_version": "v1"
+}

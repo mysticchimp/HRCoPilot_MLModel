@@ -1,0 +1,336 @@
+{
+  "case_id": "linkedin:annika-nicole-gulati-46778013b",
+  "dataset": "linkedin",
+  "jd_text": "# Assistant Vice President \u2013 Human Resources\n\n## About the Role\n\nWe are seeking an experienced and driven **Assistant Vice President \u2013 Human Resources** to lead and elevate our HR function within a fast-paced Oil & Gas environment. Reporting to the Vice President of Human Resources, this role will oversee the full spectrum of HR operations, drive strategic talent initiatives, and ensure a best-in-class employee experience across the organization. The ideal candidate is a hands-on HR leader with deep expertise in recruitment, statutory compliance, and talent management within the energy sector.\n\n## Key Responsibilities\n\n- Lead the end-to-end HR operations function, including recruitment, onboarding, compensation, benefits administration, and employee lifecycle management.\n- Partner with senior leadership to design and execute talent acquisition strategies aligned with business growth objectives, including pre-screening, qualifying, interviewing, and selection.\n- Drive workforce planning and succession planning initiatives to build a strong internal talent pipeline.\n- Ensure full compliance with statutory and regulatory requirements, including labor laws, PF, ESI, gratuity, and other applicable legislation relevant to the Oil & Gas industry.\n- Oversee compensation and benefits programs, including salary benchmarking, incentive design, and rewards administration.\n- Champion employee engagement, retention, and experience initiatives that foster a high-performance culture.\n- Lead talent management programs, including performance management, learning & development, career pathing, and leadership development.\n- Serve as a trusted advisor to business leaders on organizational design, employee relations, and change management.\n- Manage and mentor the HR team, driving operational excellence and continuous improvement across HR processes.\n- Leverage HR analytics and reporting to inform decision-making and measure the effectiveness of HR programs.\n\n## Required Qualifications\n\n- Bachelor's degree in Human Resources, Business Administration, or a related field. MBA/PGDM in HR strongly preferred.\n- 10+ years of progressive HR experience, with a significant portion within the **Oil & Gas, Energy, or Heavy Industrial sector**.\n- Proven expertise across the full HR spectrum: recruitment, talent acquisition, talent management, compensation & benefits, and statutory compliance.\n- Strong working knowledge of Indian labor laws and statutory frameworks applicable to the Oil & Gas industry.\n- Demonstrated experience managing recruitment lifecycles for technical, operational, and leadership roles in industrial settings.\n- Excellent stakeholder management skills, with the ability to influence and partner effectively with senior leadership.\n- Strong communication, negotiation, and interpersonal skills.\n\n## Preferred Qualifications\n\n- Experience working with HRIS platforms (SAP SuccessFactors, Workday, or similar).\n- Prior exposure to unionized or multi-location industrial workforce environments.\n- Certification in HR (SHRM-SCP, SPHR, or equivalent) is a plus.\n- Experience leading employee experience and culture transformation initiatives.\n- Track record of building and scaling HR functions in growth-stage or complex organizations.\n\n## What We Offer\n\n- Competitive compensation and comprehensive benefits package.\n- Opportunity to shape the HR strategy of a leading player in the Oil & Gas sector.\n- A collaborative, mission-driven work environment with strong leadership visibility.\n- Continuous learning, development, and career advancement opportunities.\n\n---\n\n*We are an equal opportunity employer and value diversity at our company. We do not discriminate on the basis of race, religion, color, national origin, gender, sexual orientation, age, marital status, veteran status, or disability status.*",
+  "parsed_jd": {
+    "role": "Assistant Vice President \u2013 Human Resources",
+    "company": {
+      "name": "Confidential (Oil & Gas Company)",
+      "size": null,
+      "stage": null
+    },
+    "industry": [
+      "oil_and_gas",
+      "energy",
+      "heavy_industrial"
+    ],
+    "role_objectives": [
+      "Lead and elevate the HR function within a fast-paced Oil & Gas environment",
+      "Oversee the full spectrum of HR operations",
+      "Drive strategic talent initiatives",
+      "Ensure a best-in-class employee experience across the organization",
+      "Shape the HR strategy of a leading player in the Oil & Gas sector"
+    ],
+    "responsibilities": [
+      "Lead the end-to-end HR operations function, including recruitment, onboarding, compensation, benefits administration, and employee lifecycle management",
+      "Partner with senior leadership to design and execute talent acquisition strategies aligned with business growth objectives, including pre-screening, qualifying, interviewing, and selection",
+      "Drive workforce planning and succession planning initiatives to build a strong internal talent pipeline",
+      "Ensure full compliance with statutory and regulatory requirements, including labor laws, PF, ESI, gratuity, and other applicable legislation relevant to the Oil & Gas industry",
+      "Oversee compensation and benefits programs, including salary benchmarking, incentive design, and rewards administration",
+      "Champion employee engagement, retention, and experience initiatives that foster a high-performance culture",
+      "Lead talent management programs, including performance management, learning & development, career pathing, and leadership development",
+      "Serve as a trusted advisor to business leaders on organizational design, employee relations, and change management",
+      "Manage and mentor the HR team, driving operational excellence and continuous improvement across HR processes",
+      "Leverage HR analytics and reporting to inform decision-making and measure the effectiveness of HR programs"
+    ],
+    "skills": [
+      {
+        "skill": "HR Operations Management",
+        "priority": "essential",
+        "proficiency_level": "expert"
+      },
+      {
+        "skill": "Recruitment & Talent Acquisition",
+        "priority": "essential",
+        "proficiency_level": "expert"
+      },
+      {
+        "skill": "Talent Management",
+        "priority": "essential",
+        "proficiency_level": "expert"
+      },
+      {
+        "skill": "Compensation & Benefits",
+        "priority": "essential",
+        "proficiency_level": "expert"
+      },
+      {
+        "skill": "Statutory Compliance",
+        "priority": "essential",
+        "proficiency_level": "expert"
+      },
+      {
+        "skill": "Indian Labor Laws Knowledge",
+        "priority": "essential",
+        "proficiency_level": "advanced"
+      },
+      {
+        "skill": "Workforce Planning",
+        "priority": "essential",
+        "proficiency_level": "advanced"
+      },
+      {
+        "skill": "Succession Planning",
+        "priority": "essential",
+        "proficiency_level": "advanced"
+      },
+      {
+        "skill": "Salary Benchmarking",
+        "priority": "essential",
+        "proficiency_level": "advanced"
+      },
+      {
+        "skill": "Performance Management",
+        "priority": "essential",
+        "proficiency_level": "advanced"
+      },
+      {
+        "skill": "Learning & Development",
+        "priority": "essential",
+        "proficiency_level": "advanced"
+      },
+      {
+        "skill": "Employee Relations",
+        "priority": "essential",
+        "proficiency_level": "advanced"
+      },
+      {
+        "skill": "Change Management",
+        "priority": "essential",
+        "proficiency_level": "advanced"
+      },
+      {
+        "skill": "Organizational Design",
+        "priority": "essential",
+        "proficiency_level": "advanced"
+      },
+      {
+        "skill": "Stakeholder Management",
+        "priority": "essential",
+        "proficiency_level": "expert"
+      },
+      {
+        "skill": "HR Analytics & Reporting",
+        "priority": "important",
+        "proficiency_level": "advanced"
+      },
+      {
+        "skill": "Leadership Development",
+        "priority": "important",
+        "proficiency_level": "advanced"
+      },
+      {
+        "skill": "Employee Engagement",
+        "priority": "important",
+        "proficiency_level": "advanced"
+      },
+      {
+        "skill": "Culture Transformation",
+        "priority": "valuable",
+        "proficiency_level": "advanced"
+      },
+      {
+        "skill": "Union Relations",
+        "priority": "valuable",
+        "proficiency_level": "intermediate"
+      },
+      {
+        "skill": "Scaling HR Functions",
+        "priority": "valuable",
+        "proficiency_level": "advanced"
+      }
+    ],
+    "technologies": [
+      {
+        "technology": "SAP SuccessFactors",
+        "priority": "important",
+        "version": null
+      },
+      {
+        "technology": "Workday",
+        "priority": "important",
+        "version": null
+      },
+      {
+        "technology": "HRIS Platforms",
+        "priority": "important",
+        "version": null
+      }
+    ],
+    "language_proficiency": null,
+    "qualifications": {
+      "education": [
+        {
+          "degree": "Bachelor's Degree",
+          "field": "Human Resources, Business Administration, or related field",
+          "priority": "essential"
+        },
+        {
+          "degree": "MBA/PGDM",
+          "field": "Human Resources",
+          "priority": "important"
+        }
+      ],
+      "certifications": [
+        {
+          "certification": "SHRM-SCP",
+          "priority": "valuable",
+          "timeline": null
+        },
+        {
+          "certification": "SPHR",
+          "priority": "valuable",
+          "timeline": null
+        }
+      ]
+    },
+    "experience": {
+      "level": "executive",
+      "years_total": {
+        "min": 10,
+        "max": null
+      },
+      "years_relevant": {
+        "min": 10,
+        "max": null
+      },
+      "industry_experience": [
+        {
+          "industry": "Oil & Gas",
+          "priority": "essential"
+        },
+        {
+          "industry": "Energy",
+          "priority": "essential"
+        },
+        {
+          "industry": "Heavy Industrial",
+          "priority": "essential"
+        },
+        {
+          "industry": "Unionized/Multi-location Industrial Workforce",
+          "priority": "valuable"
+        }
+      ],
+      "leadership": {
+        "required": true,
+        "team_size": null,
+        "priority": "essential"
+      }
+    },
+    "location": null,
+    "employment_details": {
+      "type": "full_time",
+      "urgency": null,
+      "salary_range": null,
+      "benefits": [
+        "Competitive compensation",
+        "Comprehensive benefits package",
+        "Continuous learning and development",
+        "Career advancement opportunities",
+        "Strong leadership visibility"
+      ]
+    },
+    "soft_skills": [
+      {
+        "skill": "Communication",
+        "priority": "essential",
+        "context": "partnering with senior leadership and cross-functional stakeholders"
+      },
+      {
+        "skill": "Negotiation",
+        "priority": "essential",
+        "context": "compensation, employee relations, and stakeholder engagement"
+      },
+      {
+        "skill": "Interpersonal Skills",
+        "priority": "essential",
+        "context": "building trusted relationships across the organization"
+      },
+      {
+        "skill": "Leadership",
+        "priority": "essential",
+        "context": "managing and mentoring HR team"
+      },
+      {
+        "skill": "Strategic Thinking",
+        "priority": "essential",
+        "context": "aligning HR strategy with business growth objectives"
+      },
+      {
+        "skill": "Influence",
+        "priority": "essential",
+        "context": "partnering with senior leadership"
+      },
+      {
+        "skill": "Mentorship",
+        "priority": "important",
+        "context": "developing HR team members"
+      },
+      {
+        "skill": "Advisory",
+        "priority": "important",
+        "context": "trusted advisor to business leaders"
+      }
+    ],
+    "project_context": {
+      "types": [
+        "talent acquisition",
+        "workforce planning",
+        "succession planning",
+        "compensation & benefits administration",
+        "compliance management",
+        "culture transformation",
+        "HR analytics"
+      ],
+      "methodologies": [
+        "strategic HR",
+        "data-driven decision making",
+        "continuous improvement"
+      ],
+      "environment": null
+    },
+    "team_context": {
+      "size": null,
+      "structure": "HR leadership team managing full HR operations across the organization",
+      "reporting_to": "Vice President of Human Resources"
+    },
+    "compliance_legal": {
+      "visa_sponsorship": null,
+      "security_clearance": null,
+      "background_check": null
+    },
+    "cultural_fit": {
+      "company_values": [
+        "diversity",
+        "equal opportunity",
+        "high-performance culture",
+        "collaboration",
+        "mission-driven",
+        "continuous learning"
+      ],
+      "work_style": [
+        "hands-on",
+        "strategic",
+        "collaborative",
+        "results-driven",
+        "leadership-oriented",
+        "fast-paced"
+      ]
+    },
+    "growth_opportunities": [
+      "Shape the HR strategy of a leading player in the Oil & Gas sector",
+      "Continuous learning and development",
+      "Career advancement opportunities",
+      "Strong leadership visibility",
+      "Opportunity to build and scale HR functions"
+    ]
+  },
+  "relevance": {
+    "annika-nicole-gulati-46778013b": 1.0
+  },
+  "source": "reverse_match",
+  "seed_id": "annika-nicole-gulati-46778013b",
+  "model": "claude-opus-4.7",
+  "prompt_version": "v1"
+}

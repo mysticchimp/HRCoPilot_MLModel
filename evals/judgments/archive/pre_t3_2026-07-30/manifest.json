@@ -1,0 +1,11 @@
+{
+  "description": "Pre-T3 silver-anchor artifacts",
+  "files": {
+    "evals/judgments/blind_judgments_hr_assistant.csv": "4de96aace5527c584aeacc7f46adeb6311a8c85352842f71c6f184fc05ef0feb",
+    "evals/judgments/blind_ranking_comparison_hr_assistant.json": "fc80e846a7d89a95ac8cbaac3d40e25d75090d4b29ad7753d678408e28d931fd",
+    "evals/fixtures/linkedin/_gold_hr_assistant.json": "55093c997b67fe6dd7e57cc497166b9905ff45467320c3588c0073cc30b6d300",
+    "evals/results/baseline_linkedin.json": "84db7f4f0d9896793a2181644823540192837682c9757bc5e558d7bce2106b5c",
+    "tests/test_eval_regression.py": "c2d5cfbfb3106025aaabf30c9ff65c082859cdb8a01bc39bd0d071ae6729c3ba",
+    "models/mappings.py": "cbc347fe9fd7c48f6174f7e018332056897d2d1e5e013a979c5f6968a19a50ee"
+  }
+}

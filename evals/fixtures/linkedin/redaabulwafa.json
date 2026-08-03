@@ -1,0 +1,354 @@
+{
+  "case_id": "linkedin:redaabulwafa",
+  "dataset": "linkedin",
+  "jd_text": "# Assistant Manager \u2013 Human Resources\n\n## About the Role\n\nWe are seeking a proactive and people-oriented **Assistant Manager \u2013 Human Resources** to join our growing team. This role sits at the heart of our people function, partnering with department heads and employees across our properties to deliver a seamless HR experience. The ideal candidate thrives in a fast-paced hospitality environment, enjoys building strong workplace cultures, and takes pride in driving both operational excellence and employee engagement.\n\n## Location\n\nOn-site | Full-time\n\n## What You'll Do\n\n- Support the end-to-end recruitment cycle \u2014 from sourcing and screening to onboarding \u2014 with a focus on hiring for hospitality, events, and support functions.\n- Serve as a first point of contact for employee queries, grievances, and workplace concerns, ensuring timely and empathetic resolution.\n- Design, coordinate, and facilitate Learning & Development programs, including new-hire orientations, functional training, and soft-skills workshops.\n- Assist in the implementation and communication of HR policies, ensuring consistency and compliance across teams and locations.\n- Manage day-to-day HR operations, including attendance, leave management, employee records, and HRIS updates.\n- Partner with line managers on performance reviews, feedback conversations, and individual development plans.\n- Drive employee engagement initiatives, recognition programs, and internal events that reinforce company culture.\n- Support talent development efforts, including succession planning inputs, career-pathing conversations, and retention strategies.\n- Prepare HR reports and dashboards on key metrics such as attrition, hiring TAT, training coverage, and engagement scores.\n- Collaborate with the Payroll and Compliance teams to ensure statutory adherence and smooth month-end processes.\n\n## What We're Looking For\n\n**Required**\n\n- 2\u20134 years of hands-on HR experience, preferably in **hospitality, events, hotels, F&B, or a similar people-intensive industry**.\n- Bachelor's degree in Human Resources, Business Administration, Hospitality Management, or a related field. MBA/PGDM in HR is a plus.\n- Working knowledge of HR operations across recruitment, L&D, employee relations, and policy administration.\n- Strong interpersonal and communication skills, with a naturally approachable and solution-oriented demeanor.\n- Ability to handle sensitive information with discretion and maintain confidentiality.\n- High attention to detail and comfort with managing multiple priorities in a dynamic environment.\n- Proficiency in MS Office (Excel, Word, PowerPoint) and familiarity with HRIS platforms.\n\n**Preferred**\n\n- Exposure to talent development frameworks, competency mapping, or structured training program design.\n- Experience partnering with operations teams in a multi-location or multi-unit setup.\n- Awareness of applicable labor laws and statutory compliance requirements.\n- Prior involvement in employee engagement campaigns or culture-building initiatives.\n\n## What We Offer\n\n- A collaborative and people-first work culture where HR is a true business partner.\n- Opportunities to lead cross-functional projects and grow into broader HRBP or specialist roles.\n- Learning budget, structured development plans, and mentorship from senior HR leaders.\n- Competitive compensation, performance incentives, and hospitality-industry perks.\n\nIf you enjoy working closely with people, solving problems on the ground, and shaping employee experiences that matter \u2014 we'd love to hear from you.",
+  "parsed_jd": {
+    "role": "Assistant Manager \u2013 Human Resources",
+    "company": {
+      "name": "Undisclosed Hospitality Company",
+      "size": null,
+      "stage": "growth"
+    },
+    "industry": [
+      "hospitality",
+      "events",
+      "hotels",
+      "F&B"
+    ],
+    "role_objectives": [
+      "Partner with department heads and employees to deliver a seamless HR experience",
+      "Drive operational excellence and employee engagement",
+      "Build strong workplace cultures across properties",
+      "Serve as a true business partner to the organization"
+    ],
+    "responsibilities": [
+      "Support the end-to-end recruitment cycle \u2014 from sourcing and screening to onboarding \u2014 with a focus on hiring for hospitality, events, and support functions",
+      "Serve as a first point of contact for employee queries, grievances, and workplace concerns, ensuring timely and empathetic resolution",
+      "Design, coordinate, and facilitate Learning & Development programs, including new-hire orientations, functional training, and soft-skills workshops",
+      "Assist in the implementation and communication of HR policies, ensuring consistency and compliance across teams and locations",
+      "Manage day-to-day HR operations, including attendance, leave management, employee records, and HRIS updates",
+      "Partner with line managers on performance reviews, feedback conversations, and individual development plans",
+      "Drive employee engagement initiatives, recognition programs, and internal events that reinforce company culture",
+      "Support talent development efforts, including succession planning inputs, career-pathing conversations, and retention strategies",
+      "Prepare HR reports and dashboards on key metrics such as attrition, hiring TAT, training coverage, and engagement scores",
+      "Collaborate with the Payroll and Compliance teams to ensure statutory adherence and smooth month-end processes"
+    ],
+    "skills": [
+      {
+        "skill": "Recruitment & Talent Acquisition",
+        "priority": "essential",
+        "proficiency_level": "intermediate"
+      },
+      {
+        "skill": "Employee Relations",
+        "priority": "essential",
+        "proficiency_level": "intermediate"
+      },
+      {
+        "skill": "HR Operations",
+        "priority": "essential",
+        "proficiency_level": "intermediate"
+      },
+      {
+        "skill": "Learning & Development",
+        "priority": "essential",
+        "proficiency_level": "intermediate"
+      },
+      {
+        "skill": "Policy Administration",
+        "priority": "essential",
+        "proficiency_level": "intermediate"
+      },
+      {
+        "skill": "Onboarding",
+        "priority": "essential",
+        "proficiency_level": "intermediate"
+      },
+      {
+        "skill": "Attendance & Leave Management",
+        "priority": "essential",
+        "proficiency_level": "intermediate"
+      },
+      {
+        "skill": "Performance Management",
+        "priority": "essential",
+        "proficiency_level": "intermediate"
+      },
+      {
+        "skill": "Employee Engagement",
+        "priority": "essential",
+        "proficiency_level": "intermediate"
+      },
+      {
+        "skill": "HR Reporting & Analytics",
+        "priority": "essential",
+        "proficiency_level": "intermediate"
+      },
+      {
+        "skill": "Confidentiality & Discretion",
+        "priority": "essential",
+        "proficiency_level": "advanced"
+      },
+      {
+        "skill": "Attention to Detail",
+        "priority": "essential",
+        "proficiency_level": "advanced"
+      },
+      {
+        "skill": "Multitasking & Prioritization",
+        "priority": "essential",
+        "proficiency_level": "advanced"
+      },
+      {
+        "skill": "Talent Development Frameworks",
+        "priority": "important",
+        "proficiency_level": "intermediate"
+      },
+      {
+        "skill": "Competency Mapping",
+        "priority": "important",
+        "proficiency_level": "intermediate"
+      },
+      {
+        "skill": "Structured Training Program Design",
+        "priority": "important",
+        "proficiency_level": "intermediate"
+      },
+      {
+        "skill": "Multi-location/Multi-unit HR Partnering",
+        "priority": "important",
+        "proficiency_level": "intermediate"
+      },
+      {
+        "skill": "Labor Law & Statutory Compliance Awareness",
+        "priority": "important",
+        "proficiency_level": "intermediate"
+      },
+      {
+        "skill": "Culture-Building Initiatives",
+        "priority": "important",
+        "proficiency_level": "intermediate"
+      },
+      {
+        "skill": "Succession Planning",
+        "priority": "valuable",
+        "proficiency_level": "beginner"
+      },
+      {
+        "skill": "Career Pathing",
+        "priority": "valuable",
+        "proficiency_level": "intermediate"
+      },
+      {
+        "skill": "Retention Strategies",
+        "priority": "valuable",
+        "proficiency_level": "intermediate"
+      },
+      {
+        "skill": "Payroll Coordination",
+        "priority": "valuable",
+        "proficiency_level": "beginner"
+      }
+    ],
+    "technologies": [
+      {
+        "technology": "MS Excel",
+        "priority": "essential",
+        "version": null
+      },
+      {
+        "technology": "MS Word",
+        "priority": "essential",
+        "version": null
+      },
+      {
+        "technology": "MS PowerPoint",
+        "priority": "essential",
+        "version": null
+      },
+      {
+        "technology": "HRIS Platforms",
+        "priority": "essential",
+        "version": null
+      }
+    ],
+    "language_proficiency": null,
+    "qualifications": {
+      "education": [
+        {
+          "degree": "Bachelor's degree",
+          "field": "Human Resources, Business Administration, Hospitality Management, or a related field",
+          "priority": "essential"
+        },
+        {
+          "degree": "MBA/PGDM",
+          "field": "Human Resources",
+          "priority": "valuable"
+        }
+      ],
+      "certifications": null
+    },
+    "experience": {
+      "level": "mid",
+      "years_total": {
+        "min": 2,
+        "max": 4
+      },
+      "years_relevant": {
+        "min": 2,
+        "max": 4
+      },
+      "industry_experience": [
+        {
+          "industry": "hospitality",
+          "priority": "important"
+        },
+        {
+          "industry": "events",
+          "priority": "important"
+        },
+        {
+          "industry": "hotels",
+          "priority": "important"
+        },
+        {
+          "industry": "F&B",
+          "priority": "important"
+        },
+        {
+          "industry": "people-intensive industry",
+          "priority": "important"
+        }
+      ],
+      "leadership": {
+        "required": false,
+        "team_size": null,
+        "priority": "valuable"
+      }
+    },
+    "location": null,
+    "employment_details": {
+      "type": "full_time",
+      "urgency": null,
+      "salary_range": null,
+      "benefits": [
+        "Learning budget",
+        "Structured development plans",
+        "Mentorship from senior HR leaders",
+        "Competitive compensation",
+        "Performance incentives",
+        "Hospitality-industry perks"
+      ]
+    },
+    "soft_skills": [
+      {
+        "skill": "Interpersonal Skills",
+        "priority": "essential",
+        "context": "partnering with department heads and employees"
+      },
+      {
+        "skill": "Communication",
+        "priority": "essential",
+        "context": "employee queries, grievances, and feedback conversations"
+      },
+      {
+        "skill": "Approachability",
+        "priority": "essential",
+        "context": "first point of contact for employees"
+      },
+      {
+        "skill": "Problem Solving",
+        "priority": "essential",
+        "context": "solution-oriented demeanor"
+      },
+      {
+        "skill": "Empathy",
+        "priority": "essential",
+        "context": "timely and empathetic resolution of employee concerns"
+      },
+      {
+        "skill": "Discretion",
+        "priority": "essential",
+        "context": "handling sensitive information and maintaining confidentiality"
+      },
+      {
+        "skill": "Attention to Detail",
+        "priority": "essential",
+        "context": "managing multiple priorities in a dynamic environment"
+      },
+      {
+        "skill": "Collaboration",
+        "priority": "essential",
+        "context": "cross-functional work with Payroll and Compliance teams"
+      },
+      {
+        "skill": "Proactivity",
+        "priority": "essential",
+        "context": "proactive and people-oriented approach"
+      },
+      {
+        "skill": "Adaptability",
+        "priority": "important",
+        "context": "fast-paced hospitality environment"
+      }
+    ],
+    "project_context": {
+      "types": [
+        "recruitment",
+        "onboarding",
+        "learning & development",
+        "employee engagement",
+        "policy implementation",
+        "performance management",
+        "HR reporting"
+      ],
+      "methodologies": null,
+      "environment": null
+    },
+    "team_context": {
+      "size": null,
+      "structure": "cross-functional HR team partnering with department heads, line managers, Payroll, and Compliance teams across multiple properties",
+      "reporting_to": null
+    },
+    "compliance_legal": {
+      "visa_sponsorship": null,
+      "security_clearance": null,
+      "background_check": null
+    },
+    "cultural_fit": {
+      "company_values": [
+        "people-first",
+        "collaborative",
+        "employee experience",
+        "operational excellence",
+        "culture-building",
+        "business partnership"
+      ],
+      "work_style": [
+        "proactive",
+        "people-oriented",
+        "solution-oriented",
+        "detail-oriented",
+        "empathetic",
+        "approachable",
+        "discreet",
+        "adaptable to fast-paced environment"
+      ]
+    },
+    "growth_opportunities": [
+      "Lead cross-functional projects",
+      "Grow into broader HRBP roles",
+      "Grow into specialist HR roles",
+      "Learning budget access",
+      "Structured development plans",
+      "Mentorship from senior HR leaders"
+    ]
+  },
+  "relevance": {
+    "redaabulwafa": 1.0
+  },
+  "source": "reverse_match",
+  "seed_id": "redaabulwafa",
+  "model": "claude-opus-4.7",
+  "prompt_version": "v1"
+}

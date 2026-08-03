@@ -1,0 +1,116 @@
+{
+  "decision": "product_motivated_structural_tie_breakers",
+  "date": "2026-07-31",
+  "anchor_caveat": "One circular silver Judge-grade JD; validate portability with recruiter swipes and human multi-JD labels.",
+  "control_weights": {
+    "attrition_score": 0.0,
+    "experience_relevance_score": 0.0,
+    "education_relevance_score": 0.0
+  },
+  "product_weights": {
+    "attrition_score": 0.005,
+    "experience_relevance_score": 0.015,
+    "education_relevance_score": 0.005
+  },
+  "approximate_normalized_shares_on_hr_jd": {
+    "attrition_score": 0.00339,
+    "experience_relevance_score": 0.01017,
+    "education_relevance_score": 0.00339
+  },
+  "silver_judge_grade_comparison": {
+    "control": {
+      "ndcg_at_5": 0.946438,
+      "ndcg_at_10": 0.958786,
+      "ndcg_at_20": 0.928931
+    },
+    "product": {
+      "ndcg_at_5": 0.946438,
+      "ndcg_at_10": 0.958786,
+      "ndcg_at_20": 0.951752
+    }
+  },
+  "reverse_match_comparison": {
+    "control": {
+      "mrr": 0.519,
+      "hit_at_3": 0.5789,
+      "hit_at_5": 0.6316,
+      "hit_at_10": 0.7895,
+      "seed_found_rate": 1.0
+    },
+    "product": {
+      "mrr": 0.5212,
+      "hit_at_3": 0.5789,
+      "hit_at_5": 0.6316,
+      "hit_at_10": 0.7895,
+      "seed_found_rate": 1.0
+    }
+  },
+  "original_llm_comparison": {
+    "control": {
+      "fit_ndcg_at_10": 0.712459,
+      "rank_spearman": 0.259998,
+      "rank_kendall": 0.17931,
+      "top_10_overlap": 3,
+      "top_20_overlap": 7
+    },
+    "product": {
+      "fit_ndcg_at_10": 0.712459,
+      "rank_spearman": 0.256798,
+      "rank_kendall": 0.176437,
+      "top_10_overlap": 3,
+      "top_20_overlap": 7
+    }
+  },
+  "leave_one_out": {
+    "without_attrition": {
+      "ndcg_at_5": 0.946438,
+      "ndcg_at_10": 0.958396,
+      "ndcg_at_20": 0.951491
+    },
+    "without_experience_relevance": {
+      "ndcg_at_5": 0.937063,
+      "ndcg_at_10": 0.958548,
+      "ndcg_at_20": 0.92877
+    },
+    "without_education_relevance": {
+      "ndcg_at_5": 0.946438,
+      "ndcg_at_10": 0.958396,
+      "ndcg_at_20": 0.951274
+    }
+  },
+  "top_20_changes": {
+    "entered": [
+      {
+        "candidate_id": "shafas-hussain-5b9850214",
+        "judge_mean_score": 76.5,
+        "judge_consensus_rank": 7,
+        "original_llm_rank": 24
+      },
+      {
+        "candidate_id": "shahul-p-74a571a8",
+        "judge_mean_score": 77.0,
+        "judge_consensus_rank": 10,
+        "original_llm_rank": 113
+      }
+    ],
+    "left": [
+      {
+        "candidate_id": "adnan-faisal-17b260211",
+        "judge_mean_score": 47.25,
+        "judge_consensus_rank": 51,
+        "original_llm_rank": 59
+      },
+      {
+        "candidate_id": "muhammed-muhammed-bin-siddique-a270873a6",
+        "judge_mean_score": 54.5,
+        "judge_consensus_rank": 38,
+        "original_llm_rank": 52
+      }
+    ]
+  },
+  "why_individual_sweeps_regressed": {
+    "attrition": "Strong own-section correlation but weak total-grade correlation; larger weights overemphasize continuity and break reverse floors.",
+    "experience_relevance": "Strong own-section correlation but only weak total-grade correlation; the title-ratio signal overlaps existing relevance evidence and becomes harmful when large.",
+    "education_relevance": "The component broadly rewards HR/business degrees while the rubric directly anchors certifications; it can promote degree-bearing profiles with little preferred-signal evidence."
+  }
+}

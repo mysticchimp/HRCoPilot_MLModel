@@ -1,0 +1,390 @@
+{
+  "case_id": "linkedin:leena-e-2973131b9",
+  "dataset": "linkedin",
+  "jd_text": "# HR Executive\n\n**Location:** Dubai, UAE\n**Employment Type:** Full-Time, On-site\n\n## About the Role\n\nWe are seeking a driven and people-focused **HR Executive** to join our growing People & Culture team. This is a hands-on generalist role covering the full employee lifecycle \u2014 from talent acquisition and onboarding through engagement, compliance, and offboarding. The successful candidate will play a key role in supporting recruitment across multiple business functions, ensuring compliance with UAE Labour Law, and helping build a positive, high-performing workplace culture.\n\nIf you thrive in a fast-paced environment, enjoy working with people at every level of the business, and want to make a tangible impact on both talent outcomes and employee experience, we'd love to hear from you.\n\n## Key Responsibilities\n\n### Talent Acquisition & Onboarding\n- Manage end-to-end recruitment across corporate, operations, sales, and specialist functions \u2014 including job posting, sourcing, screening, interviewing, offer negotiation, and onboarding.\n- Source candidates through job portals, LinkedIn, referrals, and internal databases; maintain up-to-date candidate trackers and pipelines.\n- Conduct initial HR screening calls and coordinate interviews with hiring managers and department heads.\n- Prepare offer letters and employment documentation; ensure a smooth and welcoming onboarding experience for new joiners, including induction and orientation.\n\n### HR Operations & Compliance\n- Ensure full compliance with **UAE Labour Law**, company policies, and statutory requirements.\n- Coordinate visa processing, work permits, Emirates ID applications, labour contract issuance, renewals, and cancellations in collaboration with PROs.\n- Maintain accurate employee records, HRIS data, attendance, and leave administration.\n- Support payroll processing and employee benefits administration.\n\n### Employee Relations & Engagement\n- Act as a trusted point of contact for employees on HR queries, policies, and workplace matters.\n- Handle employee relations issues including conflict resolution, grievances, and disciplinary processes with fairness and discretion.\n- Design and execute employee engagement, recognition, and wellness initiatives to strengthen workplace culture.\n- Coordinate internal events, town halls, and team-building activities.\n\n### Performance & Talent Management\n- Support the performance management cycle, including goal setting, reviews, KPI tracking, and development plans.\n- Assist in career development, succession planning, and retention strategies.\n- Prepare HR dashboards and reports on recruitment, turnover, attendance, and other key workforce metrics to support decision-making.\n\n### Policy & Advisory\n- Contribute to the development, review, and rollout of HR policies, procedures, and the employee handbook.\n- Provide day-to-day HR guidance to managers and employees on policies and best practices.\n\n## Required Qualifications\n\n- Bachelor's degree in Human Resources, Business Administration, Psychology, or a related field.\n- **2\u20134 years** of HR generalist / HR Executive experience, ideally within the UAE or wider GCC region.\n- Working knowledge of **UAE Labour Law** and visa/immigration processes (MOHRE, GDRFA, Emirates ID, labour contracts).\n- Demonstrated experience managing full-cycle recruitment across multiple functions.\n- Strong proficiency with MS Office (Excel, Word, PowerPoint) and familiarity with HRIS/ATS platforms.\n- Excellent verbal and written communication skills in English.\n- High level of discretion, integrity, and professionalism when handling confidential information.\n\n## Preferred Qualifications\n\n- Prior experience recruiting in **healthcare (nurses, allied health) or hospitality** sectors, including familiarity with **DHA, HAAD (DoH), MOH, or other GCC licensing processes**.\n- Experience sourcing and coordinating **overseas candidates** and managing international mobility.\n- Exposure to CRM or ATS tools for candidate management.\n- Background that combines HR with client-facing, sales, or business development experience \u2014 bringing a commercial lens to people decisions.\n- CHRP, SHRM-CP, CIPD, or equivalent HR certification.\n\n## What We Offer\n\n- Competitive tax-free salary and annual benefits package as per UAE norms.\n- Medical insurance, annual leave, and airfare allowance.\n- A collaborative, multicultural work environment with genuine opportunities for career progression.\n- Exposure to a broad range of HR functions and business units \u2014 ideal for a generalist looking to grow into a senior HR role.\n- Learning and development support, including certifications and workshops.\n\n---\n\n*We are an equal opportunity employer and welcome applications from candidates of all nationalities and backgrounds. Only shortlisted candidates will be contacted.*",
+  "parsed_jd": {
+    "role": "HR Executive",
+    "company": {
+      "name": "Undisclosed",
+      "size": null,
+      "stage": "growth"
+    },
+    "industry": [
+      "human resources",
+      "healthcare",
+      "hospitality"
+    ],
+    "role_objectives": [
+      "Support the full employee lifecycle from talent acquisition through offboarding",
+      "Ensure compliance with UAE Labour Law and statutory requirements",
+      "Help build a positive, high-performing workplace culture",
+      "Make a tangible impact on talent outcomes and employee experience"
+    ],
+    "responsibilities": [
+      "Manage end-to-end recruitment across corporate, operations, sales, and specialist functions \u2014 including job posting, sourcing, screening, interviewing, offer negotiation, and onboarding",
+      "Source candidates through job portals, LinkedIn, referrals, and internal databases; maintain up-to-date candidate trackers and pipelines",
+      "Conduct initial HR screening calls and coordinate interviews with hiring managers and department heads",
+      "Prepare offer letters and employment documentation; ensure a smooth and welcoming onboarding experience for new joiners, including induction and orientation",
+      "Ensure full compliance with UAE Labour Law, company policies, and statutory requirements",
+      "Coordinate visa processing, work permits, Emirates ID applications, labour contract issuance, renewals, and cancellations in collaboration with PROs",
+      "Maintain accurate employee records, HRIS data, attendance, and leave administration",
+      "Support payroll processing and employee benefits administration",
+      "Act as a trusted point of contact for employees on HR queries, policies, and workplace matters",
+      "Handle employee relations issues including conflict resolution, grievances, and disciplinary processes with fairness and discretion",
+      "Design and execute employee engagement, recognition, and wellness initiatives to strengthen workplace culture",
+      "Coordinate internal events, town halls, and team-building activities",
+      "Support the performance management cycle, including goal setting, reviews, KPI tracking, and development plans",
+      "Assist in career development, succession planning, and retention strategies",
+      "Prepare HR dashboards and reports on recruitment, turnover, attendance, and other key workforce metrics to support decision-making",
+      "Contribute to the development, review, and rollout of HR policies, procedures, and the employee handbook",
+      "Provide day-to-day HR guidance to managers and employees on policies and best practices"
+    ],
+    "skills": [
+      {
+        "skill": "Full-cycle recruitment",
+        "priority": "essential",
+        "proficiency_level": "advanced"
+      },
+      {
+        "skill": "UAE Labour Law knowledge",
+        "priority": "essential",
+        "proficiency_level": "intermediate"
+      },
+      {
+        "skill": "Visa and immigration processing",
+        "priority": "essential",
+        "proficiency_level": "intermediate"
+      },
+      {
+        "skill": "HR generalist operations",
+        "priority": "essential",
+        "proficiency_level": "intermediate"
+      },
+      {
+        "skill": "Candidate sourcing",
+        "priority": "essential",
+        "proficiency_level": "advanced"
+      },
+      {
+        "skill": "Employee onboarding",
+        "priority": "essential",
+        "proficiency_level": "intermediate"
+      },
+      {
+        "skill": "Payroll processing support",
+        "priority": "important",
+        "proficiency_level": "intermediate"
+      },
+      {
+        "skill": "Employee benefits administration",
+        "priority": "important",
+        "proficiency_level": "intermediate"
+      },
+      {
+        "skill": "Employee relations",
+        "priority": "essential",
+        "proficiency_level": "intermediate"
+      },
+      {
+        "skill": "Conflict resolution",
+        "priority": "essential",
+        "proficiency_level": "intermediate"
+      },
+      {
+        "skill": "Performance management",
+        "priority": "important",
+        "proficiency_level": "intermediate"
+      },
+      {
+        "skill": "HR policy development",
+        "priority": "important",
+        "proficiency_level": "intermediate"
+      },
+      {
+        "skill": "HR reporting and analytics",
+        "priority": "important",
+        "proficiency_level": "intermediate"
+      },
+      {
+        "skill": "Employee engagement",
+        "priority": "important",
+        "proficiency_level": "intermediate"
+      },
+      {
+        "skill": "Leave and attendance administration",
+        "priority": "important",
+        "proficiency_level": "intermediate"
+      },
+      {
+        "skill": "Healthcare recruitment (nurses, allied health)",
+        "priority": "valuable",
+        "proficiency_level": "intermediate"
+      },
+      {
+        "skill": "Hospitality recruitment",
+        "priority": "valuable",
+        "proficiency_level": "intermediate"
+      },
+      {
+        "skill": "GCC healthcare licensing (DHA, HAAD/DoH, MOH)",
+        "priority": "valuable",
+        "proficiency_level": "intermediate"
+      },
+      {
+        "skill": "Overseas candidate sourcing and international mobility",
+        "priority": "valuable",
+        "proficiency_level": "intermediate"
+      },
+      {
+        "skill": "Career development and succession planning",
+        "priority": "important",
+        "proficiency_level": "intermediate"
+      }
+    ],
+    "technologies": [
+      {
+        "technology": "MS Excel",
+        "priority": "essential",
+        "version": null
+      },
+      {
+        "technology": "MS Word",
+        "priority": "essential",
+        "version": null
+      },
+      {
+        "technology": "MS PowerPoint",
+        "priority": "essential",
+        "version": null
+      },
+      {
+        "technology": "HRIS platforms",
+        "priority": "important",
+        "version": null
+      },
+      {
+        "technology": "ATS platforms",
+        "priority": "important",
+        "version": null
+      },
+      {
+        "technology": "LinkedIn",
+        "priority": "important",
+        "version": null
+      },
+      {
+        "technology": "Job portals",
+        "priority": "important",
+        "version": null
+      },
+      {
+        "technology": "CRM tools",
+        "priority": "valuable",
+        "version": null
+      },
+      {
+        "technology": "MOHRE systems",
+        "priority": "important",
+        "version": null
+      },
+      {
+        "technology": "GDRFA systems",
+        "priority": "important",
+        "version": null
+      }
+    ],
+    "language_proficiency": null,
+    "qualifications": {
+      "education": [
+        {
+          "degree": "Bachelor's degree",
+          "field": "Human Resources, Business Administration, Psychology, or related field",
+          "priority": "essential"
+        }
+      ],
+      "certifications": [
+        {
+          "certification": "CHRP",
+          "priority": "valuable",
+          "timeline": null
+        },
+        {
+          "certification": "SHRM-CP",
+          "priority": "valuable",
+          "timeline": null
+        },
+        {
+          "certification": "CIPD",
+          "priority": "valuable",
+          "timeline": null
+        }
+      ]
+    },
+    "experience": {
+      "level": "mid",
+      "years_total": {
+        "min": 2,
+        "max": 4
+      },
+      "years_relevant": {
+        "min": 2,
+        "max": 4
+      },
+      "industry_experience": [
+        {
+          "industry": "HR generalist / HR Executive",
+          "priority": "essential"
+        },
+        {
+          "industry": "UAE / GCC region HR",
+          "priority": "important"
+        },
+        {
+          "industry": "healthcare recruitment",
+          "priority": "valuable"
+        },
+        {
+          "industry": "hospitality recruitment",
+          "priority": "valuable"
+        },
+        {
+          "industry": "sales or business development",
+          "priority": "supplementary"
+        }
+      ],
+      "leadership": {
+        "required": false,
+        "team_size": null,
+        "priority": "supplementary"
+      }
+    },
+    "location": null,
+    "employment_details": {
+      "type": "full_time",
+      "urgency": "flexible",
+      "salary_range": {
+        "min": null,
+        "max": null,
+        "currency": "AED",
+        "frequency": "annually"
+      },
+      "benefits": [
+        "Competitive tax-free salary",
+        "Annual benefits package as per UAE norms",
+        "Medical insurance",
+        "Annual leave",
+        "Airfare allowance",
+        "Learning and development support",
+        "Certifications and workshops"
+      ]
+    },
+    "soft_skills": [
+      {
+        "skill": "Communication",
+        "priority": "essential",
+        "context": "excellent verbal and written communication in English with employees at all levels"
+      },
+      {
+        "skill": "Discretion",
+        "priority": "essential",
+        "context": "handling confidential employee information"
+      },
+      {
+        "skill": "Integrity",
+        "priority": "essential",
+        "context": "professional handling of sensitive HR matters"
+      },
+      {
+        "skill": "Professionalism",
+        "priority": "essential",
+        "context": "trusted point of contact for employees"
+      },
+      {
+        "skill": "People-focused mindset",
+        "priority": "essential",
+        "context": "working with people at every level of the business"
+      },
+      {
+        "skill": "Fairness",
+        "priority": "essential",
+        "context": "handling grievances and disciplinary processes"
+      },
+      {
+        "skill": "Adaptability",
+        "priority": "important",
+        "context": "thriving in a fast-paced environment"
+      },
+      {
+        "skill": "Collaboration",
+        "priority": "important",
+        "context": "working with PROs, hiring managers, and department heads"
+      },
+      {
+        "skill": "Attention to detail",
+        "priority": "important",
+        "context": "maintaining accurate employee records and compliance"
+      },
+      {
+        "skill": "Commercial acumen",
+        "priority": "valuable",
+        "context": "bringing a commercial lens to people decisions"
+      }
+    ],
+    "project_context": {
+      "types": [
+        "talent acquisition",
+        "onboarding",
+        "compliance",
+        "employee engagement",
+        "performance management",
+        "policy development"
+      ],
+      "methodologies": [
+        "full employee lifecycle management",
+        "employee relations"
+      ],
+      "environment": null
+    },
+    "team_context": {
+      "size": null,
+      "structure": "People & Culture team",
+      "reporting_to": null
+    },
+    "compliance_legal": {
+      "visa_sponsorship": true,
+      "security_clearance": null,
+      "background_check": null
+    },
+    "cultural_fit": {
+      "company_values": [
+        "multicultural",
+        "collaborative",
+        "equal opportunity",
+        "high-performing culture",
+        "employee experience focus"
+      ],
+      "work_style": [
+        "hands-on generalist",
+        "fast-paced",
+        "people-focused",
+        "detail-oriented",
+        "collaborative",
+        "discreet"
+      ]
+    },
+    "growth_opportunities": [
+      "Genuine opportunities for career progression",
+      "Exposure to a broad range of HR functions and business units",
+      "Ideal for a generalist looking to grow into a senior HR role",
+      "Learning and development support",
+      "Certifications and workshops"
+    ]
+  },
+  "relevance": {
+    "leena-e-2973131b9": 1.0
+  },
+  "source": "reverse_match",
+  "seed_id": "leena-e-2973131b9",
+  "model": "claude-opus-4.7",
+  "prompt_version": "v1"
+}

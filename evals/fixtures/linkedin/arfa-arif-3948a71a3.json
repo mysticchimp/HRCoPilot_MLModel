@@ -1,0 +1,318 @@
+{
+  "case_id": "linkedin:arfa-arif-3948a71a3",
+  "dataset": "linkedin",
+  "jd_text": "# Administrative & HR Coordinator\n\n## About the Role\n\nWe're looking for a highly organised and proactive **Administrative & HR Coordinator** to join our growing team. In this hybrid role, you'll be the operational backbone of the office \u2014 supporting HR processes, managing day-to-day administration, coordinating with vendors, and helping bring internal events and employer branding initiatives to life. This is an ideal opportunity for someone who thrives in a fast-paced environment, enjoys wearing multiple hats, and takes pride in keeping the business running smoothly behind the scenes.\n\n## What You'll Do\n\n### HR & People Operations\n- Maintain accurate employee records, HR documentation, contracts, and attendance reports.\n- Support onboarding and training of new hires, ensuring smooth integration into company workflows.\n- Assist with payroll processing, ensuring timely and accurate compensation for employees and contractors.\n- Serve as a trusted point of contact for staff on HR queries, documentation, and general people matters.\n\n### Office Administration\n- Own and maintain structured digital and physical filing systems for contracts, invoices, reports, and operational records.\n- Prepare reports, presentations, meeting minutes, and departmental documents with a high standard of formatting and consistency.\n- Manage registers, trackers, and schedules to monitor compliance requirements, administrative deadlines, and operational activities.\n- Support finance with invoice processing, expense tracking, and procurement coordination.\n\n### Vendor & Supplier Coordination\n- Act as the primary liaison with suppliers and service providers for documentation, approvals, procurement, and service requests.\n- Oversee logistics for office supplies, vendor management, and general operational needs.\n\n### Events & Employer Branding\n- Plan and execute internal events, team offsites, and celebrations \u2014 from small team dinners to large gatherings of 200+ participants.\n- Coordinate sponsors, deliverables, and branding requirements across event stages.\n- Support employer branding campaigns aimed at strengthening internal culture and attracting top talent.\n- Design social media posts, internal communications, and marketing collateral using graphic design tools, in line with brand guidelines.\n\n## What We're Looking For\n\n### Required\n- 2+ years of experience in an administrative, HR, or office coordination role.\n- Strong organisational skills with proven ability to manage multiple priorities, deadlines, and stakeholders simultaneously.\n- Hands-on experience with HR documentation, employee records, and payroll support.\n- Excellent written and verbal communication skills, with a professional and approachable demeanour.\n- Proficiency in Microsoft Office / Google Workspace (Word, Excel, PowerPoint, Docs, Sheets, Slides).\n- Comfortable coordinating with vendors, suppliers, and cross-functional teams.\n- High attention to detail and a strong sense of ownership.\n\n### Preferred\n- Experience organising corporate events, offsites, or team activities.\n- Familiarity with invoice processing, expense tracking, and procurement workflows.\n- Working knowledge of graphic design tools (Canva, Adobe Express, or similar) for internal branding and social media assets.\n- Exposure to employer branding, internal communications, or people/culture initiatives.\n- Experience training or onboarding new team members.\n- Front-of-house or customer-facing experience \u2014 you know how to make people feel welcome.\n\n## Why Join Us\n\n- A varied, high-impact role where no two days look the same.\n- Direct exposure to HR, operations, finance, and marketing functions \u2014 great for career growth.\n- Supportive team culture that values initiative, creativity, and reliability.\n- Competitive compensation, benefits, and opportunities to lead your own projects and events.\n\n*We're an equal opportunity employer and welcome applicants from all backgrounds.*",
+  "parsed_jd": {
+    "role": "Administrative & HR Coordinator",
+    "company": {
+      "name": "Unspecified Company",
+      "size": "small",
+      "stage": "growth"
+    },
+    "industry": null,
+    "role_objectives": [
+      "Be the operational backbone of the office",
+      "Support HR processes and day-to-day administration",
+      "Coordinate with vendors and suppliers",
+      "Bring internal events and employer branding initiatives to life",
+      "Keep the business running smoothly behind the scenes"
+    ],
+    "responsibilities": [
+      "Maintain accurate employee records, HR documentation, contracts, and attendance reports",
+      "Support onboarding and training of new hires, ensuring smooth integration into company workflows",
+      "Assist with payroll processing, ensuring timely and accurate compensation for employees and contractors",
+      "Serve as a trusted point of contact for staff on HR queries, documentation, and general people matters",
+      "Own and maintain structured digital and physical filing systems for contracts, invoices, reports, and operational records",
+      "Prepare reports, presentations, meeting minutes, and departmental documents with a high standard of formatting and consistency",
+      "Manage registers, trackers, and schedules to monitor compliance requirements, administrative deadlines, and operational activities",
+      "Support finance with invoice processing, expense tracking, and procurement coordination",
+      "Act as the primary liaison with suppliers and service providers for documentation, approvals, procurement, and service requests",
+      "Oversee logistics for office supplies, vendor management, and general operational needs",
+      "Plan and execute internal events, team offsites, and celebrations \u2014 from small team dinners to large gatherings of 200+ participants",
+      "Coordinate sponsors, deliverables, and branding requirements across event stages",
+      "Support employer branding campaigns aimed at strengthening internal culture and attracting top talent",
+      "Design social media posts, internal communications, and marketing collateral using graphic design tools, in line with brand guidelines"
+    ],
+    "skills": [
+      {
+        "skill": "HR Documentation Management",
+        "priority": "essential",
+        "proficiency_level": "advanced"
+      },
+      {
+        "skill": "Employee Records Management",
+        "priority": "essential",
+        "proficiency_level": "advanced"
+      },
+      {
+        "skill": "Payroll Support",
+        "priority": "essential",
+        "proficiency_level": "intermediate"
+      },
+      {
+        "skill": "Office Administration",
+        "priority": "essential",
+        "proficiency_level": "advanced"
+      },
+      {
+        "skill": "Organisational Skills",
+        "priority": "essential",
+        "proficiency_level": "advanced"
+      },
+      {
+        "skill": "Multi-tasking and Prioritisation",
+        "priority": "essential",
+        "proficiency_level": "advanced"
+      },
+      {
+        "skill": "Vendor Coordination",
+        "priority": "essential",
+        "proficiency_level": "intermediate"
+      },
+      {
+        "skill": "Cross-functional Team Coordination",
+        "priority": "essential",
+        "proficiency_level": "intermediate"
+      },
+      {
+        "skill": "Report and Presentation Preparation",
+        "priority": "essential",
+        "proficiency_level": "intermediate"
+      },
+      {
+        "skill": "Filing Systems Management",
+        "priority": "essential",
+        "proficiency_level": "intermediate"
+      },
+      {
+        "skill": "Onboarding and Training",
+        "priority": "important",
+        "proficiency_level": "intermediate"
+      },
+      {
+        "skill": "Corporate Event Planning",
+        "priority": "important",
+        "proficiency_level": "intermediate"
+      },
+      {
+        "skill": "Invoice Processing",
+        "priority": "important",
+        "proficiency_level": "intermediate"
+      },
+      {
+        "skill": "Expense Tracking",
+        "priority": "important",
+        "proficiency_level": "intermediate"
+      },
+      {
+        "skill": "Procurement Coordination",
+        "priority": "important",
+        "proficiency_level": "intermediate"
+      },
+      {
+        "skill": "Graphic Design for Branding",
+        "priority": "valuable",
+        "proficiency_level": "beginner"
+      },
+      {
+        "skill": "Employer Branding",
+        "priority": "valuable",
+        "proficiency_level": "beginner"
+      },
+      {
+        "skill": "Internal Communications",
+        "priority": "valuable",
+        "proficiency_level": "beginner"
+      },
+      {
+        "skill": "Social Media Content Design",
+        "priority": "valuable",
+        "proficiency_level": "beginner"
+      },
+      {
+        "skill": "Front-of-house / Customer-facing Experience",
+        "priority": "supplementary",
+        "proficiency_level": "beginner"
+      }
+    ],
+    "technologies": [
+      {
+        "technology": "Microsoft Word",
+        "priority": "essential",
+        "version": null
+      },
+      {
+        "technology": "Microsoft Excel",
+        "priority": "essential",
+        "version": null
+      },
+      {
+        "technology": "Microsoft PowerPoint",
+        "priority": "essential",
+        "version": null
+      },
+      {
+        "technology": "Google Docs",
+        "priority": "essential",
+        "version": null
+      },
+      {
+        "technology": "Google Sheets",
+        "priority": "essential",
+        "version": null
+      },
+      {
+        "technology": "Google Slides",
+        "priority": "essential",
+        "version": null
+      },
+      {
+        "technology": "Canva",
+        "priority": "valuable",
+        "version": null
+      },
+      {
+        "technology": "Adobe Express",
+        "priority": "valuable",
+        "version": null
+      }
+    ],
+    "language_proficiency": null,
+    "qualifications": {
+      "education": null,
+      "certifications": null
+    },
+    "experience": {
+      "level": "mid",
+      "years_total": {
+        "min": 2,
+        "max": null
+      },
+      "years_relevant": {
+        "min": 2,
+        "max": null
+      },
+      "industry_experience": null,
+      "leadership": {
+        "required": false,
+        "team_size": null,
+        "priority": "supplementary"
+      }
+    },
+    "location": null,
+    "employment_details": {
+      "type": "full_time",
+      "urgency": "flexible",
+      "salary_range": null,
+      "benefits": [
+        "Competitive compensation",
+        "Benefits package",
+        "Opportunities to lead own projects and events"
+      ]
+    },
+    "soft_skills": [
+      {
+        "skill": "Written Communication",
+        "priority": "essential",
+        "context": "professional and approachable demeanour, HR queries and documentation"
+      },
+      {
+        "skill": "Verbal Communication",
+        "priority": "essential",
+        "context": "professional and approachable demeanour with staff and vendors"
+      },
+      {
+        "skill": "Attention to Detail",
+        "priority": "essential",
+        "context": "documentation, records, and formatting consistency"
+      },
+      {
+        "skill": "Ownership",
+        "priority": "essential",
+        "context": "strong sense of ownership of tasks and processes"
+      },
+      {
+        "skill": "Proactivity",
+        "priority": "essential",
+        "context": "operating in a fast-paced environment"
+      },
+      {
+        "skill": "Adaptability",
+        "priority": "important",
+        "context": "wearing multiple hats across HR, admin, events, and branding"
+      },
+      {
+        "skill": "Approachability",
+        "priority": "important",
+        "context": "trusted point of contact for staff"
+      },
+      {
+        "skill": "Initiative",
+        "priority": "important",
+        "context": "supportive culture values initiative"
+      },
+      {
+        "skill": "Creativity",
+        "priority": "important",
+        "context": "events, branding, and marketing collateral design"
+      },
+      {
+        "skill": "Reliability",
+        "priority": "important",
+        "context": "keeping the business running smoothly"
+      }
+    ],
+    "project_context": {
+      "types": [
+        "HR operations",
+        "office administration",
+        "vendor coordination",
+        "internal events",
+        "employer branding"
+      ],
+      "methodologies": null,
+      "environment": null
+    },
+    "team_context": {
+      "size": null,
+      "structure": "cross-functional, exposure to HR, operations, finance, and marketing",
+      "reporting_to": null
+    },
+    "compliance_legal": {
+      "visa_sponsorship": null,
+      "security_clearance": null,
+      "background_check": null
+    },
+    "cultural_fit": {
+      "company_values": [
+        "initiative",
+        "creativity",
+        "reliability",
+        "supportive team culture",
+        "equal opportunity"
+      ],
+      "work_style": [
+        "organised",
+        "proactive",
+        "detail-oriented",
+        "fast-paced",
+        "multi-hat wearer",
+        "ownership-driven",
+        "behind-the-scenes operator"
+      ]
+    },
+    "growth_opportunities": [
+      "Direct exposure to HR, operations, finance, and marketing functions",
+      "Career growth across multiple business functions",
+      "Opportunities to lead own projects and events",
+      "High-impact and varied role"
+    ]
+  },
+  "relevance": {
+    "arfa-arif-3948a71a3": 1.0
+  },
+  "source": "reverse_match",
+  "seed_id": "arfa-arif-3948a71a3",
+  "model": "claude-opus-4.7",
+  "prompt_version": "v1"
+}

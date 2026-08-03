@@ -1,0 +1,296 @@
+{
+  "role": "HR Assistant",
+  "company": {
+    "name": "Prime Focus Group (Prime AC)",
+    "size": "medium",
+    "stage": "mature"
+  },
+  "industry": [
+    "HVAC/ductwork manufacturing",
+    "industrial",
+    "manufacturing"
+  ],
+  "role_objectives": [
+    "Support the full employee lifecycle for a UAE HVAC/ductwork manufacturing operation spanning a factory workforce and office staff",
+    "Provide hands-on HR administrative support including visa and labour-card coordination, WPS payroll support, records, onboarding, and recruitment coordination"
+  ],
+  "responsibilities": [
+    "Coordinate visa, labour card, Emirates ID, and medical processing via PRO/typing centre (Tasheel, MOHRE, GDRFA portals); track expiries and renewals",
+    "Support monthly payroll and WPS submissions; maintain attendance, overtime, and leave records for factory and office staff",
+    "Maintain employee files and HRIS records (Bayzat / ZenHR) — joiners, transfers, exits, end-of-service/gratuity data",
+    "Run onboarding/offboarding logistics: offer letters, MOHRE contract registration, inductions, asset issue/return",
+    "Coordinate recruitment admin across the group's open roles — screening logistics, interview scheduling, candidate correspondence, agency liaison",
+    "Handle first-line employee queries; keep HR compliant with UAE Labour Law and MOHRE requirements"
+  ],
+  "skills": [
+    {
+      "skill": "UAE Labour Law knowledge",
+      "priority": "essential",
+      "proficiency_level": null
+    },
+    {
+      "skill": "WPS (Wage Protection System)",
+      "priority": "essential",
+      "proficiency_level": null
+    },
+    {
+      "skill": "Visa and labour-card processes",
+      "priority": "essential",
+      "proficiency_level": null
+    },
+    {
+      "skill": "HRIS management",
+      "priority": "essential",
+      "proficiency_level": null
+    },
+    {
+      "skill": "Records management and discipline",
+      "priority": "essential",
+      "proficiency_level": "advanced"
+    },
+    {
+      "skill": "Payroll administration",
+      "priority": "essential",
+      "proficiency_level": null
+    },
+    {
+      "skill": "Onboarding/offboarding",
+      "priority": "essential",
+      "proficiency_level": null
+    },
+    {
+      "skill": "Recruitment coordination",
+      "priority": "essential",
+      "proficiency_level": null
+    },
+    {
+      "skill": "Attendance, overtime, and leave tracking",
+      "priority": "essential",
+      "proficiency_level": null
+    },
+    {
+      "skill": "Interview scheduling",
+      "priority": "important",
+      "proficiency_level": null
+    },
+    {
+      "skill": "Candidate correspondence",
+      "priority": "important",
+      "proficiency_level": null
+    },
+    {
+      "skill": "Agency liaison",
+      "priority": "important",
+      "proficiency_level": null
+    },
+    {
+      "skill": "MOHRE contract registration",
+      "priority": "essential",
+      "proficiency_level": null
+    },
+    {
+      "skill": "End-of-service/gratuity calculations",
+      "priority": "important",
+      "proficiency_level": null
+    },
+    {
+      "skill": "PRO / government-portal experience",
+      "priority": "valuable",
+      "proficiency_level": null
+    },
+    {
+      "skill": "Blue-collar / labour-camp workforce management",
+      "priority": "valuable",
+      "proficiency_level": null
+    }
+  ],
+  "technologies": [
+    {
+      "technology": "Bayzat",
+      "priority": "important",
+      "version": null
+    },
+    {
+      "technology": "ZenHR",
+      "priority": "important",
+      "version": null
+    },
+    {
+      "technology": "MS Office",
+      "priority": "essential",
+      "version": null
+    },
+    {
+      "technology": "Microsoft Excel",
+      "priority": "essential",
+      "version": null
+    },
+    {
+      "technology": "Tasheel",
+      "priority": "valuable",
+      "version": null
+    },
+    {
+      "technology": "MOHRE portal",
+      "priority": "valuable",
+      "version": null
+    },
+    {
+      "technology": "GDRFA portal",
+      "priority": "valuable",
+      "version": null
+    }
+  ],
+  "language_proficiency": [
+    {
+      "language": "English",
+      "level": "fluent",
+      "priority": "essential"
+    },
+    {
+      "language": "Arabic",
+      "level": "conversational",
+      "priority": "valuable"
+    },
+    {
+      "language": "Tagalog",
+      "level": "conversational",
+      "priority": "valuable"
+    }
+  ],
+  "qualifications": {
+    "education": null,
+    "certifications": [
+      {
+        "certification": "CIPD or equivalent HR certification",
+        "priority": "valuable",
+        "timeline": null
+      }
+    ]
+  },
+  "experience": {
+    "level": "entry",
+    "years_total": {
+      "min": 1,
+      "max": 4
+    },
+    "years_relevant": {
+      "min": 1,
+      "max": 4
+    },
+    "industry_experience": [
+      {
+        "industry": "HR/admin in the UAE",
+        "priority": "essential"
+      },
+      {
+        "industry": "manufacturing",
+        "priority": "valuable"
+      },
+      {
+        "industry": "HVAC",
+        "priority": "valuable"
+      },
+      {
+        "industry": "MEP",
+        "priority": "valuable"
+      },
+      {
+        "industry": "construction",
+        "priority": "valuable"
+      },
+      {
+        "industry": "contracting",
+        "priority": "valuable"
+      },
+      {
+        "industry": "facilities management",
+        "priority": "valuable"
+      },
+      {
+        "industry": "building materials",
+        "priority": "valuable"
+      }
+    ],
+    "leadership": {
+      "required": false,
+      "team_size": null,
+      "priority": null
+    }
+  },
+  "location": {
+    "cities": [
+      "Dubai"
+    ],
+    "countries": [
+      "United Arab Emirates"
+    ],
+    "remote_options": "on_site",
+    "travel_requirements": null,
+    "relocation": null
+  },
+  "employment_details": {
+    "type": "full_time",
+    "urgency": null,
+    "salary_range": null,
+    "benefits": null
+  },
+  "soft_skills": [
+    {
+      "skill": "Confidentiality",
+      "priority": "essential",
+      "context": "handling sensitive HR and employee data"
+    },
+    {
+      "skill": "Records discipline",
+      "priority": "essential",
+      "context": "maintaining accurate employee files and HRIS records"
+    },
+    {
+      "skill": "Communication",
+      "priority": "important",
+      "context": "first-line employee queries and candidate correspondence"
+    },
+    {
+      "skill": "Organization",
+      "priority": "important",
+      "context": "tracking expiries, renewals, and coordinating multiple processes"
+    },
+    {
+      "skill": "Attention to detail",
+      "priority": "important",
+      "context": "payroll, records, and compliance work"
+    }
+  ],
+  "project_context": {
+    "types": [
+      "employee lifecycle management",
+      "payroll administration",
+      "visa/labour-card processing",
+      "recruitment coordination",
+      "onboarding/offboarding"
+    ],
+    "methodologies": null,
+    "environment": null
+  },
+  "team_context": {
+    "size": null,
+    "structure": "HR function supporting factory workforce and office staff",
+    "reporting_to": "HR Manager"
+  },
+  "compliance_legal": {
+    "visa_sponsorship": null,
+    "security_clearance": null,
+    "background_check": null
+  },
+  "cultural_fit": {
+    "company_values": null,
+    "work_style": [
+      "hands-on",
+      "detail-oriented",
+      "administrative",
+      "compliance-focused"
+    ]
+  },
+  "growth_opportunities": null
+}

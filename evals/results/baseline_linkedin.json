@@ -1,0 +1,257 @@
+{
+  "config": {
+    "title_mode": "hybrid",
+    "title_threshold": 0.4,
+    "title_hard": false,
+    "filter_by_skills": false,
+    "skill_threshold": 0.25,
+    "skill_match_floor": 70,
+    "skill_mode": "hybrid",
+    "skill_semantic_threshold": null,
+    "filter_by_qualifications": false,
+    "qual_threshold": 0.2,
+    "weights": null,
+    "normalize_components": false,
+    "rerank_top_k": 50
+  },
+  "embedding": {
+    "embedding_model": "Qwen/Qwen3-Embedding-0.6B",
+    "sim_query_instruction": "Instruct: Given a job description, retrieve candidate profiles that best match the role.\nQuery: ",
+    "sim_doc_instruction": null
+  },
+  "summary": {
+    "n_reverse_match": 19,
+    "n_gold": 1,
+    "hit@1": 0.4211,
+    "hit@3": 0.5789,
+    "hit@5": 0.6316,
+    "hit@10": 0.7895,
+    "mrr": 0.5212,
+    "seed_found_rate": 1.0,
+    "ndcg@5": 0.9464,
+    "ndcg@10": 0.9588
+  },
+  "per_case": [
+    {
+      "case_id": "linkedin:hiroshi-de-silva-\u4f55\u6d1b\u8bd7\uff09-4317a7207",
+      "source": "reverse_match",
+      "n_ranked": 145,
+      "hit@1": 0.0,
+      "hit@3": 0.0,
+      "hit@5": 1.0,
+      "hit@10": 1.0,
+      "rr": 0.2,
+      "seed_rank": 5
+    },
+    {
+      "case_id": "linkedin:lipna-s-144762201",
+      "source": "reverse_match",
+      "n_ranked": 145,
+      "hit@1": 0.0,
+      "hit@3": 0.0,
+      "hit@5": 0.0,
+      "hit@10": 0.0,
+      "rr": 0.022727272727272728,
+      "seed_rank": 44
+    },
+    {
+      "case_id": "linkedin:ayshaalneyadi-811a792ab",
+      "source": "reverse_match",
+      "n_ranked": 145,
+      "hit@1": 1.0,
+      "hit@3": 1.0,
+      "hit@5": 1.0,
+      "hit@10": 1.0,
+      "rr": 1.0,
+      "seed_rank": 1
+    },
+    {
+      "case_id": "linkedin:ramihanbali",
+      "source": "reverse_match",
+      "n_ranked": 145,
+      "hit@1": 1.0,
+      "hit@3": 1.0,
+      "hit@5": 1.0,
+      "hit@10": 1.0,
+      "rr": 1.0,
+      "seed_rank": 1
+    },
+    {
+      "case_id": "linkedin:arfa-arif-3948a71a3",
+      "source": "reverse_match",
+      "n_ranked": 145,
+      "hit@1": 0.0,
+      "hit@3": 1.0,
+      "hit@5": 1.0,
+      "hit@10": 1.0,
+      "rr": 0.3333333333333333,
+      "seed_rank": 3
+    },
+    {
+      "case_id": "linkedin:diksha-dey-971932253",
+      "source": "reverse_match",
+      "n_ranked": 145,
+      "hit@1": 1.0,
+      "hit@3": 1.0,
+      "hit@5": 1.0,
+      "hit@10": 1.0,
+      "rr": 1.0,
+      "seed_rank": 1
+    },
+    {
+      "case_id": "linkedin:muhammed-ashar-k-19b216236",
+      "source": "reverse_match",
+      "n_ranked": 145,
+      "hit@1": 0.0,
+      "hit@3": 0.0,
+      "hit@5": 0.0,
+      "hit@10": 1.0,
+      "rr": 0.1,
+      "seed_rank": 10
+    },
+    {
+      "case_id": "linkedin:annika-nicole-gulati-46778013b",
+      "source": "reverse_match",
+      "n_ranked": 145,
+      "hit@1": 1.0,
+      "hit@3": 1.0,
+      "hit@5": 1.0,
+      "hit@10": 1.0,
+      "rr": 1.0,
+      "seed_rank": 1
+    },
+    {
+      "case_id": "linkedin:sean-dsouza-7aa2b1214",
+      "source": "reverse_match",
+      "n_ranked": 145,
+      "hit@1": 0.0,
+      "hit@3": 0.0,
+      "hit@5": 0.0,
+      "hit@10": 0.0,
+      "rr": 0.08333333333333333,
+      "seed_rank": 12
+    },
+    {
+      "case_id": "linkedin:leena-e-2973131b9",
+      "source": "reverse_match",
+      "n_ranked": 145,
+      "hit@1": 1.0,
+      "hit@3": 1.0,
+      "hit@5": 1.0,
+      "hit@10": 1.0,
+      "rr": 1.0,
+      "seed_rank": 1
+    },
+    {
+      "case_id": "linkedin:donna-rose-ortiz-167590199",
+      "source": "reverse_match",
+      "n_ranked": 145,
+      "hit@1": 0.0,
+      "hit@3": 1.0,
+      "hit@5": 1.0,
+      "hit@10": 1.0,
+      "rr": 0.3333333333333333,
+      "seed_rank": 3
+    },
+    {
+      "case_id": "linkedin:catherine-njoroge-539974257",
+      "source": "reverse_match",
+      "n_ranked": 145,
+      "hit@1": 1.0,
+      "hit@3": 1.0,
+      "hit@5": 1.0,
+      "hit@10": 1.0,
+      "rr": 1.0,
+      "seed_rank": 1
+    },
+    {
+      "case_id": "linkedin:mohini-ingale-1b2093237",
+      "source": "reverse_match",
+      "n_ranked": 145,
+      "hit@1": 0.0,
+      "hit@3": 0.0,
+      "hit@5": 0.0,
+      "hit@10": 0.0,
+      "rr": 0.007874015748031496,
+      "seed_rank": 127
+    },
+    {
+      "case_id": "linkedin:sufiyan-malik-",
+      "source": "reverse_match",
+      "n_ranked": 145,
+      "hit@1": 0.0,
+      "hit@3": 1.0,
+      "hit@5": 1.0,
+      "hit@10": 1.0,
+      "rr": 0.5,
+      "seed_rank": 2
+    },
+    {
+      "case_id": "linkedin:gouri-prasad-psych",
+      "source": "reverse_match",
+      "n_ranked": 145,
+      "hit@1": 1.0,
+      "hit@3": 1.0,
+      "hit@5": 1.0,
+      "hit@10": 1.0,
+      "rr": 1.0,
+      "seed_rank": 1
+    },
+    {
+      "case_id": "linkedin:redaabulwafa",
+      "source": "reverse_match",
+      "n_ranked": 145,
+      "hit@1": 1.0,
+      "hit@3": 1.0,
+      "hit@5": 1.0,
+      "hit@10": 1.0,
+      "rr": 1.0,
+      "seed_rank": 1
+    },
+    {
+      "case_id": "linkedin:muhammad-ak-4bb07a234",
+      "source": "reverse_match",
+      "n_ranked": 145,
+      "hit@1": 0.0,
+      "hit@3": 0.0,
+      "hit@5": 0.0,
+      "hit@10": 1.0,
+      "rr": 0.14285714285714285,
+      "seed_rank": 7
+    },
+    {
+      "case_id": "linkedin:mohammed-haziq-baig-692225232",
+      "source": "reverse_match",
+      "n_ranked": 145,
+      "hit@1": 0.0,
+      "hit@3": 0.0,
+      "hit@5": 0.0,
+      "hit@10": 0.0,
+      "rr": 0.037037037037037035,
+      "seed_rank": 27
+    },
+    {
+      "case_id": "linkedin:mahnoor-ijaz-004690167",
+      "source": "reverse_match",
+      "n_ranked": 145,
+      "hit@1": 0.0,
+      "hit@3": 0.0,
+      "hit@5": 0.0,
+      "hit@10": 1.0,
+      "rr": 0.14285714285714285,
+      "seed_rank": 7
+    },
+    {
+      "case_id": "linkedin:gold_hr_assistant",
+      "source": "llm_scored",
+      "n_ranked": 145,
+      "hit@1": 1.0,
+      "hit@3": 1.0,
+      "hit@5": 1.0,
+      "hit@10": 1.0,
+      "rr": 1.0,
+      "ndcg@5": 0.9464384341033937,
+      "ndcg@10": 0.9587859024394491
+    }
+  ]
+}

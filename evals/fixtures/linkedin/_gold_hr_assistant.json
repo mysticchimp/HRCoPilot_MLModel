@@ -1,0 +1,391 @@
+{
+  "case_id": "linkedin:gold_hr_assistant",
+  "dataset": "linkedin",
+  "jd_text": "### **HR Assistant \u2014 Prime Focus Group (Prime AC)**\n\n**Location:** Dubai, UAE (on-site) \u00b7 **Reports to:** HR Manager \u00b7 **Function:** Human Resources \u00b7 **Level:** Assistant / junior (this is a hands-on admin seat, not a supervisory role)\n\n**Role summary**  \n Support the full employee lifecycle for a UAE HVAC/ductwork manufacturing operation spanning a factory workforce and office staff \u2014 visa and labour-card coordination, WPS payroll support, records, onboarding, and recruitment coordination across the group's open roles.\n\n**Key responsibilities**\n\n* Coordinate visa, labour card, Emirates ID, and medical processing via PRO/typing centre (Tasheel, MOHRE, GDRFA portals); track expiries and renewals.  \n* Support monthly payroll and WPS submissions; maintain attendance, overtime, and leave records for factory and office staff.  \n* Maintain employee files and HRIS records (Bayzat / ZenHR) \u2014 joiners, transfers, exits, end-of-service/gratuity data.  \n* Run onboarding/offboarding logistics: offer letters, MOHRE contract registration, inductions, asset issue/return.  \n* Coordinate recruitment admin across the group's open roles \u2014 screening logistics, interview scheduling, candidate correspondence, agency liaison.  \n* Handle first-line employee queries; keep HR compliant with UAE Labour Law and MOHRE requirements.\n\n**Must-have**\n\n* 1\u20134 years HR/admin experience in the UAE.  \n* Working knowledge of UAE Labour Law, WPS, and visa/labour-card processes.  \n* HRIS familiarity (Bayzat, ZenHR, or similar) and strong MS Office/Excel.  \n* Fluent English; strong records discipline and confidentiality.\n\n**Nice-to-have**\n\n* Experience in an industrial-sector employer: manufacturing, HVAC, MEP, construction, contracting, facilities management, or building materials (blue-collar / labour-camp workforce exposure).  \n* Arabic language.  \n* Tagalog/Filipino, to support the Filipino factory workforce.  \n* CIPD or equivalent HR certification.  \n* Hands-on PRO / government-portal experience (Tasheel, MOHRE, GDRFA).\n\n",
+  "parsed_jd": {
+    "role": "HR Assistant",
+    "company": {
+      "name": "Prime Focus Group (Prime AC)",
+      "size": "medium",
+      "stage": "mature"
+    },
+    "industry": [
+      "HVAC/ductwork manufacturing",
+      "industrial",
+      "manufacturing"
+    ],
+    "role_objectives": [
+      "Support the full employee lifecycle for a UAE HVAC/ductwork manufacturing operation spanning a factory workforce and office staff",
+      "Provide hands-on HR administrative support including visa and labour-card coordination, WPS payroll support, records, onboarding, and recruitment coordination"
+    ],
+    "responsibilities": [
+      "Coordinate visa, labour card, Emirates ID, and medical processing via PRO/typing centre (Tasheel, MOHRE, GDRFA portals); track expiries and renewals",
+      "Support monthly payroll and WPS submissions; maintain attendance, overtime, and leave records for factory and office staff",
+      "Maintain employee files and HRIS records (Bayzat / ZenHR) \u2014 joiners, transfers, exits, end-of-service/gratuity data",
+      "Run onboarding/offboarding logistics: offer letters, MOHRE contract registration, inductions, asset issue/return",
+      "Coordinate recruitment admin across the group's open roles \u2014 screening logistics, interview scheduling, candidate correspondence, agency liaison",
+      "Handle first-line employee queries; keep HR compliant with UAE Labour Law and MOHRE requirements"
+    ],
+    "skills": [
+      {
+        "skill": "UAE Labour Law knowledge",
+        "priority": "essential",
+        "proficiency_level": null
+      },
+      {
+        "skill": "WPS (Wage Protection System)",
+        "priority": "essential",
+        "proficiency_level": null
+      },
+      {
+        "skill": "Visa and labour-card processes",
+        "priority": "essential",
+        "proficiency_level": null
+      },
+      {
+        "skill": "HRIS management",
+        "priority": "essential",
+        "proficiency_level": null
+      },
+      {
+        "skill": "Records management and discipline",
+        "priority": "essential",
+        "proficiency_level": "advanced"
+      },
+      {
+        "skill": "Payroll administration",
+        "priority": "essential",
+        "proficiency_level": null
+      },
+      {
+        "skill": "Onboarding/offboarding",
+        "priority": "essential",
+        "proficiency_level": null
+      },
+      {
+        "skill": "Recruitment coordination",
+        "priority": "essential",
+        "proficiency_level": null
+      },
+      {
+        "skill": "Attendance, overtime, and leave tracking",
+        "priority": "essential",
+        "proficiency_level": null
+      },
+      {
+        "skill": "Interview scheduling",
+        "priority": "important",
+        "proficiency_level": null
+      },
+      {
+        "skill": "Candidate correspondence",
+        "priority": "important",
+        "proficiency_level": null
+      },
+      {
+        "skill": "Agency liaison",
+        "priority": "important",
+        "proficiency_level": null
+      },
+      {
+        "skill": "MOHRE contract registration",
+        "priority": "essential",
+        "proficiency_level": null
+      },
+      {
+        "skill": "End-of-service/gratuity calculations",
+        "priority": "important",
+        "proficiency_level": null
+      },
+      {
+        "skill": "PRO / government-portal experience",
+        "priority": "valuable",
+        "proficiency_level": null
+      },
+      {
+        "skill": "Blue-collar / labour-camp workforce management",
+        "priority": "valuable",
+        "proficiency_level": null
+      }
+    ],
+    "technologies": [
+      {
+        "technology": "Bayzat",
+        "priority": "important",
+        "version": null
+      },
+      {
+        "technology": "ZenHR",
+        "priority": "important",
+        "version": null
+      },
+      {
+        "technology": "MS Office",
+        "priority": "essential",
+        "version": null
+      },
+      {
+        "technology": "Microsoft Excel",
+        "priority": "essential",
+        "version": null
+      },
+      {
+        "technology": "Tasheel",
+        "priority": "valuable",
+        "version": null
+      },
+      {
+        "technology": "MOHRE portal",
+        "priority": "valuable",
+        "version": null
+      },
+      {
+        "technology": "GDRFA portal",
+        "priority": "valuable",
+        "version": null
+      }
+    ],
+    "language_proficiency": [
+      {
+        "language": "English",
+        "level": "fluent",
+        "priority": "essential"
+      },
+      {
+        "language": "Arabic",
+        "level": "conversational",
+        "priority": "valuable"
+      },
+      {
+        "language": "Tagalog",
+        "level": "conversational",
+        "priority": "valuable"
+      }
+    ],
+    "qualifications": {
+      "education": null,
+      "certifications": [
+        {
+          "certification": "CIPD or equivalent HR certification",
+          "priority": "valuable",
+          "timeline": null
+        }
+      ]
+    },
+    "experience": {
+      "level": "entry",
+      "years_total": {
+        "min": 1,
+        "max": 4
+      },
+      "years_relevant": {
+        "min": 1,
+        "max": 4
+      },
+      "industry_experience": [
+        {
+          "industry": "HR/admin in the UAE",
+          "priority": "essential"
+        },
+        {
+          "industry": "manufacturing",
+          "priority": "valuable"
+        },
+        {
+          "industry": "HVAC",
+          "priority": "valuable"
+        },
+        {
+          "industry": "MEP",
+          "priority": "valuable"
+        },
+        {
+          "industry": "construction",
+          "priority": "valuable"
+        },
+        {
+          "industry": "contracting",
+          "priority": "valuable"
+        },
+        {
+          "industry": "facilities management",
+          "priority": "valuable"
+        },
+        {
+          "industry": "building materials",
+          "priority": "valuable"
+        }
+      ],
+      "leadership": {
+        "required": false,
+        "team_size": null,
+        "priority": null
+      }
+    },
+    "location": {
+      "cities": [
+        "Dubai"
+      ],
+      "countries": [
+        "United Arab Emirates"
+      ],
+      "remote_options": "on_site",
+      "travel_requirements": null,
+      "relocation": null
+    },
+    "employment_details": {
+      "type": "full_time",
+      "urgency": null,
+      "salary_range": null,
+      "benefits": null
+    },
+    "soft_skills": [
+      {
+        "skill": "Confidentiality",
+        "priority": "essential",
+        "context": "handling sensitive HR and employee data"
+      },
+      {
+        "skill": "Records discipline",
+        "priority": "essential",
+        "context": "maintaining accurate employee files and HRIS records"
+      },
+      {
+        "skill": "Communication",
+        "priority": "important",
+        "context": "first-line employee queries and candidate correspondence"
+      },
+      {
+        "skill": "Organization",
+        "priority": "important",
+        "context": "tracking expiries, renewals, and coordinating multiple processes"
+      },
+      {
+        "skill": "Attention to detail",
+        "priority": "important",
+        "context": "payroll, records, and compliance work"
+      }
+    ],
+    "project_context": {
+      "types": [
+        "employee lifecycle management",
+        "payroll administration",
+        "visa/labour-card processing",
+        "recruitment coordination",
+        "onboarding/offboarding"
+      ],
+      "methodologies": null,
+      "environment": null
+    },
+    "team_context": {
+      "size": null,
+      "structure": "HR function supporting factory workforce and office staff",
+      "reporting_to": "HR Manager"
+    },
+    "compliance_legal": {
+      "visa_sponsorship": null,
+      "security_clearance": null,
+      "background_check": null
+    },
+    "cultural_fit": {
+      "company_values": null,
+      "work_style": [
+        "hands-on",
+        "detail-oriented",
+        "administrative",
+        "compliance-focused"
+      ]
+    },
+    "growth_opportunities": null
+  },
+  "relevance": {
+    "roxanna-ghassemlou-007078191": 40.25,
+    "sabatinihussain": 53.25,
+    "pratheeshajohnbosco": 55.0,
+    "karen-kaye": 54.5,
+    "abdullah-al-zadjali-2553b7275": 44.5,
+    "efrelyn-ablay-81b008252": 32.25,
+    "donna-rose-ortiz-167590199": 32.5,
+    "aiswarya-ravindran-a59569223": 76.5,
+    "vishnu-viswan-42a1zd": 47.75,
+    "reshmajose13": 28.0,
+    "adnan-faisal-17b260211": 47.25,
+    "priyanshi-negi-9b6480217": 44.0,
+    "fathimath-safa-65b4b219b": 52.0,
+    "anandhu-s-30a9b61b9": 30.5,
+    "fathimath-farhana-parveen": 69.5,
+    "che-ibardelosa-a538072a1": 30.5,
+    "saranya-s-97a935115": 60.0,
+    "catherine-njoroge-539974257": 39.0,
+    "swathi-ar-84681417b": 33.0,
+    "samasthasunoj": 79.5,
+    "liezelle-anne-n-394338252": 52.5,
+    "muhammed-muhammed-bin-siddique-a270873a6": 54.5,
+    "jasnaorv": 60.75,
+    "arya-kunnath-69039b221": 56.5,
+    "ranjani-anthony-raj-chrp-chrm-751669227": 79.5,
+    "rose-de-castro-b92a76250": 28.0,
+    "harikrishna-r-87b3ab253": 79.0,
+    "saeeduzaman-k-b94663268": 53.5,
+    "amrutha-k-k-901814331": 66.0,
+    "feba-abraham-7009291a9": 59.25,
+    "muhammed-akthab-kv-8056042b4": 53.5,
+    "aiswarya-h": 53.0,
+    "shahul-p-74a571a8": 77.0,
+    "thereseelizabeth": 49.5,
+    "anshu-daswani-261aa3193": 51.75,
+    "febamarybabu": 44.5,
+    "rajasree-devadas-81aa83214": 50.0,
+    "muhammed-ashar-k-19b216236": 82.5,
+    "shamma-almansoori-6649102b7": 46.0,
+    "arunmania": 66.5,
+    "sufiyan-malik-": 66.0,
+    "selenaatari": 46.0,
+    "galmangalino": 37.0,
+    "savaf-methiyil-744910316": 76.5,
+    "dhrissya-m-s-b9b41a230": 51.5,
+    "abiya-prince-9b159b1b2": 67.25,
+    "amal-ragesh": 29.0,
+    "abbas-ali-khan-558a4b400": 66.0,
+    "aswin-shanmugam-raghuraman": 43.5,
+    "yoosuf-chamathadka-ali-9a018a273": 74.25,
+    "sabeeh-ansari-43525923b": 79.0,
+    "shafas-hussain-5b9850214": 76.5,
+    "leena-e-2973131b9": 55.0,
+    "amjadkhan12": 41.5,
+    "alicia-d-souza-43660a193": 63.0,
+    "dawood-imran-hr": 54.5,
+    "devikaaneesh": 41.5,
+    "amulya-dattada-941b89231": 75.0,
+    "mohammedshakirpp": 52.0,
+    "aaqib-mohamed-734b30271": 27.0,
+    "akhila-s-joseph-3045561a5": 67.5,
+    "anjali-nair-h-21a358128": 47.0,
+    "monika-bhati-651b782b3": 27.25,
+    "ayesha-nasim-188151196": 34.5,
+    "megha-p-s": 79.25,
+    "dayana-reddy-908340287": 58.0,
+    "mufeetha-p-v-951b9a281": 51.75,
+    "mariam-khalid-47a537211": 66.5,
+    "nayantharabalagopal": 49.5,
+    "ahmed-sameh-8864091a3": 21.0,
+    "roan-garambas-1b0092290": 44.25,
+    "alyazyeh-a-2928b7155": 58.0,
+    "moideen-ziad-k-551913371": 30.0,
+    "sonali-kandari-7655441a9": 48.5,
+    "diksha-dey-971932253": 43.75,
+    "minahil-farooq-3961a8294": 63.0,
+    "muhammad-ak-4bb07a234": 66.5,
+    "fenny-c-varghese-b31b391ab": 57.5
+  },
+  "source": "llm_scored",
+  "seed_id": null,
+  "label_source": "evals/judgments/blind_judgments_hr_assistant.csv",
+  "judge_models": [
+    "claude-opus-4.8",
+    "gpt-5.5"
+  ],
+  "rubric_version": "t3-tenure-relevance-language-v1",
+  "anchor_kind": "silver_judge_grade",
+  "jd_source": "jd/HR Assistant \u2014 Prime Focus Group (Prime AC).md"
+}

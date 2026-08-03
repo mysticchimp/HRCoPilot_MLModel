@@ -1,0 +1,338 @@
+{
+  "case_id": "linkedin:donna-rose-ortiz-167590199",
+  "dataset": "linkedin",
+  "jd_text": "# HR & Admin Officer \u2014 Fit-Out & Joinery\n\n**Location:** Dubai, UAE (On-site)\n**Employment Type:** Full-time\n**Department:** Human Resources & Administration\n**Reports to:** Managing Director / Operations Manager\n\n## About the Role\n\nWe are a growing UAE-based design and build company specializing in high-quality fit-out and bespoke joinery for residential, retail, and corporate interiors. We are looking for a dependable and detail-oriented **HR & Admin Officer** to be the operational backbone of our office \u2014 supporting our people, keeping documentation airtight, and coordinating seamlessly between our factory, site teams, and management.\n\nThis role is ideal for someone who has worked in or around the fit-out, joinery, interiors, or construction industry and understands the pace, paperwork, and coordination demands that come with it. You will wear multiple hats: HR generalist, office administrator, document controller, procurement support, and finance liaison.\n\n## Key Responsibilities\n\n### HR & People Operations\n- Manage the full employee lifecycle: onboarding, offboarding, contracts, and personnel file maintenance.\n- Coordinate visa processing, labor cards, Emirates ID renewals, medical insurance, and other statutory documentation in line with UAE labor law and MOHRE regulations.\n- Track attendance, leave balances, timesheets, and overtime for office, factory, and site-based staff.\n- Support recruitment: post openings, screen candidates, schedule interviews, and coordinate with recruitment agencies.\n- Assist with payroll preparation in coordination with the accounts team, including WPS submissions.\n- Maintain HR policies, employee handbook, and ensure compliance across all locations.\n\n### Office & Document Administration\n- Oversee day-to-day office operations, supplies, and vendor relationships.\n- Maintain a structured document control system for project files, client correspondence, contracts, RFIs, drawings, LPOs, and invoices.\n- Prepare and format quotations, purchase orders, letters, and internal reports.\n- Coordinate courier, travel, and accommodation arrangements for staff and visiting clients.\n- Manage trade license renewals, tenancy contracts, and other company registrations.\n\n### Procurement & Project Support\n- Support the procurement team with supplier follow-ups, PO tracking, and delivery coordination between suppliers, the factory, and site.\n- Act as an administrative point of contact between project managers, site supervisors, and the factory to ensure smooth information flow.\n- Maintain records of subcontractor documentation, insurance certificates, and site passes.\n\n### Finance & Accounts Assistance\n- Assist the accounts team with accounts receivables tracking, invoice follow-ups, and payment reminders to clients.\n- Document and organize received receipts, petty cash, and supplier invoices.\n- Support in preparing paperwork for VAT filings, tax returns, and other regulatory submissions to UAE Federal Tax Authority.\n- Help maintain the company's tax and financial documentation database.\n- Flag industry updates and changes in UAE tax regulations that may affect the business.\n\n## Required Qualifications\n\n- Bachelor's degree in Business Administration, Human Resources, Accounting, or a related field.\n- **3+ years of HR and administration experience**, ideally within the **fit-out, joinery, interior design, or construction industry** in the UAE.\n- Working knowledge of **UAE labor law, MOHRE procedures, and visa/immigration processes**.\n- Familiarity with **UAE VAT and basic accounting principles** (receivables, payables, invoicing).\n- Strong document control skills \u2014 you know how to keep a paper trail clean and retrievable.\n- Proficiency in MS Office (especially Excel and Word) and comfort with HR/ERP systems.\n- Excellent written and spoken English; Arabic is a strong plus.\n- High attention to detail, discretion with confidential information, and the ability to juggle competing priorities under pressure.\n\n## Preferred Qualifications\n\n- Prior exposure to procurement coordination or working directly with factories and site teams.\n- Experience supporting a small-to-mid-size design and build or contracting firm where the role touches multiple departments.\n- Hands-on experience with tools like Zoho, Odoo, Tally, or QuickBooks.\n- Understanding of project documentation typical to fit-out projects (LPOs, material submittals, MEP coordination paperwork, etc.).\n\n## What We Offer\n\n- A collaborative, craftsmanship-driven work environment where quality and client satisfaction come first.\n- Exposure to diverse projects across residential, retail, and corporate segments.\n- Competitive salary, medical insurance, annual leave, and end-of-service benefits per UAE law.\n- Room to grow into a Senior HR & Admin or Operations role as the company scales.",
+  "parsed_jd": {
+    "role": "HR & Admin Officer \u2014 Fit-Out & Joinery",
+    "company": {
+      "name": "UAE-based Design and Build Company",
+      "size": "small",
+      "stage": "growth"
+    },
+    "industry": [
+      "fit-out and joinery",
+      "interior design",
+      "construction",
+      "design and build"
+    ],
+    "role_objectives": [
+      "Serve as the operational backbone of the office, supporting people and coordinating between factory, site teams, and management",
+      "Ensure airtight documentation and compliance across HR, admin, procurement, and finance functions",
+      "Bridge multiple functions as HR generalist, office administrator, document controller, procurement support, and finance liaison"
+    ],
+    "responsibilities": [
+      "Manage the full employee lifecycle: onboarding, offboarding, contracts, and personnel file maintenance",
+      "Coordinate visa processing, labor cards, Emirates ID renewals, medical insurance, and other statutory documentation in line with UAE labor law and MOHRE regulations",
+      "Track attendance, leave balances, timesheets, and overtime for office, factory, and site-based staff",
+      "Support recruitment: post openings, screen candidates, schedule interviews, and coordinate with recruitment agencies",
+      "Assist with payroll preparation in coordination with the accounts team, including WPS submissions",
+      "Maintain HR policies, employee handbook, and ensure compliance across all locations",
+      "Oversee day-to-day office operations, supplies, and vendor relationships",
+      "Maintain a structured document control system for project files, client correspondence, contracts, RFIs, drawings, LPOs, and invoices",
+      "Prepare and format quotations, purchase orders, letters, and internal reports",
+      "Coordinate courier, travel, and accommodation arrangements for staff and visiting clients",
+      "Manage trade license renewals, tenancy contracts, and other company registrations",
+      "Support the procurement team with supplier follow-ups, PO tracking, and delivery coordination between suppliers, the factory, and site",
+      "Act as an administrative point of contact between project managers, site supervisors, and the factory to ensure smooth information flow",
+      "Maintain records of subcontractor documentation, insurance certificates, and site passes",
+      "Assist the accounts team with accounts receivables tracking, invoice follow-ups, and payment reminders to clients",
+      "Document and organize received receipts, petty cash, and supplier invoices",
+      "Support in preparing paperwork for VAT filings, tax returns, and other regulatory submissions to UAE Federal Tax Authority",
+      "Help maintain the company's tax and financial documentation database",
+      "Flag industry updates and changes in UAE tax regulations that may affect the business"
+    ],
+    "skills": [
+      {
+        "skill": "HR and administration",
+        "priority": "essential",
+        "proficiency_level": "advanced"
+      },
+      {
+        "skill": "UAE labor law knowledge",
+        "priority": "essential",
+        "proficiency_level": "intermediate"
+      },
+      {
+        "skill": "MOHRE procedures",
+        "priority": "essential",
+        "proficiency_level": "intermediate"
+      },
+      {
+        "skill": "Visa and immigration processes",
+        "priority": "essential",
+        "proficiency_level": "intermediate"
+      },
+      {
+        "skill": "Document control",
+        "priority": "essential",
+        "proficiency_level": "advanced"
+      },
+      {
+        "skill": "UAE VAT knowledge",
+        "priority": "essential",
+        "proficiency_level": "intermediate"
+      },
+      {
+        "skill": "Basic accounting principles (receivables, payables, invoicing)",
+        "priority": "essential",
+        "proficiency_level": "intermediate"
+      },
+      {
+        "skill": "Employee lifecycle management (onboarding/offboarding)",
+        "priority": "essential",
+        "proficiency_level": "advanced"
+      },
+      {
+        "skill": "Payroll preparation and WPS submissions",
+        "priority": "essential",
+        "proficiency_level": "intermediate"
+      },
+      {
+        "skill": "Attendance and leave tracking",
+        "priority": "essential",
+        "proficiency_level": "intermediate"
+      },
+      {
+        "skill": "Recruitment coordination",
+        "priority": "essential",
+        "proficiency_level": "intermediate"
+      },
+      {
+        "skill": "Office administration",
+        "priority": "essential",
+        "proficiency_level": "advanced"
+      },
+      {
+        "skill": "Vendor management",
+        "priority": "important",
+        "proficiency_level": "intermediate"
+      },
+      {
+        "skill": "Procurement coordination",
+        "priority": "important",
+        "proficiency_level": "intermediate"
+      },
+      {
+        "skill": "Trade license and tenancy contract management",
+        "priority": "important",
+        "proficiency_level": "intermediate"
+      },
+      {
+        "skill": "Accounts receivables tracking and invoice follow-ups",
+        "priority": "important",
+        "proficiency_level": "intermediate"
+      },
+      {
+        "skill": "Petty cash management",
+        "priority": "important",
+        "proficiency_level": "intermediate"
+      },
+      {
+        "skill": "Project documentation for fit-out projects (LPOs, material submittals, MEP coordination)",
+        "priority": "valuable",
+        "proficiency_level": "intermediate"
+      }
+    ],
+    "technologies": [
+      {
+        "technology": "MS Excel",
+        "priority": "essential",
+        "version": null
+      },
+      {
+        "technology": "MS Word",
+        "priority": "essential",
+        "version": null
+      },
+      {
+        "technology": "MS Office",
+        "priority": "essential",
+        "version": null
+      },
+      {
+        "technology": "HR/ERP systems",
+        "priority": "important",
+        "version": null
+      },
+      {
+        "technology": "Zoho",
+        "priority": "valuable",
+        "version": null
+      },
+      {
+        "technology": "Odoo",
+        "priority": "valuable",
+        "version": null
+      },
+      {
+        "technology": "Tally",
+        "priority": "valuable",
+        "version": null
+      },
+      {
+        "technology": "QuickBooks",
+        "priority": "valuable",
+        "version": null
+      }
+    ],
+    "language_proficiency": null,
+    "qualifications": {
+      "education": [
+        {
+          "degree": "Bachelor's degree",
+          "field": "Business Administration, Human Resources, Accounting, or a related field",
+          "priority": "essential"
+        }
+      ],
+      "certifications": null
+    },
+    "experience": {
+      "level": "mid",
+      "years_total": {
+        "min": 3,
+        "max": null
+      },
+      "years_relevant": {
+        "min": 3,
+        "max": null
+      },
+      "industry_experience": [
+        {
+          "industry": "fit-out",
+          "priority": "important"
+        },
+        {
+          "industry": "joinery",
+          "priority": "important"
+        },
+        {
+          "industry": "interior design",
+          "priority": "important"
+        },
+        {
+          "industry": "construction",
+          "priority": "important"
+        },
+        {
+          "industry": "UAE market",
+          "priority": "important"
+        },
+        {
+          "industry": "small-to-mid-size design and build or contracting firm",
+          "priority": "valuable"
+        }
+      ],
+      "leadership": {
+        "required": false,
+        "team_size": null,
+        "priority": "supplementary"
+      }
+    },
+    "location": null,
+    "employment_details": {
+      "type": "full_time",
+      "urgency": null,
+      "salary_range": {
+        "min": null,
+        "max": null,
+        "currency": "AED",
+        "frequency": "annually"
+      },
+      "benefits": [
+        "Competitive salary",
+        "Medical insurance",
+        "Annual leave",
+        "End-of-service benefits per UAE law"
+      ]
+    },
+    "soft_skills": [
+      {
+        "skill": "Attention to detail",
+        "priority": "essential",
+        "context": "keeping documentation airtight and maintaining paper trails"
+      },
+      {
+        "skill": "Discretion with confidential information",
+        "priority": "essential",
+        "context": "handling HR and personnel data"
+      },
+      {
+        "skill": "Multitasking and prioritization",
+        "priority": "essential",
+        "context": "juggling competing priorities under pressure"
+      },
+      {
+        "skill": "Dependability",
+        "priority": "essential",
+        "context": "operational backbone role"
+      },
+      {
+        "skill": "Coordination",
+        "priority": "essential",
+        "context": "coordinating between factory, site teams, and management"
+      },
+      {
+        "skill": "Written and verbal communication",
+        "priority": "essential",
+        "context": "correspondence with clients, suppliers, and internal teams"
+      },
+      {
+        "skill": "Organization",
+        "priority": "essential",
+        "context": "document control and record keeping"
+      }
+    ],
+    "project_context": {
+      "types": [
+        "residential fit-out",
+        "retail fit-out",
+        "corporate interiors",
+        "bespoke joinery"
+      ],
+      "methodologies": [
+        "document control",
+        "compliance-driven administration"
+      ],
+      "environment": null
+    },
+    "team_context": {
+      "size": null,
+      "structure": "cross-functional role supporting office, factory, and site teams",
+      "reporting_to": "Managing Director / Operations Manager"
+    },
+    "compliance_legal": {
+      "visa_sponsorship": null,
+      "security_clearance": null,
+      "background_check": null
+    },
+    "cultural_fit": {
+      "company_values": [
+        "craftsmanship",
+        "quality",
+        "client satisfaction",
+        "collaboration"
+      ],
+      "work_style": [
+        "detail-oriented",
+        "dependable",
+        "discreet",
+        "adaptable",
+        "multi-hat wearer",
+        "coordination-focused",
+        "able to work under pressure"
+      ]
+    },
+    "growth_opportunities": [
+      "Room to grow into a Senior HR & Admin role as the company scales",
+      "Room to grow into an Operations role as the company scales",
+      "Exposure to diverse projects across residential, retail, and corporate segments"
+    ]
+  },
+  "relevance": {
+    "donna-rose-ortiz-167590199": 1.0
+  },
+  "source": "reverse_match",
+  "seed_id": "donna-rose-ortiz-167590199",
+  "model": "claude-opus-4.7",
+  "prompt_version": "v1"
+}

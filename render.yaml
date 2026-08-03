@@ -1,0 +1,16 @@
+services:
+  - type: web
+    name: contra6-scoring-api
+    runtime: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn api.main:app --host 0.0.0.0 --port $PORT
+    envVars:
+      - key: ANTHROPIC_API_KEY
+        sync: false
+      - key: LLM_PROVIDER
+        value: anthropic
+      - key: PYTHON_VERSION
+        value: "3.11.0"
+      - key: COPILOT_SKIP_CLI_DOWNLOAD
+        value: "1"

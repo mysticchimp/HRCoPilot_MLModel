@@ -1,0 +1,353 @@
+{
+  "case_id": "linkedin:lipna-s-144762201",
+  "dataset": "linkedin",
+  "jd_text": "# Head of Human Resources\n\n## About the Role\n\nWe are seeking an accomplished **Head of Human Resources** to lead our global people strategy across multiple high-growth regions. Reporting directly to the CEO, you will serve as a strategic partner to the executive team while owning end-to-end HR operations, talent acquisition, and organizational development across the GCC, APAC, and MENA markets. This is a high-visibility leadership role for someone who thrives at the intersection of strategic HR and executive-level business partnership.\n\n## Key Responsibilities\n\n- Design and execute the global human resources strategy in alignment with the company's growth objectives across GCC, APAC, and MENA regions.\n- Lead executive and senior-level talent acquisition, building strong pipelines for niche and hard-to-fill roles across geographies.\n- Partner directly with the CEO and C-suite on organizational design, workforce planning, succession, and leadership development.\n- Oversee the full employee lifecycle: recruitment, onboarding, performance management, compensation, retention, and offboarding.\n- Build and scale HR policies, processes, and compliance frameworks tailored to local labor laws across multiple jurisdictions (UAE, KSA, Singapore, India, Egypt, and others).\n- Champion employer branding initiatives to attract top-tier talent in competitive regional markets.\n- Serve as a trusted advisor and confidant to the CEO on sensitive people matters, executive communications, and cross-functional priorities.\n- Coordinate executive calendars, board interactions, and high-priority stakeholder engagements as needed.\n- Drive culture, DE&I, and employee engagement programs across a distributed, multicultural workforce.\n- Manage HR budgets, vendor relationships, and HRIS platforms to ensure operational excellence.\n\n## Required Qualifications\n\n- 10+ years of progressive HR experience, with at least 4\u20135 years in a senior leadership or Head of HR capacity.\n- Proven track record of hiring executive and specialized talent across **GCC, APAC, and MENA** regions.\n- Deep understanding of regional labor laws, visa/immigration processes, and cultural nuances across these markets.\n- Demonstrated experience working closely with founders, CEOs, or C-level executives as a strategic partner.\n- Strong background in full-cycle recruitment for senior and hard-to-fill positions.\n- Exceptional stakeholder management, executive communication, and discretion when handling confidential matters.\n- Bachelor's degree in Human Resources, Business Administration, Psychology, or a related field.\n\n## Preferred Qualifications\n\n- Experience in fast-paced, high-growth environments such as startups, scale-ups, or expanding multinational businesses.\n- MBA or Master's degree in HR/Organizational Behavior.\n- Global HR certifications (SHRM-SCP, SPHR, CIPD Level 7, or equivalent).\n- Prior experience combining HR leadership with executive assistant or Chief of Staff-type responsibilities.\n- Multilingual capabilities (English required; Arabic, Hindi, or an APAC language a plus).\n- Familiarity with modern HRIS and ATS platforms (Workday, BambooHR, Greenhouse, Lever, etc.).\n\n## What We Offer\n\n- Direct reporting line to the CEO and a seat at the leadership table.\n- Competitive executive compensation package with performance-based incentives.\n- Opportunity to shape the people function of a rapidly scaling multi-regional business.\n- Flexible, hybrid working arrangements and international travel opportunities.\n- A collaborative, ambitious, and globally diverse team.",
+  "parsed_jd": {
+    "role": "Head of Human Resources",
+    "company": {
+      "name": "Undisclosed",
+      "size": "medium",
+      "stage": "growth"
+    },
+    "industry": [
+      "human resources",
+      "multi-regional business"
+    ],
+    "role_objectives": [
+      "Lead global people strategy across multiple high-growth regions",
+      "Serve as strategic partner to the executive team",
+      "Own end-to-end HR operations, talent acquisition, and organizational development",
+      "Shape the people function of a rapidly scaling multi-regional business"
+    ],
+    "responsibilities": [
+      "Design and execute the global human resources strategy in alignment with the company's growth objectives across GCC, APAC, and MENA regions",
+      "Lead executive and senior-level talent acquisition, building strong pipelines for niche and hard-to-fill roles across geographies",
+      "Partner directly with the CEO and C-suite on organizational design, workforce planning, succession, and leadership development",
+      "Oversee the full employee lifecycle: recruitment, onboarding, performance management, compensation, retention, and offboarding",
+      "Build and scale HR policies, processes, and compliance frameworks tailored to local labor laws across multiple jurisdictions (UAE, KSA, Singapore, India, Egypt, and others)",
+      "Champion employer branding initiatives to attract top-tier talent in competitive regional markets",
+      "Serve as a trusted advisor and confidant to the CEO on sensitive people matters, executive communications, and cross-functional priorities",
+      "Coordinate executive calendars, board interactions, and high-priority stakeholder engagements as needed",
+      "Drive culture, DE&I, and employee engagement programs across a distributed, multicultural workforce",
+      "Manage HR budgets, vendor relationships, and HRIS platforms to ensure operational excellence"
+    ],
+    "skills": [
+      {
+        "skill": "Global HR Strategy",
+        "priority": "essential",
+        "proficiency_level": "expert"
+      },
+      {
+        "skill": "Executive Talent Acquisition",
+        "priority": "essential",
+        "proficiency_level": "expert"
+      },
+      {
+        "skill": "Full-Cycle Recruitment",
+        "priority": "essential",
+        "proficiency_level": "expert"
+      },
+      {
+        "skill": "Organizational Design",
+        "priority": "essential",
+        "proficiency_level": "advanced"
+      },
+      {
+        "skill": "Workforce Planning",
+        "priority": "essential",
+        "proficiency_level": "advanced"
+      },
+      {
+        "skill": "Succession Planning",
+        "priority": "essential",
+        "proficiency_level": "advanced"
+      },
+      {
+        "skill": "Leadership Development",
+        "priority": "essential",
+        "proficiency_level": "advanced"
+      },
+      {
+        "skill": "Performance Management",
+        "priority": "essential",
+        "proficiency_level": "advanced"
+      },
+      {
+        "skill": "Compensation Management",
+        "priority": "essential",
+        "proficiency_level": "advanced"
+      },
+      {
+        "skill": "Labor Law Compliance",
+        "priority": "essential",
+        "proficiency_level": "advanced"
+      },
+      {
+        "skill": "Visa/Immigration Processes",
+        "priority": "essential",
+        "proficiency_level": "advanced"
+      },
+      {
+        "skill": "HR Policy Development",
+        "priority": "essential",
+        "proficiency_level": "advanced"
+      },
+      {
+        "skill": "Employee Lifecycle Management",
+        "priority": "essential",
+        "proficiency_level": "expert"
+      },
+      {
+        "skill": "Employer Branding",
+        "priority": "important",
+        "proficiency_level": "advanced"
+      },
+      {
+        "skill": "DE&I Programs",
+        "priority": "important",
+        "proficiency_level": "advanced"
+      },
+      {
+        "skill": "Employee Engagement",
+        "priority": "important",
+        "proficiency_level": "advanced"
+      },
+      {
+        "skill": "HR Budget Management",
+        "priority": "important",
+        "proficiency_level": "advanced"
+      },
+      {
+        "skill": "Vendor Management",
+        "priority": "important",
+        "proficiency_level": "intermediate"
+      },
+      {
+        "skill": "Culture Building",
+        "priority": "important",
+        "proficiency_level": "advanced"
+      },
+      {
+        "skill": "Chief of Staff Responsibilities",
+        "priority": "valuable",
+        "proficiency_level": "intermediate"
+      },
+      {
+        "skill": "Executive Assistant Support",
+        "priority": "valuable",
+        "proficiency_level": "intermediate"
+      }
+    ],
+    "technologies": [
+      {
+        "technology": "HRIS Platforms",
+        "priority": "important",
+        "version": null
+      },
+      {
+        "technology": "ATS Platforms",
+        "priority": "important",
+        "version": null
+      },
+      {
+        "technology": "Workday",
+        "priority": "valuable",
+        "version": null
+      },
+      {
+        "technology": "BambooHR",
+        "priority": "valuable",
+        "version": null
+      },
+      {
+        "technology": "Greenhouse",
+        "priority": "valuable",
+        "version": null
+      },
+      {
+        "technology": "Lever",
+        "priority": "valuable",
+        "version": null
+      }
+    ],
+    "language_proficiency": null,
+    "qualifications": {
+      "education": [
+        {
+          "degree": "Bachelor's Degree",
+          "field": "Human Resources, Business Administration, Psychology, or related field",
+          "priority": "essential"
+        },
+        {
+          "degree": "MBA or Master's Degree",
+          "field": "HR/Organizational Behavior",
+          "priority": "important"
+        }
+      ],
+      "certifications": [
+        {
+          "certification": "SHRM-SCP",
+          "priority": "valuable",
+          "timeline": null
+        },
+        {
+          "certification": "SPHR",
+          "priority": "valuable",
+          "timeline": null
+        },
+        {
+          "certification": "CIPD Level 7",
+          "priority": "valuable",
+          "timeline": null
+        }
+      ]
+    },
+    "experience": {
+      "level": "executive",
+      "years_total": {
+        "min": 10,
+        "max": null
+      },
+      "years_relevant": {
+        "min": 4,
+        "max": 5
+      },
+      "industry_experience": [
+        {
+          "industry": "startups",
+          "priority": "important"
+        },
+        {
+          "industry": "scale-ups",
+          "priority": "important"
+        },
+        {
+          "industry": "multinational businesses",
+          "priority": "important"
+        },
+        {
+          "industry": "high-growth environments",
+          "priority": "important"
+        }
+      ],
+      "leadership": {
+        "required": true,
+        "team_size": null,
+        "priority": "essential"
+      }
+    },
+    "location": null,
+    "employment_details": {
+      "type": "full_time",
+      "urgency": null,
+      "salary_range": {
+        "min": null,
+        "max": null,
+        "currency": null,
+        "frequency": "annually"
+      },
+      "benefits": [
+        "Competitive executive compensation package",
+        "Performance-based incentives",
+        "Flexible, hybrid working arrangements",
+        "International travel opportunities",
+        "Direct reporting line to CEO",
+        "Seat at the leadership table"
+      ]
+    },
+    "soft_skills": [
+      {
+        "skill": "Executive Communication",
+        "priority": "essential",
+        "context": "CEO and C-suite partnership"
+      },
+      {
+        "skill": "Stakeholder Management",
+        "priority": "essential",
+        "context": "board interactions and high-priority engagements"
+      },
+      {
+        "skill": "Discretion",
+        "priority": "essential",
+        "context": "handling confidential matters and sensitive people issues"
+      },
+      {
+        "skill": "Strategic Thinking",
+        "priority": "essential",
+        "context": "aligning HR with business growth objectives"
+      },
+      {
+        "skill": "Cultural Awareness",
+        "priority": "essential",
+        "context": "distributed, multicultural workforce across GCC, APAC, MENA"
+      },
+      {
+        "skill": "Leadership",
+        "priority": "essential",
+        "context": "leading global people function"
+      },
+      {
+        "skill": "Trusted Advisor",
+        "priority": "essential",
+        "context": "CEO confidant on sensitive matters"
+      },
+      {
+        "skill": "Cross-functional Collaboration",
+        "priority": "important",
+        "context": "working across regions and functions"
+      }
+    ],
+    "project_context": {
+      "types": [
+        "global HR strategy",
+        "executive talent acquisition",
+        "organizational design",
+        "compliance frameworks",
+        "employer branding",
+        "DE&I initiatives"
+      ],
+      "methodologies": null,
+      "environment": null
+    },
+    "team_context": {
+      "size": null,
+      "structure": "global, distributed, multicultural workforce across GCC, APAC, and MENA regions",
+      "reporting_to": "CEO"
+    },
+    "compliance_legal": {
+      "visa_sponsorship": null,
+      "security_clearance": null,
+      "background_check": null
+    },
+    "cultural_fit": {
+      "company_values": [
+        "collaborative",
+        "ambitious",
+        "globally diverse",
+        "high-growth",
+        "strategic"
+      ],
+      "work_style": [
+        "strategic partner",
+        "trusted advisor",
+        "discretion-oriented",
+        "executive-facing",
+        "multicultural",
+        "fast-paced"
+      ]
+    },
+    "growth_opportunities": [
+      "Direct reporting line to the CEO and a seat at the leadership table",
+      "Opportunity to shape the people function of a rapidly scaling multi-regional business",
+      "High-visibility leadership role at the intersection of strategic HR and executive-level business partnership",
+      "International exposure across GCC, APAC, and MENA markets"
+    ]
+  },
+  "relevance": {
+    "lipna-s-144762201": 1.0
+  },
+  "source": "reverse_match",
+  "seed_id": "lipna-s-144762201",
+  "model": "claude-opus-4.7",
+  "prompt_version": "v1"
+}

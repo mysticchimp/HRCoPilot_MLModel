@@ -1,0 +1,377 @@
+{
+  "case_id": "linkedin:mohammed-haziq-baig-692225232",
+  "dataset": "linkedin",
+  "jd_text": "# HR and Administration Manager\n\n## About the Role\n\nWe are seeking an experienced and proactive **HR and Administration Manager** to lead our people operations and office administration functions. In this dual-focused role, you will be responsible for shaping a positive workplace culture, managing the full employee lifecycle, and ensuring the smooth day-to-day running of our office. You'll partner closely with leadership to align HR strategy with business goals while overseeing administrative operations that keep the organization running efficiently.\n\nThis is an excellent opportunity for a well-rounded HR professional who thrives in a hands-on, cross-functional environment and enjoys balancing strategic initiatives with operational execution.\n\n## Key Responsibilities\n\n### Human Resources\n- Oversee the end-to-end employee lifecycle including recruitment, onboarding, performance management, engagement, and offboarding.\n- Develop, implement, and maintain HR policies, procedures, and employee handbooks in compliance with applicable labor laws and regulations.\n- Manage payroll coordination, benefits administration, and employee compensation processes in partnership with the finance team.\n- Lead employee relations efforts, resolving workplace issues, conducting investigations, and fostering a healthy, inclusive work culture.\n- Drive learning and development initiatives, including training programs, career growth plans, and succession planning.\n- Manage performance appraisal cycles and support managers with coaching, feedback, and talent development.\n- Maintain accurate HR records, HRIS data, and generate reports on key people metrics for leadership.\n- Ensure statutory compliance across employment laws, PF, ESI, gratuity, and other regulatory requirements.\n\n### Administration\n- Oversee general office administration, including facilities management, vendor coordination, procurement, and workplace safety.\n- Manage relationships with external service providers such as housekeeping, security, IT vendors, and travel agencies.\n- Plan and coordinate company events, employee engagement activities, town halls, and offsites.\n- Oversee office budgets, administrative expenses, and cost optimization initiatives.\n- Ensure the workplace is well-maintained, welcoming, and compliant with health and safety standards.\n- Manage travel bookings, visa processing, and logistics support for employees and visitors.\n\n## Required Qualifications\n\n- Bachelor's degree in Human Resources, Business Administration, or a related field (MBA / PGDM in HR preferred).\n- 6+ years of progressive experience in HR and administrative roles, with at least 2 years in a managerial capacity.\n- Strong working knowledge of local labor laws, statutory compliance, and HR best practices.\n- Proven experience managing the full employee lifecycle and running end-to-end HR operations.\n- Hands-on experience with HRIS platforms, payroll systems, and MS Office / Google Workspace.\n- Excellent interpersonal, communication, and conflict-resolution skills.\n- Strong organizational abilities with the capacity to manage multiple priorities in a fast-paced environment.\n- High level of discretion, integrity, and confidentiality when handling sensitive information.\n\n## Preferred Qualifications\n\n- Experience working in a mid-sized organization or high-growth environment.\n- Exposure to employee engagement, DEI, and culture-building initiatives.\n- Familiarity with vendor negotiation, facility management, and office setup / relocation projects.\n- Certification in HR (SHRM-CP, PHR, or equivalent) is a plus.\n- Experience partnering with senior leadership on strategic HR initiatives.\n\n## What We Offer\n\n- A collaborative, people-first work environment where your contributions directly shape culture.\n- Competitive compensation and comprehensive benefits.\n- Opportunities for professional growth and leadership development.\n- A supportive team that values ownership, initiative, and impact.",
+  "parsed_jd": {
+    "role": "HR and Administration Manager",
+    "company": {
+      "name": "Not Specified",
+      "size": null,
+      "stage": null
+    },
+    "industry": [
+      "Human Resources",
+      "Administration"
+    ],
+    "role_objectives": [
+      "Lead people operations and office administration functions",
+      "Shape a positive workplace culture",
+      "Manage the full employee lifecycle",
+      "Ensure the smooth day-to-day running of the office",
+      "Partner with leadership to align HR strategy with business goals",
+      "Oversee administrative operations for organizational efficiency"
+    ],
+    "responsibilities": [
+      "Oversee the end-to-end employee lifecycle including recruitment, onboarding, performance management, engagement, and offboarding",
+      "Develop, implement, and maintain HR policies, procedures, and employee handbooks in compliance with applicable labor laws and regulations",
+      "Manage payroll coordination, benefits administration, and employee compensation processes in partnership with the finance team",
+      "Lead employee relations efforts, resolving workplace issues, conducting investigations, and fostering a healthy, inclusive work culture",
+      "Drive learning and development initiatives, including training programs, career growth plans, and succession planning",
+      "Manage performance appraisal cycles and support managers with coaching, feedback, and talent development",
+      "Maintain accurate HR records, HRIS data, and generate reports on key people metrics for leadership",
+      "Ensure statutory compliance across employment laws, PF, ESI, gratuity, and other regulatory requirements",
+      "Oversee general office administration, including facilities management, vendor coordination, procurement, and workplace safety",
+      "Manage relationships with external service providers such as housekeeping, security, IT vendors, and travel agencies",
+      "Plan and coordinate company events, employee engagement activities, town halls, and offsites",
+      "Oversee office budgets, administrative expenses, and cost optimization initiatives",
+      "Ensure the workplace is well-maintained, welcoming, and compliant with health and safety standards",
+      "Manage travel bookings, visa processing, and logistics support for employees and visitors"
+    ],
+    "skills": [
+      {
+        "skill": "Employee Lifecycle Management",
+        "priority": "essential",
+        "proficiency_level": "advanced"
+      },
+      {
+        "skill": "HR Operations",
+        "priority": "essential",
+        "proficiency_level": "advanced"
+      },
+      {
+        "skill": "Labor Law Compliance",
+        "priority": "essential",
+        "proficiency_level": "advanced"
+      },
+      {
+        "skill": "Statutory Compliance (PF, ESI, Gratuity)",
+        "priority": "essential",
+        "proficiency_level": "advanced"
+      },
+      {
+        "skill": "Payroll Management",
+        "priority": "essential",
+        "proficiency_level": "advanced"
+      },
+      {
+        "skill": "Benefits Administration",
+        "priority": "essential",
+        "proficiency_level": "advanced"
+      },
+      {
+        "skill": "Employee Relations",
+        "priority": "essential",
+        "proficiency_level": "advanced"
+      },
+      {
+        "skill": "Performance Management",
+        "priority": "essential",
+        "proficiency_level": "advanced"
+      },
+      {
+        "skill": "HR Policy Development",
+        "priority": "essential",
+        "proficiency_level": "advanced"
+      },
+      {
+        "skill": "Recruitment and Onboarding",
+        "priority": "essential",
+        "proficiency_level": "advanced"
+      },
+      {
+        "skill": "Office Administration",
+        "priority": "essential",
+        "proficiency_level": "advanced"
+      },
+      {
+        "skill": "Facilities Management",
+        "priority": "essential",
+        "proficiency_level": "advanced"
+      },
+      {
+        "skill": "Vendor Management",
+        "priority": "essential",
+        "proficiency_level": "advanced"
+      },
+      {
+        "skill": "Budget Management",
+        "priority": "essential",
+        "proficiency_level": "intermediate"
+      },
+      {
+        "skill": "Learning and Development",
+        "priority": "essential",
+        "proficiency_level": "intermediate"
+      },
+      {
+        "skill": "Succession Planning",
+        "priority": "essential",
+        "proficiency_level": "intermediate"
+      },
+      {
+        "skill": "HR Reporting and Analytics",
+        "priority": "essential",
+        "proficiency_level": "intermediate"
+      },
+      {
+        "skill": "Event Planning and Coordination",
+        "priority": "essential",
+        "proficiency_level": "intermediate"
+      },
+      {
+        "skill": "Procurement",
+        "priority": "essential",
+        "proficiency_level": "intermediate"
+      },
+      {
+        "skill": "Workplace Safety Compliance",
+        "priority": "essential",
+        "proficiency_level": "intermediate"
+      },
+      {
+        "skill": "Travel and Logistics Coordination",
+        "priority": "essential",
+        "proficiency_level": "intermediate"
+      },
+      {
+        "skill": "Vendor Negotiation",
+        "priority": "important",
+        "proficiency_level": "intermediate"
+      },
+      {
+        "skill": "Employee Engagement",
+        "priority": "important",
+        "proficiency_level": "intermediate"
+      },
+      {
+        "skill": "DEI (Diversity, Equity, Inclusion) Initiatives",
+        "priority": "important",
+        "proficiency_level": "intermediate"
+      },
+      {
+        "skill": "Culture Building",
+        "priority": "important",
+        "proficiency_level": "intermediate"
+      },
+      {
+        "skill": "Strategic HR Partnership",
+        "priority": "important",
+        "proficiency_level": "intermediate"
+      },
+      {
+        "skill": "Office Setup and Relocation",
+        "priority": "valuable",
+        "proficiency_level": "intermediate"
+      }
+    ],
+    "technologies": [
+      {
+        "technology": "HRIS Platforms",
+        "priority": "essential",
+        "version": null
+      },
+      {
+        "technology": "Payroll Systems",
+        "priority": "essential",
+        "version": null
+      },
+      {
+        "technology": "MS Office",
+        "priority": "essential",
+        "version": null
+      },
+      {
+        "technology": "Google Workspace",
+        "priority": "essential",
+        "version": null
+      }
+    ],
+    "language_proficiency": null,
+    "qualifications": {
+      "education": [
+        {
+          "degree": "Bachelor's Degree",
+          "field": "Human Resources, Business Administration, or related field",
+          "priority": "essential"
+        },
+        {
+          "degree": "MBA / PGDM",
+          "field": "Human Resources",
+          "priority": "important"
+        }
+      ],
+      "certifications": [
+        {
+          "certification": "SHRM-CP",
+          "priority": "valuable",
+          "timeline": null
+        },
+        {
+          "certification": "PHR",
+          "priority": "valuable",
+          "timeline": null
+        }
+      ]
+    },
+    "experience": {
+      "level": "senior",
+      "years_total": {
+        "min": 6,
+        "max": null
+      },
+      "years_relevant": {
+        "min": 6,
+        "max": null
+      },
+      "industry_experience": [
+        {
+          "industry": "mid-sized organization",
+          "priority": "important"
+        },
+        {
+          "industry": "high-growth environment",
+          "priority": "important"
+        }
+      ],
+      "leadership": {
+        "required": true,
+        "team_size": null,
+        "priority": "essential"
+      }
+    },
+    "location": null,
+    "employment_details": {
+      "type": "full_time",
+      "urgency": null,
+      "salary_range": null,
+      "benefits": [
+        "Competitive compensation",
+        "Comprehensive benefits",
+        "Professional growth opportunities",
+        "Leadership development opportunities",
+        "Collaborative work environment"
+      ]
+    },
+    "soft_skills": [
+      {
+        "skill": "Interpersonal Skills",
+        "priority": "essential",
+        "context": "employee relations and cross-functional collaboration"
+      },
+      {
+        "skill": "Communication",
+        "priority": "essential",
+        "context": "partnering with leadership, employees, and vendors"
+      },
+      {
+        "skill": "Conflict Resolution",
+        "priority": "essential",
+        "context": "resolving workplace issues and conducting investigations"
+      },
+      {
+        "skill": "Organizational Skills",
+        "priority": "essential",
+        "context": "managing multiple priorities in a fast-paced environment"
+      },
+      {
+        "skill": "Discretion and Confidentiality",
+        "priority": "essential",
+        "context": "handling sensitive employee information"
+      },
+      {
+        "skill": "Integrity",
+        "priority": "essential",
+        "context": "handling sensitive information and employee relations"
+      },
+      {
+        "skill": "Proactive Attitude",
+        "priority": "essential",
+        "context": "leading people operations"
+      },
+      {
+        "skill": "Coaching and Feedback",
+        "priority": "important",
+        "context": "supporting managers with talent development"
+      },
+      {
+        "skill": "Cross-functional Collaboration",
+        "priority": "important",
+        "context": "hands-on, cross-functional environment"
+      },
+      {
+        "skill": "Strategic Thinking",
+        "priority": "important",
+        "context": "aligning HR strategy with business goals"
+      },
+      {
+        "skill": "Ownership and Initiative",
+        "priority": "important",
+        "context": "team values ownership, initiative, and impact"
+      }
+    ],
+    "project_context": {
+      "types": [
+        "employee lifecycle management",
+        "HR policy development",
+        "employee engagement",
+        "culture building",
+        "office administration",
+        "facility management",
+        "vendor management",
+        "office setup / relocation"
+      ],
+      "methodologies": null,
+      "environment": null
+    },
+    "team_context": {
+      "size": null,
+      "structure": "cross-functional, partnering with finance team and senior leadership",
+      "reporting_to": "Leadership"
+    },
+    "compliance_legal": {
+      "visa_sponsorship": null,
+      "security_clearance": null,
+      "background_check": null
+    },
+    "cultural_fit": {
+      "company_values": [
+        "people-first",
+        "ownership",
+        "initiative",
+        "impact",
+        "collaboration",
+        "inclusivity"
+      ],
+      "work_style": [
+        "hands-on",
+        "cross-functional",
+        "proactive",
+        "detail-oriented",
+        "strategic and operational balance"
+      ]
+    },
+    "growth_opportunities": [
+      "Professional growth",
+      "Leadership development",
+      "Strategic HR initiatives with senior leadership",
+      "Shaping company culture"
+    ]
+  },
+  "relevance": {
+    "mohammed-haziq-baig-692225232": 1.0
+  },
+  "source": "reverse_match",
+  "seed_id": "mohammed-haziq-baig-692225232",
+  "model": "claude-opus-4.7",
+  "prompt_version": "v1"
+}

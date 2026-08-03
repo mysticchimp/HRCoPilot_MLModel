@@ -1,0 +1,364 @@
+{
+  "case_id": "linkedin:hiroshi-de-silva-\u4f55\u6d1b\u8bd7\uff09-4317a7207",
+  "dataset": "linkedin",
+  "jd_text": "# HR Officer & Executive Assistant to CEO\n\n**Location:** Dubai, United Arab Emirates\n**Employment Type:** Full-time, On-site\n**Department:** Human Resources / Executive Office\n\n## About the Role\n\nWe are seeking a proactive and highly organized **HR Officer & Executive Assistant to the CEO** to join our growing team in the UAE. This dual-function role is ideal for a people-oriented HR professional who thrives in a fast-paced environment and enjoys balancing hands-on human resources responsibilities with high-level executive support. You will be a trusted partner to the CEO while playing a key role in shaping our talent pipeline, employee experience, and daily business operations.\n\n## Key Responsibilities\n\n### Human Resources\n- Manage the full recruitment lifecycle: sourcing, screening, interview coordination, offer management, and onboarding across multiple departments.\n- Partner with department heads to understand staffing needs and deliver tailored hiring solutions.\n- Oversee HR administration, including employee records, attendance tracking, leave management, and HRIS updates.\n- Handle employee relations matters with discretion, professionalism, and empathy.\n- Administer visa processing, renewals, cancellations, and Emirates ID coordination in line with UAE labor law.\n- Manage employee medical insurance enrollments, renewals, and claims support.\n- Support policy implementation, performance management cycles, and internal HR reporting.\n- Ensure compliance with UAE Labour Law, MOHRE, and relevant regulatory requirements.\n\n### Executive Support to the CEO\n- Manage the CEO's calendar, appointments, travel arrangements, and daily schedule.\n- Coordinate internal and external meetings, prepare agendas, and follow up on action items.\n- Draft correspondence, reports, and presentations on behalf of the CEO.\n- Handle confidential information with the utmost integrity and discretion.\n- Act as a liaison between the CEO and internal teams, clients, and external stakeholders.\n- Support strategic projects, business operations, and cross-functional initiatives as directed.\n\n## Required Qualifications\n\n- Bachelor's degree in Human Resources, Business Administration, or a related field.\n- 3+ years of combined experience in HR operations and/or executive support, preferably within the UAE.\n- Solid understanding of UAE Labour Law, visa procedures, and HR compliance requirements.\n- Proven experience managing end-to-end recruitment across diverse roles and industries.\n- Strong proficiency in Microsoft Office (Word, Excel, PowerPoint, Outlook) and HR reporting.\n- Excellent written and verbal communication skills in English.\n- Demonstrated ability to handle confidential information with professionalism.\n- Strong multitasking, prioritization, and time management skills.\n\n## Preferred Qualifications\n\n- Experience working directly with C-level executives or business founders.\n- Background in recruitment agency, executive search, or HR consulting.\n- Exposure to industries such as IT, marketing, finance, or customer service.\n- Familiarity with HRIS platforms and applicant tracking systems (ATS).\n- Arabic language skills are a plus but not required.\n- Currently based in the UAE with valid residency (or ability to relocate).\n\n## What We Offer\n\n- Competitive tax-free salary and annual performance bonus.\n- Comprehensive medical insurance and annual flight allowance.\n- Direct exposure to leadership, strategy, and business decision-making.\n- A collaborative, multicultural work environment.\n- Clear pathways for professional growth in HR and business operations.\n\n---\n\n*We are an equal opportunity employer and welcome applications from all qualified candidates.*",
+  "parsed_jd": {
+    "role": "HR Officer & Executive Assistant to CEO",
+    "company": {
+      "name": "Confidential",
+      "size": null,
+      "stage": "growth"
+    },
+    "industry": [
+      "Human Resources",
+      "Executive Services"
+    ],
+    "role_objectives": [
+      "Serve as a trusted partner to the CEO",
+      "Shape the talent pipeline and employee experience",
+      "Support daily business operations",
+      "Ensure HR compliance with UAE regulations",
+      "Deliver seamless executive support"
+    ],
+    "responsibilities": [
+      "Manage the full recruitment lifecycle: sourcing, screening, interview coordination, offer management, and onboarding across multiple departments",
+      "Partner with department heads to understand staffing needs and deliver tailored hiring solutions",
+      "Oversee HR administration, including employee records, attendance tracking, leave management, and HRIS updates",
+      "Handle employee relations matters with discretion, professionalism, and empathy",
+      "Administer visa processing, renewals, cancellations, and Emirates ID coordination in line with UAE labor law",
+      "Manage employee medical insurance enrollments, renewals, and claims support",
+      "Support policy implementation, performance management cycles, and internal HR reporting",
+      "Ensure compliance with UAE Labour Law, MOHRE, and relevant regulatory requirements",
+      "Manage the CEO's calendar, appointments, travel arrangements, and daily schedule",
+      "Coordinate internal and external meetings, prepare agendas, and follow up on action items",
+      "Draft correspondence, reports, and presentations on behalf of the CEO",
+      "Handle confidential information with the utmost integrity and discretion",
+      "Act as a liaison between the CEO and internal teams, clients, and external stakeholders",
+      "Support strategic projects, business operations, and cross-functional initiatives as directed"
+    ],
+    "skills": [
+      {
+        "skill": "Full-cycle Recruitment",
+        "priority": "essential",
+        "proficiency_level": "advanced"
+      },
+      {
+        "skill": "HR Operations",
+        "priority": "essential",
+        "proficiency_level": "advanced"
+      },
+      {
+        "skill": "Executive Support",
+        "priority": "essential",
+        "proficiency_level": "advanced"
+      },
+      {
+        "skill": "UAE Labour Law Knowledge",
+        "priority": "essential",
+        "proficiency_level": "advanced"
+      },
+      {
+        "skill": "Visa Processing & Immigration Procedures",
+        "priority": "essential",
+        "proficiency_level": "advanced"
+      },
+      {
+        "skill": "HR Compliance",
+        "priority": "essential",
+        "proficiency_level": "advanced"
+      },
+      {
+        "skill": "Employee Relations",
+        "priority": "essential",
+        "proficiency_level": "advanced"
+      },
+      {
+        "skill": "Onboarding",
+        "priority": "essential",
+        "proficiency_level": "advanced"
+      },
+      {
+        "skill": "HR Reporting",
+        "priority": "essential",
+        "proficiency_level": "intermediate"
+      },
+      {
+        "skill": "Calendar Management",
+        "priority": "essential",
+        "proficiency_level": "advanced"
+      },
+      {
+        "skill": "Travel Coordination",
+        "priority": "essential",
+        "proficiency_level": "advanced"
+      },
+      {
+        "skill": "Meeting Coordination",
+        "priority": "essential",
+        "proficiency_level": "advanced"
+      },
+      {
+        "skill": "Drafting Correspondence & Reports",
+        "priority": "essential",
+        "proficiency_level": "advanced"
+      },
+      {
+        "skill": "Multitasking & Prioritization",
+        "priority": "essential",
+        "proficiency_level": "advanced"
+      },
+      {
+        "skill": "Time Management",
+        "priority": "essential",
+        "proficiency_level": "advanced"
+      },
+      {
+        "skill": "Performance Management",
+        "priority": "important",
+        "proficiency_level": "intermediate"
+      },
+      {
+        "skill": "Policy Implementation",
+        "priority": "important",
+        "proficiency_level": "intermediate"
+      },
+      {
+        "skill": "Medical Insurance Administration",
+        "priority": "important",
+        "proficiency_level": "intermediate"
+      },
+      {
+        "skill": "Stakeholder Liaison",
+        "priority": "important",
+        "proficiency_level": "advanced"
+      },
+      {
+        "skill": "Executive Search",
+        "priority": "valuable",
+        "proficiency_level": "intermediate"
+      },
+      {
+        "skill": "HR Consulting",
+        "priority": "valuable",
+        "proficiency_level": "intermediate"
+      }
+    ],
+    "technologies": [
+      {
+        "technology": "Microsoft Word",
+        "priority": "essential",
+        "version": null
+      },
+      {
+        "technology": "Microsoft Excel",
+        "priority": "essential",
+        "version": null
+      },
+      {
+        "technology": "Microsoft PowerPoint",
+        "priority": "essential",
+        "version": null
+      },
+      {
+        "technology": "Microsoft Outlook",
+        "priority": "essential",
+        "version": null
+      },
+      {
+        "technology": "HRIS Platforms",
+        "priority": "important",
+        "version": null
+      },
+      {
+        "technology": "Applicant Tracking Systems (ATS)",
+        "priority": "important",
+        "version": null
+      }
+    ],
+    "language_proficiency": null,
+    "qualifications": {
+      "education": [
+        {
+          "degree": "Bachelor's Degree",
+          "field": "Human Resources, Business Administration, or related field",
+          "priority": "essential"
+        }
+      ],
+      "certifications": null
+    },
+    "experience": {
+      "level": "mid",
+      "years_total": {
+        "min": 3,
+        "max": null
+      },
+      "years_relevant": {
+        "min": 3,
+        "max": null
+      },
+      "industry_experience": [
+        {
+          "industry": "UAE-based HR/Executive Support",
+          "priority": "important"
+        },
+        {
+          "industry": "Recruitment Agency",
+          "priority": "valuable"
+        },
+        {
+          "industry": "Executive Search",
+          "priority": "valuable"
+        },
+        {
+          "industry": "HR Consulting",
+          "priority": "valuable"
+        },
+        {
+          "industry": "Information Technology",
+          "priority": "valuable"
+        },
+        {
+          "industry": "Marketing",
+          "priority": "valuable"
+        },
+        {
+          "industry": "Finance",
+          "priority": "valuable"
+        },
+        {
+          "industry": "Customer Service",
+          "priority": "valuable"
+        }
+      ],
+      "leadership": {
+        "required": false,
+        "team_size": null,
+        "priority": "supplementary"
+      }
+    },
+    "location": null,
+    "employment_details": {
+      "type": "full_time",
+      "urgency": "flexible",
+      "salary_range": {
+        "min": null,
+        "max": null,
+        "currency": "AED",
+        "frequency": "annually"
+      },
+      "benefits": [
+        "Competitive tax-free salary",
+        "Annual performance bonus",
+        "Comprehensive medical insurance",
+        "Annual flight allowance",
+        "Multicultural work environment",
+        "Direct exposure to leadership and strategy"
+      ]
+    },
+    "soft_skills": [
+      {
+        "skill": "Discretion & Confidentiality",
+        "priority": "essential",
+        "context": "handling sensitive employee and executive information"
+      },
+      {
+        "skill": "Written Communication",
+        "priority": "essential",
+        "context": "drafting correspondence, reports, and presentations"
+      },
+      {
+        "skill": "Verbal Communication",
+        "priority": "essential",
+        "context": "liaising with internal teams, clients, and stakeholders"
+      },
+      {
+        "skill": "Organization",
+        "priority": "essential",
+        "context": "managing dual HR and executive support responsibilities"
+      },
+      {
+        "skill": "Proactivity",
+        "priority": "essential",
+        "context": "anticipating needs in a fast-paced environment"
+      },
+      {
+        "skill": "Professionalism",
+        "priority": "essential",
+        "context": "employee relations and confidential matters"
+      },
+      {
+        "skill": "Empathy",
+        "priority": "important",
+        "context": "employee relations matters"
+      },
+      {
+        "skill": "Integrity",
+        "priority": "essential",
+        "context": "handling confidential information"
+      },
+      {
+        "skill": "Collaboration",
+        "priority": "important",
+        "context": "cross-functional initiatives and multicultural environment"
+      },
+      {
+        "skill": "Adaptability",
+        "priority": "important",
+        "context": "balancing dual-function role in fast-paced environment"
+      }
+    ],
+    "project_context": {
+      "types": [
+        "recruitment",
+        "onboarding",
+        "HR compliance",
+        "visa administration",
+        "performance management",
+        "strategic executive projects",
+        "cross-functional initiatives"
+      ],
+      "methodologies": null,
+      "environment": null
+    },
+    "team_context": {
+      "size": null,
+      "structure": "dual-function role supporting HR department and Executive Office",
+      "reporting_to": "CEO"
+    },
+    "compliance_legal": {
+      "visa_sponsorship": null,
+      "security_clearance": null,
+      "background_check": null
+    },
+    "cultural_fit": {
+      "company_values": [
+        "integrity",
+        "professionalism",
+        "collaboration",
+        "multicultural inclusion",
+        "equal opportunity"
+      ],
+      "work_style": [
+        "proactive",
+        "highly organized",
+        "detail-oriented",
+        "people-oriented",
+        "fast-paced",
+        "discreet",
+        "collaborative",
+        "multitasker"
+      ]
+    },
+    "growth_opportunities": [
+      "Direct exposure to leadership, strategy, and business decision-making",
+      "Clear pathways for professional growth in HR and business operations"
+    ]
+  },
+  "relevance": {
+    "hiroshi-de-silva-\u4f55\u6d1b\u8bd7\uff09-4317a7207": 1.0
+  },
+  "source": "reverse_match",
+  "seed_id": "hiroshi-de-silva-\u4f55\u6d1b\u8bd7\uff09-4317a7207",
+  "model": "claude-opus-4.7",
+  "prompt_version": "v1"
+}

@@ -1,0 +1,362 @@
+{
+  "case_id": "linkedin:ramihanbali",
+  "dataset": "linkedin",
+  "jd_text": "# DEI & Social Impact Program Manager\n\n**Location:** Dubai, UAE (with regional travel across GCC & Egypt)\n**Department:** People & Culture / Social Impact\n**Employment Type:** Full-time\n\n## About the Role\n\nWe are seeking a purpose-driven **DEI & Social Impact Program Manager** to lead and scale inclusion, accessibility, and community-focused programs across our regional operations. This role sits at the intersection of Human Resources, Diversity Equity & Inclusion (DEI), and social purpose, and is ideal for someone who believes that great organizations are built when people of all abilities and backgrounds are empowered to thrive.\n\nYou will design, coordinate, and measure inclusion programs that create meaningful employment opportunities for underrepresented groups, partner with franchisees and community stakeholders, and champion youth development initiatives that shape the next generation of talent in the region.\n\n## Key Responsibilities\n\n- Lead the design, rollout, and continuous improvement of inclusive employment programs, including the recruitment, onboarding, and workplace integration of People of Determination across franchise and corporate locations.\n- Partner with franchisees, operations leaders, and community organizations across the UAE, KSA, Bahrain, and Egypt to launch and sustain inclusive workplaces.\n- Develop and implement inclusive hiring frameworks, accessibility policies, and workplace accommodations aligned with local regulations and global DEI best practices.\n- Design and facilitate career awareness, personality assessment, and self-discovery programs for high school and early-career audiences, supporting informed academic and career decisions.\n- Coach managers, HR business partners, and frontline leaders on inclusive leadership, unconscious bias, and psychologically safe team cultures.\n- Track, analyze, and report on DEI and social impact KPIs using people data and diagnostic assessments; translate insights into recommendations for leadership.\n- Build internal and external communications, case studies, and impact reports that showcase the organization's social purpose commitments.\n- Represent the organization at CSR forums, DEI conferences, and community partnership events across the region.\n\n## Required Qualifications\n\n- Bachelor's degree in Human Resources, Psychology, Social Sciences, Business, or a related field.\n- 4+ years of experience in HR, DEI, CSR, or social impact program management, preferably within the MENA region.\n- Demonstrated experience designing and executing inclusive recruitment and onboarding programs for People of Determination or other underrepresented groups.\n- Proven ability to manage multi-country programs and coordinate with franchise partners, NGOs, and government entities.\n- Strong grounding in HR policy development, employee engagement, and workplace inclusion.\n- Working proficiency in people analytics and data-driven decision-making.\n- Excellent written and verbal communication skills in English; Arabic is a strong advantage.\n\n## Preferred Qualifications\n\n- Certified Professional Coach (ICF or equivalent) with experience coaching individuals and leaders.\n- Experience delivering career discovery, psychometric, or diagnostic assessment programs for youth or students.\n- Familiarity with regional inclusion frameworks such as the UAE National Policy for People of Determination, Mowaamah (KSA), or similar accessibility standards.\n- Background working with retail, F&B, or franchise-model businesses.\n- Track record of building measurable social impact narratives and stakeholder reports.\n\n## What We Offer\n\n- The opportunity to build programs that create real, measurable social impact across the region.\n- A collaborative culture that values empathy, equity, and purpose-driven work.\n- Competitive salary, performance bonus, health insurance, and professional development support.\n- Exposure to senior leadership and cross-market strategic initiatives.\n\n*We are an equal opportunity employer and strongly encourage applications from People of Determination and candidates of all backgrounds.*",
+  "parsed_jd": {
+    "role": "DEI & Social Impact Program Manager",
+    "company": {
+      "name": "Unspecified Company",
+      "size": null,
+      "stage": null
+    },
+    "industry": [
+      "retail",
+      "food & beverage",
+      "franchise",
+      "social impact"
+    ],
+    "role_objectives": [
+      "Lead and scale inclusion, accessibility, and community-focused programs across regional operations",
+      "Create meaningful employment opportunities for underrepresented groups",
+      "Partner with franchisees and community stakeholders to build inclusive workplaces",
+      "Champion youth development initiatives that shape the next generation of talent in the region",
+      "Drive measurable social impact across the MENA region"
+    ],
+    "responsibilities": [
+      "Lead the design, rollout, and continuous improvement of inclusive employment programs, including recruitment, onboarding, and workplace integration of People of Determination across franchise and corporate locations",
+      "Partner with franchisees, operations leaders, and community organizations across the UAE, KSA, Bahrain, and Egypt to launch and sustain inclusive workplaces",
+      "Develop and implement inclusive hiring frameworks, accessibility policies, and workplace accommodations aligned with local regulations and global DEI best practices",
+      "Design and facilitate career awareness, personality assessment, and self-discovery programs for high school and early-career audiences",
+      "Coach managers, HR business partners, and frontline leaders on inclusive leadership, unconscious bias, and psychologically safe team cultures",
+      "Track, analyze, and report on DEI and social impact KPIs using people data and diagnostic assessments; translate insights into recommendations for leadership",
+      "Build internal and external communications, case studies, and impact reports that showcase the organization's social purpose commitments",
+      "Represent the organization at CSR forums, DEI conferences, and community partnership events across the region"
+    ],
+    "skills": [
+      {
+        "skill": "DEI Program Management",
+        "priority": "essential",
+        "proficiency_level": "advanced"
+      },
+      {
+        "skill": "Inclusive Employment Program Design",
+        "priority": "essential",
+        "proficiency_level": "advanced"
+      },
+      {
+        "skill": "Inclusive Hiring Frameworks",
+        "priority": "essential",
+        "proficiency_level": "advanced"
+      },
+      {
+        "skill": "Accessibility Policy Development",
+        "priority": "essential",
+        "proficiency_level": "advanced"
+      },
+      {
+        "skill": "HR Policy Development",
+        "priority": "essential",
+        "proficiency_level": "advanced"
+      },
+      {
+        "skill": "Multi-country Program Management",
+        "priority": "essential",
+        "proficiency_level": "advanced"
+      },
+      {
+        "skill": "Stakeholder Management",
+        "priority": "essential",
+        "proficiency_level": "advanced"
+      },
+      {
+        "skill": "People Analytics",
+        "priority": "essential",
+        "proficiency_level": "intermediate"
+      },
+      {
+        "skill": "Data-driven Decision Making",
+        "priority": "essential",
+        "proficiency_level": "intermediate"
+      },
+      {
+        "skill": "Employee Engagement",
+        "priority": "essential",
+        "proficiency_level": "advanced"
+      },
+      {
+        "skill": "Workplace Inclusion",
+        "priority": "essential",
+        "proficiency_level": "advanced"
+      },
+      {
+        "skill": "Program Design and Facilitation",
+        "priority": "essential",
+        "proficiency_level": "advanced"
+      },
+      {
+        "skill": "KPI Tracking and Reporting",
+        "priority": "essential",
+        "proficiency_level": "advanced"
+      },
+      {
+        "skill": "Coaching and Leadership Development",
+        "priority": "essential",
+        "proficiency_level": "advanced"
+      },
+      {
+        "skill": "Onboarding Program Design",
+        "priority": "essential",
+        "proficiency_level": "advanced"
+      },
+      {
+        "skill": "Career Discovery Program Design",
+        "priority": "important",
+        "proficiency_level": "intermediate"
+      },
+      {
+        "skill": "Psychometric Assessment Delivery",
+        "priority": "important",
+        "proficiency_level": "intermediate"
+      },
+      {
+        "skill": "Youth Development Programs",
+        "priority": "important",
+        "proficiency_level": "intermediate"
+      },
+      {
+        "skill": "CSR Program Management",
+        "priority": "important",
+        "proficiency_level": "advanced"
+      },
+      {
+        "skill": "Case Study and Impact Report Writing",
+        "priority": "important",
+        "proficiency_level": "advanced"
+      },
+      {
+        "skill": "Unconscious Bias Training",
+        "priority": "important",
+        "proficiency_level": "advanced"
+      },
+      {
+        "skill": "Social Impact Narrative Building",
+        "priority": "valuable",
+        "proficiency_level": "advanced"
+      },
+      {
+        "skill": "Regional Inclusion Framework Knowledge (UAE National Policy for People of Determination, Mowaamah)",
+        "priority": "valuable",
+        "proficiency_level": "intermediate"
+      }
+    ],
+    "technologies": [
+      {
+        "technology": "People Analytics Tools",
+        "priority": "important",
+        "version": null
+      },
+      {
+        "technology": "Diagnostic Assessment Tools",
+        "priority": "important",
+        "version": null
+      },
+      {
+        "technology": "Psychometric Assessment Platforms",
+        "priority": "valuable",
+        "version": null
+      }
+    ],
+    "language_proficiency": null,
+    "qualifications": {
+      "education": [
+        {
+          "degree": "Bachelor's degree",
+          "field": "Human Resources, Psychology, Social Sciences, Business, or related field",
+          "priority": "essential"
+        }
+      ],
+      "certifications": [
+        {
+          "certification": "Certified Professional Coach (ICF or equivalent)",
+          "priority": "important",
+          "timeline": null
+        }
+      ]
+    },
+    "experience": {
+      "level": "mid",
+      "years_total": {
+        "min": 4,
+        "max": null
+      },
+      "years_relevant": {
+        "min": 4,
+        "max": null
+      },
+      "industry_experience": [
+        {
+          "industry": "Human Resources",
+          "priority": "essential"
+        },
+        {
+          "industry": "DEI (Diversity, Equity & Inclusion)",
+          "priority": "essential"
+        },
+        {
+          "industry": "CSR (Corporate Social Responsibility)",
+          "priority": "essential"
+        },
+        {
+          "industry": "Social Impact Program Management",
+          "priority": "essential"
+        },
+        {
+          "industry": "MENA Region",
+          "priority": "important"
+        },
+        {
+          "industry": "Retail",
+          "priority": "valuable"
+        },
+        {
+          "industry": "F&B (Food & Beverage)",
+          "priority": "valuable"
+        },
+        {
+          "industry": "Franchise-model Businesses",
+          "priority": "valuable"
+        }
+      ],
+      "leadership": {
+        "required": false,
+        "team_size": null,
+        "priority": "important"
+      }
+    },
+    "location": null,
+    "employment_details": {
+      "type": "full_time",
+      "urgency": null,
+      "salary_range": null,
+      "benefits": [
+        "Competitive salary",
+        "Performance bonus",
+        "Health insurance",
+        "Professional development support",
+        "Exposure to senior leadership",
+        "Cross-market strategic initiatives"
+      ]
+    },
+    "soft_skills": [
+      {
+        "skill": "Written Communication",
+        "priority": "essential",
+        "context": "case studies, impact reports, and stakeholder communications"
+      },
+      {
+        "skill": "Verbal Communication",
+        "priority": "essential",
+        "context": "representing organization at forums and coaching leaders"
+      },
+      {
+        "skill": "Empathy",
+        "priority": "essential",
+        "context": "purpose-driven inclusion work with underrepresented groups"
+      },
+      {
+        "skill": "Collaboration",
+        "priority": "essential",
+        "context": "cross-functional partnership with franchisees, NGOs, and government entities"
+      },
+      {
+        "skill": "Purpose-driven Mindset",
+        "priority": "essential",
+        "context": "believes in empowering people of all abilities and backgrounds"
+      },
+      {
+        "skill": "Cross-cultural Awareness",
+        "priority": "essential",
+        "context": "working across GCC and Egypt regions"
+      },
+      {
+        "skill": "Strategic Thinking",
+        "priority": "important",
+        "context": "translating insights into leadership recommendations"
+      },
+      {
+        "skill": "Facilitation",
+        "priority": "important",
+        "context": "delivering programs to youth and early-career audiences"
+      },
+      {
+        "skill": "Coaching",
+        "priority": "important",
+        "context": "coaching managers and frontline leaders"
+      },
+      {
+        "skill": "Analytical Thinking",
+        "priority": "important",
+        "context": "diagnostic assessments and people data analysis"
+      }
+    ],
+    "project_context": {
+      "types": [
+        "inclusive employment programs",
+        "accessibility policy implementation",
+        "youth career development",
+        "CSR initiatives",
+        "DEI training",
+        "social impact reporting"
+      ],
+      "methodologies": [
+        "program management",
+        "data-driven decision-making",
+        "stakeholder engagement",
+        "coaching"
+      ],
+      "environment": null
+    },
+    "team_context": {
+      "size": null,
+      "structure": "Cross-functional role spanning People & Culture and Social Impact departments, working with franchisees, operations leaders, HR business partners, and community organizations",
+      "reporting_to": null
+    },
+    "compliance_legal": {
+      "visa_sponsorship": null,
+      "security_clearance": null,
+      "background_check": null
+    },
+    "cultural_fit": {
+      "company_values": [
+        "empathy",
+        "equity",
+        "purpose-driven work",
+        "inclusion",
+        "accessibility",
+        "social impact",
+        "diversity"
+      ],
+      "work_style": [
+        "collaborative",
+        "purpose-driven",
+        "cross-functional",
+        "community-focused",
+        "empathetic",
+        "data-informed"
+      ]
+    },
+    "growth_opportunities": [
+      "Exposure to senior leadership",
+      "Cross-market strategic initiatives",
+      "Professional development support",
+      "Opportunity to build programs with measurable social impact across the region"
+    ]
+  },
+  "relevance": {
+    "ramihanbali": 1.0
+  },
+  "source": "reverse_match",
+  "seed_id": "ramihanbali",
+  "model": "claude-opus-4.7",
+  "prompt_version": "v1"
+}

@@ -1,0 +1,324 @@
+{
+  "case_id": "linkedin:diksha-dey-971932253",
+  "dataset": "linkedin",
+  "jd_text": "```markdown\n# Recruitment Coordinator / Talent Acquisition Coordinator\n\n**Location:** Hybrid / On-site\n**Experience:** 2\u20134 years\n**Employment Type:** Full-time\n\n## About the Role\n\nWe are looking for a detail-oriented and proactive **Recruitment Coordinator** to join our growing Talent Acquisition team. In this role, you will be the backbone of our hiring operations \u2014 driving seamless interview coordination, candidate communication, and end-to-end recruitment logistics. You will work closely with recruiters, hiring managers, and interview panels to deliver an exceptional candidate experience and help us build high-performing teams.\n\nIf you thrive in a fast-paced environment, love keeping things organized, and are passionate about connecting great people to great opportunities, we'd love to hear from you.\n\n## What You'll Do\n\n- Partner with recruiters and hiring managers to understand hiring needs and drive recruitment activities across multiple open roles.\n- Source candidates through job portals, LinkedIn, employee referrals, and internal databases.\n- Screen incoming resumes and conduct initial phone screens to assess fit against role requirements.\n- Schedule and coordinate interviews across multiple time zones \u2014 including phone, virtual, face-to-face, and ad-hoc/last-minute panels.\n- Serve as the primary point of contact for candidates throughout the hiring lifecycle, ensuring clear and timely communication.\n- Maintain and update live trackers, interview dashboards, and recruitment reports to give stakeholders real-time visibility into pipeline health.\n- Document interview feedback promptly and ensure timely follow-ups with interviewers and hiring managers to keep processes on track.\n- Support offer rollouts, including compensation discussions and negotiation of packages within approved bands.\n- Coordinate pre-onboarding and onboarding activities to ensure a smooth transition for new hires.\n- Continuously improve scheduling workflows, candidate experience, and internal reporting processes.\n\n## What We're Looking For\n\n**Required:**\n- 2+ years of experience in recruitment coordination, talent acquisition, or HR operations.\n- Hands-on experience with the full recruitment lifecycle \u2014 sourcing, screening, scheduling, feedback tracking, and offer rollout.\n- Proven ability to manage high-volume interview scheduling, including complex and ad-hoc calendars.\n- Strong proficiency in maintaining trackers, reports, and dashboards (Excel / Google Sheets).\n- Excellent verbal and written communication skills, with a knack for engaging candidates and stakeholders professionally.\n- Strong attention to detail and the ability to juggle multiple priorities without dropping the ball.\n- Comfort working in a fast-paced environment with shifting priorities.\n\n**Preferred:**\n- Experience with ATS platforms (e.g., Greenhouse, Workday, Lever, Naukri RMS, or similar).\n- Exposure to compensation discussions and offer negotiation.\n- Experience partnering with hiring managers across technical and non-technical functions.\n- Familiarity with onboarding coordination and pre-joining engagement.\n- Bachelor's degree in Human Resources, Business Administration, or a related field.\n\n## Why Join Us\n\n- Be part of a collaborative and people-first talent team.\n- Own meaningful work with direct impact on how we grow.\n- Opportunities for growth into senior recruiting, sourcing, or HRBP tracks.\n- Competitive compensation, learning budget, and comprehensive benefits.\n```",
+  "parsed_jd": {
+    "role": "Recruitment Coordinator / Talent Acquisition Coordinator",
+    "company": {
+      "name": "Confidential",
+      "size": null,
+      "stage": "growth"
+    },
+    "industry": [
+      "Human Resources",
+      "Talent Acquisition",
+      "Recruitment"
+    ],
+    "role_objectives": [
+      "Drive seamless interview coordination and end-to-end recruitment logistics",
+      "Deliver an exceptional candidate experience throughout the hiring lifecycle",
+      "Serve as the backbone of hiring operations",
+      "Help build high-performing teams by connecting great people to great opportunities",
+      "Provide real-time visibility into pipeline health for stakeholders"
+    ],
+    "responsibilities": [
+      "Partner with recruiters and hiring managers to understand hiring needs and drive recruitment activities across multiple open roles",
+      "Source candidates through job portals, LinkedIn, employee referrals, and internal databases",
+      "Screen incoming resumes and conduct initial phone screens to assess fit against role requirements",
+      "Schedule and coordinate interviews across multiple time zones \u2014 including phone, virtual, face-to-face, and ad-hoc/last-minute panels",
+      "Serve as the primary point of contact for candidates throughout the hiring lifecycle, ensuring clear and timely communication",
+      "Maintain and update live trackers, interview dashboards, and recruitment reports to give stakeholders real-time visibility into pipeline health",
+      "Document interview feedback promptly and ensure timely follow-ups with interviewers and hiring managers to keep processes on track",
+      "Support offer rollouts, including compensation discussions and negotiation of packages within approved bands",
+      "Coordinate pre-onboarding and onboarding activities to ensure a smooth transition for new hires",
+      "Continuously improve scheduling workflows, candidate experience, and internal reporting processes"
+    ],
+    "skills": [
+      {
+        "skill": "Recruitment Coordination",
+        "priority": "essential",
+        "proficiency_level": "advanced"
+      },
+      {
+        "skill": "Full Recruitment Lifecycle Management",
+        "priority": "essential",
+        "proficiency_level": "advanced"
+      },
+      {
+        "skill": "Sourcing",
+        "priority": "essential",
+        "proficiency_level": "intermediate"
+      },
+      {
+        "skill": "Resume Screening",
+        "priority": "essential",
+        "proficiency_level": "intermediate"
+      },
+      {
+        "skill": "Phone Screening",
+        "priority": "essential",
+        "proficiency_level": "intermediate"
+      },
+      {
+        "skill": "High-Volume Interview Scheduling",
+        "priority": "essential",
+        "proficiency_level": "advanced"
+      },
+      {
+        "skill": "Calendar Management",
+        "priority": "essential",
+        "proficiency_level": "advanced"
+      },
+      {
+        "skill": "Candidate Experience Management",
+        "priority": "essential",
+        "proficiency_level": "advanced"
+      },
+      {
+        "skill": "Tracker and Dashboard Maintenance",
+        "priority": "essential",
+        "proficiency_level": "advanced"
+      },
+      {
+        "skill": "Recruitment Reporting",
+        "priority": "essential",
+        "proficiency_level": "intermediate"
+      },
+      {
+        "skill": "Interview Feedback Documentation",
+        "priority": "essential",
+        "proficiency_level": "intermediate"
+      },
+      {
+        "skill": "Offer Rollout",
+        "priority": "essential",
+        "proficiency_level": "intermediate"
+      },
+      {
+        "skill": "Compensation Discussions and Offer Negotiation",
+        "priority": "important",
+        "proficiency_level": "intermediate"
+      },
+      {
+        "skill": "HR Operations",
+        "priority": "important",
+        "proficiency_level": "intermediate"
+      },
+      {
+        "skill": "Onboarding Coordination",
+        "priority": "important",
+        "proficiency_level": "intermediate"
+      },
+      {
+        "skill": "Pre-Joining Engagement",
+        "priority": "important",
+        "proficiency_level": "intermediate"
+      },
+      {
+        "skill": "Cross-Functional Stakeholder Partnership",
+        "priority": "important",
+        "proficiency_level": "intermediate"
+      },
+      {
+        "skill": "Process Improvement",
+        "priority": "valuable",
+        "proficiency_level": "intermediate"
+      }
+    ],
+    "technologies": [
+      {
+        "technology": "Excel",
+        "priority": "essential",
+        "version": null
+      },
+      {
+        "technology": "Google Sheets",
+        "priority": "essential",
+        "version": null
+      },
+      {
+        "technology": "LinkedIn",
+        "priority": "essential",
+        "version": null
+      },
+      {
+        "technology": "Job Portals",
+        "priority": "essential",
+        "version": null
+      },
+      {
+        "technology": "ATS Platforms",
+        "priority": "important",
+        "version": null
+      },
+      {
+        "technology": "Greenhouse",
+        "priority": "important",
+        "version": null
+      },
+      {
+        "technology": "Workday",
+        "priority": "important",
+        "version": null
+      },
+      {
+        "technology": "Lever",
+        "priority": "important",
+        "version": null
+      },
+      {
+        "technology": "Naukri RMS",
+        "priority": "important",
+        "version": null
+      }
+    ],
+    "language_proficiency": null,
+    "qualifications": {
+      "education": [
+        {
+          "degree": "Bachelor's Degree",
+          "field": "Human Resources, Business Administration, or a related field",
+          "priority": "important"
+        }
+      ],
+      "certifications": null
+    },
+    "experience": {
+      "level": "mid",
+      "years_total": {
+        "min": 2,
+        "max": 4
+      },
+      "years_relevant": {
+        "min": 2,
+        "max": 4
+      },
+      "industry_experience": [
+        {
+          "industry": "Recruitment / Talent Acquisition",
+          "priority": "essential"
+        },
+        {
+          "industry": "HR Operations",
+          "priority": "important"
+        }
+      ],
+      "leadership": {
+        "required": false,
+        "team_size": null,
+        "priority": "supplementary"
+      }
+    },
+    "location": null,
+    "employment_details": {
+      "type": "full_time",
+      "urgency": null,
+      "salary_range": null,
+      "benefits": [
+        "Competitive compensation",
+        "Learning budget",
+        "Comprehensive benefits"
+      ]
+    },
+    "soft_skills": [
+      {
+        "skill": "Attention to Detail",
+        "priority": "essential",
+        "context": "juggling multiple priorities without dropping the ball"
+      },
+      {
+        "skill": "Verbal Communication",
+        "priority": "essential",
+        "context": "engaging candidates and stakeholders professionally"
+      },
+      {
+        "skill": "Written Communication",
+        "priority": "essential",
+        "context": "candidate and stakeholder engagement"
+      },
+      {
+        "skill": "Multitasking",
+        "priority": "essential",
+        "context": "managing multiple open roles and priorities"
+      },
+      {
+        "skill": "Proactiveness",
+        "priority": "essential",
+        "context": "driving recruitment operations"
+      },
+      {
+        "skill": "Organization",
+        "priority": "essential",
+        "context": "keeping recruitment logistics on track"
+      },
+      {
+        "skill": "Adaptability",
+        "priority": "essential",
+        "context": "working in fast-paced environment with shifting priorities"
+      },
+      {
+        "skill": "Time Management",
+        "priority": "important",
+        "context": "coordinating interviews across time zones"
+      },
+      {
+        "skill": "Stakeholder Management",
+        "priority": "important",
+        "context": "working with recruiters, hiring managers, and interview panels"
+      },
+      {
+        "skill": "Collaboration",
+        "priority": "important",
+        "context": "people-first talent team"
+      }
+    ],
+    "project_context": {
+      "types": [
+        "Recruitment lifecycle management",
+        "Interview coordination",
+        "Onboarding coordination",
+        "Recruitment reporting and analytics",
+        "Process improvement"
+      ],
+      "methodologies": null,
+      "environment": null
+    },
+    "team_context": {
+      "size": null,
+      "structure": "Talent Acquisition team working with recruiters, hiring managers, and interview panels",
+      "reporting_to": null
+    },
+    "compliance_legal": null,
+    "cultural_fit": {
+      "company_values": [
+        "people-first",
+        "collaboration",
+        "candidate experience focus",
+        "ownership",
+        "impact-driven"
+      ],
+      "work_style": [
+        "detail-oriented",
+        "proactive",
+        "organized",
+        "collaborative",
+        "fast-paced",
+        "adaptable to shifting priorities"
+      ]
+    },
+    "growth_opportunities": [
+      "Growth into senior recruiting track",
+      "Growth into sourcing track",
+      "Growth into HRBP (HR Business Partner) track",
+      "Learning budget for professional development",
+      "Ownership of meaningful work with direct impact on company growth"
+    ]
+  },
+  "relevance": {
+    "diksha-dey-971932253": 1.0
+  },
+  "source": "reverse_match",
+  "seed_id": "diksha-dey-971932253",
+  "model": "claude-opus-4.7",
+  "prompt_version": "v1"
+}

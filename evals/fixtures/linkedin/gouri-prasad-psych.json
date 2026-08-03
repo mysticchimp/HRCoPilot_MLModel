@@ -1,0 +1,381 @@
+{
+  "case_id": "linkedin:gouri-prasad-psych",
+  "dataset": "linkedin",
+  "jd_text": "# People & Culture Specialist (HR & Talent Acquisition)\n\n**Location:** Dubai, UAE (On-site)\n**Department:** People Operations\n**Reports to:** Head of People / Managing Director\n\n## About the Role\n\nWe're looking for a **People & Culture Specialist** to join a growing, values-driven organisation where human experience sits at the heart of everything we do. This is a hybrid HR generalist and talent acquisition role for someone who sees culture as a craft, candidate journeys as experiences worth designing, and policy as the scaffolding that lets people do their best work.\n\nYou'll partner closely with leadership to shape how we hire, onboard, engage, and retain talent \u2014 while embedding fair, transparent, and psychologically-informed people practices across the business. If you're equally comfortable authoring an employee handbook, running a grievance investigation, and closing out a candidate pipeline, we'd love to talk.\n\n## What You'll Do\n\n### Culture & Employee Experience\n- Design and evolve the company's culture framework, values, and internal engagement rituals.\n- Build people-centred engagement programmes that drive measurable improvements in satisfaction and retention.\n- Serve as a trusted first point of contact for employees \u2014 offering an empathetic, confidential \"open-door\" channel for concerns.\n\n### Talent Acquisition\n- Own the end-to-end recruitment lifecycle: sourcing, CV screening, interview coordination, offer negotiation, and onboarding.\n- Manage active candidate pipelines across multiple roles, maintaining accurate ATS/HRIS records.\n- Partner with hiring managers to write compelling job descriptions and reduce time-to-hire without compromising quality.\n- Design onboarding journeys and training materials that set new joiners up for success from day one.\n\n### HR Operations & Compliance\n- Author, maintain, and communicate HR policies, procedures, and the employee handbook in line with UAE labour law and internal standards.\n- Manage employee records, HRIS data, and people analytics dashboards with full data-protection discipline (GDPR / UAE PDPL).\n- Prepare HR reports to inform leadership decisions on workforce planning, engagement, and attrition.\n\n### Employee Relations & Offboarding\n- Run formal grievance and disciplinary procedures with fairness, documentation, and clear escalation protocols.\n- Own the end-of-service and offboarding lifecycle \u2014 including exit interviews, asset clearance, handovers, and final settlements.\n- Translate qualitative exit data into actionable retention insights.\n\n## What You'll Bring\n\n### Required\n- 2+ years of experience in an HR generalist, People Operations, or Talent Acquisition role.\n- Degree in **Organisational Psychology, Human Resources, Business, or a related field**.\n- Hands-on experience with **ATS and/or HRIS platforms** and confidence with people-analytics reporting.\n- Working knowledge of employment law, grievance procedures, and data-protection principles (GDPR or equivalent).\n- Demonstrated experience drafting HR policies, handbooks, or standard operating procedures.\n- Excellent written and verbal communication \u2014 you can write a policy, a job ad, and a difficult email with equal clarity.\n- Strong stakeholder management with the ability to handle sensitive situations with discretion and empathy.\n\n### Preferred\n- Background in **organisational or applied psychology**, behavioural science, or consumer insights.\n- Experience building HR or TA functions from the ground up in a scale-up or SME environment.\n- Exposure to neurodiversity, wellbeing, or mental-health-informed workplace programmes.\n- Familiarity with CRM tools (SAP, Finesse, or similar) and their crossover into HRIS workflows.\n- Experience working in the UAE or wider GCC region.\n\n## Why Join Us\n\n- Real ownership: your policies, hires, and culture initiatives will shape the company for years to come.\n- A leadership team that treats people strategy as a business strategy \u2014 not an afterthought.\n- Competitive salary, medical insurance, annual flight allowance, and 22 days of paid leave.\n- The chance to build something meaningful in one of the world's most dynamic talent markets.\n\n---\n\n*We're an equal-opportunity employer and welcome applicants from all backgrounds. If you need any accommodations during the interview process, please let us know.*",
+  "parsed_jd": {
+    "role": "People & Culture Specialist (HR & Talent Acquisition)",
+    "company": {
+      "name": "Undisclosed (values-driven scale-up/SME)",
+      "size": "small",
+      "stage": "growth"
+    },
+    "industry": [
+      "human resources",
+      "people operations"
+    ],
+    "role_objectives": [
+      "Shape how the company hires, onboards, engages, and retains talent",
+      "Embed fair, transparent, and psychologically-informed people practices across the business",
+      "Serve as a hybrid HR generalist and talent acquisition partner to leadership"
+    ],
+    "responsibilities": [
+      "Design and evolve the company's culture framework, values, and internal engagement rituals",
+      "Build people-centred engagement programmes that drive measurable improvements in satisfaction and retention",
+      "Serve as a trusted first point of contact for employees, offering an empathetic, confidential open-door channel for concerns",
+      "Own the end-to-end recruitment lifecycle: sourcing, CV screening, interview coordination, offer negotiation, and onboarding",
+      "Manage active candidate pipelines across multiple roles, maintaining accurate ATS/HRIS records",
+      "Partner with hiring managers to write compelling job descriptions and reduce time-to-hire without compromising quality",
+      "Design onboarding journeys and training materials that set new joiners up for success from day one",
+      "Author, maintain, and communicate HR policies, procedures, and the employee handbook in line with UAE labour law and internal standards",
+      "Manage employee records, HRIS data, and people analytics dashboards with full data-protection discipline (GDPR / UAE PDPL)",
+      "Prepare HR reports to inform leadership decisions on workforce planning, engagement, and attrition",
+      "Run formal grievance and disciplinary procedures with fairness, documentation, and clear escalation protocols",
+      "Own the end-of-service and offboarding lifecycle including exit interviews, asset clearance, handovers, and final settlements",
+      "Translate qualitative exit data into actionable retention insights"
+    ],
+    "skills": [
+      {
+        "skill": "HR Generalist",
+        "priority": "essential",
+        "proficiency_level": "intermediate"
+      },
+      {
+        "skill": "Talent Acquisition",
+        "priority": "essential",
+        "proficiency_level": "intermediate"
+      },
+      {
+        "skill": "End-to-end Recruitment Lifecycle Management",
+        "priority": "essential",
+        "proficiency_level": "intermediate"
+      },
+      {
+        "skill": "People Operations",
+        "priority": "essential",
+        "proficiency_level": "intermediate"
+      },
+      {
+        "skill": "People Analytics Reporting",
+        "priority": "essential",
+        "proficiency_level": "intermediate"
+      },
+      {
+        "skill": "Employment Law Knowledge",
+        "priority": "essential",
+        "proficiency_level": "intermediate"
+      },
+      {
+        "skill": "Grievance and Disciplinary Procedures",
+        "priority": "essential",
+        "proficiency_level": "intermediate"
+      },
+      {
+        "skill": "Data Protection Principles (GDPR/PDPL)",
+        "priority": "essential",
+        "proficiency_level": "intermediate"
+      },
+      {
+        "skill": "HR Policy and Handbook Drafting",
+        "priority": "essential",
+        "proficiency_level": "advanced"
+      },
+      {
+        "skill": "Standard Operating Procedures Authoring",
+        "priority": "essential",
+        "proficiency_level": "intermediate"
+      },
+      {
+        "skill": "Stakeholder Management",
+        "priority": "essential",
+        "proficiency_level": "advanced"
+      },
+      {
+        "skill": "Onboarding Program Design",
+        "priority": "essential",
+        "proficiency_level": "intermediate"
+      },
+      {
+        "skill": "Offboarding and Exit Management",
+        "priority": "essential",
+        "proficiency_level": "intermediate"
+      },
+      {
+        "skill": "Culture Framework Design",
+        "priority": "essential",
+        "proficiency_level": "intermediate"
+      },
+      {
+        "skill": "Employee Engagement Programme Design",
+        "priority": "essential",
+        "proficiency_level": "intermediate"
+      },
+      {
+        "skill": "Workforce Planning and Attrition Reporting",
+        "priority": "essential",
+        "proficiency_level": "intermediate"
+      },
+      {
+        "skill": "UAE Labour Law",
+        "priority": "essential",
+        "proficiency_level": "intermediate"
+      },
+      {
+        "skill": "Offer Negotiation",
+        "priority": "essential",
+        "proficiency_level": "intermediate"
+      },
+      {
+        "skill": "CV Screening and Sourcing",
+        "priority": "essential",
+        "proficiency_level": "intermediate"
+      },
+      {
+        "skill": "Behavioural Science",
+        "priority": "important",
+        "proficiency_level": "intermediate"
+      },
+      {
+        "skill": "Consumer Insights",
+        "priority": "important",
+        "proficiency_level": "intermediate"
+      },
+      {
+        "skill": "Building HR/TA Functions from Ground Up",
+        "priority": "important",
+        "proficiency_level": "intermediate"
+      },
+      {
+        "skill": "Neurodiversity and Wellbeing Programme Design",
+        "priority": "valuable",
+        "proficiency_level": "intermediate"
+      },
+      {
+        "skill": "Mental-Health-Informed Workplace Practices",
+        "priority": "valuable",
+        "proficiency_level": "intermediate"
+      }
+    ],
+    "technologies": [
+      {
+        "technology": "ATS (Applicant Tracking System)",
+        "priority": "essential",
+        "version": null
+      },
+      {
+        "technology": "HRIS (Human Resource Information System)",
+        "priority": "essential",
+        "version": null
+      },
+      {
+        "technology": "People Analytics Dashboards",
+        "priority": "essential",
+        "version": null
+      },
+      {
+        "technology": "SAP",
+        "priority": "valuable",
+        "version": null
+      },
+      {
+        "technology": "Finesse",
+        "priority": "valuable",
+        "version": null
+      },
+      {
+        "technology": "CRM Tools",
+        "priority": "valuable",
+        "version": null
+      }
+    ],
+    "language_proficiency": null,
+    "qualifications": {
+      "education": [
+        {
+          "degree": "Bachelor's Degree in Organisational Psychology",
+          "field": "Organisational Psychology",
+          "priority": "essential"
+        },
+        {
+          "degree": "Bachelor's Degree in Human Resources",
+          "field": "Human Resources",
+          "priority": "essential"
+        },
+        {
+          "degree": "Bachelor's Degree in Business",
+          "field": "Business",
+          "priority": "essential"
+        },
+        {
+          "degree": "Degree in a related field",
+          "field": "Related field (e.g., Applied Psychology, Behavioural Science)",
+          "priority": "essential"
+        },
+        {
+          "degree": "Background in Applied/Organisational Psychology or Behavioural Science",
+          "field": "Applied Psychology / Behavioural Science",
+          "priority": "important"
+        }
+      ],
+      "certifications": null
+    },
+    "experience": {
+      "level": "mid",
+      "years_total": {
+        "min": 2,
+        "max": null
+      },
+      "years_relevant": {
+        "min": 2,
+        "max": null
+      },
+      "industry_experience": [
+        {
+          "industry": "Human Resources / People Operations",
+          "priority": "essential"
+        },
+        {
+          "industry": "Talent Acquisition",
+          "priority": "essential"
+        },
+        {
+          "industry": "Scale-up or SME (building HR/TA from ground up)",
+          "priority": "important"
+        },
+        {
+          "industry": "UAE / GCC region",
+          "priority": "important"
+        }
+      ],
+      "leadership": {
+        "required": false,
+        "team_size": null,
+        "priority": "supplementary"
+      }
+    },
+    "location": null,
+    "employment_details": {
+      "type": "full_time",
+      "urgency": "flexible",
+      "salary_range": {
+        "min": null,
+        "max": null,
+        "currency": "AED",
+        "frequency": "annually"
+      },
+      "benefits": [
+        "Competitive salary",
+        "Medical insurance",
+        "Annual flight allowance",
+        "22 days of paid leave"
+      ]
+    },
+    "soft_skills": [
+      {
+        "skill": "Written Communication",
+        "priority": "essential",
+        "context": "authoring policies, job ads, and difficult emails with equal clarity"
+      },
+      {
+        "skill": "Verbal Communication",
+        "priority": "essential",
+        "context": "leadership partnering and employee conversations"
+      },
+      {
+        "skill": "Empathy",
+        "priority": "essential",
+        "context": "acting as a trusted, confidential open-door for employees"
+      },
+      {
+        "skill": "Discretion",
+        "priority": "essential",
+        "context": "handling sensitive employee relations situations"
+      },
+      {
+        "skill": "Stakeholder Management",
+        "priority": "essential",
+        "context": "partnering with leadership and hiring managers"
+      },
+      {
+        "skill": "Fairness and Impartiality",
+        "priority": "essential",
+        "context": "running grievance and disciplinary procedures"
+      },
+      {
+        "skill": "Attention to Detail",
+        "priority": "important",
+        "context": "documentation, records, and data-protection discipline"
+      },
+      {
+        "skill": "Design Thinking",
+        "priority": "important",
+        "context": "designing candidate journeys as experiences"
+      },
+      {
+        "skill": "Ownership Mindset",
+        "priority": "important",
+        "context": "shaping policies, hires, and culture initiatives for the long term"
+      }
+    ],
+    "project_context": {
+      "types": [
+        "HR policy and handbook authoring",
+        "Culture framework and engagement programme design",
+        "End-to-end recruitment and onboarding",
+        "Grievance and disciplinary investigations",
+        "Offboarding and exit analytics",
+        "Workforce planning and people analytics reporting"
+      ],
+      "methodologies": [
+        "Psychologically-informed people practices",
+        "Fair and transparent HR processes",
+        "Data-protection-first operations (GDPR / UAE PDPL)",
+        "Human-centred design of candidate and employee journeys"
+      ],
+      "environment": null
+    },
+    "team_context": {
+      "size": null,
+      "structure": "People Operations department within a growing, values-driven organisation",
+      "reporting_to": "Head of People / Managing Director"
+    },
+    "compliance_legal": {
+      "visa_sponsorship": null,
+      "security_clearance": {
+        "required": false,
+        "level": null
+      },
+      "background_check": null
+    },
+    "cultural_fit": {
+      "company_values": [
+        "Values-driven",
+        "Human experience at the heart of the business",
+        "People strategy as business strategy",
+        "Fairness and transparency",
+        "Psychological safety and wellbeing",
+        "Equal opportunity and inclusivity"
+      ],
+      "work_style": [
+        "Empathetic and confidential",
+        "Detail-oriented and documentation-driven",
+        "Ownership-oriented",
+        "Design-minded (treats culture as a craft)",
+        "Discreet and diplomatic",
+        "Cross-functional partner to leadership"
+      ]
+    },
+    "growth_opportunities": [
+      "Real ownership over policies, hires, and culture initiatives that will shape the company for years",
+      "Opportunity to build an HR/TA function from the ground up",
+      "Direct partnership with senior leadership on people strategy",
+      "Exposure to one of the world's most dynamic talent markets (UAE/GCC)"
+    ]
+  },
+  "relevance": {
+    "gouri-prasad-psych": 1.0
+  },
+  "source": "reverse_match",
+  "seed_id": "gouri-prasad-psych",
+  "model": "claude-opus-4.7",
+  "prompt_version": "v1"
+}

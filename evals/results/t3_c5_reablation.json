@@ -1,0 +1,2592 @@
+{
+  "methodology": {
+    "anchor": "silver Judge-grade anchor (n=1; circular, not human ground truth)",
+    "control": "all four C5 components at raw weight 0",
+    "grid": [
+      0.0,
+      0.01,
+      0.02,
+      0.03,
+      0.05,
+      0.075,
+      0.1,
+      0.15,
+      0.2
+    ],
+    "primary_metric": "unrounded NDCG@10",
+    "strict_gain_required": true,
+    "combination_rule": "best eligible subset with strict leave-one-out contribution",
+    "floor_reset": "gold floors truncated down to 0.01 from the new-label incumbent; reverse floors unchanged"
+  },
+  "incumbent_weights": {
+    "title_score": 0.25,
+    "skill_score": 0.25,
+    "qualification_score": 0.05,
+    "similarity_score": 0.45,
+    "seniority_score": 0.05,
+    "experience_score": 0.05,
+    "industry_score": 0.2,
+    "language_score": 0.0,
+    "location_score": 0.05,
+    "attrition_score": 0.0,
+    "experience_relevance_score": 0.0,
+    "education_relevance_score": 0.03
+  },
+  "incumbent_metrics": {
+    "n_reverse_match": 19,
+    "n_gold": 1,
+    "hit@1": 0.4211,
+    "hit@3": 0.5789,
+    "hit@5": 0.6316,
+    "hit@10": 0.7368,
+    "mrr": 0.5202,
+    "seed_found_rate": 1.0,
+    "ndcg@5": 0.9345,
+    "ndcg@10": 0.9483,
+    "raw_ndcg@5": 0.9344902129761469,
+    "raw_ndcg@10": 0.9483051496033104
+  },
+  "reset_floors": {
+    "seed_found_rate": 1.0,
+    "hit@3": 0.42,
+    "hit@5": 0.47,
+    "hit@10": 0.68,
+    "mrr": 0.41,
+    "ndcg@5": 0.93,
+    "ndcg@10": 0.94
+  },
+  "incumbent_floor_results": {
+    "pass": true,
+    "metrics": {
+      "seed_found_rate": {
+        "value": 1.0,
+        "floor": 1.0,
+        "pass": true
+      },
+      "hit@3": {
+        "value": 0.5789,
+        "floor": 0.42,
+        "pass": true
+      },
+      "hit@5": {
+        "value": 0.6316,
+        "floor": 0.47,
+        "pass": true
+      },
+      "hit@10": {
+        "value": 0.7368,
+        "floor": 0.68,
+        "pass": true
+      },
+      "mrr": {
+        "value": 0.5202,
+        "floor": 0.41,
+        "pass": true
+      },
+      "ndcg@5": {
+        "value": 0.9344902129761469,
+        "floor": 0.93,
+        "pass": true
+      },
+      "ndcg@10": {
+        "value": 0.9483051496033104,
+        "floor": 0.94,
+        "pass": true
+      }
+    }
+  },
+  "neutral_weights": {
+    "title_score": 0.25,
+    "skill_score": 0.25,
+    "qualification_score": 0.05,
+    "similarity_score": 0.45,
+    "seniority_score": 0.05,
+    "experience_score": 0.05,
+    "industry_score": 0.2,
+    "language_score": 0.0,
+    "location_score": 0.05,
+    "attrition_score": 0.0,
+    "experience_relevance_score": 0.0,
+    "education_relevance_score": 0.0
+  },
+  "neutral_metrics": {
+    "n_reverse_match": 19,
+    "n_gold": 1,
+    "hit@1": 0.4211,
+    "hit@3": 0.5789,
+    "hit@5": 0.6316,
+    "hit@10": 0.7895,
+    "mrr": 0.519,
+    "seed_found_rate": 1.0,
+    "ndcg@5": 0.9356,
+    "ndcg@10": 0.949,
+    "raw_ndcg@5": 0.9355992005238581,
+    "raw_ndcg@10": 0.949035172822821
+  },
+  "construct_validity": {
+    "n_judged": 78,
+    "correlations": {
+      "attrition_score": 0.4272597818223854,
+      "experience_relevance_score": 0.7160370121827871,
+      "education_relevance_score": 0.29542471871879494,
+      "language_score": 0.6839477052440002
+    },
+    "component_gates": {
+      "attrition_score": {
+        "section": "tenure_continuity",
+        "overall_agreement_pass": true,
+        "section_agreement_pass": true,
+        "construct_spearman": 0.4272597818223854,
+        "construct_direction_pass": true,
+        "pass": true
+      },
+      "experience_relevance_score": {
+        "section": "career_relevance_mix",
+        "overall_agreement_pass": true,
+        "section_agreement_pass": true,
+        "construct_spearman": 0.7160370121827871,
+        "construct_direction_pass": true,
+        "pass": true
+      },
+      "education_relevance_score": {
+        "section": "preferred_signals",
+        "overall_agreement_pass": true,
+        "section_agreement_pass": true,
+        "construct_spearman": 0.29542471871879494,
+        "construct_direction_pass": true,
+        "pass": true
+      },
+      "language_score": {
+        "section": "preferred_signals",
+        "overall_agreement_pass": true,
+        "section_agreement_pass": true,
+        "construct_spearman": 0.6839477052440002,
+        "construct_direction_pass": true,
+        "pass": true
+      }
+    },
+    "education_partial_anchor": {
+      "caveat": "The rubric directly grades HR certification, not degree relevance.",
+      "certification_bearing": {
+        "n": 7,
+        "mean_education_component": 1.0,
+        "mean_preferred_section": 3.75
+      },
+      "degree_only": {
+        "n": 46,
+        "mean_education_component": 0.9021739130434783,
+        "mean_preferred_section": 1.9456521739130435
+      }
+    },
+    "language_evidence": {
+      "explicit_language_count": 16,
+      "explicit_tagalog_or_filipino_count": 1,
+      "tagalog_validated": false,
+      "caveat": "Any adoption is a general-language result; Tagalog-specific evidence is n=1."
+    }
+  },
+  "sweeps": {
+    "attrition_score": [
+      {
+        "weight": 0.0,
+        "metrics": {
+          "n_reverse_match": 19,
+          "n_gold": 1,
+          "hit@1": 0.4211,
+          "hit@3": 0.5789,
+          "hit@5": 0.6316,
+          "hit@10": 0.7895,
+          "mrr": 0.519,
+          "seed_found_rate": 1.0,
+          "ndcg@5": 0.9356,
+          "ndcg@10": 0.949,
+          "raw_ndcg@5": 0.9355992005238581,
+          "raw_ndcg@10": 0.949035172822821
+        },
+        "ndcg10_delta_vs_neutral": 0.0,
+        "floors": {
+          "pass": true,
+          "metrics": {
+            "seed_found_rate": {
+              "value": 1.0,
+              "floor": 1.0,
+              "pass": true
+            },
+            "hit@3": {
+              "value": 0.5789,
+              "floor": 0.42,
+              "pass": true
+            },
+            "hit@5": {
+              "value": 0.6316,
+              "floor": 0.47,
+              "pass": true
+            },
+            "hit@10": {
+              "value": 0.7895,
+              "floor": 0.68,
+              "pass": true
+            },
+            "mrr": {
+              "value": 0.519,
+              "floor": 0.41,
+              "pass": true
+            },
+            "ndcg@5": {
+              "value": 0.9355992005238581,
+              "floor": 0.93,
+              "pass": true
+            },
+            "ndcg@10": {
+              "value": 0.949035172822821,
+              "floor": 0.94,
+              "pass": true
+            }
+          }
+        },
+        "eligible": false
+      },
+      {
+        "weight": 0.01,
+        "metrics": {
+          "n_reverse_match": 19,
+          "n_gold": 1,
+          "hit@1": 0.4211,
+          "hit@3": 0.5789,
+          "hit@5": 0.6316,
+          "hit@10": 0.7895,
+          "mrr": 0.5183,
+          "seed_found_rate": 1.0,
+          "ndcg@5": 0.9345,
+          "ndcg@10": 0.9483,
+          "raw_ndcg@5": 0.9344902129761469,
+          "raw_ndcg@10": 0.9483051496033104
+        },
+        "ndcg10_delta_vs_neutral": -0.000730023219510656,
+        "floors": {
+          "pass": true,
+          "metrics": {
+            "seed_found_rate": {
+              "value": 1.0,
+              "floor": 1.0,
+              "pass": true
+            },
+            "hit@3": {
+              "value": 0.5789,
+              "floor": 0.42,
+              "pass": true
+            },
+            "hit@5": {
+              "value": 0.6316,
+              "floor": 0.47,
+              "pass": true
+            },
+            "hit@10": {
+              "value": 0.7895,
+              "floor": 0.68,
+              "pass": true
+            },
+            "mrr": {
+              "value": 0.5183,
+              "floor": 0.41,
+              "pass": true
+            },
+            "ndcg@5": {
+              "value": 0.9344902129761469,
+              "floor": 0.93,
+              "pass": true
+            },
+            "ndcg@10": {
+              "value": 0.9483051496033104,
+              "floor": 0.94,
+              "pass": true
+            }
+          }
+        },
+        "eligible": false
+      },
+      {
+        "weight": 0.02,
+        "metrics": {
+          "n_reverse_match": 19,
+          "n_gold": 1,
+          "hit@1": 0.4211,
+          "hit@3": 0.5789,
+          "hit@5": 0.6316,
+          "hit@10": 0.7895,
+          "mrr": 0.5185,
+          "seed_found_rate": 1.0,
+          "ndcg@5": 0.9345,
+          "ndcg@10": 0.9483,
+          "raw_ndcg@5": 0.9344902129761469,
+          "raw_ndcg@10": 0.9483051496033104
+        },
+        "ndcg10_delta_vs_neutral": -0.000730023219510656,
+        "floors": {
+          "pass": true,
+          "metrics": {
+            "seed_found_rate": {
+              "value": 1.0,
+              "floor": 1.0,
+              "pass": true
+            },
+            "hit@3": {
+              "value": 0.5789,
+              "floor": 0.42,
+              "pass": true
+            },
+            "hit@5": {
+              "value": 0.6316,
+              "floor": 0.47,
+              "pass": true
+            },
+            "hit@10": {
+              "value": 0.7895,
+              "floor": 0.68,
+              "pass": true
+            },
+            "mrr": {
+              "value": 0.5185,
+              "floor": 0.41,
+              "pass": true
+            },
+            "ndcg@5": {
+              "value": 0.9344902129761469,
+              "floor": 0.93,
+              "pass": true
+            },
+            "ndcg@10": {
+              "value": 0.9483051496033104,
+              "floor": 0.94,
+              "pass": true
+            }
+          }
+        },
+        "eligible": false
+      },
+      {
+        "weight": 0.03,
+        "metrics": {
+          "n_reverse_match": 19,
+          "n_gold": 1,
+          "hit@1": 0.3684,
+          "hit@3": 0.5263,
+          "hit@5": 0.6316,
+          "hit@10": 0.7368,
+          "mrr": 0.4871,
+          "seed_found_rate": 1.0,
+          "ndcg@5": 0.921,
+          "ndcg@10": 0.948,
+          "raw_ndcg@5": 0.9210295771454284,
+          "raw_ndcg@10": 0.9479935430291209
+        },
+        "ndcg10_delta_vs_neutral": -0.0010416297937001495,
+        "floors": {
+          "pass": false,
+          "metrics": {
+            "seed_found_rate": {
+              "value": 1.0,
+              "floor": 1.0,
+              "pass": true
+            },
+            "hit@3": {
+              "value": 0.5263,
+              "floor": 0.42,
+              "pass": true
+            },
+            "hit@5": {
+              "value": 0.6316,
+              "floor": 0.47,
+              "pass": true
+            },
+            "hit@10": {
+              "value": 0.7368,
+              "floor": 0.68,
+              "pass": true
+            },
+            "mrr": {
+              "value": 0.4871,
+              "floor": 0.41,
+              "pass": true
+            },
+            "ndcg@5": {
+              "value": 0.9210295771454284,
+              "floor": 0.93,
+              "pass": false
+            },
+            "ndcg@10": {
+              "value": 0.9479935430291209,
+              "floor": 0.94,
+              "pass": true
+            }
+          }
+        },
+        "eligible": false
+      },
+      {
+        "weight": 0.05,
+        "metrics": {
+          "n_reverse_match": 19,
+          "n_gold": 1,
+          "hit@1": 0.3684,
+          "hit@3": 0.5263,
+          "hit@5": 0.5789,
+          "hit@10": 0.7368,
+          "mrr": 0.4845,
+          "seed_found_rate": 1.0,
+          "ndcg@5": 0.9184,
+          "ndcg@10": 0.9347,
+          "raw_ndcg@5": 0.9183662803046598,
+          "raw_ndcg@10": 0.9346749731970734
+        },
+        "ndcg10_delta_vs_neutral": -0.014360199625747638,
+        "floors": {
+          "pass": false,
+          "metrics": {
+            "seed_found_rate": {
+              "value": 1.0,
+              "floor": 1.0,
+              "pass": true
+            },
+            "hit@3": {
+              "value": 0.5263,
+              "floor": 0.42,
+              "pass": true
+            },
+            "hit@5": {
+              "value": 0.5789,
+              "floor": 0.47,
+              "pass": true
+            },
+            "hit@10": {
+              "value": 0.7368,
+              "floor": 0.68,
+              "pass": true
+            },
+            "mrr": {
+              "value": 0.4845,
+              "floor": 0.41,
+              "pass": true
+            },
+            "ndcg@5": {
+              "value": 0.9183662803046598,
+              "floor": 0.93,
+              "pass": false
+            },
+            "ndcg@10": {
+              "value": 0.9346749731970734,
+              "floor": 0.94,
+              "pass": false
+            }
+          }
+        },
+        "eligible": false
+      },
+      {
+        "weight": 0.075,
+        "metrics": {
+          "n_reverse_match": 19,
+          "n_gold": 1,
+          "hit@1": 0.2632,
+          "hit@3": 0.5263,
+          "hit@5": 0.5263,
+          "hit@10": 0.7368,
+          "mrr": 0.4191,
+          "seed_found_rate": 1.0,
+          "ndcg@5": 0.9182,
+          "ndcg@10": 0.9451,
+          "raw_ndcg@5": 0.9181705059803629,
+          "raw_ndcg@10": 0.9450828441470556
+        },
+        "ndcg10_delta_vs_neutral": -0.0039523286757654486,
+        "floors": {
+          "pass": false,
+          "metrics": {
+            "seed_found_rate": {
+              "value": 1.0,
+              "floor": 1.0,
+              "pass": true
+            },
+            "hit@3": {
+              "value": 0.5263,
+              "floor": 0.42,
+              "pass": true
+            },
+            "hit@5": {
+              "value": 0.5263,
+              "floor": 0.47,
+              "pass": true
+            },
+            "hit@10": {
+              "value": 0.7368,
+              "floor": 0.68,
+              "pass": true
+            },
+            "mrr": {
+              "value": 0.4191,
+              "floor": 0.41,
+              "pass": true
+            },
+            "ndcg@5": {
+              "value": 0.9181705059803629,
+              "floor": 0.93,
+              "pass": false
+            },
+            "ndcg@10": {
+              "value": 0.9450828441470556,
+              "floor": 0.94,
+              "pass": true
+            }
+          }
+        },
+        "eligible": false
+      },
+      {
+        "weight": 0.1,
+        "metrics": {
+          "n_reverse_match": 19,
+          "n_gold": 1,
+          "hit@1": 0.2632,
+          "hit@3": 0.5263,
+          "hit@5": 0.5263,
+          "hit@10": 0.7368,
+          "mrr": 0.4066,
+          "seed_found_rate": 1.0,
+          "ndcg@5": 0.9261,
+          "ndcg@10": 0.9501,
+          "raw_ndcg@5": 0.9261048689967285,
+          "raw_ndcg@10": 0.950115350537724
+        },
+        "ndcg10_delta_vs_neutral": 0.0010801777149029856,
+        "floors": {
+          "pass": false,
+          "metrics": {
+            "seed_found_rate": {
+              "value": 1.0,
+              "floor": 1.0,
+              "pass": true
+            },
+            "hit@3": {
+              "value": 0.5263,
+              "floor": 0.42,
+              "pass": true
+            },
+            "hit@5": {
+              "value": 0.5263,
+              "floor": 0.47,
+              "pass": true
+            },
+            "hit@10": {
+              "value": 0.7368,
+              "floor": 0.68,
+              "pass": true
+            },
+            "mrr": {
+              "value": 0.4066,
+              "floor": 0.41,
+              "pass": false
+            },
+            "ndcg@5": {
+              "value": 0.9261048689967285,
+              "floor": 0.93,
+              "pass": false
+            },
+            "ndcg@10": {
+              "value": 0.950115350537724,
+              "floor": 0.94,
+              "pass": true
+            }
+          }
+        },
+        "eligible": false
+      },
+      {
+        "weight": 0.15,
+        "metrics": {
+          "n_reverse_match": 19,
+          "n_gold": 1,
+          "hit@1": 0.2632,
+          "hit@3": 0.4211,
+          "hit@5": 0.4737,
+          "hit@10": 0.6842,
+          "mrr": 0.3748,
+          "seed_found_rate": 1.0,
+          "ndcg@5": 0.9443,
+          "ndcg@10": 0.952,
+          "raw_ndcg@5": 0.9442691037953002,
+          "raw_ndcg@10": 0.9520178166717382
+        },
+        "ndcg10_delta_vs_neutral": 0.0029826438489172213,
+        "floors": {
+          "pass": false,
+          "metrics": {
+            "seed_found_rate": {
+              "value": 1.0,
+              "floor": 1.0,
+              "pass": true
+            },
+            "hit@3": {
+              "value": 0.4211,
+              "floor": 0.42,
+              "pass": true
+            },
+            "hit@5": {
+              "value": 0.4737,
+              "floor": 0.47,
+              "pass": true
+            },
+            "hit@10": {
+              "value": 0.6842,
+              "floor": 0.68,
+              "pass": true
+            },
+            "mrr": {
+              "value": 0.3748,
+              "floor": 0.41,
+              "pass": false
+            },
+            "ndcg@5": {
+              "value": 0.9442691037953002,
+              "floor": 0.93,
+              "pass": true
+            },
+            "ndcg@10": {
+              "value": 0.9520178166717382,
+              "floor": 0.94,
+              "pass": true
+            }
+          }
+        },
+        "eligible": false
+      },
+      {
+        "weight": 0.2,
+        "metrics": {
+          "n_reverse_match": 19,
+          "n_gold": 1,
+          "hit@1": 0.1579,
+          "hit@3": 0.3684,
+          "hit@5": 0.5263,
+          "hit@10": 0.5789,
+          "mrr": 0.3087,
+          "seed_found_rate": 1.0,
+          "ndcg@5": 0.9443,
+          "ndcg@10": 0.9336,
+          "raw_ndcg@5": 0.9442691037953002,
+          "raw_ndcg@10": 0.9336441954074755
+        },
+        "ndcg10_delta_vs_neutral": -0.015390977415345564,
+        "floors": {
+          "pass": false,
+          "metrics": {
+            "seed_found_rate": {
+              "value": 1.0,
+              "floor": 1.0,
+              "pass": true
+            },
+            "hit@3": {
+              "value": 0.3684,
+              "floor": 0.42,
+              "pass": false
+            },
+            "hit@5": {
+              "value": 0.5263,
+              "floor": 0.47,
+              "pass": true
+            },
+            "hit@10": {
+              "value": 0.5789,
+              "floor": 0.68,
+              "pass": false
+            },
+            "mrr": {
+              "value": 0.3087,
+              "floor": 0.41,
+              "pass": false
+            },
+            "ndcg@5": {
+              "value": 0.9442691037953002,
+              "floor": 0.93,
+              "pass": true
+            },
+            "ndcg@10": {
+              "value": 0.9336441954074755,
+              "floor": 0.94,
+              "pass": false
+            }
+          }
+        },
+        "eligible": false
+      }
+    ],
+    "experience_relevance_score": [
+      {
+        "weight": 0.0,
+        "metrics": {
+          "n_reverse_match": 19,
+          "n_gold": 1,
+          "hit@1": 0.4211,
+          "hit@3": 0.5789,
+          "hit@5": 0.6316,
+          "hit@10": 0.7895,
+          "mrr": 0.519,
+          "seed_found_rate": 1.0,
+          "ndcg@5": 0.9356,
+          "ndcg@10": 0.949,
+          "raw_ndcg@5": 0.9355992005238581,
+          "raw_ndcg@10": 0.949035172822821
+        },
+        "ndcg10_delta_vs_neutral": 0.0,
+        "floors": {
+          "pass": true,
+          "metrics": {
+            "seed_found_rate": {
+              "value": 1.0,
+              "floor": 1.0,
+              "pass": true
+            },
+            "hit@3": {
+              "value": 0.5789,
+              "floor": 0.42,
+              "pass": true
+            },
+            "hit@5": {
+              "value": 0.6316,
+              "floor": 0.47,
+              "pass": true
+            },
+            "hit@10": {
+              "value": 0.7895,
+              "floor": 0.68,
+              "pass": true
+            },
+            "mrr": {
+              "value": 0.519,
+              "floor": 0.41,
+              "pass": true
+            },
+            "ndcg@5": {
+              "value": 0.9355992005238581,
+              "floor": 0.93,
+              "pass": true
+            },
+            "ndcg@10": {
+              "value": 0.949035172822821,
+              "floor": 0.94,
+              "pass": true
+            }
+          }
+        },
+        "eligible": false
+      },
+      {
+        "weight": 0.01,
+        "metrics": {
+          "n_reverse_match": 19,
+          "n_gold": 1,
+          "hit@1": 0.4211,
+          "hit@3": 0.5789,
+          "hit@5": 0.6316,
+          "hit@10": 0.7895,
+          "mrr": 0.5203,
+          "seed_found_rate": 1.0,
+          "ndcg@5": 0.9356,
+          "ndcg@10": 0.949,
+          "raw_ndcg@5": 0.9355992005238581,
+          "raw_ndcg@10": 0.949035172822821
+        },
+        "ndcg10_delta_vs_neutral": 0.0,
+        "floors": {
+          "pass": true,
+          "metrics": {
+            "seed_found_rate": {
+              "value": 1.0,
+              "floor": 1.0,
+              "pass": true
+            },
+            "hit@3": {
+              "value": 0.5789,
+              "floor": 0.42,
+              "pass": true
+            },
+            "hit@5": {
+              "value": 0.6316,
+              "floor": 0.47,
+              "pass": true
+            },
+            "hit@10": {
+              "value": 0.7895,
+              "floor": 0.68,
+              "pass": true
+            },
+            "mrr": {
+              "value": 0.5203,
+              "floor": 0.41,
+              "pass": true
+            },
+            "ndcg@5": {
+              "value": 0.9355992005238581,
+              "floor": 0.93,
+              "pass": true
+            },
+            "ndcg@10": {
+              "value": 0.949035172822821,
+              "floor": 0.94,
+              "pass": true
+            }
+          }
+        },
+        "eligible": false
+      },
+      {
+        "weight": 0.02,
+        "metrics": {
+          "n_reverse_match": 19,
+          "n_gold": 1,
+          "hit@1": 0.4211,
+          "hit@3": 0.5789,
+          "hit@5": 0.6316,
+          "hit@10": 0.7895,
+          "mrr": 0.5218,
+          "seed_found_rate": 1.0,
+          "ndcg@5": 0.9356,
+          "ndcg@10": 0.949,
+          "raw_ndcg@5": 0.9355992005238581,
+          "raw_ndcg@10": 0.949035172822821
+        },
+        "ndcg10_delta_vs_neutral": 0.0,
+        "floors": {
+          "pass": true,
+          "metrics": {
+            "seed_found_rate": {
+              "value": 1.0,
+              "floor": 1.0,
+              "pass": true
+            },
+            "hit@3": {
+              "value": 0.5789,
+              "floor": 0.42,
+              "pass": true
+            },
+            "hit@5": {
+              "value": 0.6316,
+              "floor": 0.47,
+              "pass": true
+            },
+            "hit@10": {
+              "value": 0.7895,
+              "floor": 0.68,
+              "pass": true
+            },
+            "mrr": {
+              "value": 0.5218,
+              "floor": 0.41,
+              "pass": true
+            },
+            "ndcg@5": {
+              "value": 0.9355992005238581,
+              "floor": 0.93,
+              "pass": true
+            },
+            "ndcg@10": {
+              "value": 0.949035172822821,
+              "floor": 0.94,
+              "pass": true
+            }
+          }
+        },
+        "eligible": false
+      },
+      {
+        "weight": 0.03,
+        "metrics": {
+          "n_reverse_match": 19,
+          "n_gold": 1,
+          "hit@1": 0.3684,
+          "hit@3": 0.5789,
+          "hit@5": 0.6316,
+          "hit@10": 0.7895,
+          "mrr": 0.4959,
+          "seed_found_rate": 1.0,
+          "ndcg@5": 0.9356,
+          "ndcg@10": 0.949,
+          "raw_ndcg@5": 0.9355992005238581,
+          "raw_ndcg@10": 0.949035172822821
+        },
+        "ndcg10_delta_vs_neutral": 0.0,
+        "floors": {
+          "pass": true,
+          "metrics": {
+            "seed_found_rate": {
+              "value": 1.0,
+              "floor": 1.0,
+              "pass": true
+            },
+            "hit@3": {
+              "value": 0.5789,
+              "floor": 0.42,
+              "pass": true
+            },
+            "hit@5": {
+              "value": 0.6316,
+              "floor": 0.47,
+              "pass": true
+            },
+            "hit@10": {
+              "value": 0.7895,
+              "floor": 0.68,
+              "pass": true
+            },
+            "mrr": {
+              "value": 0.4959,
+              "floor": 0.41,
+              "pass": true
+            },
+            "ndcg@5": {
+              "value": 0.9355992005238581,
+              "floor": 0.93,
+              "pass": true
+            },
+            "ndcg@10": {
+              "value": 0.949035172822821,
+              "floor": 0.94,
+              "pass": true
+            }
+          }
+        },
+        "eligible": false
+      },
+      {
+        "weight": 0.05,
+        "metrics": {
+          "n_reverse_match": 19,
+          "n_gold": 1,
+          "hit@1": 0.3684,
+          "hit@3": 0.4211,
+          "hit@5": 0.5789,
+          "hit@10": 0.7895,
+          "mrr": 0.4705,
+          "seed_found_rate": 1.0,
+          "ndcg@5": 0.9451,
+          "ndcg@10": 0.9344,
+          "raw_ndcg@5": 0.9450888111215684,
+          "raw_ndcg@10": 0.934415730942666
+        },
+        "ndcg10_delta_vs_neutral": -0.01461944188015507,
+        "floors": {
+          "pass": false,
+          "metrics": {
+            "seed_found_rate": {
+              "value": 1.0,
+              "floor": 1.0,
+              "pass": true
+            },
+            "hit@3": {
+              "value": 0.4211,
+              "floor": 0.42,
+              "pass": true
+            },
+            "hit@5": {
+              "value": 0.5789,
+              "floor": 0.47,
+              "pass": true
+            },
+            "hit@10": {
+              "value": 0.7895,
+              "floor": 0.68,
+              "pass": true
+            },
+            "mrr": {
+              "value": 0.4705,
+              "floor": 0.41,
+              "pass": true
+            },
+            "ndcg@5": {
+              "value": 0.9450888111215684,
+              "floor": 0.93,
+              "pass": true
+            },
+            "ndcg@10": {
+              "value": 0.934415730942666,
+              "floor": 0.94,
+              "pass": false
+            }
+          }
+        },
+        "eligible": false
+      },
+      {
+        "weight": 0.075,
+        "metrics": {
+          "n_reverse_match": 19,
+          "n_gold": 1,
+          "hit@1": 0.3684,
+          "hit@3": 0.4211,
+          "hit@5": 0.5263,
+          "hit@10": 0.7895,
+          "mrr": 0.4551,
+          "seed_found_rate": 1.0,
+          "ndcg@5": 0.9564,
+          "ndcg@10": 0.9419,
+          "raw_ndcg@5": 0.9563942586980875,
+          "raw_ndcg@10": 0.941857869724884
+        },
+        "ndcg10_delta_vs_neutral": -0.007177303097937071,
+        "floors": {
+          "pass": true,
+          "metrics": {
+            "seed_found_rate": {
+              "value": 1.0,
+              "floor": 1.0,
+              "pass": true
+            },
+            "hit@3": {
+              "value": 0.4211,
+              "floor": 0.42,
+              "pass": true
+            },
+            "hit@5": {
+              "value": 0.5263,
+              "floor": 0.47,
+              "pass": true
+            },
+            "hit@10": {
+              "value": 0.7895,
+              "floor": 0.68,
+              "pass": true
+            },
+            "mrr": {
+              "value": 0.4551,
+              "floor": 0.41,
+              "pass": true
+            },
+            "ndcg@5": {
+              "value": 0.9563942586980875,
+              "floor": 0.93,
+              "pass": true
+            },
+            "ndcg@10": {
+              "value": 0.941857869724884,
+              "floor": 0.94,
+              "pass": true
+            }
+          }
+        },
+        "eligible": false
+      },
+      {
+        "weight": 0.1,
+        "metrics": {
+          "n_reverse_match": 19,
+          "n_gold": 1,
+          "hit@1": 0.3158,
+          "hit@3": 0.4211,
+          "hit@5": 0.4737,
+          "hit@10": 0.7895,
+          "mrr": 0.4127,
+          "seed_found_rate": 1.0,
+          "ndcg@5": 0.9593,
+          "ndcg@10": 0.9428,
+          "raw_ndcg@5": 0.959318047449983,
+          "raw_ndcg@10": 0.9428289224134411
+        },
+        "ndcg10_delta_vs_neutral": -0.006206250409379943,
+        "floors": {
+          "pass": true,
+          "metrics": {
+            "seed_found_rate": {
+              "value": 1.0,
+              "floor": 1.0,
+              "pass": true
+            },
+            "hit@3": {
+              "value": 0.4211,
+              "floor": 0.42,
+              "pass": true
+            },
+            "hit@5": {
+              "value": 0.4737,
+              "floor": 0.47,
+              "pass": true
+            },
+            "hit@10": {
+              "value": 0.7895,
+              "floor": 0.68,
+              "pass": true
+            },
+            "mrr": {
+              "value": 0.4127,
+              "floor": 0.41,
+              "pass": true
+            },
+            "ndcg@5": {
+              "value": 0.959318047449983,
+              "floor": 0.93,
+              "pass": true
+            },
+            "ndcg@10": {
+              "value": 0.9428289224134411,
+              "floor": 0.94,
+              "pass": true
+            }
+          }
+        },
+        "eligible": false
+      },
+      {
+        "weight": 0.15,
+        "metrics": {
+          "n_reverse_match": 19,
+          "n_gold": 1,
+          "hit@1": 0.3158,
+          "hit@3": 0.3684,
+          "hit@5": 0.4737,
+          "hit@10": 0.6316,
+          "mrr": 0.4035,
+          "seed_found_rate": 1.0,
+          "ndcg@5": 0.9581,
+          "ndcg@10": 0.9257,
+          "raw_ndcg@5": 0.958094353283554,
+          "raw_ndcg@10": 0.9257207356202101
+        },
+        "ndcg10_delta_vs_neutral": -0.02331443720261095,
+        "floors": {
+          "pass": false,
+          "metrics": {
+            "seed_found_rate": {
+              "value": 1.0,
+              "floor": 1.0,
+              "pass": true
+            },
+            "hit@3": {
+              "value": 0.3684,
+              "floor": 0.42,
+              "pass": false
+            },
+            "hit@5": {
+              "value": 0.4737,
+              "floor": 0.47,
+              "pass": true
+            },
+            "hit@10": {
+              "value": 0.6316,
+              "floor": 0.68,
+              "pass": false
+            },
+            "mrr": {
+              "value": 0.4035,
+              "floor": 0.41,
+              "pass": false
+            },
+            "ndcg@5": {
+              "value": 0.958094353283554,
+              "floor": 0.93,
+              "pass": true
+            },
+            "ndcg@10": {
+              "value": 0.9257207356202101,
+              "floor": 0.94,
+              "pass": false
+            }
+          }
+        },
+        "eligible": false
+      },
+      {
+        "weight": 0.2,
+        "metrics": {
+          "n_reverse_match": 19,
+          "n_gold": 1,
+          "hit@1": 0.3158,
+          "hit@3": 0.3158,
+          "hit@5": 0.4737,
+          "hit@10": 0.6316,
+          "mrr": 0.3916,
+          "seed_found_rate": 1.0,
+          "ndcg@5": 0.9467,
+          "ndcg@10": 0.9158,
+          "raw_ndcg@5": 0.9466732077302171,
+          "raw_ndcg@10": 0.9157663457203082
+        },
+        "ndcg10_delta_vs_neutral": -0.03326882710251278,
+        "floors": {
+          "pass": false,
+          "metrics": {
+            "seed_found_rate": {
+              "value": 1.0,
+              "floor": 1.0,
+              "pass": true
+            },
+            "hit@3": {
+              "value": 0.3158,
+              "floor": 0.42,
+              "pass": false
+            },
+            "hit@5": {
+              "value": 0.4737,
+              "floor": 0.47,
+              "pass": true
+            },
+            "hit@10": {
+              "value": 0.6316,
+              "floor": 0.68,
+              "pass": false
+            },
+            "mrr": {
+              "value": 0.3916,
+              "floor": 0.41,
+              "pass": false
+            },
+            "ndcg@5": {
+              "value": 0.9466732077302171,
+              "floor": 0.93,
+              "pass": true
+            },
+            "ndcg@10": {
+              "value": 0.9157663457203082,
+              "floor": 0.94,
+              "pass": false
+            }
+          }
+        },
+        "eligible": false
+      }
+    ],
+    "education_relevance_score": [
+      {
+        "weight": 0.0,
+        "metrics": {
+          "n_reverse_match": 19,
+          "n_gold": 1,
+          "hit@1": 0.4211,
+          "hit@3": 0.5789,
+          "hit@5": 0.6316,
+          "hit@10": 0.7895,
+          "mrr": 0.519,
+          "seed_found_rate": 1.0,
+          "ndcg@5": 0.9356,
+          "ndcg@10": 0.949,
+          "raw_ndcg@5": 0.9355992005238581,
+          "raw_ndcg@10": 0.949035172822821
+        },
+        "ndcg10_delta_vs_neutral": 0.0,
+        "floors": {
+          "pass": true,
+          "metrics": {
+            "seed_found_rate": {
+              "value": 1.0,
+              "floor": 1.0,
+              "pass": true
+            },
+            "hit@3": {
+              "value": 0.5789,
+              "floor": 0.42,
+              "pass": true
+            },
+            "hit@5": {
+              "value": 0.6316,
+              "floor": 0.47,
+              "pass": true
+            },
+            "hit@10": {
+              "value": 0.7895,
+              "floor": 0.68,
+              "pass": true
+            },
+            "mrr": {
+              "value": 0.519,
+              "floor": 0.41,
+              "pass": true
+            },
+            "ndcg@5": {
+              "value": 0.9355992005238581,
+              "floor": 0.93,
+              "pass": true
+            },
+            "ndcg@10": {
+              "value": 0.949035172822821,
+              "floor": 0.94,
+              "pass": true
+            }
+          }
+        },
+        "eligible": false
+      },
+      {
+        "weight": 0.01,
+        "metrics": {
+          "n_reverse_match": 19,
+          "n_gold": 1,
+          "hit@1": 0.4211,
+          "hit@3": 0.5789,
+          "hit@5": 0.6316,
+          "hit@10": 0.7368,
+          "mrr": 0.5204,
+          "seed_found_rate": 1.0,
+          "ndcg@5": 0.9345,
+          "ndcg@10": 0.9483,
+          "raw_ndcg@5": 0.9344902129761469,
+          "raw_ndcg@10": 0.9483051496033104
+        },
+        "ndcg10_delta_vs_neutral": -0.000730023219510656,
+        "floors": {
+          "pass": true,
+          "metrics": {
+            "seed_found_rate": {
+              "value": 1.0,
+              "floor": 1.0,
+              "pass": true
+            },
+            "hit@3": {
+              "value": 0.5789,
+              "floor": 0.42,
+              "pass": true
+            },
+            "hit@5": {
+              "value": 0.6316,
+              "floor": 0.47,
+              "pass": true
+            },
+            "hit@10": {
+              "value": 0.7368,
+              "floor": 0.68,
+              "pass": true
+            },
+            "mrr": {
+              "value": 0.5204,
+              "floor": 0.41,
+              "pass": true
+            },
+            "ndcg@5": {
+              "value": 0.9344902129761469,
+              "floor": 0.93,
+              "pass": true
+            },
+            "ndcg@10": {
+              "value": 0.9483051496033104,
+              "floor": 0.94,
+              "pass": true
+            }
+          }
+        },
+        "eligible": false
+      },
+      {
+        "weight": 0.02,
+        "metrics": {
+          "n_reverse_match": 19,
+          "n_gold": 1,
+          "hit@1": 0.4211,
+          "hit@3": 0.5789,
+          "hit@5": 0.6316,
+          "hit@10": 0.7368,
+          "mrr": 0.5204,
+          "seed_found_rate": 1.0,
+          "ndcg@5": 0.9345,
+          "ndcg@10": 0.9483,
+          "raw_ndcg@5": 0.9344902129761469,
+          "raw_ndcg@10": 0.9483051496033104
+        },
+        "ndcg10_delta_vs_neutral": -0.000730023219510656,
+        "floors": {
+          "pass": true,
+          "metrics": {
+            "seed_found_rate": {
+              "value": 1.0,
+              "floor": 1.0,
+              "pass": true
+            },
+            "hit@3": {
+              "value": 0.5789,
+              "floor": 0.42,
+              "pass": true
+            },
+            "hit@5": {
+              "value": 0.6316,
+              "floor": 0.47,
+              "pass": true
+            },
+            "hit@10": {
+              "value": 0.7368,
+              "floor": 0.68,
+              "pass": true
+            },
+            "mrr": {
+              "value": 0.5204,
+              "floor": 0.41,
+              "pass": true
+            },
+            "ndcg@5": {
+              "value": 0.9344902129761469,
+              "floor": 0.93,
+              "pass": true
+            },
+            "ndcg@10": {
+              "value": 0.9483051496033104,
+              "floor": 0.94,
+              "pass": true
+            }
+          }
+        },
+        "eligible": false
+      },
+      {
+        "weight": 0.03,
+        "metrics": {
+          "n_reverse_match": 19,
+          "n_gold": 1,
+          "hit@1": 0.4211,
+          "hit@3": 0.5789,
+          "hit@5": 0.6316,
+          "hit@10": 0.7368,
+          "mrr": 0.5202,
+          "seed_found_rate": 1.0,
+          "ndcg@5": 0.9345,
+          "ndcg@10": 0.9483,
+          "raw_ndcg@5": 0.9344902129761469,
+          "raw_ndcg@10": 0.9483051496033104
+        },
+        "ndcg10_delta_vs_neutral": -0.000730023219510656,
+        "floors": {
+          "pass": true,
+          "metrics": {
+            "seed_found_rate": {
+              "value": 1.0,
+              "floor": 1.0,
+              "pass": true
+            },
+            "hit@3": {
+              "value": 0.5789,
+              "floor": 0.42,
+              "pass": true
+            },
+            "hit@5": {
+              "value": 0.6316,
+              "floor": 0.47,
+              "pass": true
+            },
+            "hit@10": {
+              "value": 0.7368,
+              "floor": 0.68,
+              "pass": true
+            },
+            "mrr": {
+              "value": 0.5202,
+              "floor": 0.41,
+              "pass": true
+            },
+            "ndcg@5": {
+              "value": 0.9344902129761469,
+              "floor": 0.93,
+              "pass": true
+            },
+            "ndcg@10": {
+              "value": 0.9483051496033104,
+              "floor": 0.94,
+              "pass": true
+            }
+          }
+        },
+        "eligible": false
+      },
+      {
+        "weight": 0.05,
+        "metrics": {
+          "n_reverse_match": 19,
+          "n_gold": 1,
+          "hit@1": 0.4211,
+          "hit@3": 0.5263,
+          "hit@5": 0.6316,
+          "hit@10": 0.7368,
+          "mrr": 0.5161,
+          "seed_found_rate": 1.0,
+          "ndcg@5": 0.9345,
+          "ndcg@10": 0.9369,
+          "raw_ndcg@5": 0.9344902129761469,
+          "raw_ndcg@10": 0.9368767596431031
+        },
+        "ndcg10_delta_vs_neutral": -0.012158413179717886,
+        "floors": {
+          "pass": false,
+          "metrics": {
+            "seed_found_rate": {
+              "value": 1.0,
+              "floor": 1.0,
+              "pass": true
+            },
+            "hit@3": {
+              "value": 0.5263,
+              "floor": 0.42,
+              "pass": true
+            },
+            "hit@5": {
+              "value": 0.6316,
+              "floor": 0.47,
+              "pass": true
+            },
+            "hit@10": {
+              "value": 0.7368,
+              "floor": 0.68,
+              "pass": true
+            },
+            "mrr": {
+              "value": 0.5161,
+              "floor": 0.41,
+              "pass": true
+            },
+            "ndcg@5": {
+              "value": 0.9344902129761469,
+              "floor": 0.93,
+              "pass": true
+            },
+            "ndcg@10": {
+              "value": 0.9368767596431031,
+              "floor": 0.94,
+              "pass": false
+            }
+          }
+        },
+        "eligible": false
+      },
+      {
+        "weight": 0.075,
+        "metrics": {
+          "n_reverse_match": 19,
+          "n_gold": 1,
+          "hit@1": 0.3158,
+          "hit@3": 0.4737,
+          "hit@5": 0.6316,
+          "hit@10": 0.7368,
+          "mrr": 0.4556,
+          "seed_found_rate": 1.0,
+          "ndcg@5": 0.9345,
+          "ndcg@10": 0.9354,
+          "raw_ndcg@5": 0.9344902129761469,
+          "raw_ndcg@10": 0.9353604211779284
+        },
+        "ndcg10_delta_vs_neutral": -0.013674751644892624,
+        "floors": {
+          "pass": false,
+          "metrics": {
+            "seed_found_rate": {
+              "value": 1.0,
+              "floor": 1.0,
+              "pass": true
+            },
+            "hit@3": {
+              "value": 0.4737,
+              "floor": 0.42,
+              "pass": true
+            },
+            "hit@5": {
+              "value": 0.6316,
+              "floor": 0.47,
+              "pass": true
+            },
+            "hit@10": {
+              "value": 0.7368,
+              "floor": 0.68,
+              "pass": true
+            },
+            "mrr": {
+              "value": 0.4556,
+              "floor": 0.41,
+              "pass": true
+            },
+            "ndcg@5": {
+              "value": 0.9344902129761469,
+              "floor": 0.93,
+              "pass": true
+            },
+            "ndcg@10": {
+              "value": 0.9353604211779284,
+              "floor": 0.94,
+              "pass": false
+            }
+          }
+        },
+        "eligible": false
+      },
+      {
+        "weight": 0.1,
+        "metrics": {
+          "n_reverse_match": 19,
+          "n_gold": 1,
+          "hit@1": 0.2632,
+          "hit@3": 0.4737,
+          "hit@5": 0.6316,
+          "hit@10": 0.6842,
+          "mrr": 0.4158,
+          "seed_found_rate": 1.0,
+          "ndcg@5": 0.9288,
+          "ndcg@10": 0.9118,
+          "raw_ndcg@5": 0.9287796401994785,
+          "raw_ndcg@10": 0.9118104907250788
+        },
+        "ndcg10_delta_vs_neutral": -0.03722468209774221,
+        "floors": {
+          "pass": false,
+          "metrics": {
+            "seed_found_rate": {
+              "value": 1.0,
+              "floor": 1.0,
+              "pass": true
+            },
+            "hit@3": {
+              "value": 0.4737,
+              "floor": 0.42,
+              "pass": true
+            },
+            "hit@5": {
+              "value": 0.6316,
+              "floor": 0.47,
+              "pass": true
+            },
+            "hit@10": {
+              "value": 0.6842,
+              "floor": 0.68,
+              "pass": true
+            },
+            "mrr": {
+              "value": 0.4158,
+              "floor": 0.41,
+              "pass": true
+            },
+            "ndcg@5": {
+              "value": 0.9287796401994785,
+              "floor": 0.93,
+              "pass": false
+            },
+            "ndcg@10": {
+              "value": 0.9118104907250788,
+              "floor": 0.94,
+              "pass": false
+            }
+          }
+        },
+        "eligible": false
+      },
+      {
+        "weight": 0.15,
+        "metrics": {
+          "n_reverse_match": 19,
+          "n_gold": 1,
+          "hit@1": 0.2632,
+          "hit@3": 0.4211,
+          "hit@5": 0.4737,
+          "hit@10": 0.6842,
+          "mrr": 0.3824,
+          "seed_found_rate": 1.0,
+          "ndcg@5": 0.9288,
+          "ndcg@10": 0.8847,
+          "raw_ndcg@5": 0.9287796401994785,
+          "raw_ndcg@10": 0.884706487629475
+        },
+        "ndcg10_delta_vs_neutral": -0.064328685193346,
+        "floors": {
+          "pass": false,
+          "metrics": {
+            "seed_found_rate": {
+              "value": 1.0,
+              "floor": 1.0,
+              "pass": true
+            },
+            "hit@3": {
+              "value": 0.4211,
+              "floor": 0.42,
+              "pass": true
+            },
+            "hit@5": {
+              "value": 0.4737,
+              "floor": 0.47,
+              "pass": true
+            },
+            "hit@10": {
+              "value": 0.6842,
+              "floor": 0.68,
+              "pass": true
+            },
+            "mrr": {
+              "value": 0.3824,
+              "floor": 0.41,
+              "pass": false
+            },
+            "ndcg@5": {
+              "value": 0.9287796401994785,
+              "floor": 0.93,
+              "pass": false
+            },
+            "ndcg@10": {
+              "value": 0.884706487629475,
+              "floor": 0.94,
+              "pass": false
+            }
+          }
+        },
+        "eligible": false
+      },
+      {
+        "weight": 0.2,
+        "metrics": {
+          "n_reverse_match": 19,
+          "n_gold": 1,
+          "hit@1": 0.2632,
+          "hit@3": 0.3158,
+          "hit@5": 0.4211,
+          "hit@10": 0.6842,
+          "mrr": 0.3547,
+          "seed_found_rate": 1.0,
+          "ndcg@5": 0.8901,
+          "ndcg@10": 0.8731,
+          "raw_ndcg@5": 0.8900835050186319,
+          "raw_ndcg@10": 0.8731300437385467
+        },
+        "ndcg10_delta_vs_neutral": -0.07590512908427427,
+        "floors": {
+          "pass": false,
+          "metrics": {
+            "seed_found_rate": {
+              "value": 1.0,
+              "floor": 1.0,
+              "pass": true
+            },
+            "hit@3": {
+              "value": 0.3158,
+              "floor": 0.42,
+              "pass": false
+            },
+            "hit@5": {
+              "value": 0.4211,
+              "floor": 0.47,
+              "pass": false
+            },
+            "hit@10": {
+              "value": 0.6842,
+              "floor": 0.68,
+              "pass": true
+            },
+            "mrr": {
+              "value": 0.3547,
+              "floor": 0.41,
+              "pass": false
+            },
+            "ndcg@5": {
+              "value": 0.8900835050186319,
+              "floor": 0.93,
+              "pass": false
+            },
+            "ndcg@10": {
+              "value": 0.8731300437385467,
+              "floor": 0.94,
+              "pass": false
+            }
+          }
+        },
+        "eligible": false
+      }
+    ],
+    "language_score": [
+      {
+        "weight": 0.0,
+        "metrics": {
+          "n_reverse_match": 19,
+          "n_gold": 1,
+          "hit@1": 0.4211,
+          "hit@3": 0.5789,
+          "hit@5": 0.6316,
+          "hit@10": 0.7895,
+          "mrr": 0.519,
+          "seed_found_rate": 1.0,
+          "ndcg@5": 0.9356,
+          "ndcg@10": 0.949,
+          "raw_ndcg@5": 0.9355992005238581,
+          "raw_ndcg@10": 0.949035172822821
+        },
+        "ndcg10_delta_vs_neutral": 0.0,
+        "floors": {
+          "pass": true,
+          "metrics": {
+            "seed_found_rate": {
+              "value": 1.0,
+              "floor": 1.0,
+              "pass": true
+            },
+            "hit@3": {
+              "value": 0.5789,
+              "floor": 0.42,
+              "pass": true
+            },
+            "hit@5": {
+              "value": 0.6316,
+              "floor": 0.47,
+              "pass": true
+            },
+            "hit@10": {
+              "value": 0.7895,
+              "floor": 0.68,
+              "pass": true
+            },
+            "mrr": {
+              "value": 0.519,
+              "floor": 0.41,
+              "pass": true
+            },
+            "ndcg@5": {
+              "value": 0.9355992005238581,
+              "floor": 0.93,
+              "pass": true
+            },
+            "ndcg@10": {
+              "value": 0.949035172822821,
+              "floor": 0.94,
+              "pass": true
+            }
+          }
+        },
+        "eligible": false
+      },
+      {
+        "weight": 0.01,
+        "metrics": {
+          "n_reverse_match": 19,
+          "n_gold": 1,
+          "hit@1": 0.4211,
+          "hit@3": 0.5789,
+          "hit@5": 0.6316,
+          "hit@10": 0.7895,
+          "mrr": 0.519,
+          "seed_found_rate": 1.0,
+          "ndcg@5": 0.9356,
+          "ndcg@10": 0.949,
+          "raw_ndcg@5": 0.9355992005238581,
+          "raw_ndcg@10": 0.949035172822821
+        },
+        "ndcg10_delta_vs_neutral": 0.0,
+        "floors": {
+          "pass": true,
+          "metrics": {
+            "seed_found_rate": {
+              "value": 1.0,
+              "floor": 1.0,
+              "pass": true
+            },
+            "hit@3": {
+              "value": 0.5789,
+              "floor": 0.42,
+              "pass": true
+            },
+            "hit@5": {
+              "value": 0.6316,
+              "floor": 0.47,
+              "pass": true
+            },
+            "hit@10": {
+              "value": 0.7895,
+              "floor": 0.68,
+              "pass": true
+            },
+            "mrr": {
+              "value": 0.519,
+              "floor": 0.41,
+              "pass": true
+            },
+            "ndcg@5": {
+              "value": 0.9355992005238581,
+              "floor": 0.93,
+              "pass": true
+            },
+            "ndcg@10": {
+              "value": 0.949035172822821,
+              "floor": 0.94,
+              "pass": true
+            }
+          }
+        },
+        "eligible": false
+      },
+      {
+        "weight": 0.02,
+        "metrics": {
+          "n_reverse_match": 19,
+          "n_gold": 1,
+          "hit@1": 0.4211,
+          "hit@3": 0.5789,
+          "hit@5": 0.6316,
+          "hit@10": 0.7895,
+          "mrr": 0.519,
+          "seed_found_rate": 1.0,
+          "ndcg@5": 0.9356,
+          "ndcg@10": 0.949,
+          "raw_ndcg@5": 0.9355992005238581,
+          "raw_ndcg@10": 0.949035172822821
+        },
+        "ndcg10_delta_vs_neutral": 0.0,
+        "floors": {
+          "pass": true,
+          "metrics": {
+            "seed_found_rate": {
+              "value": 1.0,
+              "floor": 1.0,
+              "pass": true
+            },
+            "hit@3": {
+              "value": 0.5789,
+              "floor": 0.42,
+              "pass": true
+            },
+            "hit@5": {
+              "value": 0.6316,
+              "floor": 0.47,
+              "pass": true
+            },
+            "hit@10": {
+              "value": 0.7895,
+              "floor": 0.68,
+              "pass": true
+            },
+            "mrr": {
+              "value": 0.519,
+              "floor": 0.41,
+              "pass": true
+            },
+            "ndcg@5": {
+              "value": 0.9355992005238581,
+              "floor": 0.93,
+              "pass": true
+            },
+            "ndcg@10": {
+              "value": 0.949035172822821,
+              "floor": 0.94,
+              "pass": true
+            }
+          }
+        },
+        "eligible": false
+      },
+      {
+        "weight": 0.03,
+        "metrics": {
+          "n_reverse_match": 19,
+          "n_gold": 1,
+          "hit@1": 0.4211,
+          "hit@3": 0.5789,
+          "hit@5": 0.6316,
+          "hit@10": 0.7895,
+          "mrr": 0.519,
+          "seed_found_rate": 1.0,
+          "ndcg@5": 0.9356,
+          "ndcg@10": 0.949,
+          "raw_ndcg@5": 0.9355992005238581,
+          "raw_ndcg@10": 0.949035172822821
+        },
+        "ndcg10_delta_vs_neutral": 0.0,
+        "floors": {
+          "pass": true,
+          "metrics": {
+            "seed_found_rate": {
+              "value": 1.0,
+              "floor": 1.0,
+              "pass": true
+            },
+            "hit@3": {
+              "value": 0.5789,
+              "floor": 0.42,
+              "pass": true
+            },
+            "hit@5": {
+              "value": 0.6316,
+              "floor": 0.47,
+              "pass": true
+            },
+            "hit@10": {
+              "value": 0.7895,
+              "floor": 0.68,
+              "pass": true
+            },
+            "mrr": {
+              "value": 0.519,
+              "floor": 0.41,
+              "pass": true
+            },
+            "ndcg@5": {
+              "value": 0.9355992005238581,
+              "floor": 0.93,
+              "pass": true
+            },
+            "ndcg@10": {
+              "value": 0.949035172822821,
+              "floor": 0.94,
+              "pass": true
+            }
+          }
+        },
+        "eligible": false
+      },
+      {
+        "weight": 0.05,
+        "metrics": {
+          "n_reverse_match": 19,
+          "n_gold": 1,
+          "hit@1": 0.4211,
+          "hit@3": 0.5789,
+          "hit@5": 0.6316,
+          "hit@10": 0.7895,
+          "mrr": 0.519,
+          "seed_found_rate": 1.0,
+          "ndcg@5": 0.9376,
+          "ndcg@10": 0.9526,
+          "raw_ndcg@5": 0.9375819894360747,
+          "raw_ndcg@10": 0.9525655602603615
+        },
+        "ndcg10_delta_vs_neutral": 0.0035303874375405275,
+        "floors": {
+          "pass": true,
+          "metrics": {
+            "seed_found_rate": {
+              "value": 1.0,
+              "floor": 1.0,
+              "pass": true
+            },
+            "hit@3": {
+              "value": 0.5789,
+              "floor": 0.42,
+              "pass": true
+            },
+            "hit@5": {
+              "value": 0.6316,
+              "floor": 0.47,
+              "pass": true
+            },
+            "hit@10": {
+              "value": 0.7895,
+              "floor": 0.68,
+              "pass": true
+            },
+            "mrr": {
+              "value": 0.519,
+              "floor": 0.41,
+              "pass": true
+            },
+            "ndcg@5": {
+              "value": 0.9375819894360747,
+              "floor": 0.93,
+              "pass": true
+            },
+            "ndcg@10": {
+              "value": 0.9525655602603615,
+              "floor": 0.94,
+              "pass": true
+            }
+          }
+        },
+        "eligible": true
+      },
+      {
+        "weight": 0.075,
+        "metrics": {
+          "n_reverse_match": 19,
+          "n_gold": 1,
+          "hit@1": 0.4211,
+          "hit@3": 0.5789,
+          "hit@5": 0.6316,
+          "hit@10": 0.7895,
+          "mrr": 0.519,
+          "seed_found_rate": 1.0,
+          "ndcg@5": 0.9376,
+          "ndcg@10": 0.9526,
+          "raw_ndcg@5": 0.9375819894360747,
+          "raw_ndcg@10": 0.9525655602603615
+        },
+        "ndcg10_delta_vs_neutral": 0.0035303874375405275,
+        "floors": {
+          "pass": true,
+          "metrics": {
+            "seed_found_rate": {
+              "value": 1.0,
+              "floor": 1.0,
+              "pass": true
+            },
+            "hit@3": {
+              "value": 0.5789,
+              "floor": 0.42,
+              "pass": true
+            },
+            "hit@5": {
+              "value": 0.6316,
+              "floor": 0.47,
+              "pass": true
+            },
+            "hit@10": {
+              "value": 0.7895,
+              "floor": 0.68,
+              "pass": true
+            },
+            "mrr": {
+              "value": 0.519,
+              "floor": 0.41,
+              "pass": true
+            },
+            "ndcg@5": {
+              "value": 0.9375819894360747,
+              "floor": 0.93,
+              "pass": true
+            },
+            "ndcg@10": {
+              "value": 0.9525655602603615,
+              "floor": 0.94,
+              "pass": true
+            }
+          }
+        },
+        "eligible": true
+      },
+      {
+        "weight": 0.1,
+        "metrics": {
+          "n_reverse_match": 19,
+          "n_gold": 1,
+          "hit@1": 0.4211,
+          "hit@3": 0.5789,
+          "hit@5": 0.6316,
+          "hit@10": 0.7895,
+          "mrr": 0.519,
+          "seed_found_rate": 1.0,
+          "ndcg@5": 0.9446,
+          "ndcg@10": 0.9572,
+          "raw_ndcg@5": 0.9445866552796904,
+          "raw_ndcg@10": 0.9571765847225439
+        },
+        "ndcg10_delta_vs_neutral": 0.008141411899722839,
+        "floors": {
+          "pass": true,
+          "metrics": {
+            "seed_found_rate": {
+              "value": 1.0,
+              "floor": 1.0,
+              "pass": true
+            },
+            "hit@3": {
+              "value": 0.5789,
+              "floor": 0.42,
+              "pass": true
+            },
+            "hit@5": {
+              "value": 0.6316,
+              "floor": 0.47,
+              "pass": true
+            },
+            "hit@10": {
+              "value": 0.7895,
+              "floor": 0.68,
+              "pass": true
+            },
+            "mrr": {
+              "value": 0.519,
+              "floor": 0.41,
+              "pass": true
+            },
+            "ndcg@5": {
+              "value": 0.9445866552796904,
+              "floor": 0.93,
+              "pass": true
+            },
+            "ndcg@10": {
+              "value": 0.9571765847225439,
+              "floor": 0.94,
+              "pass": true
+            }
+          }
+        },
+        "eligible": true
+      },
+      {
+        "weight": 0.15,
+        "metrics": {
+          "n_reverse_match": 19,
+          "n_gold": 1,
+          "hit@1": 0.4211,
+          "hit@3": 0.5789,
+          "hit@5": 0.6316,
+          "hit@10": 0.7895,
+          "mrr": 0.519,
+          "seed_found_rate": 1.0,
+          "ndcg@5": 0.9464,
+          "ndcg@10": 0.9588,
+          "raw_ndcg@5": 0.9464384341033937,
+          "raw_ndcg@10": 0.9587859024394491
+        },
+        "ndcg10_delta_vs_neutral": 0.00975072961662804,
+        "floors": {
+          "pass": true,
+          "metrics": {
+            "seed_found_rate": {
+              "value": 1.0,
+              "floor": 1.0,
+              "pass": true
+            },
+            "hit@3": {
+              "value": 0.5789,
+              "floor": 0.42,
+              "pass": true
+            },
+            "hit@5": {
+              "value": 0.6316,
+              "floor": 0.47,
+              "pass": true
+            },
+            "hit@10": {
+              "value": 0.7895,
+              "floor": 0.68,
+              "pass": true
+            },
+            "mrr": {
+              "value": 0.519,
+              "floor": 0.41,
+              "pass": true
+            },
+            "ndcg@5": {
+              "value": 0.9464384341033937,
+              "floor": 0.93,
+              "pass": true
+            },
+            "ndcg@10": {
+              "value": 0.9587859024394491,
+              "floor": 0.94,
+              "pass": true
+            }
+          }
+        },
+        "eligible": true
+      },
+      {
+        "weight": 0.2,
+        "metrics": {
+          "n_reverse_match": 19,
+          "n_gold": 1,
+          "hit@1": 0.4211,
+          "hit@3": 0.5789,
+          "hit@5": 0.6316,
+          "hit@10": 0.7895,
+          "mrr": 0.519,
+          "seed_found_rate": 1.0,
+          "ndcg@5": 0.9464,
+          "ndcg@10": 0.9588,
+          "raw_ndcg@5": 0.9464384341033937,
+          "raw_ndcg@10": 0.9587859024394491
+        },
+        "ndcg10_delta_vs_neutral": 0.00975072961662804,
+        "floors": {
+          "pass": true,
+          "metrics": {
+            "seed_found_rate": {
+              "value": 1.0,
+              "floor": 1.0,
+              "pass": true
+            },
+            "hit@3": {
+              "value": 0.5789,
+              "floor": 0.42,
+              "pass": true
+            },
+            "hit@5": {
+              "value": 0.6316,
+              "floor": 0.47,
+              "pass": true
+            },
+            "hit@10": {
+              "value": 0.7895,
+              "floor": 0.68,
+              "pass": true
+            },
+            "mrr": {
+              "value": 0.519,
+              "floor": 0.41,
+              "pass": true
+            },
+            "ndcg@5": {
+              "value": 0.9464384341033937,
+              "floor": 0.93,
+              "pass": true
+            },
+            "ndcg@10": {
+              "value": 0.9587859024394491,
+              "floor": 0.94,
+              "pass": true
+            }
+          }
+        },
+        "eligible": true
+      }
+    ]
+  },
+  "best_individual": {
+    "language_score": {
+      "weight": 0.15,
+      "metrics": {
+        "n_reverse_match": 19,
+        "n_gold": 1,
+        "hit@1": 0.4211,
+        "hit@3": 0.5789,
+        "hit@5": 0.6316,
+        "hit@10": 0.7895,
+        "mrr": 0.519,
+        "seed_found_rate": 1.0,
+        "ndcg@5": 0.9464,
+        "ndcg@10": 0.9588,
+        "raw_ndcg@5": 0.9464384341033937,
+        "raw_ndcg@10": 0.9587859024394491
+      },
+      "ndcg10_delta_vs_neutral": 0.00975072961662804,
+      "floors": {
+        "pass": true,
+        "metrics": {
+          "seed_found_rate": {
+            "value": 1.0,
+            "floor": 1.0,
+            "pass": true
+          },
+          "hit@3": {
+            "value": 0.5789,
+            "floor": 0.42,
+            "pass": true
+          },
+          "hit@5": {
+            "value": 0.6316,
+            "floor": 0.47,
+            "pass": true
+          },
+          "hit@10": {
+            "value": 0.7895,
+            "floor": 0.68,
+            "pass": true
+          },
+          "mrr": {
+            "value": 0.519,
+            "floor": 0.41,
+            "pass": true
+          },
+          "ndcg@5": {
+            "value": 0.9464384341033937,
+            "floor": 0.93,
+            "pass": true
+          },
+          "ndcg@10": {
+            "value": 0.9587859024394491,
+            "floor": 0.94,
+            "pass": true
+          }
+        }
+      },
+      "eligible": true
+    }
+  },
+  "combinations": [
+    {
+      "components": [],
+      "weights": {},
+      "metrics": {
+        "n_reverse_match": 19,
+        "n_gold": 1,
+        "hit@1": 0.4211,
+        "hit@3": 0.5789,
+        "hit@5": 0.6316,
+        "hit@10": 0.7895,
+        "mrr": 0.519,
+        "seed_found_rate": 1.0,
+        "ndcg@5": 0.9356,
+        "ndcg@10": 0.949,
+        "raw_ndcg@5": 0.9355992005238581,
+        "raw_ndcg@10": 0.949035172822821
+      },
+      "ndcg10_delta_vs_neutral": 0.0,
+      "floors": {
+        "pass": true,
+        "metrics": {
+          "seed_found_rate": {
+            "value": 1.0,
+            "floor": 1.0,
+            "pass": true
+          },
+          "hit@3": {
+            "value": 0.5789,
+            "floor": 0.42,
+            "pass": true
+          },
+          "hit@5": {
+            "value": 0.6316,
+            "floor": 0.47,
+            "pass": true
+          },
+          "hit@10": {
+            "value": 0.7895,
+            "floor": 0.68,
+            "pass": true
+          },
+          "mrr": {
+            "value": 0.519,
+            "floor": 0.41,
+            "pass": true
+          },
+          "ndcg@5": {
+            "value": 0.9355992005238581,
+            "floor": 0.93,
+            "pass": true
+          },
+          "ndcg@10": {
+            "value": 0.949035172822821,
+            "floor": 0.94,
+            "pass": true
+          }
+        }
+      },
+      "leave_one_out": {},
+      "valid": true
+    },
+    {
+      "components": [
+        "language_score"
+      ],
+      "weights": {
+        "language_score": 0.15
+      },
+      "metrics": {
+        "n_reverse_match": 19,
+        "n_gold": 1,
+        "hit@1": 0.4211,
+        "hit@3": 0.5789,
+        "hit@5": 0.6316,
+        "hit@10": 0.7895,
+        "mrr": 0.519,
+        "seed_found_rate": 1.0,
+        "ndcg@5": 0.9464,
+        "ndcg@10": 0.9588,
+        "raw_ndcg@5": 0.9464384341033937,
+        "raw_ndcg@10": 0.9587859024394491
+      },
+      "ndcg10_delta_vs_neutral": 0.00975072961662804,
+      "floors": {
+        "pass": true,
+        "metrics": {
+          "seed_found_rate": {
+            "value": 1.0,
+            "floor": 1.0,
+            "pass": true
+          },
+          "hit@3": {
+            "value": 0.5789,
+            "floor": 0.42,
+            "pass": true
+          },
+          "hit@5": {
+            "value": 0.6316,
+            "floor": 0.47,
+            "pass": true
+          },
+          "hit@10": {
+            "value": 0.7895,
+            "floor": 0.68,
+            "pass": true
+          },
+          "mrr": {
+            "value": 0.519,
+            "floor": 0.41,
+            "pass": true
+          },
+          "ndcg@5": {
+            "value": 0.9464384341033937,
+            "floor": 0.93,
+            "pass": true
+          },
+          "ndcg@10": {
+            "value": 0.9587859024394491,
+            "floor": 0.94,
+            "pass": true
+          }
+        }
+      },
+      "leave_one_out": {
+        "language_score": {
+          "ndcg10_delta": 0.00975072961662804,
+          "pass": true
+        }
+      },
+      "valid": true
+    }
+  ],
+  "selected": {
+    "components": [
+      "language_score"
+    ],
+    "weights": {
+      "language_score": 0.15
+    },
+    "metrics": {
+      "n_reverse_match": 19,
+      "n_gold": 1,
+      "hit@1": 0.4211,
+      "hit@3": 0.5789,
+      "hit@5": 0.6316,
+      "hit@10": 0.7895,
+      "mrr": 0.519,
+      "seed_found_rate": 1.0,
+      "ndcg@5": 0.9464,
+      "ndcg@10": 0.9588,
+      "raw_ndcg@5": 0.9464384341033937,
+      "raw_ndcg@10": 0.9587859024394491
+    },
+    "ndcg10_delta_vs_neutral": 0.00975072961662804,
+    "floors": {
+      "pass": true,
+      "metrics": {
+        "seed_found_rate": {
+          "value": 1.0,
+          "floor": 1.0,
+          "pass": true
+        },
+        "hit@3": {
+          "value": 0.5789,
+          "floor": 0.42,
+          "pass": true
+        },
+        "hit@5": {
+          "value": 0.6316,
+          "floor": 0.47,
+          "pass": true
+        },
+        "hit@10": {
+          "value": 0.7895,
+          "floor": 0.68,
+          "pass": true
+        },
+        "mrr": {
+          "value": 0.519,
+          "floor": 0.41,
+          "pass": true
+        },
+        "ndcg@5": {
+          "value": 0.9464384341033937,
+          "floor": 0.93,
+          "pass": true
+        },
+        "ndcg@10": {
+          "value": 0.9587859024394491,
+          "floor": 0.94,
+          "pass": true
+        }
+      }
+    },
+    "leave_one_out": {
+      "language_score": {
+        "ndcg10_delta": 0.00975072961662804,
+        "pass": true
+      }
+    },
+    "valid": true
+  },
+  "recommended_c5_weights": {
+    "attrition_score": 0.0,
+    "experience_relevance_score": 0.0,
+    "education_relevance_score": 0.0,
+    "language_score": 0.15
+  }
+}

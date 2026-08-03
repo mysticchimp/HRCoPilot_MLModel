@@ -1,0 +1,652 @@
+{
+  "type": "object",
+  "properties": {
+    "role": {
+      "type": "string",
+      "description": "Job title or role name",
+      "example": "Senior Security Administrator"
+    },
+    "company": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string",
+          "description": "Company name",
+          "example": "TechCorp Inc."
+        },
+        "size": {
+          "type": "string",
+          "description": "Company size category",
+          "enum": [
+            "startup",
+            "small",
+            "medium",
+            "large",
+            "enterprise"
+          ]
+        },
+        "stage": {
+          "type": "string",
+          "description": "Company maturity stage",
+          "enum": [
+            "early_stage",
+            "growth",
+            "mature",
+            "public"
+          ]
+        }
+      },
+      "required": [
+        "name"
+      ]
+    },
+    "industry": {
+      "type": "array",
+      "description": "Industry sectors",
+      "items": {
+        "type": "string"
+      },
+      "example": [
+        "technology",
+        "fintech",
+        "healthcare"
+      ]
+    },
+    "role_objectives": {
+      "type": "array",
+      "description": "High-level goals and objectives for the role",
+      "items": {
+        "type": "string"
+      },
+      "example": [
+        "Maintain security infrastructure",
+        "Implement compliance protocols"
+      ]
+    },
+    "responsibilities": {
+      "type": "array",
+      "description": "Specific job responsibilities and duties",
+      "items": {
+        "type": "string"
+      },
+      "example": [
+        "Monitor security systems",
+        "Conduct vulnerability assessments"
+      ]
+    },
+    "skills": {
+      "type": "array",
+      "description": "Technical and soft skills required",
+      "items": {
+        "type": "object",
+        "properties": {
+          "skill": {
+            "type": "string",
+            "description": "Skill name",
+            "example": "System Architecture"
+          },
+          "priority": {
+            "type": "string",
+            "description": "Importance level of the skill",
+            "enum": [
+              "essential",
+              "important",
+              "valuable",
+              "supplementary"
+            ]
+          },
+          "proficiency_level": {
+            "type": "string",
+            "description": "Required proficiency level",
+            "enum": [
+              "beginner",
+              "intermediate",
+              "advanced",
+              "expert"
+            ]
+          }
+        },
+        "required": [
+          "skill",
+          "priority"
+        ]
+      }
+    },
+    "technologies": {
+      "type": "array",
+      "description": "Technologies, tools, and platforms required",
+      "items": {
+        "type": "object",
+        "properties": {
+          "technology": {
+            "type": "string",
+            "description": "Technology name",
+            "example": "AWS"
+          },
+          "priority": {
+            "type": "string",
+            "description": "Importance level of the technology",
+            "enum": [
+              "essential",
+              "important",
+              "valuable",
+              "supplementary"
+            ]
+          },
+          "version": {
+            "type": "string",
+            "description": "Specific version if mentioned",
+            "example": "Python 3.9+"
+          }
+        },
+        "required": [
+          "technology",
+          "priority"
+        ]
+      }
+    },
+    "language_proficiency": {
+      "type": "array",
+      "description": "Language requirements",
+      "items": {
+        "type": "object",
+        "properties": {
+          "language": {
+            "type": "string",
+            "description": "Language name",
+            "example": "English"
+          },
+          "level": {
+            "type": "string",
+            "description": "Required proficiency level",
+            "enum": [
+              "basic",
+              "conversational",
+              "professional",
+              "native",
+              "fluent"
+            ]
+          },
+          "priority": {
+            "type": "string",
+            "description": "Importance level of the language",
+            "enum": [
+              "essential",
+              "important",
+              "valuable",
+              "supplementary"
+            ]
+          }
+        },
+        "required": [
+          "language",
+          "level",
+          "priority"
+        ]
+      }
+    },
+    "qualifications": {
+      "type": "object",
+      "properties": {
+        "education": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "degree": {
+                "type": "string",
+                "description": "Degree type",
+                "example": "Bachelor's in Computer Science"
+              },
+              "field": {
+                "type": "string",
+                "description": "Field of study",
+                "example": "Computer Science"
+              },
+              "priority": {
+                "type": "string",
+                "description": "Importance level",
+                "enum": [
+                  "essential",
+                  "important",
+                  "valuable",
+                  "supplementary"
+                ]
+              }
+            },
+            "required": [
+              "degree",
+              "priority"
+            ]
+          }
+        },
+        "certifications": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "certification": {
+                "type": "string",
+                "description": "Certification name",
+                "example": "CISSP"
+              },
+              "priority": {
+                "type": "string",
+                "description": "Importance level",
+                "enum": [
+                  "essential",
+                  "important",
+                  "valuable",
+                  "supplementary"
+                ]
+              },
+              "timeline": {
+                "type": "string",
+                "description": "When certification must be obtained",
+                "example": "within 6 months"
+              }
+            },
+            "required": [
+              "certification",
+              "priority"
+            ]
+          }
+        }
+      }
+    },
+    "experience": {
+      "type": "object",
+      "properties": {
+        "level": {
+          "type": "string",
+          "description": "Seniority level",
+          "enum": [
+            "entry",
+            "mid",
+            "senior",
+            "executive",
+            "c_level"
+          ]
+        },
+        "years_total": {
+          "type": "object",
+          "properties": {
+            "min": {
+              "type": "integer",
+              "description": "Minimum years of experience"
+            },
+            "max": {
+              "type": "integer",
+              "description": "Maximum years of experience"
+            }
+          }
+        },
+        "years_relevant": {
+          "type": "object",
+          "properties": {
+            "min": {
+              "type": "integer",
+              "description": "Minimum years of relevant experience"
+            },
+            "max": {
+              "type": "integer",
+              "description": "Maximum years of relevant experience"
+            }
+          }
+        },
+        "industry_experience": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "industry": {
+                "type": "string",
+                "description": "Industry name",
+                "example": "fintech"
+              },
+              "priority": {
+                "type": "string",
+                "description": "Importance level",
+                "enum": [
+                  "essential",
+                  "important",
+                  "valuable",
+                  "supplementary"
+                ]
+              }
+            },
+            "required": [
+              "industry",
+              "priority"
+            ]
+          }
+        },
+        "leadership": {
+          "type": "object",
+          "properties": {
+            "required": {
+              "type": "boolean",
+              "description": "Whether leadership experience is required"
+            },
+            "team_size": {
+              "type": "object",
+              "properties": {
+                "min": {
+                  "type": "integer",
+                  "description": "Minimum team size managed"
+                },
+                "max": {
+                  "type": "integer",
+                  "description": "Maximum team size managed"
+                }
+              }
+            },
+            "priority": {
+              "type": "string",
+              "description": "Importance level",
+              "enum": [
+                "essential",
+                "important",
+                "valuable",
+                "supplementary"
+              ]
+            }
+          }
+        }
+      }
+    },
+    "location": {
+      "type": "object",
+      "properties": {
+        "cities": {
+          "type": "array",
+          "description": "Acceptable cities",
+          "items": {
+            "type": "string"
+          },
+          "example": [
+            "San Francisco",
+            "New York",
+            "Remote"
+          ]
+        },
+        "countries": {
+          "type": "array",
+          "description": "Acceptable countries",
+          "items": {
+            "type": "string"
+          },
+          "example": [
+            "USA",
+            "Canada"
+          ]
+        },
+        "remote_options": {
+          "type": "string",
+          "description": "Work arrangement options",
+          "enum": [
+            "remote",
+            "hybrid",
+            "on_site",
+            "flexible"
+          ]
+        },
+        "travel_requirements": {
+          "type": "object",
+          "properties": {
+            "percentage": {
+              "type": "integer",
+              "description": "Travel percentage required",
+              "example": 25
+            },
+            "frequency": {
+              "type": "string",
+              "description": "Travel frequency description",
+              "example": "quarterly client visits"
+            }
+          }
+        },
+        "relocation": {
+          "type": "object",
+          "properties": {
+            "assistance_available": {
+              "type": "boolean",
+              "description": "Whether relocation assistance is provided"
+            },
+            "required": {
+              "type": "boolean",
+              "description": "Whether relocation is required"
+            }
+          }
+        }
+      }
+    },
+    "employment_details": {
+      "type": "object",
+      "properties": {
+        "type": {
+          "type": "string",
+          "description": "Employment type",
+          "enum": [
+            "full_time",
+            "part_time",
+            "contract",
+            "contract_to_hire",
+            "internship"
+          ]
+        },
+        "urgency": {
+          "type": "string",
+          "description": "Hiring timeline urgency",
+          "enum": [
+            "immediate",
+            "within_30_days",
+            "within_60_days",
+            "flexible"
+          ]
+        },
+        "salary_range": {
+          "type": "object",
+          "properties": {
+            "min": {
+              "type": "number",
+              "description": "Minimum salary"
+            },
+            "max": {
+              "type": "number",
+              "description": "Maximum salary"
+            },
+            "currency": {
+              "type": "string",
+              "description": "Currency code",
+              "example": "USD"
+            },
+            "frequency": {
+              "type": "string",
+              "description": "Pay frequency",
+              "enum": [
+                "hourly",
+                "annually",
+                "monthly"
+              ]
+            }
+          }
+        },
+        "benefits": {
+          "type": "array",
+          "description": "Benefits and perks mentioned",
+          "items": {
+            "type": "string"
+          },
+          "example": [
+            "health insurance",
+            "401k",
+            "remote work"
+          ]
+        }
+      }
+    },
+    "soft_skills": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "skill": {
+            "type": "string",
+            "description": "Soft skill name",
+            "example": "Communication"
+          },
+          "priority": {
+            "type": "string",
+            "description": "Importance level",
+            "enum": [
+              "essential",
+              "important",
+              "valuable",
+              "supplementary"
+            ]
+          },
+          "context": {
+            "type": "string",
+            "description": "Context or specific application",
+            "example": "client-facing communication"
+          }
+        },
+        "required": [
+          "skill",
+          "priority"
+        ]
+      }
+    },
+    "project_context": {
+      "type": "object",
+      "properties": {
+        "types": {
+          "type": "array",
+          "description": "Types of projects they'll work on",
+          "items": {
+            "type": "string"
+          },
+          "example": [
+            "infrastructure migration",
+            "security compliance"
+          ]
+        },
+        "methodologies": {
+          "type": "array",
+          "description": "Work methodologies used",
+          "items": {
+            "type": "string"
+          },
+          "example": [
+            "agile",
+            "devops",
+            "waterfall"
+          ]
+        },
+        "environment": {
+          "type": "string",
+          "description": "Technical environment",
+          "enum": [
+            "cloud",
+            "on_premise",
+            "hybrid"
+          ]
+        }
+      }
+    },
+    "team_context": {
+      "type": "object",
+      "properties": {
+        "size": {
+          "type": "integer",
+          "description": "Team size they'll join"
+        },
+        "structure": {
+          "type": "string",
+          "description": "Team structure description",
+          "example": "cross-functional agile team"
+        },
+        "reporting_to": {
+          "type": "string",
+          "description": "Role they'll report to",
+          "example": "Director of Security"
+        }
+      }
+    },
+    "compliance_legal": {
+      "type": "object",
+      "properties": {
+        "visa_sponsorship": {
+          "type": "boolean",
+          "description": "Whether visa sponsorship is available"
+        },
+        "security_clearance": {
+          "type": "object",
+          "properties": {
+            "required": {
+              "type": "boolean",
+              "description": "Whether security clearance is required"
+            },
+            "level": {
+              "type": "string",
+              "description": "Security clearance level required",
+              "example": "Secret"
+            }
+          }
+        },
+        "background_check": {
+          "type": "boolean",
+          "description": "Whether background check is required"
+        }
+      }
+    },
+    "cultural_fit": {
+      "type": "object",
+      "properties": {
+        "company_values": {
+          "type": "array",
+          "description": "Company values mentioned",
+          "items": {
+            "type": "string"
+          },
+          "example": [
+            "innovation",
+            "collaboration",
+            "integrity"
+          ]
+        },
+        "work_style": {
+          "type": "array",
+          "description": "Preferred work style traits",
+          "items": {
+            "type": "string"
+          },
+          "example": [
+            "self-motivated",
+            "detail-oriented",
+            "fast-paced"
+          ]
+        }
+      }
+    },
+    "growth_opportunities": {
+      "type": "array",
+      "description": "Career development opportunities mentioned",
+      "items": {
+        "type": "string"
+      },
+      "example": [
+        "mentorship program",
+        "conference attendance",
+        "skill development"
+      ]
+    }
+  },
+  "required": [
+    "role",
+    "company",
+    "responsibilities",
+    "skills"
+  ]
+}

@@ -1,0 +1,204 @@
+{
+  "disclaimer": "Blind consensus of LLM judges; silver evaluation, not human ground truth.",
+  "jd": "jd/HR Assistant — Prime Focus Group (Prime AC).md",
+  "judges": [
+    "claude-opus-4.8",
+    "gpt-5.5"
+  ],
+  "blind_union_size": 78,
+  "judge_agreement": {
+    "claude-opus-4.8__gpt-5.5_spearman": 0.9083
+  },
+  "metrics": [
+    {
+      "ranking": "pipeline",
+      "k": 10,
+      "ndcg": 0.9512,
+      "top_k_overlap_with_consensus": 6,
+      "mean_consensus_score": 77.15
+    },
+    {
+      "ranking": "llm_scored",
+      "k": 10,
+      "ndcg": 0.6893,
+      "top_k_overlap_with_consensus": 2,
+      "mean_consensus_score": 58.9
+    },
+    {
+      "ranking": "pipeline",
+      "k": 20,
+      "ndcg": 0.9326,
+      "top_k_overlap_with_consensus": 13,
+      "mean_consensus_score": 69.88
+    },
+    {
+      "ranking": "llm_scored",
+      "k": 20,
+      "ndcg": 0.7277,
+      "top_k_overlap_with_consensus": 7,
+      "mean_consensus_score": 57.7
+    }
+  ],
+  "consensus_top20": [
+    {
+      "consensus_rank": 1,
+      "candidate_id": "muhammed-ashar-k-19b216236",
+      "title": "Human Resources Assistant",
+      "judge_mean_score": 85.0,
+      "pipeline_rank": 4,
+      "llm_rank": 54
+    },
+    {
+      "consensus_rank": 2,
+      "candidate_id": "harikrishna-r-87b3ab253",
+      "title": "HR Officer - Group Operations",
+      "judge_mean_score": 84.5,
+      "pipeline_rank": 10,
+      "llm_rank": 4
+    },
+    {
+      "consensus_rank": 3,
+      "candidate_id": "megha-p-s",
+      "title": "HR Executive",
+      "judge_mean_score": 82.5,
+      "pipeline_rank": 19,
+      "llm_rank": 25
+    },
+    {
+      "consensus_rank": 4,
+      "candidate_id": "amulya-dattada-941b89231",
+      "title": "HR Operations Executive",
+      "judge_mean_score": 80.0,
+      "pipeline_rank": 1,
+      "llm_rank": 42
+    },
+    {
+      "consensus_rank": 4,
+      "candidate_id": "shafas-hussain-5b9850214",
+      "title": "Human Resources Executive, (HR Operation & Payroll)",
+      "judge_mean_score": 80.0,
+      "pipeline_rank": 21,
+      "llm_rank": 24
+    },
+    {
+      "consensus_rank": 6,
+      "candidate_id": "savaf-methiyil-744910316",
+      "title": "Human Resources Assistant",
+      "judge_mean_score": 79.5,
+      "pipeline_rank": 5,
+      "llm_rank": 39
+    },
+    {
+      "consensus_rank": 7,
+      "candidate_id": "sabeeh-ansari-43525923b",
+      "title": "HR and Administrative Executive",
+      "judge_mean_score": 77.5,
+      "pipeline_rank": 7,
+      "llm_rank": 5
+    },
+    {
+      "consensus_rank": 8,
+      "candidate_id": "ranjani-anthony-raj-chrp-chrm-751669227",
+      "title": "Talent Acquisition Professional / Hr Executive",
+      "judge_mean_score": 77.0,
+      "pipeline_rank": 31,
+      "llm_rank": 53
+    },
+    {
+      "consensus_rank": 9,
+      "candidate_id": "shahul-p-74a571a8",
+      "title": "Assistant Manager  - Human Resources",
+      "judge_mean_score": 76.5,
+      "pipeline_rank": 20,
+      "llm_rank": 113
+    },
+    {
+      "consensus_rank": 9,
+      "candidate_id": "aiswarya-ravindran-a59569223",
+      "title": "HR operation assistant",
+      "judge_mean_score": 76.5,
+      "pipeline_rank": 8,
+      "llm_rank": 34
+    },
+    {
+      "consensus_rank": 9,
+      "candidate_id": "samasthasunoj",
+      "title": "Human Resources Assistant & Document Controller",
+      "judge_mean_score": 76.5,
+      "pipeline_rank": 3,
+      "llm_rank": 20
+    },
+    {
+      "consensus_rank": 12,
+      "candidate_id": "yoosuf-chamathadka-ali-9a018a273",
+      "title": "PRO Executive – HR Assistant",
+      "judge_mean_score": 75.0,
+      "pipeline_rank": 6,
+      "llm_rank": 13
+    },
+    {
+      "consensus_rank": 13,
+      "candidate_id": "alicia-d-souza-43660a193",
+      "title": "HR Executive",
+      "judge_mean_score": 69.5,
+      "pipeline_rank": 26,
+      "llm_rank": 69
+    },
+    {
+      "consensus_rank": 14,
+      "candidate_id": "abbas-ali-khan-558a4b400",
+      "title": "HR Coordinator/Welfare Officer",
+      "judge_mean_score": 69.5,
+      "pipeline_rank": 12,
+      "llm_rank": 2
+    },
+    {
+      "consensus_rank": 15,
+      "candidate_id": "abiya-prince-9b159b1b2",
+      "title": "HR & Admin Officer",
+      "judge_mean_score": 68.5,
+      "pipeline_rank": 9,
+      "llm_rank": 8
+    },
+    {
+      "consensus_rank": 16,
+      "candidate_id": "fathimath-farhana-parveen",
+      "title": "HR Executive",
+      "judge_mean_score": 68.5,
+      "pipeline_rank": 41,
+      "llm_rank": 19
+    },
+    {
+      "consensus_rank": 17,
+      "candidate_id": "arunmania",
+      "title": "Regional Assistant - HR (Corporate Office Dubai & NE)",
+      "judge_mean_score": 68.5,
+      "pipeline_rank": 2,
+      "llm_rank": 37
+    },
+    {
+      "consensus_rank": 18,
+      "candidate_id": "muhammad-ak-4bb07a234",
+      "title": "Assistant Manager Human Resources",
+      "judge_mean_score": 65.5,
+      "pipeline_rank": 35,
+      "llm_rank": 74
+    },
+    {
+      "consensus_rank": 19,
+      "candidate_id": "saranya-s-97a935115",
+      "title": "Human resources operations",
+      "judge_mean_score": 66.5,
+      "pipeline_rank": 50,
+      "llm_rank": 49
+    },
+    {
+      "consensus_rank": 20,
+      "candidate_id": "akhila-s-joseph-3045561a5",
+      "title": "Human Resources Executive",
+      "judge_mean_score": 65.5,
+      "pipeline_rank": 24,
+      "llm_rank": 122
+    }
+  ]
+}

@@ -1,0 +1,330 @@
+{
+  "case_id": "linkedin:catherine-njoroge-539974257",
+  "dataset": "linkedin",
+  "jd_text": "# HR Operations Executive\n\n## About the Role\n\nWe are a growing domestic staffing and placement agency looking for a dedicated **HR Operations Executive** to join our team. In this role, you will be the vital link between our domestic workforce and our clients, ensuring seamless day-to-day operations, smooth placements, and a supportive experience for everyone we serve. If you thrive in a people-facing, fast-paced environment and enjoy bringing order and clarity to complex situations, we would love to hear from you.\n\n## What You'll Do\n\n- Serve as the primary point of contact for domestic workers, handling enquiries in person, over the phone, and via messaging platforms with professionalism and empathy.\n- Manage the full lifecycle of worker contracts, including new placements, renewals, cancellations, and documentation.\n- Coordinate placements between workers and clients, ensuring the right fit and a smooth onboarding process.\n- Oversee leave management, scheduling, and attendance records for the domestic workforce.\n- Handle transport logistics, including airport pick-ups, drop-offs, and inter-city travel arrangements for workers.\n- Resolve conflicts and grievances between workers and clients through calm, solution-oriented communication.\n- Maintain accurate HR records, files, and databases in compliance with company policy and applicable regulations.\n- Support invoicing, payment follow-ups, and coordination with the finance team to ensure timely settlement of client accounts.\n- Manage office administration tasks including inventory of supplies, equipment upkeep, and vendor coordination.\n- Contribute to the development and implementation of HR policies and workflow improvements that enhance operational efficiency.\n- Prepare and present monthly operations and HR reports for management review.\n\n## What We're Looking For\n\n**Required Qualifications**\n\n- Bachelor's degree in Human Resources, Business Administration, Finance, or a related field.\n- 2+ years of experience in HR operations, staffing, placements, or a similar people-focused operational role.\n- Proven experience managing employee relations, contracts, and day-to-day HR administration.\n- Strong verbal and written communication skills, with the ability to engage professionally with workers, clients, and management.\n- Excellent conflict resolution and problem-solving abilities, especially in emotionally sensitive situations.\n- Strong organizational skills with the ability to manage multiple priorities and meet deadlines in a fast-paced environment.\n- Attention to detail, discipline, and comfort working with numbers, invoices, and records.\n- Proficiency in Microsoft Office (Word, Excel, Outlook) and familiarity with HRIS or record-keeping systems.\n\n**Preferred Qualifications**\n\n- Prior experience in the domestic staffing, hospitality, or facilities/manpower services industry.\n- Exposure to finance, invoicing, or accounts receivable functions.\n- Experience coordinating logistics such as travel and transportation.\n- Familiarity with local labor laws and compliance requirements related to domestic or contract workers.\n- A calm, empathetic temperament and a genuine passion for people-centered work.\n\n## Why Join Us\n\n- Meaningful, human-centered work where your contribution directly impacts workers' livelihoods and clients' daily lives.\n- A collaborative team environment that values initiative, empathy, and continuous improvement.\n- Opportunities for professional growth in HR, employee relations, and operations management.\n- Competitive compensation and a supportive workplace culture.\n\n*We are an equal opportunity employer and welcome applicants from all backgrounds.*",
+  "parsed_jd": {
+    "role": "HR Operations Executive",
+    "company": {
+      "name": "Domestic Staffing and Placement Agency",
+      "size": null,
+      "stage": "growth"
+    },
+    "industry": [
+      "staffing",
+      "placement services",
+      "human resources"
+    ],
+    "role_objectives": [
+      "Serve as the vital link between the domestic workforce and clients",
+      "Ensure seamless day-to-day operations and smooth placements",
+      "Provide a supportive experience for workers and clients",
+      "Bring order and clarity to complex operational situations"
+    ],
+    "responsibilities": [
+      "Serve as the primary point of contact for domestic workers, handling enquiries in person, over the phone, and via messaging platforms with professionalism and empathy",
+      "Manage the full lifecycle of worker contracts, including new placements, renewals, cancellations, and documentation",
+      "Coordinate placements between workers and clients, ensuring the right fit and a smooth onboarding process",
+      "Oversee leave management, scheduling, and attendance records for the domestic workforce",
+      "Handle transport logistics, including airport pick-ups, drop-offs, and inter-city travel arrangements for workers",
+      "Resolve conflicts and grievances between workers and clients through calm, solution-oriented communication",
+      "Maintain accurate HR records, files, and databases in compliance with company policy and applicable regulations",
+      "Support invoicing, payment follow-ups, and coordination with the finance team to ensure timely settlement of client accounts",
+      "Manage office administration tasks including inventory of supplies, equipment upkeep, and vendor coordination",
+      "Contribute to the development and implementation of HR policies and workflow improvements that enhance operational efficiency",
+      "Prepare and present monthly operations and HR reports for management review"
+    ],
+    "skills": [
+      {
+        "skill": "HR Operations",
+        "priority": "essential",
+        "proficiency_level": "intermediate"
+      },
+      {
+        "skill": "Employee Relations",
+        "priority": "essential",
+        "proficiency_level": "intermediate"
+      },
+      {
+        "skill": "Contract Management",
+        "priority": "essential",
+        "proficiency_level": "intermediate"
+      },
+      {
+        "skill": "HR Administration",
+        "priority": "essential",
+        "proficiency_level": "intermediate"
+      },
+      {
+        "skill": "Staffing and Placements",
+        "priority": "essential",
+        "proficiency_level": "intermediate"
+      },
+      {
+        "skill": "Record Keeping and Documentation",
+        "priority": "essential",
+        "proficiency_level": "advanced"
+      },
+      {
+        "skill": "Leave Management and Scheduling",
+        "priority": "essential",
+        "proficiency_level": "intermediate"
+      },
+      {
+        "skill": "Invoicing and Payment Follow-up",
+        "priority": "essential",
+        "proficiency_level": "intermediate"
+      },
+      {
+        "skill": "Office Administration",
+        "priority": "essential",
+        "proficiency_level": "intermediate"
+      },
+      {
+        "skill": "Vendor Coordination",
+        "priority": "important",
+        "proficiency_level": "intermediate"
+      },
+      {
+        "skill": "HR Policy Development",
+        "priority": "important",
+        "proficiency_level": "intermediate"
+      },
+      {
+        "skill": "Report Preparation and Presentation",
+        "priority": "essential",
+        "proficiency_level": "intermediate"
+      },
+      {
+        "skill": "Logistics Coordination",
+        "priority": "important",
+        "proficiency_level": "intermediate"
+      },
+      {
+        "skill": "Accounts Receivable",
+        "priority": "important",
+        "proficiency_level": "beginner"
+      },
+      {
+        "skill": "Labor Law Compliance",
+        "priority": "important",
+        "proficiency_level": "beginner"
+      }
+    ],
+    "technologies": [
+      {
+        "technology": "Microsoft Word",
+        "priority": "essential",
+        "version": null
+      },
+      {
+        "technology": "Microsoft Excel",
+        "priority": "essential",
+        "version": null
+      },
+      {
+        "technology": "Microsoft Outlook",
+        "priority": "essential",
+        "version": null
+      },
+      {
+        "technology": "HRIS",
+        "priority": "important",
+        "version": null
+      },
+      {
+        "technology": "Record-keeping Systems",
+        "priority": "important",
+        "version": null
+      }
+    ],
+    "language_proficiency": null,
+    "qualifications": {
+      "education": [
+        {
+          "degree": "Bachelor's degree",
+          "field": "Human Resources",
+          "priority": "essential"
+        },
+        {
+          "degree": "Bachelor's degree",
+          "field": "Business Administration",
+          "priority": "essential"
+        },
+        {
+          "degree": "Bachelor's degree",
+          "field": "Finance",
+          "priority": "essential"
+        },
+        {
+          "degree": "Bachelor's degree",
+          "field": "Related field",
+          "priority": "essential"
+        }
+      ],
+      "certifications": null
+    },
+    "experience": {
+      "level": "mid",
+      "years_total": {
+        "min": 2,
+        "max": null
+      },
+      "years_relevant": {
+        "min": 2,
+        "max": null
+      },
+      "industry_experience": [
+        {
+          "industry": "HR operations",
+          "priority": "essential"
+        },
+        {
+          "industry": "staffing and placements",
+          "priority": "essential"
+        },
+        {
+          "industry": "domestic staffing",
+          "priority": "important"
+        },
+        {
+          "industry": "hospitality",
+          "priority": "important"
+        },
+        {
+          "industry": "facilities/manpower services",
+          "priority": "important"
+        },
+        {
+          "industry": "finance/accounts receivable",
+          "priority": "important"
+        }
+      ],
+      "leadership": {
+        "required": false,
+        "team_size": null,
+        "priority": "supplementary"
+      }
+    },
+    "location": null,
+    "employment_details": {
+      "type": "full_time",
+      "urgency": null,
+      "salary_range": null,
+      "benefits": [
+        "Competitive compensation",
+        "Supportive workplace culture",
+        "Professional growth opportunities"
+      ]
+    },
+    "soft_skills": [
+      {
+        "skill": "Verbal and Written Communication",
+        "priority": "essential",
+        "context": "engaging professionally with workers, clients, and management"
+      },
+      {
+        "skill": "Conflict Resolution",
+        "priority": "essential",
+        "context": "resolving grievances between workers and clients in emotionally sensitive situations"
+      },
+      {
+        "skill": "Problem-Solving",
+        "priority": "essential",
+        "context": "emotionally sensitive situations"
+      },
+      {
+        "skill": "Organizational Skills",
+        "priority": "essential",
+        "context": "managing multiple priorities and meeting deadlines"
+      },
+      {
+        "skill": "Attention to Detail",
+        "priority": "essential",
+        "context": "working with numbers, invoices, and records"
+      },
+      {
+        "skill": "Discipline",
+        "priority": "essential",
+        "context": "records and administrative accuracy"
+      },
+      {
+        "skill": "Empathy",
+        "priority": "important",
+        "context": "people-centered work with domestic workers"
+      },
+      {
+        "skill": "Professionalism",
+        "priority": "essential",
+        "context": "worker and client interactions"
+      },
+      {
+        "skill": "Calm Temperament",
+        "priority": "important",
+        "context": "handling grievances and sensitive situations"
+      },
+      {
+        "skill": "Time Management",
+        "priority": "essential",
+        "context": "fast-paced environment with multiple priorities"
+      },
+      {
+        "skill": "Passion for People-Centered Work",
+        "priority": "valuable",
+        "context": "engagement with domestic workforce"
+      }
+    ],
+    "project_context": {
+      "types": [
+        "placements",
+        "contract lifecycle management",
+        "HR policy development",
+        "operations reporting",
+        "logistics coordination"
+      ],
+      "methodologies": [
+        "people-centered operations"
+      ],
+      "environment": null
+    },
+    "team_context": {
+      "size": null,
+      "structure": "collaborative team environment",
+      "reporting_to": "management"
+    },
+    "compliance_legal": {
+      "visa_sponsorship": null,
+      "security_clearance": null,
+      "background_check": null
+    },
+    "cultural_fit": {
+      "company_values": [
+        "initiative",
+        "empathy",
+        "continuous improvement",
+        "people-centered work",
+        "equal opportunity",
+        "human-centered service"
+      ],
+      "work_style": [
+        "people-facing",
+        "fast-paced",
+        "detail-oriented",
+        "empathetic",
+        "solution-oriented",
+        "collaborative"
+      ]
+    },
+    "growth_opportunities": [
+      "Professional growth in HR",
+      "Development in employee relations",
+      "Advancement in operations management"
+    ]
+  },
+  "relevance": {
+    "catherine-njoroge-539974257": 1.0
+  },
+  "source": "reverse_match",
+  "seed_id": "catherine-njoroge-539974257",
+  "model": "claude-opus-4.7",
+  "prompt_version": "v1"
+}

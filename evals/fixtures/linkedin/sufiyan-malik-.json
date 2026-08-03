@@ -1,0 +1,343 @@
+{
+  "case_id": "linkedin:sufiyan-malik-",
+  "dataset": "linkedin",
+  "jd_text": "# HR & Labor Relations Officer\n\n**Location:** Dubai, UAE  \n**Department:** Human Resources  \n**Employment Type:** Full-Time, On-Site\n\n## About the Role\n\nWe are a leading construction and engineering contractor seeking an experienced **HR & Labor Relations Officer** to join our People Operations team. The successful candidate will oversee end-to-end recruitment, employee documentation, visa and labor processing, and government liaison activities across our active project sites. This is a hands-on role suited to a detail-oriented HR professional who thrives in a fast-paced, project-driven environment and understands the operational realities of workforce mobilization in the UAE.\n\n## Key Responsibilities\n\n- Manage the full recruitment lifecycle \u2014 job postings, sourcing, screening, interview coordination, offer rollout, and onboarding \u2014 for both white-collar and site-based roles.\n- Prepare, review, and submit visa applications, employment contracts, work permits, and related government documentation with a high standard of accuracy and compliance.\n- Coordinate with PROs, external processing agencies, and UAE government portals including **MOHRE, GDRFA, and DDE** to ensure timely and error-free transactions.\n- Monitor and track the renewal of visas, labor cards, Emirates IDs, and other statutory documents, proactively preventing lapses, penalties, or operational disruption.\n- Maintain accurate and confidential employee records across HRIS and physical filing systems, ensuring data integrity for audits and reporting.\n- Deliver a smooth onboarding experience for new joiners, including document collection, orientation logistics, medical and biometric scheduling, and mobilization to project sites.\n- Serve as the point of contact for employee queries related to contracts, leave, labor law entitlements, and documentation.\n- Partner with project managers, site supervisors, and camp administration to coordinate manpower planning and workforce deployment.\n- Ensure full compliance with UAE Labor Law, WPS requirements, and internal HR policies.\n- Support broader HR operations and administrative tasks, including reporting, letter drafting, and cross-departmental coordination.\n\n## Required Qualifications\n\n- Bachelor's degree in Human Resources, Business Administration, or a related field.\n- **2+ years of hands-on HR / Labor Relations / PRO-coordination experience in the UAE**, preferably within construction, engineering, contracting, or another blue-collar-heavy industry.\n- Working knowledge of UAE Labor Law and practical experience with **MOHRE, GDRFA, Tas'heel, and Amer** portals.\n- Demonstrated experience managing high-volume visa processing and employee documentation workflows.\n- Strong recruitment and onboarding experience across mixed workforces (professional staff and site labor).\n- Excellent attention to detail, discretion with confidential information, and strong organizational skills.\n- Proficiency in MS Office 365 and comfort working within HRIS platforms.\n- Strong communication skills in English; Arabic, Hindi, Urdu, or Tagalog is a plus given our diverse workforce.\n\n## Preferred Qualifications\n\n- Prior experience with a large contractor or infrastructure/EPC company.\n- Familiarity with ticketing or workflow tools (e.g., JIRA, ServiceNow) for tracking HR requests and cases.\n- Comfort with IT systems administration basics \u2014 a plus for troubleshooting HRIS, VOIP, and end-user issues in coordination with the IT team.\n- Experience supporting internal audits and preparing compliance reports.\n- Certification in HR (CIPD, SHRM, or equivalent) is desirable but not required.\n\n## What We Offer\n\n- Competitive tax-free salary with annual benefits per UAE Labor Law.\n- Medical insurance, annual air ticket, and end-of-service gratuity.\n- Exposure to landmark construction projects and a multicultural workforce of thousands.\n- A collaborative HR team that values process improvement, ownership, and professional growth.\n\n*We are an equal opportunity employer. All qualified applicants will be considered without regard to nationality, gender, religion, or background.*",
+  "parsed_jd": {
+    "role": "HR & Labor Relations Officer",
+    "company": {
+      "name": "Undisclosed Construction & Engineering Contractor",
+      "size": "large",
+      "stage": "mature"
+    },
+    "industry": [
+      "construction",
+      "engineering",
+      "contracting",
+      "infrastructure"
+    ],
+    "role_objectives": [
+      "Oversee end-to-end recruitment and workforce mobilization across active project sites",
+      "Ensure timely and compliant visa, labor, and government documentation processing",
+      "Serve as HR operations partner for project managers and site teams",
+      "Maintain full compliance with UAE Labor Law and internal HR policies"
+    ],
+    "responsibilities": [
+      "Manage the full recruitment lifecycle \u2014 job postings, sourcing, screening, interview coordination, offer rollout, and onboarding \u2014 for both white-collar and site-based roles",
+      "Prepare, review, and submit visa applications, employment contracts, work permits, and related government documentation with a high standard of accuracy and compliance",
+      "Coordinate with PROs, external processing agencies, and UAE government portals including MOHRE, GDRFA, and DDE to ensure timely and error-free transactions",
+      "Monitor and track the renewal of visas, labor cards, Emirates IDs, and other statutory documents, proactively preventing lapses, penalties, or operational disruption",
+      "Maintain accurate and confidential employee records across HRIS and physical filing systems, ensuring data integrity for audits and reporting",
+      "Deliver a smooth onboarding experience for new joiners, including document collection, orientation logistics, medical and biometric scheduling, and mobilization to project sites",
+      "Serve as the point of contact for employee queries related to contracts, leave, labor law entitlements, and documentation",
+      "Partner with project managers, site supervisors, and camp administration to coordinate manpower planning and workforce deployment",
+      "Ensure full compliance with UAE Labor Law, WPS requirements, and internal HR policies",
+      "Support broader HR operations and administrative tasks, including reporting, letter drafting, and cross-departmental coordination"
+    ],
+    "skills": [
+      {
+        "skill": "Full-cycle recruitment",
+        "priority": "essential",
+        "proficiency_level": "advanced"
+      },
+      {
+        "skill": "Visa and work permit processing",
+        "priority": "essential",
+        "proficiency_level": "advanced"
+      },
+      {
+        "skill": "UAE Labor Law knowledge",
+        "priority": "essential",
+        "proficiency_level": "advanced"
+      },
+      {
+        "skill": "PRO coordination",
+        "priority": "essential",
+        "proficiency_level": "advanced"
+      },
+      {
+        "skill": "Employee documentation management",
+        "priority": "essential",
+        "proficiency_level": "advanced"
+      },
+      {
+        "skill": "Government liaison",
+        "priority": "essential",
+        "proficiency_level": "advanced"
+      },
+      {
+        "skill": "Onboarding and mobilization",
+        "priority": "essential",
+        "proficiency_level": "advanced"
+      },
+      {
+        "skill": "WPS compliance",
+        "priority": "essential",
+        "proficiency_level": "intermediate"
+      },
+      {
+        "skill": "High-volume workflow management",
+        "priority": "essential",
+        "proficiency_level": "advanced"
+      },
+      {
+        "skill": "HR records management",
+        "priority": "essential",
+        "proficiency_level": "advanced"
+      },
+      {
+        "skill": "Manpower planning coordination",
+        "priority": "important",
+        "proficiency_level": "intermediate"
+      },
+      {
+        "skill": "Renewal tracking (Emirates ID, labor cards)",
+        "priority": "essential",
+        "proficiency_level": "advanced"
+      },
+      {
+        "skill": "Compliance reporting",
+        "priority": "important",
+        "proficiency_level": "intermediate"
+      },
+      {
+        "skill": "Internal audit support",
+        "priority": "valuable",
+        "proficiency_level": "intermediate"
+      },
+      {
+        "skill": "IT systems administration basics",
+        "priority": "valuable",
+        "proficiency_level": "beginner"
+      },
+      {
+        "skill": "Letter drafting",
+        "priority": "important",
+        "proficiency_level": "intermediate"
+      }
+    ],
+    "technologies": [
+      {
+        "technology": "MOHRE portal",
+        "priority": "essential",
+        "version": null
+      },
+      {
+        "technology": "GDRFA portal",
+        "priority": "essential",
+        "version": null
+      },
+      {
+        "technology": "Tas'heel portal",
+        "priority": "essential",
+        "version": null
+      },
+      {
+        "technology": "Amer portal",
+        "priority": "essential",
+        "version": null
+      },
+      {
+        "technology": "DDE portal",
+        "priority": "essential",
+        "version": null
+      },
+      {
+        "technology": "MS Office 365",
+        "priority": "essential",
+        "version": null
+      },
+      {
+        "technology": "HRIS platforms",
+        "priority": "essential",
+        "version": null
+      },
+      {
+        "technology": "JIRA",
+        "priority": "valuable",
+        "version": null
+      },
+      {
+        "technology": "ServiceNow",
+        "priority": "valuable",
+        "version": null
+      },
+      {
+        "technology": "VOIP systems",
+        "priority": "supplementary",
+        "version": null
+      }
+    ],
+    "language_proficiency": null,
+    "qualifications": {
+      "education": [
+        {
+          "degree": "Bachelor's degree",
+          "field": "Human Resources, Business Administration, or related field",
+          "priority": "essential"
+        }
+      ],
+      "certifications": [
+        {
+          "certification": "CIPD",
+          "priority": "valuable",
+          "timeline": null
+        },
+        {
+          "certification": "SHRM",
+          "priority": "valuable",
+          "timeline": null
+        }
+      ]
+    },
+    "experience": {
+      "level": "mid",
+      "years_total": {
+        "min": 2,
+        "max": null
+      },
+      "years_relevant": {
+        "min": 2,
+        "max": null
+      },
+      "industry_experience": [
+        {
+          "industry": "construction",
+          "priority": "important"
+        },
+        {
+          "industry": "engineering",
+          "priority": "important"
+        },
+        {
+          "industry": "contracting",
+          "priority": "important"
+        },
+        {
+          "industry": "EPC / infrastructure",
+          "priority": "valuable"
+        },
+        {
+          "industry": "blue-collar-heavy industries",
+          "priority": "important"
+        }
+      ],
+      "leadership": {
+        "required": false,
+        "team_size": null,
+        "priority": "supplementary"
+      }
+    },
+    "location": null,
+    "employment_details": {
+      "type": "full_time",
+      "urgency": "flexible",
+      "salary_range": {
+        "min": null,
+        "max": null,
+        "currency": "AED",
+        "frequency": "annually"
+      },
+      "benefits": [
+        "Competitive tax-free salary",
+        "Medical insurance",
+        "Annual air ticket",
+        "End-of-service gratuity",
+        "Annual benefits per UAE Labor Law"
+      ]
+    },
+    "soft_skills": [
+      {
+        "skill": "Attention to detail",
+        "priority": "essential",
+        "context": "documentation accuracy and compliance"
+      },
+      {
+        "skill": "Discretion with confidential information",
+        "priority": "essential",
+        "context": "handling employee records"
+      },
+      {
+        "skill": "Organizational skills",
+        "priority": "essential",
+        "context": "managing high-volume workflows"
+      },
+      {
+        "skill": "Communication",
+        "priority": "essential",
+        "context": "employee queries and cross-departmental coordination"
+      },
+      {
+        "skill": "Ownership",
+        "priority": "important",
+        "context": "process improvement and professional growth"
+      },
+      {
+        "skill": "Adaptability",
+        "priority": "important",
+        "context": "fast-paced, project-driven environment"
+      },
+      {
+        "skill": "Collaboration",
+        "priority": "important",
+        "context": "partnering with project managers and site supervisors"
+      }
+    ],
+    "project_context": {
+      "types": [
+        "recruitment operations",
+        "visa and labor processing",
+        "onboarding",
+        "compliance and audit",
+        "manpower planning"
+      ],
+      "methodologies": [
+        "project-driven workforce mobilization",
+        "compliance-driven operations"
+      ],
+      "environment": null
+    },
+    "team_context": {
+      "size": null,
+      "structure": "People Operations team within HR department, collaborating with PROs, project managers, site supervisors, and camp administration",
+      "reporting_to": "HR / People Operations leadership"
+    },
+    "compliance_legal": {
+      "visa_sponsorship": true,
+      "security_clearance": {
+        "required": false,
+        "level": null
+      },
+      "background_check": null
+    },
+    "cultural_fit": {
+      "company_values": [
+        "process improvement",
+        "ownership",
+        "professional growth",
+        "equal opportunity",
+        "multicultural inclusion"
+      ],
+      "work_style": [
+        "detail-oriented",
+        "hands-on",
+        "thrives in fast-paced project-driven environment",
+        "process-improvement mindset",
+        "ownership-driven",
+        "collaborative"
+      ]
+    },
+    "growth_opportunities": [
+      "Exposure to landmark construction projects",
+      "Work within a multicultural workforce of thousands",
+      "Professional growth in a collaborative HR team",
+      "Process improvement and ownership opportunities"
+    ]
+  },
+  "relevance": {
+    "sufiyan-malik-": 1.0
+  },
+  "source": "reverse_match",
+  "seed_id": "sufiyan-malik-",
+  "model": "claude-opus-4.7",
+  "prompt_version": "v1"
+}

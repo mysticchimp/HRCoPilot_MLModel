@@ -1,0 +1,146 @@
+pipeline_rank,candidate_id,job_title,total_score,industry_score,skill_score,similarity_score,linkedin_url
+1,amulya-dattada-941b89231,HR Operations Executive,0.6771804671200987,0.2692307692307692,0.6819534490978909,0.7243758,https://www.linkedin.com/in/amulya-dattada-941b89231
+2,arunmania,Regional Assistant - HR (Corporate Office Dubai & NE),0.6704251788186276,0.23076923076923078,0.4971896652671143,0.66911435,https://www.linkedin.com/in/arunmania
+3,samasthasunoj,Human Resources Assistant & Document Controller,0.6601582277561785,0.23076923076923078,0.5146052631048058,0.7124773,https://www.linkedin.com/in/samasthasunoj
+4,savaf-methiyil-744910316,Human Resources Assistant,0.6565439114493109,0.15384615384615385,0.4571640696195888,0.76775694,https://www.linkedin.com/in/savaf-methiyil-744910316
+5,muhammed-ashar-k-19b216236,Human Resources Assistant,0.6545812854447645,0.2692307692307692,0.448340540708937,0.7234849,https://www.linkedin.com/in/muhammed-ashar-k-19b216236
+6,yoosuf-chamathadka-ali-9a018a273,PRO Executive – HR Assistant,0.6505362494443447,0.07692307692307693,0.3929071522236666,0.745746,https://www.linkedin.com/in/yoosuf-chamathadka-ali-9a018a273
+7,sabeeh-ansari-43525923b,HR and Administrative Executive,0.645930786770678,0.2692307692307692,0.42802198149345755,0.79613566,https://www.linkedin.com/in/sabeeh-ansari-43525923b
+8,aiswarya-ravindran-a59569223,HR operation assistant,0.6418956962500325,0.07692307692307693,0.5150124444269487,0.69405925,https://www.linkedin.com/in/aiswarya-ravindran-a59569223
+9,abiya-prince-9b159b1b2,HR & Admin Officer,0.6224097968492438,0.423076923076923,0.33293289072925186,0.71467865,https://www.linkedin.com/in/abiya-prince-9b159b1b2
+10,harikrishna-r-87b3ab253,HR Officer - Group Operations,0.6188212889183505,0.3076923076923077,0.363116075376888,0.8124016,https://www.linkedin.com/in/harikrishna-r-87b3ab253
+11,liezelle-anne-n-394338252,Human Resources Assistant / HR Assistant,0.6142037330496039,0.4615384615384615,0.17837633831160418,0.58125126,https://www.linkedin.com/in/liezelle-anne-n-394338252
+12,abbas-ali-khan-558a4b400,HR Coordinator/Welfare Officer,0.6113248959637112,0.23076923076923078,0.4306733926141452,0.7113012,https://www.linkedin.com/in/abbas-ali-khan-558a4b400
+13,minahil-farooq-3961a8294,HR Assistant,0.6092050352453278,0.07692307692307693,0.20934463300547765,0.74387944,https://www.linkedin.com/in/minahil-farooq-3961a8294
+14,jasnaorv,HR Operations and Administration,0.6086270064549909,0.2692307692307692,0.44823413589030653,0.67495835,https://www.linkedin.com/in/jasnaorv
+15,aiswarya-h,Assistant Manager Human Resources,0.6061576657707443,0.3461538461538461,0.40900636007029767,0.6183042,https://www.linkedin.com/in/aiswarya-h
+16,amrutha-k-k-901814331,HR and Administration Officer,0.6055105749259908,0.07692307692307693,0.3967589800782632,0.74453896,https://www.linkedin.com/in/amrutha-k-k-901814331
+17,muhammed-akthab-kv-8056042b4,HR Manager,0.6026000029345363,0.15384615384615385,0.375796294525653,0.7543819,https://www.linkedin.com/in/muhammed-akthab-kv-8056042b4
+18,adnan-faisal-17b260211,HR Assistant,0.5974446211045467,0.15384615384615385,0.4273531621533987,0.56460106,https://www.linkedin.com/in/adnan-faisal-17b260211
+19,megha-p-s,HR Executive,0.5954653057594573,0.15384615384615385,0.2552215974409503,0.75744814,https://www.linkedin.com/in/megha-p-s
+20,shahul-p-74a571a8,Assistant Manager  - Human Resources,0.5898625244918027,0.2692307692307692,0.32732376121744833,0.65357435,https://www.linkedin.com/in/shahul-p-74a571a8
+21,shafas-hussain-5b9850214,"Human Resources Executive, (HR Operation & Payroll)",0.5870944813282907,0.3076923076923077,0.3325610358262176,0.7194916,https://www.linkedin.com/in/shafas-hussain-5b9850214
+22,saeeduzaman-k-b94663268,Human Resources Assistant,0.5846127437722523,0.0,0.5097650437845356,0.5718869,https://www.linkedin.com/in/saeeduzaman-k-b94663268
+23,akhila-s-joseph-3045561a5,Human Resources Executive,0.5825002454335604,0.07692307692307693,0.40895252910013197,0.7211665,https://www.linkedin.com/in/akhila-s-joseph-3045561a5
+24,pratheeshajohnbosco,Assistant Manager Human Resources,0.581495910165916,0.2692307692307692,0.40550176680447253,0.58819413,https://www.linkedin.com/in/pratheeshajohnbosco
+25,thereseelizabeth,HR & Executive Assistant,0.5787724661379885,0.07692307692307693,0.4349146050548606,0.5073132,https://www.linkedin.com/in/thereseelizabeth
+26,alicia-d-souza-43660a193,HR Executive,0.5775781180097183,0.07692307692307693,0.4172846057783793,0.6443715,https://www.linkedin.com/in/alicia-d-souza-43660a193
+27,fenny-c-varghese-b31b391ab,Executive Assistant Human Resources,0.5765685407906795,0.07692307692307693,0.4122839127923108,0.6134395,https://www.linkedin.com/in/fenny-c-varghese-b31b391ab
+28,leena-e-2973131b9,HR Executive,0.5752518997482678,0.07692307692307693,0.3742274103280384,0.656572,https://www.linkedin.com/in/leena-e-2973131b9
+29,ranjani-anthony-raj-chrp-chrm-751669227,Talent Acquisition Professional / Hr Executive,0.5713963925008209,0.07692307692307693,0.5350152315627464,0.703495,https://www.linkedin.com/in/ranjani-anthony-raj-chrp-chrm-751669227
+30,febamarybabu,HR Executive,0.5686498358089945,0.07692307692307693,0.33205958496738275,0.6609259,https://www.linkedin.com/in/febamarybabu
+31,muhammad-ak-4bb07a234,Assistant Manager Human Resources,0.5682464478283944,0.07692307692307693,0.24351254105567943,0.7181598,https://www.linkedin.com/in/muhammad-ak-4bb07a234
+32,arya-kunnath-69039b221,Sr HR Officer,0.566507678922968,0.0,0.4497358509144942,0.6851549,https://www.linkedin.com/in/arya-kunnath-69039b221
+33,dhrissya-m-s-b9b41a230,HR Admin Executive,0.5660775560768324,0.3461538461538461,0.39062323025186063,0.52036035,https://www.linkedin.com/in/dhrissya-m-s-b9b41a230
+34,mohammedshakirpp,HR & Admin Executive,0.5660088928896597,0.2692307692307692,0.42692666918366834,0.5611809,https://www.linkedin.com/in/mohammedshakirpp
+35,mariam-khalid-47a537211,Human Resources Assistant,0.5657811703217401,0.23076923076923078,0.13429456163238698,0.6601819,https://www.linkedin.com/in/mariam-khalid-47a537211
+36,alyazyeh-a-2928b7155,Sr. Associate Officer - HR,0.565680663203246,0.15384615384615385,0.3170701825356747,0.7114865,https://www.linkedin.com/in/alyazyeh-a-2928b7155
+37,muhammed-muhammed-bin-siddique-a270873a6,HR Executive cum Accountant,0.5643012604244434,0.07692307692307693,0.4983816296797909,0.6907414,https://www.linkedin.com/in/muhammed-muhammed-bin-siddique-a270873a6
+38,ayesha-nasim-188151196,Assistant Manager Human Resources,0.5625045427444485,0.5769230769230769,0.18675183906595355,0.52088356,https://www.linkedin.com/in/ayesha-nasim-188151196
+39,sufiyan-malik-,HR | Labor Relations Officer,0.5622848456453088,0.3076923076923077,0.18749152304052005,0.66261286,https://www.linkedin.com/in/sufiyan-malik-
+40,fathimath-farhana-parveen,HR Executive,0.5588217143100119,0.07692307692307693,0.39191718030585193,0.6026127,https://www.linkedin.com/in/fathimath-farhana-parveen
+41,reshmajose13,Human Resources Professional,0.5586531268069025,0.0,0.4830097510264472,0.67527205,https://www.linkedin.com/in/reshmajose13
+42,feba-abraham-7009291a9,Senior HR Executive,0.5576134512627603,0.0,0.4099935815913782,0.69989157,https://www.linkedin.com/in/feba-abraham-7009291a9
+43,sonali-kandari-7655441a9,Human Resources Assistant,0.5569095854217438,0.07692307692307693,0.3476754698356981,0.5477173,https://www.linkedin.com/in/sonali-kandari-7655441a9
+44,aswin-shanmugam-raghuraman,Human Resources Assistant,0.5567709247382305,0.3076923076923077,0.3248689526010721,0.4674229,https://www.linkedin.com/in/aswin-shanmugam-raghuraman
+45,anshu-daswani-261aa3193,Assistant Manager Human Resources,0.556152592666763,0.07692307692307693,0.46794211759204235,0.5768722,https://www.linkedin.com/in/anshu-daswani-261aa3193
+46,roxanna-ghassemlou-007078191,HR Manager,0.5531119409074399,0.07692307692307693,0.44619390102237405,0.62038356,https://www.linkedin.com/in/roxanna-ghassemlou-007078191
+47,nayantharabalagopal,HR Executive,0.5525727555736449,0.07692307692307693,0.3991430891470683,0.5844346,https://www.linkedin.com/in/nayantharabalagopal
+48,devikaaneesh,Human Resources Assistant,0.5504471752013389,0.2692307692307692,0.49167011441692493,0.40246993,https://www.linkedin.com/in/devikaaneesh
+49,mufeetha-p-v-951b9a281,Assistant Human Resources Officer,0.5494516564329712,0.3846153846153846,0.39154153253335866,0.4254288,https://www.linkedin.com/in/mufeetha-p-v-951b9a281
+50,vishnu-viswan-42a1zd,HR Executive,0.5489502103261021,0.3846153846153846,0.35075989163620586,0.45909694,https://www.linkedin.com/in/vishnu-viswan-42a1zd
+51,kanittha-lanpisut-4653631b3,HR Business Partner / Executive Assistant,0.5477012077142052,0.07692307692307693,0.28573279749920344,0.5109861,https://www.linkedin.com/in/kanittha-lanpisut-4653631b3
+52,saranya-s-97a935115,Human resources operations,0.5463787825512014,0.15384615384615385,0.372888382604806,0.656611,https://www.linkedin.com/in/saranya-s-97a935115
+53,priyanshi-negi-9b6480217,Human Resources Assistant,0.5458338567561651,0.15384615384615385,0.1409596823729002,0.6097082,https://www.linkedin.com/in/priyanshi-negi-9b6480217
+54,dayana-reddy-908340287,HR and Payroll Administrator,0.5432108923001805,0.07692307692307693,0.42297111091377987,0.6111555,https://www.linkedin.com/in/dayana-reddy-908340287
+55,signey-a-a9ba51272,Assistant Manager Human Resources,0.5424358335061049,0.07692307692307693,0.3247333185551009,0.6518065,https://www.linkedin.com/in/signey-a-a9ba51272
+56,hiroshi-de-silva-何洛诗）-4317a7207,HR Officer & Personal Assistant to CEO,0.5396485403150252,0.07692307692307693,0.3218081686616507,0.60879207,https://www.linkedin.com/in/hiroshi-de-silva-何洛诗）-4317a7207
+57,shalini-ajith-734812373,Human Resources Assistant,0.5396357717430326,0.15384615384615385,0.4163094978924251,0.48771936,https://www.linkedin.com/in/shalini-ajith-734812373
+58,sean-dsouza-7aa2b1214,HR & Administrative Officer & EA to Managing Director,0.5354887910641313,0.15384615384615385,0.3781375530889297,0.7262923,https://www.linkedin.com/in/sean-dsouza-7aa2b1214
+59,akshaya-a-s-a855301b3,Human Resources Assistant,0.5321576566461376,0.0,0.10117114474485213,0.6473466,https://www.linkedin.com/in/akshaya-a-s-a855301b3
+60,sandra-amoafo-3819a435a,Human Resources Assistant,0.5314817481061973,0.3076923076923077,0.24060015247044056,0.4317369,https://www.linkedin.com/in/sandra-amoafo-3819a435a
+61,arfa-arif-3948a71a3,Administrative & HR Assistant,0.5292124329151864,0.3076923076923077,0.1890870734301105,0.4042576,https://www.linkedin.com/in/arfa-arif-3948a71a3
+62,angelika-quiambao,Human Resources Administrative Assistant,0.5260220350457367,0.3076923076923077,0.19552642107009896,0.47340456,https://www.linkedin.com/in/angelika-quiambao
+63,sabatinihussain,Human Resources Assistant,0.525459051412087,0.0,0.3273660142670623,0.5095535,https://www.linkedin.com/in/sabatinihussain
+64,nazreen-abdulmajeed-763701376,Human Resources Assistant,0.5253380357382116,0.1923076923076923,0.1774951779157801,0.5331065,https://www.linkedin.com/in/nazreen-abdulmajeed-763701376
+65,fidha-ashraf-a115b32b8,HR Operations Executive,0.5247323922331588,0.15384615384615385,0.30965887592576186,0.5420826,https://www.linkedin.com/in/fidha-ashraf-a115b32b8
+66,khadija-suroor-khan-27a92021b,HR Executive,0.519985570424846,0.07692307692307693,0.4363349046913373,0.46240956,https://www.linkedin.com/in/khadija-suroor-khan-27a92021b
+67,sharath-p-nair-951a8a1b1,HR Compensations Executive,0.5194486903026185,0.07692307692307693,0.3638402911846069,0.64745754,https://www.linkedin.com/in/sharath-p-nair-951a8a1b1
+68,amjadkhan12,Admin & HR Coordinator,0.518591265170316,0.1923076923076923,0.3841020482675623,0.45572507,https://www.linkedin.com/in/amjadkhan12
+69,ayshaalneyadi-811a792ab,Human Resources Coordinator,0.5172061840640263,0.07692307692307693,0.42765011815230636,0.49788877,https://www.linkedin.com/in/ayshaalneyadi-811a792ab
+70,sanjusasi,HR &Training Executive,0.5162242173549456,0.07692307692307693,0.3862121601840775,0.55641437,https://www.linkedin.com/in/sanjusasi
+71,fathimath-safa-65b4b219b,HR Executive - Recruitment,0.515143950438963,0.3076923076923077,0.16728333195487227,0.6542985,https://www.linkedin.com/in/fathimath-safa-65b4b219b
+72,preethi-erannagowda-a89837185,Assistant Manager Human Resources,0.5150157965650421,0.15384615384615385,0.2591793645214249,0.52982384,https://www.linkedin.com/in/preethi-erannagowda-a89837185
+73,selenaatari,Area HR Executive - Marketing and Finance,0.5148359302270744,0.3846153846153846,0.2280808742884752,0.53669786,https://www.linkedin.com/in/selenaatari
+74,gouri-prasad-psych,HR Coordinator & Talent Acquisition Lead,0.5121759564357095,0.3076923076923077,0.469750123364585,0.46659636,https://www.linkedin.com/in/gouri-prasad-psych
+75,firdouse-kouser-259262415,Human Resources Assistant at Amazon,0.5114277815634615,0.07692307692307693,0.38108123951284917,0.45536768,https://www.linkedin.com/in/firdouse-kouser-259262415
+76,redaabulwafa,Assistant Manager Human Resources,0.5062615770711197,0.15384615384615385,0.2873226856137371,0.51389873,https://www.linkedin.com/in/redaabulwafa
+77,hkalsaeedi,Assistant Manager - HR,0.5023469374663098,0.07692307692307693,0.19603804909453107,0.48368198,https://www.linkedin.com/in/hkalsaeedi
+78,karen-kaye,Administrative & HR Coordinator,0.5018966538449616,0.0,0.28728572025403887,0.5612671,https://www.linkedin.com/in/karen-kaye
+79,ahmed-k-547a273a9,Talent Acquisition Lead & HR Coordinator,0.5008228493139891,0.2692307692307692,0.1647098879892748,0.6099173,https://www.linkedin.com/in/ahmed-k-547a273a9
+80,donna-rose-ortiz-167590199,HR and Admin Officer,0.4990987937471067,0.5769230769230769,0.1690035169268703,0.43669143,https://www.linkedin.com/in/donna-rose-ortiz-167590199
+81,nazish-akhtar-514887249,Assistant Manager Human Resources,0.49790822470599827,0.0,0.4315611947273711,0.44967702,https://www.linkedin.com/in/nazish-akhtar-514887249
+82,annika-nicole-gulati-46778013b,Assistant Vice President Human Resources,0.4977484134787262,0.07692307692307693,0.36416048602634815,0.5041388,https://www.linkedin.com/in/annika-nicole-gulati-46778013b
+83,manjusha-kenwal,Assistant Human Resources Manager,0.4940544876678312,0.07692307692307693,0.2716666435240952,0.49763075,https://www.linkedin.com/in/manjusha-kenwal
+84,frincy-francis-1949b120b,Assistant Manager Human Resources,0.49249765819275126,0.0,0.3464729305010191,0.48742887,https://www.linkedin.com/in/frincy-francis-1949b120b
+85,balakrishna-balamourougan-a1165922b,HR and Admin Executive,0.4894127232084322,0.2692307692307692,0.30768832557076226,0.4371679,https://www.linkedin.com/in/balakrishna-balamourougan-a1165922b
+86,rajasree-devadas-81aa83214,Human Resources Associate,0.4886195156809544,0.07692307692307693,0.18412164066519066,0.5040848,https://www.linkedin.com/in/rajasree-devadas-81aa83214
+87,sulaikha-kp-abab91201,HR -Recruitment and Manpower Executive,0.4847675921146154,0.07692307692307693,0.3888801803908881,0.5564615,https://www.linkedin.com/in/sulaikha-kp-abab91201
+88,muhammedadil69,HR & Operations Manager And Admin Officer,0.483037448807376,0.2692307692307692,0.31146537394600454,0.51440734,https://www.linkedin.com/in/muhammedadil69
+89,adv-basil-sajan-80b572280,Human Resources Executive,0.4822598953767533,0.15384615384615385,0.2530359601893227,0.45734894,https://www.linkedin.com/in/adv-basil-sajan-80b572280
+90,lipna-s-144762201,Head of HR | Executive Assistant to CEO,0.48217260108896964,0.0,0.18198553873942458,0.51850665,https://www.linkedin.com/in/lipna-s-144762201
+91,roan-garambas-1b0092290,HR & Admin Executive,0.48197305659153167,0.1923076923076923,0.2788484998082442,0.46153107,https://www.linkedin.com/in/roan-garambas-1b0092290
+92,catherine-njoroge-539974257,Human Resources Executive,0.48008698802922967,0.15384615384615385,0.28375629765351007,0.44733813,https://www.linkedin.com/in/catherine-njoroge-539974257
+93,anjali-nair-h-21a358128,HR Coordinator -IT,0.4781597161469375,0.15384615384615385,0.1332307778871977,0.5253122,https://www.linkedin.com/in/anjali-nair-h-21a358128
+94,diksha-dey-971932253,HR Recruitment coordinator,0.4763088476980326,0.0,0.28540883581716947,0.4804396,https://www.linkedin.com/in/diksha-dey-971932253
+95,aisha-muzaffar-b464ab252,Real Estate Operations & Hr assistant,0.4760700535235959,0.15384615384615385,0.19239803291720795,0.34449404,https://www.linkedin.com/in/aisha-muzaffar-b464ab252
+96,veeshma-mohan-9a0247195,Human Resources Assistant,0.47316232143113046,0.0,0.3804501766264335,0.32342732,https://www.linkedin.com/in/veeshma-mohan-9a0247195
+97,haydi-hani,HR Relationship Officer - Business Partner,0.4727569126781256,0.07692307692307693,0.29355177711430847,0.6154107,https://www.linkedin.com/in/haydi-hani
+98,rachita-kapadia-05902717a,Cluster Assistant Human Resources Manager,0.47086305118171423,0.15384615384615385,0.12630864290090715,0.50608855,https://www.linkedin.com/in/rachita-kapadia-05902717a
+99,aishwarya-rajeevkumar-105288323,Human Resources Assistant,0.46913640966933357,0.07692307692307693,0.109017068540657,0.42673838,https://www.linkedin.com/in/aishwarya-rajeevkumar-105288323
+100,athullya-ulkrishtan-929520273,HR Executive -Talent Acquisition,0.46870549776214065,0.07692307692307693,0.28567384752302644,0.5756362,https://www.linkedin.com/in/athullya-ulkrishtan-929520273
+101,shokhidarustamova,Assistant Manager Human Resources,0.4666250200187968,0.07692307692307693,0.27429204393219175,0.41859818,https://www.linkedin.com/in/shokhidarustamova
+102,sharal-zeena-vas-a9ab3922a,HR Recruitment Executive,0.4657154650770803,0.07692307692307693,0.2169283281315815,0.50720537,https://www.linkedin.com/in/sharal-zeena-vas-a9ab3922a
+103,busisiwe-ndlovu-8176981a3,HR and Training Executive,0.46525759490183227,0.07692307692307693,0.21994343007003878,0.54264414,https://www.linkedin.com/in/busisiwe-ndlovu-8176981a3
+104,christyl-mae-pada,Human Resources Assistant,0.4643608908751362,0.0,0.2526336511645239,0.3673435,https://www.linkedin.com/in/christyl-mae-pada
+105,efrelyn-ablay-81b008252,HR Admin Support - Listing Coordinator,0.4607712062732304,0.2692307692307692,0.16174318829735565,0.47029513,https://www.linkedin.com/in/efrelyn-ablay-81b008252
+106,chirag-sapara-27780311a,Assistant HR Manager,0.4542419007755596,0.0,0.10966286521691547,0.43021944,https://www.linkedin.com/in/chirag-sapara-27780311a
+107,abdullah-al-zadjali-2553b7275,HR Admin & Operation Officer,0.45383610686491743,0.2692307692307692,0.18035661594085461,0.44207114,https://www.linkedin.com/in/abdullah-al-zadjali-2553b7275
+108,mohammed-haziq-baig-692225232,HR and Administration Manager,0.45376378407162654,0.0,0.23366654487875685,0.5046046,https://www.linkedin.com/in/mohammed-haziq-baig-692225232
+109,umehanikhanum,HR Recruiter & Operations Executive,0.4517707607064894,0.07692307692307693,0.25288121996631524,0.5109594,https://www.linkedin.com/in/umehanikhanum
+110,melanie-c-silva,HR & Recruitment Executive,0.450110528240089,0.07692307692307693,0.2397260824730109,0.46886253,https://www.linkedin.com/in/melanie-c-silva
+111,hana-salik-77384b231,Human Resources Administrative Assistant,0.44925374411619623,0.0,0.0,0.5208963,https://www.linkedin.com/in/hana-salik-77384b231
+112,galmangalino,HR & Operations Executive,0.44832255585299996,0.0,0.3749628816564555,0.38839048,https://www.linkedin.com/in/galmangalino
+113,moideen-ziad-k-551913371,Human Resources Assistant,0.44797085447121965,0.15384615384615385,0.1550797106145503,0.320815,https://www.linkedin.com/in/moideen-ziad-k-551913371
+114,jamela-sagang-9bb93a2ab,HR and Documentation Officer,0.4479305648158142,0.07692307692307693,0.2797676599520144,0.4567783,https://www.linkedin.com/in/jamela-sagang-9bb93a2ab
+115,shubhra-chauhan-161357234,Assistant Manager Human Resources,0.4465263541857121,0.0,0.33410265660907157,0.46316195,https://www.linkedin.com/in/shubhra-chauhan-161357234
+116,paula-roig-outeiriñoatlantisdubai,HR Operations Assistant Manager,0.4427446242479177,0.0,0.0,0.45237333,https://www.linkedin.com/in/paula-roig-outeiriñoatlantisdubai
+117,mufitha-k-m-54b2a31a2,HR Executive/Talent Acquisition Specialist,0.44114812848320983,0.0,0.367752087933095,0.42137858,https://www.linkedin.com/in/mufitha-k-m-54b2a31a2
+118,wdeea-nashwan-0a955b1b3,Human Resources Assistant,0.44023722585287517,0.0,0.14320744590444887,0.40011188,https://www.linkedin.com/in/wdeea-nashwan-0a955b1b3
+119,abdallah-bin-massoud-8290a5147,HR Executive,0.4393835963194187,0.0,0.0,0.5161557,https://www.linkedin.com/in/abdallah-bin-massoud-8290a5147
+120,saharkhattab,Human Resources Officer,0.43901812222028125,0.0,0.13639435761577484,0.48534283,https://www.linkedin.com/in/saharkhattab
+121,niamh-mullarkey-279b3a209,Global Senior HR Coordinator,0.4388898748779313,0.0,0.21104366239357814,0.5128427,https://www.linkedin.com/in/niamh-mullarkey-279b3a209
+122,monika-bhati-651b782b3,Assistant Manager Human Resources,0.4376149125872547,0.0,0.27139892704170676,0.36891985,https://www.linkedin.com/in/monika-bhati-651b782b3
+123,mahnoor-ijaz-004690167,Assistant Manager Human Resources,0.4348730969928941,0.0,0.17429714896448956,0.4171667,https://www.linkedin.com/in/mahnoor-ijaz-004690167
+124,afna-naseeba-719799265,Human Resources Assistant,0.433312798370861,0.0,0.22021638524105522,0.32899186,https://www.linkedin.com/in/afna-naseeba-719799265
+125,shamma-almansoori-6649102b7,Administrator Fasility management,0.43180724608097054,0.3846153846153846,0.3449972743516441,0.45068857,https://www.linkedin.com/in/shamma-almansoori-6649102b7
+126,anandhu-s-30a9b61b9,Assistant Human Resources Officer,0.4252970869538615,0.07692307692307693,0.21483750515218156,0.31112555,https://www.linkedin.com/in/anandhu-s-30a9b61b9
+127,dawood-imran-hr,HR & Administration Executive,0.4227177592600591,0.07692307692307693,0.0,0.49614632,https://www.linkedin.com/in/dawood-imran-hr
+128,ramihanbali,HR- Social Purpose Project Coordinator,0.4203508964534717,0.07692307692307693,0.2505024387566973,0.37667668,https://www.linkedin.com/in/ramihanbali
+129,afrazshaikh,Recruiter,0.4154172326536041,0.15384615384615385,0.14603474254323706,0.5481921,https://www.linkedin.com/in/afrazshaikh
+130,dana-al-bastaki-bb23471a3,Assistant Manager Human Resources,0.41385299902130757,0.0,0.07563865062636017,0.40180779,https://www.linkedin.com/in/dana-al-bastaki-bb23471a3
+131,che-ibardelosa-a538072a1,Human Resources Assistant,0.4056541204142652,0.0,0.050053698020977,0.31362385,https://www.linkedin.com/in/che-ibardelosa-a538072a1
+132,naina-joshi-hr-692b45228,Admin,0.4005501203812085,0.2692307692307692,0.12630864290090715,0.4464641,https://www.linkedin.com/in/naina-joshi-hr-692b45228
+133,zahra-wael-033756351,Human Resources Manager,0.3965374284418377,0.15384615384615385,0.0,0.39947832,https://www.linkedin.com/in/zahra-wael-033756351
+134,swathi-ar-84681417b,Executive HR,0.38550745448587054,0.15384615384615385,0.09748316199929108,0.296666,https://www.linkedin.com/in/swathi-ar-84681417b
+135,ahmed-sameh-8864091a3,HR Executive Al Mazroui Engineering Co. LLC,0.3804854555381423,0.0,0.109017068540657,0.4477056,https://www.linkedin.com/in/ahmed-sameh-8864091a3
+136,alhassanaltameemi,Senior Officer - HR Governance,0.3762773925983829,0.23076923076923078,0.07484703906726489,0.36883345,https://www.linkedin.com/in/alhassanaltameemi
+137,aaqib-mohamed-734b30271,Human Resources Assistant,0.37473337465136713,0.0,0.10214549532303446,0.2003574,https://www.linkedin.com/in/aaqib-mohamed-734b30271
+138,ayesha-shams-718356251,Service Delivery & Welfare Executive,0.3643649097794523,0.07692307692307693,0.13904056109497115,0.443439,https://www.linkedin.com/in/ayesha-shams-718356251
+139,mohini-ingale-1b2093237,HR Officer,0.35969116945937385,0.0,0.09748316199929108,0.25433156,https://www.linkedin.com/in/mohini-ingale-1b2093237
+140,malavika-sunil-a3a16620b,HR &Talent Acquisition Executive,0.35885357869642376,0.0,0.1197086598424361,0.2933632,https://www.linkedin.com/in/malavika-sunil-a3a16620b
+141,houda-belfatmi-47ab5934a,HR & Executive Coordinator,0.3463903993544494,0.07692307692307693,0.0,0.23850271,https://www.linkedin.com/in/houda-belfatmi-47ab5934a
+142,rose-de-castro-b92a76250,Human Resources Executive / Executive Assistant,0.34602374067673314,0.0,0.0,0.23176697,https://www.linkedin.com/in/rose-de-castro-b92a76250
+143,veronica-aguila-00ab44100,Assistant Manager Human Resources,0.34362729097259115,0.07692307692307693,0.0,0.23176697,https://www.linkedin.com/in/veronica-aguila-00ab44100
+144,burul-asylbekova-00069a222,Assistant Manager Human Resources,0.33775109009100834,0.0,0.0,0.23175709,https://www.linkedin.com/in/burul-asylbekova-00069a222
+145,amal-ragesh,HR Executive,0.33055672448415024,0.0,0.0,0.23176697,https://www.linkedin.com/in/amal-ragesh
