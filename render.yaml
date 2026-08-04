@@ -20,3 +20,6 @@ services:
         value: "fp16"
       - key: SIMILARITY_MODEL
         value: "mpnet-only"
+      # Temporary: per-stage RSS in Render logs for OOM investigation (set 0 to disable).
+      - key: SCORE_MEM_TRACE
+        value: "1"

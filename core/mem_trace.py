@@ -124,3 +124,56 @@ class MemTrace:
         for s in ranked[:8]:
             lines.append(f"  {s.delta_from_prev_mb:+7.1f} MB  {s.label}")
         return "\n".join(lines)
+
+
+class RequestMemTrace:
+    """Per-request RSS snapshots for production /score debugging.
+
+    Logs via print(flush=True) so Render captures lines even when app log level
+    is unset; also emits logger.info for structured log drains.
+    """
+
+    def __init__(self, baseline_mb: float | None = None, request_id: str = "") -> None:
+        self.request_id = request_id
+        self.baseline_mb = baseline_mb if baseline_mb is not None else rss_mb()
+        self._prev_mb = self.baseline_mb
+        self.peak_mb = self.baseline_mb
+        self.peak_label = "request_start"
+        self.samples: list[tuple[str, float, float, float]] = []
+
+    def mark(self, label: str, logger=None, extra: str = "") -> float:
+        gc.collect()
+        r = rss_mb()
+        d_prev = r - self._prev_mb
+        d_base = r - self.baseline_mb
+        self.samples.append((label, r, d_prev, d_base))
+        suffix = f" {extra}" if extra else ""
+        msg = (
+            f"score_mem {label} rss_mb={r:.1f} d_prev={d_prev:+.1f} "
+            f"d_base={d_base:+.1f}{suffix}"
+        )
+        if self.request_id:
+            msg = f"[{self.request_id}] {msg}"
+        print(msg, flush=True)
+        if logger is not None:
+            logger.info(msg)
+        self._prev_mb = r
+        if r >= self.peak_mb:
+            self.peak_mb = r
+            self.peak_label = label
+        return r
+
+    def summary(self, logger=None) -> str:
+        ranked = sorted(self.samples[1:], key=lambda x: x[2], reverse=True)
+        lines = [
+            f"score_mem_summary peak_rss_mb={self.peak_mb:.1f} at={self.peak_label} "
+            f"baseline={self.baseline_mb:.1f}",
+            "score_mem_summary largest_d_prev:",
+        ]
+        for label, _r, d_prev, _d_base in ranked[:8]:
+            lines.append(f"  {d_prev:+7.1f} MB  {label}")
+        text = "\n".join(lines)
+        print(text, flush=True)
+        if logger is not None:
+            logger.info(text)
+        return text
