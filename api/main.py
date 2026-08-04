@@ -26,7 +26,7 @@ from core.adapters.apify_json_adapter import ApifyJsonAdapter
 from core.data import profiles_to_dataframe
 from core.embedding import embed_profiles
 from core.filtering import filter_by_job_title
-from core.jd_extraction import process_jd
+from core.jd_extraction import process_jd, resolve_jd_cache_dir
 from core.mem_trace import RequestMemTrace, rss_mb
 from core.model_cache import warm_scoring_models
 from core.scoring import (
@@ -46,20 +46,26 @@ from core.scoring import (
 )
 from core.swipe import build_card
 from models.candidate import CandidateProfile
+from models.data_models import JobRoleSchema
 from models.mappings import encode_batch_size, rerank_top_k
 
 logger = logging.getLogger(__name__)
 
-# Optional offline JD cache (e.g. jd/parsed/hr_assistant_prime_ac.json) for local
-# sanity without a live Anthropic call. Leave unset in production → Claude per request.
+# Optional single-file JD cache (eval / local offline). Hash-keyed dir is separate
+# (JD_CACHE_DIR, default .ai-recruiter/jd_cache) — see core.jd_extraction.process_jd.
 _JD_CACHE_PATH = os.environ.get("JD_CACHE_PATH") or None
-# Temporary production investigation: per-stage RSS in Render logs (remove after OOM root-cause).
+# Temporary production investigation: per-stage RSS in Render logs.
 _SCORE_MEM_TRACE = os.environ.get("SCORE_MEM_TRACE", "1").strip().lower() not in (
     "0",
     "false",
     "off",
     "no",
 )
+# Soft capacity gate (measured 2026-08-04): local n=10/25/40 climbs ~43–48 MB
+# (sub-linear); prod idle ~964 + peak@10 ~1017. Conservative linearisation of the
+# prod climb (53/10 ≈ 5.3 MB/cand) crosses 2GB−150MB reserve near n≈176. Soft max
+# 100 leaves headroom for diverse skill pools and allocator noise. Override via env.
+_SCORE_MAX_CANDIDATES = int(os.environ.get("SCORE_MAX_CANDIDATES", "100"))
 
 # Populated by lifespan; reused on every /score.
 _embedding_model = None
@@ -93,18 +99,22 @@ async def lifespan(app: FastAPI):
     print(
         f"Config: similarity_model={sim_mode}, embedding_dtype={resolved_dtype}, "
         f"SIMILARITY_MODEL_env={raw_sim_env!r}, BASE_EMBEDDING_DTYPE_env={raw_dtype_env!r} "
-        f"SCORE_MEM_TRACE={_SCORE_MEM_TRACE} JD_CACHE_PATH={_JD_CACHE_PATH!r}",
+        f"SCORE_MEM_TRACE={_SCORE_MEM_TRACE} SCORE_MAX_CANDIDATES={_SCORE_MAX_CANDIDATES} "
+        f"JD_CACHE_PATH={_JD_CACHE_PATH!r} JD_CACHE_DIR={resolve_jd_cache_dir()}",
         flush=True,
     )
     logger.info(
         "Config: similarity_model=%s, embedding_dtype=%s "
-        "(env SIMILARITY_MODEL=%r BASE_EMBEDDING_DTYPE=%r SCORE_MEM_TRACE=%s JD_CACHE_PATH=%r)",
+        "(env SIMILARITY_MODEL=%r BASE_EMBEDDING_DTYPE=%r SCORE_MEM_TRACE=%s "
+        "SCORE_MAX_CANDIDATES=%s JD_CACHE_PATH=%r JD_CACHE_DIR=%s)",
         sim_mode,
         resolved_dtype,
         raw_sim_env,
         raw_dtype_env,
         _SCORE_MEM_TRACE,
+        _SCORE_MAX_CANDIDATES,
         _JD_CACHE_PATH,
+        resolve_jd_cache_dir(),
     )
     print(
         "Warming scoring models (blocking; uvicorn has not bound the listen port yet)...",
@@ -151,11 +161,28 @@ class ScoreCandidateIn(BaseModel):
 class ScoreRequest(BaseModel):
     jd_text: str
     candidates: list[ScoreCandidateIn]
+    # Optional pre-parsed JD (e.g. Sourcing_Apify cached JobRoleSchema). When set,
+    # skips Claude for this request; still writes/reads the hash-keyed disk cache
+    # only when process_jd runs.
+    parsed_jd: dict[str, Any] | None = None
 
 
 class ScoreResponse(BaseModel):
     count: int
     cards: list[dict[str, Any]]
+
+
+def _require_batch_fits(n: int) -> None:
+    if n > _SCORE_MAX_CANDIDATES:
+        raise HTTPException(
+            status_code=422,
+            detail=(
+                f"batch too large for current capacity: got {n} candidates, "
+                f"max {_SCORE_MAX_CANDIDATES} per /score call "
+                f"(SCORE_MAX_CANDIDATES; 2GB Render Standard headroom). "
+                f"Split the pool and call /score in chunks."
+            ),
+        )
 
 
 def _adapt_candidates(candidates: list[ScoreCandidateIn]) -> list[CandidateProfile]:
@@ -187,12 +214,14 @@ def score_candidates(
     jd_text: str,
     candidates: list[ScoreCandidateIn],
     mem: RequestMemTrace | None = None,
+    parsed_jd: dict[str, Any] | None = None,
 ) -> list[dict[str, Any]]:
     _require_ready()
     if not jd_text or not jd_text.strip():
         raise HTTPException(status_code=400, detail="jd_text is required")
     if not candidates:
         raise HTTPException(status_code=400, detail="candidates must be a non-empty list")
+    _require_batch_fits(len(candidates))
 
     def _m(label: str, extra: str = "") -> None:
         if mem is not None:
@@ -204,16 +233,17 @@ def score_candidates(
     by_id = {p.candidate_id: p for p in profiles}
     _m("02_after_adapter_profiles")
 
-    jd_disk_hit = bool(_JD_CACHE_PATH and os.path.exists(_JD_CACHE_PATH))
-    _m(
-        "03_before_process_jd",
-        f"jd_cache_path={_JD_CACHE_PATH!r} disk_cache_hit={jd_disk_hit}",
-    )
-    jd = process_jd(jd_text, cache_path=_JD_CACHE_PATH)
-    _m(
-        "03_after_process_jd",
-        f"source={'disk_cache' if jd_disk_hit else 'anthropic_llm'}",
-    )
+    if parsed_jd is not None:
+        jd = JobRoleSchema.model_validate(parsed_jd)
+        _m("03_after_process_jd", "source=request_parsed_jd")
+    else:
+        cache_dir = resolve_jd_cache_dir()
+        _m(
+            "03_before_process_jd",
+            f"jd_cache_path={_JD_CACHE_PATH!r} jd_cache_dir={cache_dir}",
+        )
+        jd = process_jd(jd_text, cache_path=_JD_CACHE_PATH)
+        _m("03_after_process_jd", "source=process_jd")
 
     model = _embedding_model
     sim_spec = _sim_spec
@@ -307,7 +337,9 @@ def health():
         "sim_spec_loaded": _sim_spec is not None,
         "startup_process_rss_mb": _startup_rss_mb,
         "score_mem_trace": _SCORE_MEM_TRACE,
+        "score_max_candidates": _SCORE_MAX_CANDIDATES,
         "jd_cache_path": _JD_CACHE_PATH,
+        "jd_cache_dir": str(resolve_jd_cache_dir()) if resolve_jd_cache_dir() else None,
         "SIMILARITY_MODEL_env": os.environ.get("SIMILARITY_MODEL"),
         "BASE_EMBEDDING_DTYPE_env": os.environ.get("BASE_EMBEDDING_DTYPE"),
     }
@@ -323,7 +355,8 @@ def score(body: ScoreRequest):
     print(
         f"/score request id={req_id} n_candidates={len(body.candidates)} "
         f"jd_chars={len(body.jd_text or '')} models_ready={_models_ready} "
-        f"startup_process_rss_mb={_startup_rss_mb} mem_trace={_SCORE_MEM_TRACE}",
+        f"startup_process_rss_mb={_startup_rss_mb} mem_trace={_SCORE_MEM_TRACE} "
+        f"max_candidates={_SCORE_MAX_CANDIDATES}",
         flush=True,
     )
     logger.info(
@@ -333,7 +366,12 @@ def score(body: ScoreRequest):
         len(body.jd_text or ""),
     )
     try:
-        cards = score_candidates(body.jd_text, body.candidates, mem=mem)
+        cards = score_candidates(
+            body.jd_text,
+            body.candidates,
+            mem=mem,
+            parsed_jd=body.parsed_jd,
+        )
     except HTTPException:
         raise
     except Exception as exc:  # noqa: BLE001

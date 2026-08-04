@@ -224,7 +224,8 @@ def test_process_jd_delegates_to_provider():
         skills=[Skill(skill="s", priority=ImportanceLevel.ESSENTIAL, proficiency_level=None)],
     )
     fake = _FakeProvider(structured=jd)
-    assert process_jd("some jd text", provider=fake) is jd
+    # Disable hash cache so this always hits the provider.
+    assert process_jd("some jd text", provider=fake, cache_dir="0") is jd
     assert fake.calls[0][0] == "structured"
 
 

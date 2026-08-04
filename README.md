@@ -227,3 +227,16 @@ To support larger candidate datasets and improve matching accuracy, the followin
   - Evaluating against multiple JDs in one run.
   - Logging top-N candidates with reasons (matched attributes, scores).
   - Exporting evaluation results in a structured format (JSON/CSV).
+
+---
+
+## Scoring HTTP API (Render) — production memory notes
+
+See **`ARCHITECTURE.md` § “Scoring API on Render”** for the full write-up. Short version:
+
+- **Working config:** `BASE_EMBEDDING_DTYPE=fp16`, `SIMILARITY_MODEL=mpnet-only` → ~964 MB idle on Render Standard (2GB); n=10 peak ~1017 MB.
+- **Do not** enable dual-model Qwen on this tier (~+1.1 GB baseline).
+- **Soft batch limit:** `SCORE_MAX_CANDIDATES=100` (HTTP 422 if exceeded). Local load tests (n=10/25/40) showed **sub-linear** RSS climb; the limit is a conservative product ceiling.
+- **JD cache:** hash-keyed under `JD_CACHE_DIR` (invalidates when `jd_text` changes). Optional body field `parsed_jd` skips Claude.
+- **Uvicorn lifespan** finishes model warm-up **before** the port opens — startup races are not the OOM mode.
+- **Watchdog:** external monitor on `GET /health` requiring `status=ok` and `models_ready=true`; enable Render deploy/service failure notifications in the dashboard.

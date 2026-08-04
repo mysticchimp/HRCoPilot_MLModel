@@ -171,3 +171,42 @@ validating any re-ranker, mandatory before the LLM re-ranker) → (1) cross-enco
     recall gap (missing aliases) is bounded (industry is ~15% of the blend, a dent not a knockout)
     and best closed by the taxonomy classifier above — not fuzzy/semantic. Missing morphological
     variants should be added as explicit aliases (deterministic), not matched fuzzily.
+
+## Scoring API on Render (memory & ops — 2026-08-04)
+
+Working production config for **contra6-scoring-api** on Render Standard (2GB):
+
+| Knob | Value | Why |
+|------|-------|-----|
+| `BASE_EMBEDDING_DTYPE` | `fp16` | Halves mpnet resident weights vs fp32 |
+| `SIMILARITY_MODEL` | `mpnet-only` | Drops Qwen (~1.1GB weights); title/skill/similarity share mpnet |
+| Idle RSS (measured) | **~964 MB** | Post warm + encode-prime on Linux |
+| Successful `/score` peak (n=10) | **~1017 MB** | ~+53 MB climb |
+
+**Dual-model “champion” (Qwen similarity) is not viable on this tier** — local idle for fp32 mpnet+Qwen was ~2.1GB before any request. Keep Qwen for larger plans / eval machines only (`SIMILARITY_MODEL=qwen`).
+
+### Candidate-count ceiling (local load test, 2026-08-04)
+
+Fresh-process runs of the instrumented pipeline (fp16 mpnet-only, real LinkedIn-length profiles cloned to N):
+
+| N | Local climb (peak − baseline) | Embed stage Δ |
+|--:|------------------------------:|--------------:|
+| 10 | ~43 MB | ~34 MB |
+| 25 | ~48 MB | ~42 MB |
+| 40 | ~48 MB | ~39 MB |
+
+Climb is **sub-linear** in N: encoder workspace is mostly a fixed cost; retaining more embedding vectors adds little. Soft limit uses a **conservative** linearisation of the production climb (`53 MB / 10 ≈ 5.3 MB/cand`), which would approach 2GB−150MB reserve near **n≈176**. Product soft max is **`SCORE_MAX_CANDIDATES=100`** (HTTP 422 on overflow) so a large batch fails cleanly instead of OOM-killing the instance.
+
+### Startup race — ruled out
+
+Uvicorn 0.52 runs `lifespan` startup (including `warm_scoring_models()`) **before** `create_server()` binds the listen port. Port-open cannot overlap model load/encode-prime. `/score` also gates on `_models_ready` (503 while warming). Do not re-investigate “request arrived during warm-up” unless the uvicorn version or start command changes.
+
+### JD parse cache
+
+`process_jd` writes/reads **sha256(jd_text)** files under `JD_CACHE_DIR` (default `.ai-recruiter/jd_cache`). Changing the JD text misses the cache. Optional request field `parsed_jd` lets Sourcing_Apify skip Claude entirely on repeat scores. Render disk is ephemeral across deploys — fine for same-instance re-scores.
+
+### Alerting / watchdog (ops checklist)
+
+1. **Render Dashboard → Service → Settings → Notifications** — enable deploy failure + service failure emails (or Slack webhook).
+2. **External uptime** (UptimeRobot or similar, outside this repo): poll `GET /health` every 5 minutes. Treat as down unless JSON has `"status":"ok"` **and** `"models_ready":true`. `startup_process_rss_mb` is informational (baseline after warm); a sudden jump toward ~1800+ is an early warning, not a hard fail.
+3. Prefer clean **422 batch-too-large** over instance OOM — OOMs force multi-minute redeploys and drop in-flight work.

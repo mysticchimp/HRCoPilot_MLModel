@@ -1,9 +1,10 @@
 """API-level unit test for POST /score (JD extraction mocked)."""
 
-from unittest.mock import patch
+from unittest.mock import MagicMock, patch
 
 from fastapi.testclient import TestClient
 
+import api.main as main
 from api.main import app
 from models.data_models import Company, JobRoleSchema, Skill
 from models.enums import ImportanceLevel
@@ -52,12 +53,18 @@ def _fake_jd():
 
 
 def test_health():
-    client = TestClient(app)
-    assert client.get("/health").json() == {"status": "ok"}
+    with patch.object(main, "_models_ready", True), patch.object(
+        main, "_embedding_model", object()
+    ), patch.object(main, "_startup_rss_mb", 900.0):
+        client = TestClient(app)
+        body = client.get("/health").json()
+    assert body["status"] == "ok"
+    assert body["models_ready"] is True
+    assert body["startup_process_rss_mb"] == 900.0
+    assert "score_max_candidates" in body
 
 
 def test_score_endpoint_returns_swipe_cards():
-    client = TestClient(app)
     body = {
         "jd_text": "HR Assistant needed in Dubai. Onboarding and payroll.",
         "candidates": [
@@ -83,10 +90,28 @@ def test_score_endpoint_returns_swipe_cards():
             },
         ],
     }
-
-    with patch("api.main.process_jd", return_value=_fake_jd()):
-        # Keep embeddings cheap/offline by stubbing the heavy pipeline pieces would
-        # under-test the adapter wiring; instead run real pipeline but skip network.
+    fake_cards = [
+        {
+            "candidate_id": "db-1",
+            "rank": 1,
+            "total_score": 0.7,
+            "component_breakdown": {},
+            "matched_signals": [],
+            "reasoning": "ok",
+        },
+        {
+            "candidate_id": "db-2",
+            "rank": 2,
+            "total_score": 0.4,
+            "component_breakdown": {},
+            "matched_signals": [],
+            "reasoning": "ok",
+        },
+    ]
+    with patch.object(main, "_models_ready", True), patch.object(
+        main, "_embedding_model", MagicMock()
+    ), patch.object(main, "score_candidates", return_value=fake_cards):
+        client = TestClient(app)
         resp = client.post("/score", json=body)
 
     assert resp.status_code == 200, resp.text
@@ -100,3 +125,22 @@ def test_score_endpoint_returns_swipe_cards():
         assert "matched_signals" in card
         assert "reasoning" in card
         assert "rank" in card
+
+
+def test_score_rejects_oversized_batch():
+    with patch.object(main, "_models_ready", True), patch.object(
+        main, "_embedding_model", object()
+    ), patch.object(main, "_SCORE_MAX_CANDIDATES", 2):
+        client = TestClient(app)
+        resp = client.post(
+            "/score",
+            json={
+                "jd_text": "HR role",
+                "candidates": [
+                    {"candidate_id": f"c{i}", "raw_profile": SAMPLE_PROFILE}
+                    for i in range(3)
+                ],
+            },
+        )
+    assert resp.status_code == 422
+    assert "batch too large" in resp.json()["detail"]

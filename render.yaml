@@ -14,12 +14,19 @@ services:
         value: "3.11.0"
       - key: COPILOT_SKIP_CLI_DOWNLOAD
         value: "1"
-      # Combo D: single-model idle baseline (~637MB local) fits a 2GB plan.
+      # Combo D: single-model idle baseline (~964MB on Render Standard) fits 2GB.
       # Revert to dual-model with SIMILARITY_MODEL=qwen (+ larger plan if needed).
       - key: BASE_EMBEDDING_DTYPE
         value: "fp16"
       - key: SIMILARITY_MODEL
         value: "mpnet-only"
-      # Temporary: per-stage RSS in Render logs for OOM investigation (set 0 to disable).
+      # Hash-keyed JD parse cache (sha256 of jd_text). Ephemeral on Render disk —
+      # survives re-scores on the same instance; set to 0 to disable.
+      - key: JD_CACHE_DIR
+        value: ".ai-recruiter/jd_cache"
+      # Soft /score batch ceiling (see ARCHITECTURE.md § Render memory).
+      - key: SCORE_MAX_CANDIDATES
+        value: "100"
+      # Per-stage RSS in Render logs (set 0 once investigation is done).
       - key: SCORE_MEM_TRACE
         value: "1"
