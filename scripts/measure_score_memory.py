@@ -1,7 +1,7 @@
-"""Measure /score RSS + latency with warmed models (4 candidates).
+"""Measure /score RSS + latency with warmed models.
 
-Starts a local uvicorn, waits for model warm-up, samples process RSS
-(idle → during request → after), and prints duration.
+Default fixture: REAL richest-10 LinkedIn profiles (nested Apify shape) at
+``.ai-recruiter/real_score_batch_10.json``. Override with SCORE_FIXTURE=.
 
     COPILOT_SKIP_CLI_DOWNLOAD=1 JD_CACHE_PATH=jd/parsed/hr_assistant_prime_ac.json \\
       uv run python scripts/measure_score_memory.py
@@ -14,7 +14,6 @@ import os
 import subprocess
 import sys
 import time
-import urllib.error
 import urllib.request
 from pathlib import Path
 
@@ -24,133 +23,17 @@ sys.path.insert(0, str(ROOT))
 PORT = int(os.environ.get("SCORE_PORT", "8091"))
 BASE = f"http://127.0.0.1:{PORT}"
 JD_CACHE = os.environ.get("JD_CACHE_PATH", "jd/parsed/hr_assistant_prime_ac.json")
-
-# 4 nested Apify-shaped candidates (same style as sanity_score_api)
-CANDIDATES = [
-    {
-        "candidate_id": "cand-roxanna",
-        "raw_profile": {
-            "publicIdentifier": "roxanna",
-            "linkedinUrl": "https://www.linkedin.com/in/roxanna",
-            "fullName": "Roxanna Ghassemlou",
-            "headline": "HR Manager | Dubai",
-            "about": "HR professional with 4+ years in employee relations and onboarding.",
-            "location": {
-                "linkedinText": "Dubai, United Arab Emirates",
-                "parsed": {"city": "Dubai", "country": "United Arab Emirates", "countryCode": "AE", "text": "Dubai, UAE"},
-            },
-            "experience": [
-                {
-                    "position": "HR Manager",
-                    "companyName": "Distinct Group",
-                    "duration": "5 mos",
-                    "description": "Led HR ops and onboarding.",
-                    "startDate": {"text": "Mar 2026"},
-                    "endDate": {"text": "Present"},
-                },
-                {
-                    "position": "HR Assistant",
-                    "companyName": "Prime Focus",
-                    "duration": "2 yrs 3 mos",
-                    "description": "Payroll and manufacturing-site HR admin.",
-                    "startDate": {"text": "Jan 2024"},
-                    "endDate": {"text": "Mar 2026"},
-                },
-            ],
-            "education": [{"degree": "MSc", "fieldOfStudy": "Psychology", "schoolName": "Sussex", "endDate": {"year": 2021}}],
-            "skills": [{"name": "Onboarding"}, {"name": "Payroll"}, {"name": "HR Policies"}],
-            "languages": [{"name": "English"}, {"name": "Tagalog"}],
-        },
-    },
-    {
-        "candidate_id": "cand-entry-hr",
-        "raw_profile": {
-            "publicIdentifier": "aisha",
-            "linkedinUrl": "https://www.linkedin.com/in/aisha",
-            "fullName": "Aisha Khan",
-            "headline": "HR Assistant | Dubai",
-            "about": "HR Assistant focused on recruitment and onboarding.",
-            "location": {
-                "parsed": {"city": "Dubai", "country": "United Arab Emirates", "countryCode": "AE", "text": "Dubai, UAE"},
-            },
-            "experience": [
-                {
-                    "position": "HR Assistant",
-                    "companyName": "Gulf Manufacturing LLC",
-                    "duration": "1 yr 6 mos",
-                    "description": "Interviews, files, onboarding.",
-                    "startDate": {"text": "Jan 2025"},
-                    "endDate": {"text": "Present"},
-                }
-            ],
-            "education": [{"degree": "BBA", "fieldOfStudy": "HR", "schoolName": "UAEU", "endDate": {"year": 2024}}],
-            "skills": [{"name": "Onboarding"}, {"name": "Recruitment"}, {"name": "MS Office"}],
-            "languages": [{"name": "English"}, {"name": "Arabic"}],
-        },
-    },
-    {
-        "candidate_id": "cand-coordinator",
-        "raw_profile": {
-            "publicIdentifier": "leena",
-            "linkedinUrl": "https://www.linkedin.com/in/leena",
-            "fullName": "Leena E",
-            "headline": "HR Coordinator",
-            "about": "HR coordination across manufacturing sites in the UAE.",
-            "location": {
-                "parsed": {"city": "Abu Dhabi", "country": "United Arab Emirates", "countryCode": "AE", "text": "Abu Dhabi, UAE"},
-            },
-            "experience": [
-                {
-                    "position": "HR Coordinator",
-                    "companyName": "Industrial Co",
-                    "duration": "3 yrs",
-                    "description": "Employee relations, onboarding, admin.",
-                    "startDate": {"text": "Jan 2023"},
-                    "endDate": {"text": "Present"},
-                }
-            ],
-            "education": [{"degree": "BA", "fieldOfStudy": "Business", "schoolName": "Zayed", "endDate": {"year": 2022}}],
-            "skills": [{"name": "Employee Relations"}, {"name": "Onboarding"}, {"name": "HR Administration"}],
-            "languages": [{"name": "English"}],
-        },
-    },
-    {
-        "candidate_id": "cand-unrelated",
-        "raw_profile": {
-            "publicIdentifier": "dev",
-            "linkedinUrl": "https://www.linkedin.com/in/dev",
-            "fullName": "Dev Patel",
-            "headline": "Software Engineer",
-            "about": "Backend engineer building APIs.",
-            "location": {
-                "parsed": {"city": "Bengaluru", "country": "India", "countryCode": "IN", "text": "Bengaluru, India"},
-            },
-            "experience": [
-                {
-                    "position": "Software Engineer",
-                    "companyName": "Acme Tech",
-                    "duration": "3 yrs",
-                    "description": "Microservices and data pipelines.",
-                    "startDate": {"text": "Jan 2023"},
-                    "endDate": {"text": "Present"},
-                }
-            ],
-            "education": [{"degree": "B.Tech", "fieldOfStudy": "CS", "schoolName": "IIT", "endDate": {"year": 2022}}],
-            "skills": [{"name": "Python"}, {"name": "Go"}],
-            "languages": [{"name": "English"}],
-        },
-    },
-]
+FIXTURE = Path(os.environ.get("SCORE_FIXTURE", str(ROOT / ".ai-recruiter" / "real_score_batch_10.json")))
 
 
-def _rss_mb(pid: int) -> float:
-    """Process tree RSS in MiB (macOS/Linux ``ps``)."""
-    try:
-        out = subprocess.check_output(["ps", "-o", "rss=", "-p", str(pid)], text=True)
-        kb = float(out.strip() or "0")
-        return kb / 1024.0
-    except Exception:  # noqa: BLE001
-        return 0.0
+def _load_payload() -> tuple[str, list]:
+    if not FIXTURE.exists():
+        raise SystemExit(f"Missing fixture {FIXTURE}")
+    data = json.loads(FIXTURE.read_text(encoding="utf-8"))
+    jd = data.get("jd_text") or (ROOT / "jd" / "sample_hr_assistant_jd.txt").read_text(encoding="utf-8")
+    cands = data["candidates"]
+    print(f"fixture={FIXTURE} candidates={len(cands)} jd_chars={len(jd)}", flush=True)
+    return jd, cands
 
 
 def _tree_rss_mb(pid: int) -> float:
@@ -180,8 +63,8 @@ def _wait_ready(timeout: float = 600.0) -> None:
     raise TimeoutError("server did not become ready")
 
 
-def _post_score(jd_text: str) -> tuple[dict, float]:
-    payload = json.dumps({"jd_text": jd_text, "candidates": CANDIDATES}).encode()
+def _post_score(jd_text: str, candidates: list) -> tuple[dict, float]:
+    payload = json.dumps({"jd_text": jd_text, "candidates": candidates}).encode()
     req = urllib.request.Request(
         f"{BASE}/score", data=payload, headers={"Content-Type": "application/json"}, method="POST"
     )
@@ -199,15 +82,14 @@ def main():
         subprocess.check_call(
             [sys.executable, "-m", "pip", "install", "-q", "psutil"], cwd=str(ROOT)
         )
-        import psutil  # noqa: F401
 
-    jd_path = ROOT / "jd" / "sample_hr_assistant_jd.txt"
-    jd_text = jd_path.read_text(encoding="utf-8") if jd_path.exists() else "HR Assistant Dubai onboarding payroll."
+    jd_text, candidates = _load_payload()
 
     env = os.environ.copy()
     env["COPILOT_SKIP_CLI_DOWNLOAD"] = "1"
     env["JD_CACHE_PATH"] = JD_CACHE
     env.setdefault("LLM_PROVIDER", "anthropic")
+    env["TOKENIZERS_PARALLELISM"] = "false"
 
     cmd = [
         sys.executable, "-m", "uvicorn", "api.main:app",
@@ -241,10 +123,10 @@ def main():
         t = threading.Thread(target=sampler, daemon=True)
         t.start()
 
-        body1, dur1 = _post_score(jd_text)
+        body1, dur1 = _post_score(jd_text, candidates)
         print(f"request #1: {dur1:.2f}s count={body1.get('count')}", flush=True)
 
-        body2, dur2 = _post_score(jd_text)
+        body2, dur2 = _post_score(jd_text, candidates)
         print(f"request #2: {dur2:.2f}s count={body2.get('count')}", flush=True)
 
         stop_sample = True
@@ -252,14 +134,14 @@ def main():
         time.sleep(0.5)
         peak["after"] = _tree_rss_mb(proc.pid)
 
-        print("\n=== MEMORY / LATENCY ===")
+        print("\n=== MEMORY / LATENCY (real profiles) ===")
         print(f"idle_rss_mb:    {peak['idle']:.1f}")
         print(f"peak_during_mb: {peak['during']:.1f}")
         print(f"after_rss_mb:   {peak['after']:.1f}")
         print(f"req1_seconds:   {dur1:.2f}")
         print(f"req2_seconds:   {dur2:.2f}")
-        print(f"candidates:     {len(CANDIDATES)}")
-        assert body2.get("count") == len(CANDIDATES)
+        print(f"candidates:     {len(candidates)}")
+        assert body2.get("count") == len(candidates)
     finally:
         stop_sample = True
         proc.terminate()
@@ -267,13 +149,12 @@ def main():
             proc.wait(timeout=15)
         except subprocess.TimeoutExpired:
             proc.kill()
-        # drain a bit of server log on failure
         if proc.stdout:
             try:
                 leftover = proc.stdout.read()
                 if leftover:
                     print("--- server log (tail) ---", flush=True)
-                    print("\n".join(leftover.strip().splitlines()[-40:]), flush=True)
+                    print("\n".join(leftover.strip().splitlines()[-50:]), flush=True)
             except Exception:  # noqa: BLE001
                 pass
 

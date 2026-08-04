@@ -170,8 +170,10 @@ class ApifyJsonAdapter(CandidateAdapter):
         return exps[0] if exps else None
 
     def _responsibilities(self, record: dict) -> Optional[str]:
+        # Field contract is current/recent role text — not a career-long dump of every
+        # experience description (that blew embedding inputs past 1k tokens on Full scrapes).
         texts: list[str] = []
-        for exp in self._experience_items(record):
+        for exp in self._experience_items(record)[:3]:
             desc = _clean(exp.get("description"))
             if desc:
                 texts.append(desc)

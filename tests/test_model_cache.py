@@ -23,13 +23,32 @@ def test_build_similarity_spec_fp16_uses_torch_dtype_not_half():
                 "model_name": "Qwen/Qwen3-Embedding-0.6B",
                 "dtype": "fp16",
                 "max_seq_length": 1024,
-                "batch_size": 16,
+                "batch_size": 2,
             }
         )
     assert spec is not None
     kwargs = ctor.call_args.kwargs
     assert kwargs["model_kwargs"]["torch_dtype"] is torch.float16
     fake.half.assert_not_called()
+
+
+def test_truncate_to_max_tokens_respects_model_cap():
+    from core.embedding import truncate_to_max_tokens
+
+    class _Tok:
+        def encode(self, text, add_special_tokens=True):
+            # 1 token per word
+            return list(range(len(text.split())))
+
+        def decode(self, ids, skip_special_tokens=True):
+            return " ".join(f"w{i}" for i in ids)
+
+    model = MagicMock()
+    model.max_seq_length = 4
+    model.tokenizer = _Tok()
+    out = truncate_to_max_tokens("a b c d e f g", model)
+    assert out == "w0 w1 w2 w3"
+    assert truncate_to_max_tokens("a b", model) == "a b"
 
 
 def test_model_cache_reuses_base_model():

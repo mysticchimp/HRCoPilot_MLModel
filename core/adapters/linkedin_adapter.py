@@ -161,7 +161,9 @@ class LinkedInAdapter(CandidateAdapter):
         return education
 
     def _responsibilities(self, record: dict) -> Optional[str]:
-        descriptions = self._collect(record, "experience", ["description"], self._MAX["experience"])
+        # Current/recent only (first 3 experience rows) — matches CandidateProfile field
+        # contract and keeps embedding inputs within encoder max_seq_length.
+        descriptions = self._collect(record, "experience", ["description"], min(3, self._MAX["experience"]))
         texts = [o["description"] for o in descriptions if o["description"]]
         current = _clean(record.get("currentPosition/0/description"))
         if current and current not in texts:

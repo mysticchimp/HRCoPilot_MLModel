@@ -3,7 +3,7 @@ import torch
 from statistics import median
 from sentence_transformers import SentenceTransformer, util
 from core.matching import weighted_fuzzy_skill_score, weighted_fuzzy_qualification_score
-from core.embedding import build_jd_embedding_input, build_rerank_jd_text, log_truncation
+from core.embedding import build_jd_embedding_input, build_rerank_jd_text, log_truncation, truncate_to_max_tokens
 from core.industry_normalization import industry_present, jd_industry_requirements
 from core.reranking import RerankSpec, rerank_scores
 from core.language_normalization import jd_language_requirements, normalize_candidate_languages
@@ -390,6 +390,7 @@ def calculate_similarity_score(
     if query_instruction:
         jd_text = f"{query_instruction}{jd_text}"
     log_truncation(model, [jd_text], "JD")
+    jd_text = truncate_to_max_tokens(jd_text, model)
     # .float(): fp16/bf16 similarity models emit half-precision JD vectors, but the
     # cached candidate embeddings are stored as float lists (float32) — cast so the
     # cos_sim matmul sees matching dtypes.

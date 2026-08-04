@@ -33,6 +33,28 @@ def log_truncation(model, texts: list[str], label: str) -> int:
     return n_trunc
 
 
+def truncate_to_max_tokens(text: str, model, max_tokens: int | None = None) -> str:
+    """Truncate ``text`` to the encoder's ``max_seq_length`` (or ``max_tokens``).
+
+    Uses the model's own tokenizer — all-mpnet defaults to 384, Qwen champion to 1024 —
+    so we never invent a char budget. Returns ``text`` unchanged when under the cap or
+    when the model has no tokenizer/max_seq_length.
+    """
+    if not text:
+        return text
+    max_len = max_tokens or getattr(model, "max_seq_length", None)
+    tok = getattr(model, "tokenizer", None)
+    if not max_len or tok is None:
+        return text
+    # Fast path: avoid encode/decode when clearly short (rough char heuristic only).
+    # Token truncate is authoritative when we do hit the tokenizer.
+    ids = tok.encode(text, add_special_tokens=True)
+    if len(ids) <= max_len:
+        return text
+    truncated = tok.decode(ids[:max_len], skip_special_tokens=True)
+    return truncated
+
+
 def build_jd_embedding_input(jd_data: JobRoleSchema):
     parts = []
 
@@ -170,7 +192,7 @@ def embed_profiles(
     cache_path: str | None = None,
     model_key: str | None = None,
     doc_instruction: str | None = None,
-    batch_size: int = 32,
+    batch_size: int = 2,
 ):
     """Populate profile_text + profile_embedding for each profile (batch encoded).
 
@@ -183,12 +205,17 @@ def embed_profiles(
     compare models MUST pass a distinct `model_key` (and ideally a per-model cache_path).
     `doc_instruction`, when given, is prepended to each candidate profile (the document
     side) for instruction-tuned encoders.
+
+    Default ``batch_size=2`` keeps peak activation memory bounded when many long
+    LinkedIn profiles share a request (ST pads to the longest seq in the batch).
+    Each text is truncated to the model's ``max_seq_length`` before encode.
     """
     for profile in profiles:
         profile.profile_text = build_candidate_embedding_input(profile)
     texts = [p.profile_text or "" for p in profiles]
-    encode_texts = [f"{doc_instruction}{t}" for t in texts] if doc_instruction else texts
+    encode_texts = [f"{doc_instruction}{t}" for t in texts] if doc_instruction else list(texts)
     log_truncation(model, encode_texts, "candidate profiles")
+    encode_texts = [truncate_to_max_tokens(t, model) for t in encode_texts]
 
     key_material = f"{model_key or ''}\x1f{doc_instruction or ''}\x1f" + "||".join(texts)
     key = hashlib.md5(key_material.encode("utf-8")).hexdigest()
@@ -200,15 +227,22 @@ def embed_profiles(
                 profile.profile_embedding = emb
             return profiles
 
+    # convert_to_numpy avoids holding a full-batch torch tensor alongside the models.
     encoded = model.encode(
-        encode_texts, convert_to_tensor=True, show_progress_bar=True, batch_size=batch_size
+        encode_texts,
+        convert_to_numpy=True,
+        show_progress_bar=True,
+        batch_size=max(1, int(batch_size)),
     )
-    if torch.isnan(encoded).any():
+    import numpy as np
+
+    arr = np.asarray(encoded)
+    if np.isnan(arr).any():
         raise ValueError(
             "embed_profiles: model produced NaN embeddings — check device/dtype "
             "(some custom encoders NaN on Apple MPS; retry with device='cpu' + float32)."
         )
-    embeddings = [vec.cpu().numpy().tolist() for vec in encoded]
+    embeddings = [vec.tolist() for vec in arr]
     for profile, emb in zip(profiles, embeddings):
         profile.profile_embedding = emb
 
@@ -231,7 +265,7 @@ class SimilaritySpec:
     model_key: str
     query_instruction: str | None = None
     doc_instruction: str | None = None
-    batch_size: int = 32
+    batch_size: int = 2
 
 
 def _resolve_load_dtype(dtype: str, device: str | None):
@@ -282,5 +316,5 @@ def build_similarity_spec(config: dict | None, base_model=None) -> "SimilaritySp
         model_key=f"{name}|q={q}|d={d}|L={config.get('max_seq_length')}",
         query_instruction=q,
         doc_instruction=d,
-        batch_size=config.get("batch_size", 32),
+        batch_size=config.get("batch_size", 2),
     )

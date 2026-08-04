@@ -172,6 +172,8 @@ skill_semantic_threshold = 0.40
 # profiles that exceed all-mpnet's 384-token cap; the query instruction is its trained
 # asymmetric-retrieval prompt (JD=query). fp16 via torch_dtype at load + L1024 keep it
 # within a 16GB MPS budget (no post-load .half() RSS spike).
+# batch_size=2: real LinkedIn about+experience texts often hit the 1024-token cap;
+# encoding a full request (10+) in one padded batch spikes RSS past a 2GB Render box.
 similarity_model_config = {
     "model_name": "Qwen/Qwen3-Embedding-0.6B",
     "query_instruction": "Instruct: Given a job description, retrieve candidate profiles that best match the role.\nQuery: ",
@@ -179,7 +181,7 @@ similarity_model_config = {
     "dtype": "fp16",
     "device": None,
     "max_seq_length": 1024,
-    "batch_size": 16,
+    "batch_size": 2,
 }
 
 # Stage-2 cross-encoder reranker (docs/adr/0001-cross-encoder-reranker.md). Two-stage

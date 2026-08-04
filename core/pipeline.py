@@ -111,7 +111,7 @@ def run_pipeline(
         profiles, emb_model, cache_path=embedding_cache_path,
         model_key=resolved_sim.model_key if resolved_sim else None,
         doc_instruction=resolved_sim.doc_instruction if resolved_sim else None,
-        batch_size=resolved_sim.batch_size if resolved_sim else 32,
+        batch_size=resolved_sim.batch_size if resolved_sim else 2,
     )
     df_candidates = profiles_to_dataframe(profiles)
 
