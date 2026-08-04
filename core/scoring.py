@@ -1,7 +1,7 @@
+import numpy as np
 import pandas as pd
-import torch
 from statistics import median
-from sentence_transformers import SentenceTransformer, util
+from sentence_transformers import SentenceTransformer
 from core.matching import weighted_fuzzy_skill_score, weighted_fuzzy_qualification_score
 from core.embedding import build_jd_embedding_input, build_rerank_jd_text, log_truncation, truncate_to_max_tokens
 from core.industry_normalization import industry_present, jd_industry_requirements
@@ -17,6 +17,7 @@ from core.skill_normalization import build_skill_semantic_index
 from models.data_models import Skill, JobRoleSchema
 from models.mappings import (
     candidate_score_weights,
+    encode_batch_size,
     seniority_rank_map,
     seniority_under_penalty,
     seniority_over_penalty,
@@ -391,13 +392,29 @@ def calculate_similarity_score(
         jd_text = f"{query_instruction}{jd_text}"
     log_truncation(model, [jd_text], "JD")
     jd_text = truncate_to_max_tokens(jd_text, model)
-    # .float(): fp16/bf16 similarity models emit half-precision JD vectors, but the
-    # cached candidate embeddings are stored as float lists (float32) — cast so the
-    # cos_sim matmul sees matching dtypes.
-    jd_embedding = model.encode(jd_text, convert_to_tensor=True).cpu().float()
-    candidate_embeddings = torch.stack([torch.tensor(vec, dtype=torch.float32) for vec in df['profile_embedding']])
-    similarities = util.cos_sim(candidate_embeddings, jd_embedding).squeeze().cpu().numpy()
-    df['similarity_score'] = similarities
+    # convert_to_numpy: avoid a long-lived torch JD tensor; candidate side stays
+    # as the float lists already on the DataFrame (no torch.stack of the full pool).
+    jd_embedding = np.asarray(
+        model.encode(
+            jd_text,
+            convert_to_numpy=True,
+            batch_size=1,
+            show_progress_bar=False,
+        ),
+        dtype=np.float32,
+    ).reshape(-1)
+    candidate_embeddings = np.asarray(
+        df["profile_embedding"].tolist(), dtype=np.float32
+    )
+    # Cosine in numpy chunks — no util.cos_sim over a stacked torch batch.
+    bs = max(1, int(encode_batch_size))
+    scores = np.empty(len(candidate_embeddings), dtype=np.float32)
+    jd_n = jd_embedding / (np.linalg.norm(jd_embedding) + 1e-12)
+    for start in range(0, len(candidate_embeddings), bs):
+        chunk = candidate_embeddings[start : start + bs]
+        chunk_n = chunk / (np.linalg.norm(chunk, axis=1, keepdims=True) + 1e-12)
+        scores[start : start + bs] = chunk_n @ jd_n
+    df["similarity_score"] = scores
     return df
 
 def calculate_total_score(

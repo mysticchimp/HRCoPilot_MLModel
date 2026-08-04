@@ -40,9 +40,27 @@ _rerank_spec = None
 @asynccontextmanager
 async def lifespan(app: FastAPI):
     global _embedding_model, _sim_spec, _rerank_spec
-    logger.info("Warming scoring embedding models (once per process)...")
+    from core.model_cache import resolve_base_embedding_dtype, resolve_similarity_model_config
+
+    sim_mode = "mpnet-only" if resolve_similarity_model_config() is None else "qwen"
+    logger.info(
+        "Warming scoring embedding models (once per process; "
+        "BASE_EMBEDDING_DTYPE=%s SIMILARITY_MODEL=%s)...",
+        resolve_base_embedding_dtype(),
+        sim_mode,
+    )
     _embedding_model, _sim_spec, _rerank_spec = warm_scoring_models()
-    logger.info("Model warm-up complete")
+    try:
+        from core.mem_trace import rss_mb
+
+        logger.info(
+            "Model warm-up complete; process_rss_mb=%.1f "
+            "(post-load + encode-prime baseline; sim=%s)",
+            rss_mb(),
+            None if _sim_spec is None else _sim_spec.model_key,
+        )
+    except Exception:  # noqa: BLE001
+        logger.info("Model warm-up complete")
     yield
 
 

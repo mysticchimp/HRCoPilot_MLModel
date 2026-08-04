@@ -14,3 +14,9 @@ services:
         value: "3.11.0"
       - key: COPILOT_SKIP_CLI_DOWNLOAD
         value: "1"
+      # Combo D: single-model idle baseline (~637MB local) fits a 2GB plan.
+      # Revert to dual-model with SIMILARITY_MODEL=qwen (+ larger plan if needed).
+      - key: BASE_EMBEDDING_DTYPE
+        value: "fp16"
+      - key: SIMILARITY_MODEL
+        value: "mpnet-only"

@@ -1,5 +1,14 @@
 from models.enums import ImportanceLevel
 
+# Shared encode micro-batch for title / skill / profile / similarity paths.
+# ST pads to the longest sequence in a batch — keep this small on 2GB hosts.
+encode_batch_size = 2
+
+# Title/skill (and mpnet-only similarity) encoder dtype. fp16 via torch_dtype at
+# construction — same pattern as Qwen — roughly halves resident weight RSS vs the
+# previous default SentenceTransformer() fp32 load. Override with BASE_EMBEDDING_DTYPE.
+base_embedding_dtype = "fp16"
+
 attribute_weight_by_importance = {
     ImportanceLevel.ESSENTIAL: 1.0,
     ImportanceLevel.IMPORTANT: 0.7,
@@ -174,6 +183,10 @@ skill_semantic_threshold = 0.40
 # within a 16GB MPS budget (no post-load .half() RSS spike).
 # batch_size=2: real LinkedIn about+experience texts often hit the 1024-token cap;
 # encoding a full request (10+) in one padded batch spikes RSS past a 2GB Render box.
+#
+# Runtime toggle (scoring API / warm_scoring_models): env SIMILARITY_MODEL=
+#   qwen|champion (default) → this dict
+#   mpnet-only|mpnet|none    → None (single-model baseline; drops Qwen from RSS)
 similarity_model_config = {
     "model_name": "Qwen/Qwen3-Embedding-0.6B",
     "query_instruction": "Instruct: Given a job description, retrieve candidate profiles that best match the role.\nQuery: ",
@@ -181,7 +194,7 @@ similarity_model_config = {
     "dtype": "fp16",
     "device": None,
     "max_seq_length": 1024,
-    "batch_size": 2,
+    "batch_size": encode_batch_size,  # see encode_batch_size above
 }
 
 # Stage-2 cross-encoder reranker (docs/adr/0001-cross-encoder-reranker.md). Two-stage

@@ -96,8 +96,14 @@ class SkillSemanticIndex:
         return max(0.0, float(np.dot(va, vb)))
 
 
-def build_skill_semantic_index(skills, model) -> SkillSemanticIndex:
-    """Embed every unique normalized skill once (unit-normalized) for cosine lookups."""
+def build_skill_semantic_index(skills, model, batch_size: int | None = None) -> SkillSemanticIndex:
+    """Embed every unique normalized skill once (unit-normalized) for cosine lookups.
+
+    Called once per ``calculate_skill_score`` invocation (once per /score), not
+    per-candidate — the hybrid matcher then does cheap vector lookups only.
+    """
+    from models.mappings import encode_batch_size
+
     unique = sorted({
         normalize_skill(s)
         for s in skills
@@ -105,5 +111,12 @@ def build_skill_semantic_index(skills, model) -> SkillSemanticIndex:
     })
     if not unique:
         return SkillSemanticIndex({})
-    vectors = model.encode(unique, convert_to_numpy=True, normalize_embeddings=True)
+    bs = encode_batch_size if batch_size is None else max(1, int(batch_size))
+    vectors = model.encode(
+        unique,
+        convert_to_numpy=True,
+        normalize_embeddings=True,
+        batch_size=bs,
+        show_progress_bar=False,
+    )
     return SkillSemanticIndex({skill: vec for skill, vec in zip(unique, vectors)})

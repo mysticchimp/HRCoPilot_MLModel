@@ -28,6 +28,7 @@ from core.scoring import (
 )
 from models.candidate import CandidateProfile
 from models.data_models import JobRoleSchema
+from models.mappings import encode_batch_size
 from models.mappings import rerank_model_config as CHAMPION_RERANK_CONFIG
 from models.mappings import rerank_top_k as CHAMPION_RERANK_TOP_K
 from models.mappings import similarity_model_config as CHAMPION_SIM_CONFIG
@@ -111,7 +112,7 @@ def run_pipeline(
         profiles, emb_model, cache_path=embedding_cache_path,
         model_key=resolved_sim.model_key if resolved_sim else None,
         doc_instruction=resolved_sim.doc_instruction if resolved_sim else None,
-        batch_size=resolved_sim.batch_size if resolved_sim else 2,
+        batch_size=resolved_sim.batch_size if resolved_sim else encode_batch_size,
     )
     df_candidates = profiles_to_dataframe(profiles)
 

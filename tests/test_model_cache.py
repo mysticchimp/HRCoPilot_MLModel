@@ -55,9 +55,21 @@ def test_model_cache_reuses_base_model():
     model_cache._base_models.clear()
     model_cache._sim_specs.clear()
     fake = MagicMock(name="mpnet")
-    with patch("core.model_cache.SentenceTransformer", return_value=fake) as ctor:
-        a = model_cache.get_base_embedding_model("all-mpnet-base-v2")
-        b = model_cache.get_base_embedding_model("all-mpnet-base-v2")
+    with patch.dict("os.environ", {"BASE_EMBEDDING_DTYPE": "fp16"}, clear=False):
+        with patch("core.model_cache.SentenceTransformer", return_value=fake) as ctor:
+            a = model_cache.get_base_embedding_model("all-mpnet-base-v2")
+            b = model_cache.get_base_embedding_model("all-mpnet-base-v2")
     assert a is b is fake
     assert ctor.call_count == 1
+    kwargs = ctor.call_args.kwargs
+    assert kwargs["model_kwargs"]["torch_dtype"] is torch.float16
     model_cache._base_models.clear()
+
+
+def test_resolve_similarity_model_mpnet_only():
+    from models.mappings import similarity_model_config as champ
+
+    with patch.dict("os.environ", {"SIMILARITY_MODEL": "mpnet-only"}, clear=False):
+        assert model_cache.resolve_similarity_model_config(champ) is None
+    with patch.dict("os.environ", {"SIMILARITY_MODEL": "qwen"}, clear=False):
+        assert model_cache.resolve_similarity_model_config(champ) is champ
