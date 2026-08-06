@@ -1,8 +1,10 @@
 """Thin FastAPI wrapper around the scoring pipeline.
 
 POST /score
-  body: { jd_text, candidates: [{ candidate_id, raw_profile }] }
+  body: { jd_text?, parsed_jd?, candidates: [{ candidate_id, raw_profile }] }
   → ApifyJsonAdapter → run_pipeline → swipe-card JSON (tagged with caller candidate_id)
+  At least one of jd_text / parsed_jd is required. When parsed_jd is set, Claude is
+  skipped and scoring_mode="parsed"; otherwise process_jd runs and scoring_mode="llm".
 
 Embedding models (all-mpnet + optional Qwen similarity) are loaded once at startup
 and reused. Uvicorn 0.52+ runs lifespan startup *before* binding the listen port, so
@@ -17,10 +19,10 @@ import logging
 import os
 import uuid
 from contextlib import asynccontextmanager
-from typing import Any
+from typing import Any, Literal
 
 from fastapi import FastAPI, HTTPException
-from pydantic import BaseModel, Field
+from pydantic import BaseModel, Field, model_validator
 
 from core.adapters.apify_json_adapter import ApifyJsonAdapter
 from core.data import profiles_to_dataframe
@@ -159,17 +161,25 @@ class ScoreCandidateIn(BaseModel):
 
 
 class ScoreRequest(BaseModel):
-    jd_text: str
+    jd_text: str | None = None
     candidates: list[ScoreCandidateIn]
-    # Optional pre-parsed JD (e.g. Sourcing_Apify cached JobRoleSchema). When set,
-    # skips Claude for this request; still writes/reads the hash-keyed disk cache
-    # only when process_jd runs.
+    # Optional pre-parsed JD (e.g. Sourcing_Apify scoring brief). When set,
+    # skips Claude for this request; scoring_mode="parsed".
     parsed_jd: dict[str, Any] | None = None
+
+    @model_validator(mode="after")
+    def _require_jd_text_or_parsed(self) -> ScoreRequest:
+        has_parsed = self.parsed_jd is not None
+        has_text = bool((self.jd_text or "").strip())
+        if not has_parsed and not has_text:
+            raise ValueError("jd_text or parsed_jd is required")
+        return self
 
 
 class ScoreResponse(BaseModel):
     count: int
     cards: list[dict[str, Any]]
+    scoring_mode: Literal["parsed", "llm"]
 
 
 def _require_batch_fits(n: int) -> None:
@@ -211,14 +221,19 @@ def _payload_stats(candidates: list[ScoreCandidateIn], jd_text: str) -> str:
 
 
 def score_candidates(
-    jd_text: str,
+    jd_text: str | None,
     candidates: list[ScoreCandidateIn],
     mem: RequestMemTrace | None = None,
     parsed_jd: dict[str, Any] | None = None,
-) -> list[dict[str, Any]]:
+) -> tuple[list[dict[str, Any]], Literal["parsed", "llm"]]:
     _require_ready()
-    if not jd_text or not jd_text.strip():
-        raise HTTPException(status_code=400, detail="jd_text is required")
+    has_parsed = parsed_jd is not None
+    has_text = bool((jd_text or "").strip())
+    if not has_parsed and not has_text:
+        raise HTTPException(
+            status_code=400,
+            detail="jd_text or parsed_jd is required",
+        )
     if not candidates:
         raise HTTPException(status_code=400, detail="candidates must be a non-empty list")
     _require_batch_fits(len(candidates))
@@ -227,14 +242,15 @@ def score_candidates(
         if mem is not None:
             mem.mark(label, logger=logger, extra=extra)
 
-    _m("01_after_body_parsed", _payload_stats(candidates, jd_text))
+    _m("01_after_body_parsed", _payload_stats(candidates, jd_text or ""))
 
     profiles = _adapt_candidates(candidates)
     by_id = {p.candidate_id: p for p in profiles}
     _m("02_after_adapter_profiles")
 
-    if parsed_jd is not None:
+    if has_parsed:
         jd = JobRoleSchema.model_validate(parsed_jd)
+        scoring_mode: Literal["parsed", "llm"] = "parsed"
         _m("03_after_process_jd", "source=request_parsed_jd")
     else:
         cache_dir = resolve_jd_cache_dir()
@@ -242,7 +258,8 @@ def score_candidates(
             "03_before_process_jd",
             f"jd_cache_path={_JD_CACHE_PATH!r} jd_cache_dir={cache_dir}",
         )
-        jd = process_jd(jd_text, cache_path=_JD_CACHE_PATH)
+        jd = process_jd(jd_text or "", cache_path=_JD_CACHE_PATH)
+        scoring_mode = "llm"
         _m("03_after_process_jd", "source=process_jd")
 
     model = _embedding_model
@@ -321,7 +338,7 @@ def score_candidates(
     if mem is not None:
         mem.summary(logger=logger)
 
-    return cards
+    return cards, scoring_mode
 
 
 @app.get("/health")
@@ -352,21 +369,25 @@ def score(body: ScoreRequest):
     if _SCORE_MEM_TRACE:
         mem = RequestMemTrace(baseline_mb=_startup_rss_mb, request_id=req_id)
 
+    mode_hint = "parsed" if body.parsed_jd is not None else "llm"
     print(
         f"/score request id={req_id} n_candidates={len(body.candidates)} "
-        f"jd_chars={len(body.jd_text or '')} models_ready={_models_ready} "
+        f"jd_chars={len(body.jd_text or '')} parsed_jd={body.parsed_jd is not None} "
+        f"models_ready={_models_ready} "
         f"startup_process_rss_mb={_startup_rss_mb} mem_trace={_SCORE_MEM_TRACE} "
         f"max_candidates={_SCORE_MAX_CANDIDATES}",
         flush=True,
     )
     logger.info(
-        "/score request id=%s n_candidates=%s jd_chars=%s",
+        "/score request id=%s n_candidates=%s jd_chars=%s has_parsed_jd=%s mode_hint=%s",
         req_id,
         len(body.candidates),
         len(body.jd_text or ""),
+        body.parsed_jd is not None,
+        mode_hint,
     )
     try:
-        cards = score_candidates(
+        cards, scoring_mode = score_candidates(
             body.jd_text,
             body.candidates,
             mem=mem,
@@ -380,4 +401,4 @@ def score(body: ScoreRequest):
             mem.summary(logger=logger)
         logger.exception("score failed id=%s", req_id)
         raise HTTPException(status_code=500, detail=str(exc)) from exc
-    return ScoreResponse(count=len(cards), cards=cards)
+    return ScoreResponse(count=len(cards), cards=cards, scoring_mode=scoring_mode)

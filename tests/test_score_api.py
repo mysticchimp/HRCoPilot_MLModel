@@ -52,6 +52,18 @@ def _fake_jd():
     )
 
 
+def _minimal_parsed_jd():
+    return {
+        "role": "HR Assistant",
+        "company": {"name": "Prime Focus", "size": "medium", "stage": "mature"},
+        "responsibilities": ["Support HR operations", "Onboarding"],
+        "skills": [
+            {"skill": "Onboarding", "priority": "essential", "proficiency_level": None},
+            {"skill": "Payroll", "priority": "important", "proficiency_level": None},
+        ],
+    }
+
+
 def test_health():
     with patch.object(main, "_models_ready", True), patch.object(
         main, "_embedding_model", object()
@@ -110,13 +122,14 @@ def test_score_endpoint_returns_swipe_cards():
     ]
     with patch.object(main, "_models_ready", True), patch.object(
         main, "_embedding_model", MagicMock()
-    ), patch.object(main, "score_candidates", return_value=fake_cards):
+    ), patch.object(main, "score_candidates", return_value=(fake_cards, "llm")):
         client = TestClient(app)
         resp = client.post("/score", json=body)
 
     assert resp.status_code == 200, resp.text
     data = resp.json()
     assert data["count"] == 2
+    assert data["scoring_mode"] == "llm"
     ids = {c["candidate_id"] for c in data["cards"]}
     assert ids == {"db-1", "db-2"}
     for card in data["cards"]:
@@ -144,3 +157,134 @@ def test_score_rejects_oversized_batch():
         )
     assert resp.status_code == 422
     assert "batch too large" in resp.json()["detail"]
+
+
+def test_score_accepts_parsed_jd_without_jd_text():
+    fake_cards = [
+        {
+            "candidate_id": "db-1",
+            "rank": 1,
+            "total_score": 0.7,
+            "component_breakdown": {},
+            "matched_signals": [],
+            "reasoning": "ok",
+        }
+    ]
+    with patch.object(main, "_models_ready", True), patch.object(
+        main, "_embedding_model", MagicMock()
+    ), patch.object(main, "score_candidates", return_value=(fake_cards, "parsed")) as sc:
+        client = TestClient(app)
+        resp = client.post(
+            "/score",
+            json={
+                "parsed_jd": _minimal_parsed_jd(),
+                "candidates": [{"candidate_id": "db-1", "raw_profile": SAMPLE_PROFILE}],
+            },
+        )
+
+    assert resp.status_code == 200, resp.text
+    assert resp.json()["scoring_mode"] == "parsed"
+    kwargs = sc.call_args.kwargs
+    assert kwargs.get("parsed_jd") is not None or (
+        sc.call_args.args and len(sc.call_args.args) >= 1
+    )
+    # positional: (jd_text, candidates, ...); parsed_jd is kw
+    assert sc.call_args.kwargs.get("parsed_jd") == _minimal_parsed_jd()
+    assert sc.call_args.args[0] is None or sc.call_args.args[0] == ""
+
+
+def test_score_rejects_missing_both_jd_text_and_parsed_jd():
+    with patch.object(main, "_models_ready", True), patch.object(
+        main, "_embedding_model", object()
+    ):
+        client = TestClient(app)
+        resp = client.post(
+            "/score",
+            json={
+                "candidates": [{"candidate_id": "db-1", "raw_profile": SAMPLE_PROFILE}],
+            },
+        )
+    assert resp.status_code == 422
+
+
+def test_score_candidates_parsed_skips_process_jd():
+    """parsed_jd path must never call process_jd / Claude."""
+    parsed = _minimal_parsed_jd()
+    calls = {"process_jd": 0}
+
+    def boom(*_a, **_k):
+        calls["process_jd"] += 1
+        raise AssertionError("process_jd must not run when parsed_jd is set")
+
+    with patch.object(main, "_models_ready", True), patch.object(
+        main, "_embedding_model", MagicMock()
+    ), patch.object(main, "_sim_spec", None), patch.object(
+        main, "_rerank_spec", None
+    ), patch.object(main, "process_jd", side_effect=boom), patch.object(
+        main, "embed_profiles"
+    ), patch.object(
+        main, "filter_by_job_title", side_effect=lambda df, *a, **k: df
+    ), patch.object(
+        main, "calculate_skill_score", side_effect=lambda df, *a, **k: df
+    ), patch.object(
+        main, "calculate_qualification_score", side_effect=lambda df, *a, **k: df
+    ), patch.object(
+        main, "calculate_seniority_score", side_effect=lambda df, *a, **k: df
+    ), patch.object(
+        main, "calculate_experience_score", side_effect=lambda df, *a, **k: df
+    ), patch.object(
+        main, "calculate_industry_score", side_effect=lambda df, *a, **k: df
+    ), patch.object(
+        main, "calculate_language_score", side_effect=lambda df, *a, **k: df
+    ), patch.object(
+        main, "calculate_location_score", side_effect=lambda df, *a, **k: df
+    ), patch.object(
+        main, "calculate_attrition_score", side_effect=lambda df, *a, **k: df
+    ), patch.object(
+        main, "calculate_experience_relevance_score", side_effect=lambda df, *a, **k: df
+    ), patch.object(
+        main, "calculate_education_relevance_score", side_effect=lambda df, *a, **k: df
+    ), patch.object(
+        main, "calculate_similarity_score", side_effect=lambda df, *a, **k: df
+    ), patch.object(
+        main,
+        "calculate_total_score",
+        side_effect=lambda df, *a, **k: df.assign(total_score=0.5, title_score=0.5),
+    ), patch.object(
+        main, "apply_rerank", side_effect=lambda df, *a, **k: df
+    ), patch.object(
+        main,
+        "build_card",
+        return_value={
+            "rank": 1,
+            "total_score": 0.5,
+            "component_breakdown": {},
+            "matched_signals": [],
+            "reasoning": "ok",
+        },
+    ):
+        cards, mode = main.score_candidates(
+            None,
+            [main.ScoreCandidateIn(candidate_id="c1", raw_profile=SAMPLE_PROFILE)],
+            parsed_jd=parsed,
+        )
+
+    assert mode == "parsed"
+    assert len(cards) == 1
+    assert calls["process_jd"] == 0
+
+
+def test_score_candidates_rejects_both_missing():
+    with patch.object(main, "_models_ready", True), patch.object(
+        main, "_embedding_model", object()
+    ):
+        try:
+            main.score_candidates(
+                None,
+                [main.ScoreCandidateIn(candidate_id="c1", raw_profile=SAMPLE_PROFILE)],
+                parsed_jd=None,
+            )
+            raise AssertionError("expected HTTPException")
+        except Exception as exc:
+            assert getattr(exc, "status_code", None) == 400
+            assert "jd_text or parsed_jd" in str(exc.detail)
