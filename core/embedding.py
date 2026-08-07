@@ -12,6 +12,29 @@ from models.data_models import JobRoleSchema
 
 logger = logging.getLogger(__name__)
 
+# Process-local per-candidate profile embedding cache for /score re-scores.
+# Keyed by sha256(model_key|doc_instruction|profile_text) — JD-independent, so
+# the same candidate is never re-encoded when their profile text is unchanged.
+_PROFILE_EMBED_CACHE: dict[str, list[float]] = {}
+
+
+def clear_profile_embed_cache() -> None:
+    """Drop all cached profile embeddings (tests / explicit invalidation)."""
+    _PROFILE_EMBED_CACHE.clear()
+
+
+def profile_embed_cache_size() -> int:
+    return len(_PROFILE_EMBED_CACHE)
+
+
+def _profile_embed_cache_key(
+    model_key: str | None,
+    doc_instruction: str | None,
+    profile_text: str,
+) -> str:
+    material = f"{model_key or ''}|{doc_instruction or ''}|{profile_text or ''}"
+    return hashlib.sha256(material.encode("utf-8")).hexdigest()
+
 
 def log_truncation(model, texts: list[str], label: str) -> int:
     """Warn when inputs exceed the encoder's max_seq_length (content is silently
@@ -193,11 +216,18 @@ def embed_profiles(
     model_key: str | None = None,
     doc_instruction: str | None = None,
     batch_size: int = 2,
+    use_memory_cache: bool = True,
 ):
     """Populate profile_text + profile_embedding for each profile (batch encoded).
 
-    When cache_path is given, embeddings are cached keyed by a content hash of the
-    profile texts, so unchanged inputs are not re-encoded (fixes stale-cache issues).
+    Process-local per-candidate memory cache (default on): keyed by
+    ``sha256(model_key|doc_instruction|profile_text)``. Hits skip encode; misses
+    are batch-encoded once and written back. Logs ``embed cache: N hits, M misses``
+    per call (Render-visible via print+logger, same pattern as score_mem).
+
+    When ``cache_path`` is given, an additional whole-batch pickle is used (eval /
+    offline). That path is all-or-nothing on the joined profile texts and is
+    independent of the per-candidate memory cache.
 
     `model_key` (an embedding-model identifier) and `doc_instruction` are folded into
     the cache key so swapping the embedding model — or toggling instruction prefixes —
@@ -210,6 +240,8 @@ def embed_profiles(
     LinkedIn profiles share a request (ST pads to the longest seq in the batch).
     Each text is truncated to the model's ``max_seq_length`` before encode.
     """
+    import numpy as np
+
     for profile in profiles:
         profile.profile_text = build_candidate_embedding_input(profile)
     texts = [p.profile_text or "" for p in profiles]
@@ -217,24 +249,82 @@ def embed_profiles(
     log_truncation(model, encode_texts, "candidate profiles")
     encode_texts = [truncate_to_max_tokens(t, model) for t in encode_texts]
 
+    # --- Per-candidate in-memory cache (production /score re-scores) ---
+    hits = 0
+    misses: list[int] = []
+    if use_memory_cache:
+        for i, text in enumerate(texts):
+            key = _profile_embed_cache_key(model_key, doc_instruction, text)
+            cached_vec = _PROFILE_EMBED_CACHE.get(key)
+            if cached_vec is not None:
+                profiles[i].profile_embedding = cached_vec
+                hits += 1
+            else:
+                misses.append(i)
+        msg = f"embed cache: {hits} hits, {len(misses)} misses"
+        print(msg, flush=True)
+        logger.info(msg)
+        if not misses:
+            return profiles
+    else:
+        misses = list(range(len(profiles)))
+        msg = f"embed cache: disabled ({len(profiles)} to encode)"
+        print(msg, flush=True)
+        logger.info(msg)
+
+    # --- Optional whole-batch disk pickle (eval); only when nothing from memory ---
     key_material = f"{model_key or ''}\x1f{doc_instruction or ''}\x1f" + "||".join(texts)
-    key = hashlib.md5(key_material.encode("utf-8")).hexdigest()
-    if cache_path and os.path.exists(cache_path):
+    batch_key = hashlib.md5(key_material.encode("utf-8")).hexdigest()
+    if (
+        cache_path
+        and os.path.exists(cache_path)
+        and len(misses) == len(profiles)  # full miss — batch file may cover all
+    ):
         with open(cache_path, "rb") as fh:
             cached = pickle.load(fh)
-        if cached.get("key") == key and len(cached.get("embeddings", [])) == len(profiles):
+        if cached.get("key") == batch_key and len(cached.get("embeddings", [])) == len(profiles):
             for profile, emb in zip(profiles, cached["embeddings"]):
                 profile.profile_embedding = emb
+                if use_memory_cache:
+                    ck = _profile_embed_cache_key(
+                        model_key, doc_instruction, profile.profile_text or ""
+                    )
+                    _PROFILE_EMBED_CACHE[ck] = emb
+            msg = (
+                f"embed cache: loaded batch pickle → "
+                f"{len(profiles)} hits, 0 misses (seeded memory)"
+            )
+            print(msg, flush=True)
+            logger.info(msg)
             return profiles
 
+    # Deduplicate by cache key within this request — identical profile texts
+    # (common when padding fixtures / overlapping candidates) encode once.
+    key_to_miss_indices: dict[str, list[int]] = {}
+    unique_miss_indices: list[int] = []
+    for i in misses:
+        ck = _profile_embed_cache_key(model_key, doc_instruction, texts[i])
+        if ck not in key_to_miss_indices:
+            key_to_miss_indices[ck] = []
+            unique_miss_indices.append(i)
+        key_to_miss_indices[ck].append(i)
+
+    if len(unique_miss_indices) != len(misses):
+        msg = (
+            f"embed cache: encoding {len(unique_miss_indices)} unique of "
+            f"{len(misses)} misses"
+        )
+        print(msg, flush=True)
+        logger.info(msg)
+
+    unique_miss_texts = [encode_texts[i] for i in unique_miss_indices]
     # convert_to_numpy avoids holding a full-batch torch tensor alongside the models.
     encoded = model.encode(
-        encode_texts,
+        unique_miss_texts,
         convert_to_numpy=True,
         show_progress_bar=True,
         batch_size=max(1, int(batch_size)),
     )
-    import numpy as np
 
     arr = np.asarray(encoded)
     if np.isnan(arr).any():
@@ -242,13 +332,23 @@ def embed_profiles(
             "embed_profiles: model produced NaN embeddings — check device/dtype "
             "(some custom encoders NaN on Apple MPS; retry with device='cpu' + float32)."
         )
-    embeddings = [vec.tolist() for vec in arr]
-    for profile, emb in zip(profiles, embeddings):
-        profile.profile_embedding = emb
+    for uniq_i, vec in zip(unique_miss_indices, arr):
+        emb = vec.tolist()
+        ck = _profile_embed_cache_key(model_key, doc_instruction, texts[uniq_i])
+        if use_memory_cache:
+            _PROFILE_EMBED_CACHE[ck] = emb
+        for idx in key_to_miss_indices[ck]:
+            profiles[idx].profile_embedding = emb
 
-    if cache_path:
+    if cache_path and all(p.profile_embedding is not None for p in profiles):
         with open(cache_path, "wb") as fh:
-            pickle.dump({"key": key, "embeddings": embeddings}, fh)
+            pickle.dump(
+                {
+                    "key": batch_key,
+                    "embeddings": [p.profile_embedding for p in profiles],
+                },
+                fh,
+            )
     return profiles
 
 

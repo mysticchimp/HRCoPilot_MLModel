@@ -274,13 +274,22 @@ def score_candidates(
     sim_spec = _sim_spec
     rerank_spec = _rerank_spec
     emb_model = sim_spec.model if sim_spec else model
+    # Stable key for the per-candidate in-memory embed cache (see core.embedding).
+    # mpnet-only path has no sim_spec — still must key so cache hits across /score calls.
+    if sim_spec is not None and sim_spec.model_key:
+        emb_model_key = sim_spec.model_key
+    else:
+        emb_model_key = getattr(emb_model, "model_name_or_path", None) or "all-mpnet-base-v2"
+    if not isinstance(emb_model_key, str):
+        emb_model_key = str(emb_model_key)
 
     embed_profiles(
         profiles,
         emb_model,
-        model_key=sim_spec.model_key if sim_spec else None,
+        model_key=emb_model_key,
         doc_instruction=sim_spec.doc_instruction if sim_spec else None,
         batch_size=sim_spec.batch_size if sim_spec else encode_batch_size,
+        use_memory_cache=True,
     )
     _m("04_after_embed_profiles")
 
