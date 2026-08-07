@@ -77,7 +77,16 @@ class AnthropicProvider(LLMProvider):
             return "".join(texts)
         raise ValueError("Anthropic returned an empty response")
 
-    def generate_structured(self, prompt, schema: type[T], system=None, temperature=None, model=None) -> T:
+    def generate_structured(
+        self,
+        prompt,
+        schema: type[T],
+        system=None,
+        temperature=None,
+        model=None,
+        *,
+        cache_system: bool = False,
+    ) -> T:
         tool_name = "emit_result"
         json_schema = schema.model_json_schema()
         # Anthropic tools expect a top-level object schema; strip Pydantic title noise.
@@ -90,11 +99,24 @@ class AnthropicProvider(LLMProvider):
         ]
         system_text = "\n\n".join(p for p in system_parts if p)
 
+        # Prompt caching: mark the shared system block (instructions + JD) as ephemeral
+        # so batch narrate calls reuse the prefix across candidates.
+        if cache_system and system_text:
+            system_arg: str | list[dict] = [
+                {
+                    "type": "text",
+                    "text": system_text,
+                    "cache_control": {"type": "ephemeral"},
+                }
+            ]
+        else:
+            system_arg = system_text
+
         response = self.client.messages.create(
             model=model or self.structured_model,
             max_tokens=self.max_tokens,
             temperature=self.temperature if temperature is None else temperature,
-            system=system_text,
+            system=system_arg,
             tools=[
                 {
                     "name": tool_name,

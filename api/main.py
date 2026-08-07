@@ -6,6 +6,12 @@ POST /score
   At least one of jd_text / parsed_jd is required. When parsed_jd is set, Claude is
   skipped and scoring_mode="parsed"; otherwise process_jd runs and scoring_mode="llm".
 
+POST /narrate
+  body: { jd_parsed_or_text, candidates: [{ candidate_id, raw_profile,
+          component_breakdown?, matched_signals? }] }
+  → compressed profiles → Claude (claude-sonnet-4-6) Summary+Assessment per candidate
+  Does not require embedding models to be warm (LLM-only path).
+
 Embedding models (all-mpnet + optional Qwen similarity) are loaded once at startup
 and reused. Uvicorn 0.52+ runs lifespan startup *before* binding the listen port, so
 ``warm_scoring_models()`` completes before any request can be accepted. We still gate
@@ -31,6 +37,7 @@ from core.filtering import filter_by_job_title
 from core.jd_extraction import process_jd, resolve_jd_cache_dir
 from core.mem_trace import RequestMemTrace, rss_mb
 from core.model_cache import warm_scoring_models
+from core.narrate import NARRATE_CONCURRENCY, narrate_candidates
 from core.scoring import (
     apply_rerank,
     calculate_attrition_score,
@@ -68,6 +75,7 @@ _SCORE_MEM_TRACE = os.environ.get("SCORE_MEM_TRACE", "1").strip().lower() not in
 # prod climb (53/10 ≈ 5.3 MB/cand) crosses 2GB−150MB reserve near n≈176. Soft max
 # 100 leaves headroom for diverse skill pools and allocator noise. Override via env.
 _SCORE_MAX_CANDIDATES = int(os.environ.get("SCORE_MAX_CANDIDATES", "100"))
+_NARRATE_MAX_CANDIDATES = int(os.environ.get("NARRATE_MAX_CANDIDATES", "50"))
 
 # Populated by lifespan; reused on every /score.
 _embedding_model = None
@@ -402,3 +410,105 @@ def score(body: ScoreRequest):
         logger.exception("score failed id=%s", req_id)
         raise HTTPException(status_code=500, detail=str(exc)) from exc
     return ScoreResponse(count=len(cards), cards=cards, scoring_mode=scoring_mode)
+
+
+class NarrateCandidateIn(BaseModel):
+    candidate_id: str
+    raw_profile: dict[str, Any] = Field(default_factory=dict)
+    component_breakdown: dict[str, Any] | None = None
+    matched_signals: list[str] | None = None
+
+
+class NarrateRequest(BaseModel):
+    # Either free-text JD or a JobRoleSchema-shaped dict (same inputs /score accepts).
+    jd_parsed_or_text: str | dict[str, Any]
+    candidates: list[NarrateCandidateIn]
+
+    @model_validator(mode="after")
+    def _require_jd_and_candidates(self) -> NarrateRequest:
+        jd = self.jd_parsed_or_text
+        if isinstance(jd, str) and not jd.strip():
+            raise ValueError(
+                "jd_parsed_or_text must be non-empty text or a parsed JD object"
+            )
+        if isinstance(jd, dict) and not jd:
+            raise ValueError("jd_parsed_or_text object must not be empty")
+        if not self.candidates:
+            raise ValueError("candidates must be a non-empty list")
+        return self
+
+
+class NarrateCandidateOut(BaseModel):
+    candidate_id: str
+    summary: str | None = None
+    assessment: str | None = None
+    error: str | None = None
+
+
+class NarrateResponse(BaseModel):
+    count: int
+    narratives: list[NarrateCandidateOut]
+
+
+@app.post("/narrate", response_model=NarrateResponse)
+def narrate(body: NarrateRequest):
+    """Generate Summary + Assessment narratives for scored candidates (Claude).
+
+    Does not require embedding models — LLM-only. Per-candidate failures return
+    an error marker without failing the batch.
+    """
+    req_id = uuid.uuid4().hex[:8]
+    n = len(body.candidates)
+    if n > _NARRATE_MAX_CANDIDATES:
+        raise HTTPException(
+            status_code=422,
+            detail=(
+                f"batch too large for narrate: got {n} candidates, "
+                f"max {_NARRATE_MAX_CANDIDATES} per /narrate call "
+                f"(NARRATE_MAX_CANDIDATES)."
+            ),
+        )
+
+    jd_kind = "parsed" if isinstance(body.jd_parsed_or_text, dict) else "text"
+    print(
+        f"/narrate request id={req_id} n_candidates={n} jd_kind={jd_kind} "
+        f"concurrency={NARRATE_CONCURRENCY}",
+        flush=True,
+    )
+    logger.info(
+        "/narrate request id=%s n_candidates=%s jd_kind=%s",
+        req_id,
+        n,
+        jd_kind,
+    )
+
+    payload = [
+        {
+            "candidate_id": c.candidate_id,
+            "raw_profile": c.raw_profile or {},
+            "component_breakdown": c.component_breakdown,
+            "matched_signals": c.matched_signals,
+        }
+        for c in body.candidates
+    ]
+
+    try:
+        rows = narrate_candidates(body.jd_parsed_or_text, payload)
+    except ValueError as exc:
+        raise HTTPException(status_code=400, detail=str(exc)) from exc
+    except RuntimeError as exc:
+        logger.exception("narrate config failed id=%s", req_id)
+        raise HTTPException(status_code=503, detail=str(exc)) from exc
+    except Exception as exc:  # noqa: BLE001
+        logger.exception("narrate failed id=%s", req_id)
+        raise HTTPException(status_code=500, detail=str(exc)) from exc
+
+    narratives = [NarrateCandidateOut.model_validate(r) for r in rows]
+    ok = sum(1 for nrt in narratives if not nrt.error)
+    logger.info(
+        "/narrate done id=%s ok=%s failed=%s",
+        req_id,
+        ok,
+        len(narratives) - ok,
+    )
+    return NarrateResponse(count=len(narratives), narratives=narratives)
